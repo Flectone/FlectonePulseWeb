@@ -32,7 +32,7 @@ export default defineConfig({
           level: [2, 3]
         },
         editLink: {
-          pattern: 'https://github.com/Flectone/FlectonePulseDocs/edit/main/docs/:path',
+          pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/docs/:path',
           text: 'Edit this page on GitHub'
         },
         sidebar: [
@@ -591,7 +591,7 @@ export default defineConfig({
         darkModeSwitchTitle: "Переключить на тёмную тему",
         lightModeSwitchTitle: "Переключить на светлую тему",
         editLink: {
-          pattern: 'https://github.com/Flectone/FlectonePulseDocs/edit/main/docs/:path',
+          pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/docs/:path',
           text: 'Редактировать эту страницу на GitHub'
         },
 
