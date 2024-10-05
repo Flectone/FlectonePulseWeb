@@ -1,0 +1,52 @@
+# PlaceholderAPI
+Путь `config.yml > module.integration.placeholderapi`
+
+## Пояснение
+Интеграция с PlaceholderAPI:
+- Позволяет использовать любые [плейсхолдеры](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders)
+
+::: tip Например
+`%server_tps%`, `%server_online%` и т.д., если установлен соответствующий модуль с помощью `/papi ecloud download модуль`
+:::
+
+- Добавляет свои плейсхолдеры
+
+| Плейсхолдер                     | Что возращает                                                         |
+|---------------------------------|-----------------------------------------------------------------------|
+| `%flectonepulse_fcolor_номер%`  | Возвращает [индивидуальный](/ru/config/module/tag/color/) цвет игрока |
+| `%flectonepulse_world_prefix%`  | Префикс измерения у игрока                                            |
+| `%flectonepulse_stream_prefix%` | Префикс стрима у игрока                                               |
+| `%flectonepulse_afk_suffix%`    | Суффикс афк у игрока                                                  |
+| `%flectonepulse_player%`        | Обычное имя игрока                                                    |
+| `%flectonepulse_ip%`            | Айпи адрес игрока                                                     |
+| `%flectonepulse_ping%`          | Пинг игрока                                                           |
+| `%flectonepulse_online%`        | Количество игроков на сервере                                         |
+| `%flectonepulse_tps%%`          | ТПС сервера                                                           |
+
+## Редактирование
+```yaml
+<config.module.integration.placeholderapi>
+```
+
+### По умолчанию
+```yaml
+placeholderapi:
+  enable: true
+  permission:
+    name: "flectonepulse.module.integration.placeholderapi"
+    type: OP
+```
+
+## Параметры
+
+### `enable`
+- По умолчанию `true`
+
+Включает или выключает работоспособность модуля
+
+### `permission`
+- Название `flectonepulse.module.integration.placeholderapi`
+- Тип `OP`
+
+Право для использования плейсхолдеров прямо в сообщениях
+

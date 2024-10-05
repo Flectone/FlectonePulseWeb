@@ -1,0 +1,43 @@
+# Чат
+Путь `messages > en_us.yml > module.player.message.chat`
+
+## Пояснение
+Сообщения при использовании чата игроком
+
+## Редактирование
+```yaml
+<en_us.module.player.message.chat>
+```
+
+### По умолчанию
+```yaml
+chat:
+  null-chat: "<color:#ff7171><b>⁉</b> Chat is disabled on this server"
+  null-recipient: "<color:#ff7171><b>⁉</b> Nobody heard you"
+  type:
+    global: "<display_name> <world_prefix>»<fcolor:4> <message>"
+    local: "<fcolor:2><display_name>:<fcolor:3> <message>"
+```
+
+## Параметры
+
+- Конфигурация происходит тут [Чат](/ru/config/module/player/message/chat/)
+
+### `null-chat`
+- По умолчанию `<color:#ff7171><b>⁉</b> Chat is disabled on this server`
+
+Сообщение, если в чат ничего не удалось отправить
+
+### `null-recipient`
+- По умолчанию `<color:#ff7171><b>⁉</b> Nobody heard you`
+
+Сообщение, если никто не увидел сообщение игрока
+
+### `type`
+- По умолчанию
+```yaml
+global: "<display_name> <world_prefix>»<fcolor:4> <message>"
+local: "<fcolor:2><display_name>:<fcolor:3> <message>"
+```
+
+Список чатов и их формат

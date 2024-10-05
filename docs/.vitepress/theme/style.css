@@ -1,0 +1,14 @@
+:root {
+    --vp-c-brand-1: #0076c7;
+    --vp-c-brand-2: #ADD8E6;
+}
+
+:root.dark {
+    --vp-c-brand-1: #87CEFA;
+    --vp-c-brand-2: #ADD8E6;
+}
+
+:root {
+    --vp-custom-block-tip-bg: rgba(0, 140, 227, 0.27);
+    --vp-custom-block-tip-code-bg: rgba(1, 137, 210, 0.19);
+}
