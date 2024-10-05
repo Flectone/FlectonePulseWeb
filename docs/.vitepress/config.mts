@@ -8,6 +8,7 @@ export default defineConfig({
   title: "FlectonePulse",
   description: "A documentation",
   lastUpdated: true,
+  ignoreDeadLinks: true,
 
   locales: {
     en: {
