@@ -6,7 +6,6 @@ const boosty = '<svg width="250" height="250" viewBox="-5 60 215.6 150" xmlns="h
 export default defineConfig({
   base: '/pulse/docs/',
   title: "FlectonePulse",
-  description: "A documentation",
   lastUpdated: true,
   ignoreDeadLinks: true,
 
@@ -15,6 +14,8 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       link: '/en/',
+      logo: '/logo.png',
+      description: "FlectonePulse documentation",
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
@@ -564,6 +565,7 @@ export default defineConfig({
       label: 'Русский',
       lang: 'ru',
       link: '/ru/',
+      description: "FlectonePulse документация",
       themeConfig: {
         nav: [
           { text: 'Версия 0.0.4', link: 'https://github.com/Flectone/FlectonePulseDocs/' },
