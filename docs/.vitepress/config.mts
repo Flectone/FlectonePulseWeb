@@ -578,6 +578,9 @@ export default defineConfig({
         nav: [
           { text: 'Версия 0.0.4', link: 'https://github.com/Flectone/FlectonePulseDocs/' },
         ],
+        lastUpdated: {
+          text: 'Обновлено'
+        },
         outline: {
           label: "Содержание страницы",
           level: [2, 3]
@@ -588,8 +591,12 @@ export default defineConfig({
           next: 'Следующая страница'
         },
 
+        darkModeSwitchLabel: 'Оформление',
         darkModeSwitchTitle: "Переключить на тёмную тему",
         lightModeSwitchTitle: "Переключить на светлую тему",
+        sidebarMenuLabel: 'Меню',
+        returnToTopLabel: 'Вернуться к началу',
+        langMenuLabel: 'Изменить язык',
         editLink: {
           pattern: 'https://github.com/Flectone/FlectonePulseWeb/edit/master/docs/:path',
           text: 'Редактировать эту страницу на GitHub'
