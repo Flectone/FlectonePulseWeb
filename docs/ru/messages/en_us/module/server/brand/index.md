@@ -1,4 +1,4 @@
-# Отключение
+# Бренд
 Путь `messages > en_us.yml > module.server.brand`
 
 ## Пояснение

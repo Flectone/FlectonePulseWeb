@@ -19,9 +19,6 @@ world:
   permission:
     name: "flectonepulse.module.player.world"
     type: TRUE
-  permission-world-tag:
-    name: "flectonepulse.module.player.world_tag"
-    type: TRUE
   type:
     normal: "<color:#98FB98>"
     nether: "<color:#F08080>"

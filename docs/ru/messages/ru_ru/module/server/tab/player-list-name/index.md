@@ -13,7 +13,7 @@
 ### По умолчанию
 ```yaml
 player-list-name:
-  format: "<tab_name>"
+  format: "<world_prefix>▋ <reset><prefix><fcolor:2><player></fcolor><suffix>"
 ```
 
 ## Параметры

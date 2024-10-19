@@ -91,7 +91,7 @@ command-mutelist:
 
 ### `global`
 
-::: details Сообщения для глобальных блокировок
+::: details Сообщения для глобальных мутов
 
 #### `header`
 - По умолчанию `<fcolor:2>▋ Муты: <count> <br>`
@@ -101,7 +101,7 @@ command-mutelist:
 #### `line`
 - По умолчанию `<hover:show_text:\"<fcolor:1>Размутить <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Дата: <date><br>Время: <time><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>`
 
-Формат каждого игнорирования из списка
+Формат каждого мута из списка
 
 #### `footer`
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
@@ -124,7 +124,7 @@ command-mutelist:
 - "<fcolor:1>Дата <date>"
 - "<fcolor:1>Размутить"
 ```
-Список сообщений для формата игнорирования из списка, где:
+Список сообщений для формата мута из списка, где:
 - Первая строчка - название предмета
 - Остальные строчки - описание предмета
 
@@ -164,7 +164,7 @@ command-mutelist:
 #### `line`
 - По умолчанию `<hover:show_text:\"<fcolor:1>Размутить <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Дата: <date><br>Время: <time><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>`
 
-Формат каждого игнорирования из списка
+Формат каждого мута из списка
 
 #### `footer`
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
@@ -187,7 +187,7 @@ command-mutelist:
 - "<fcolor:1>Дата <date>"
 - "<fcolor:1>Размутить"
 ```
-Список сообщений для формата игнорирования из списка, где:
+Список сообщений для формата мута из списка, где:
 - Первая строчка - название предмета
 - Остальные строчки - описание предмета
 

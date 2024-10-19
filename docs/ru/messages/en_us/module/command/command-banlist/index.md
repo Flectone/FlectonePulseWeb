@@ -101,7 +101,7 @@ command-banlist:
 #### `line`
 - По умолчанию `<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Date: <date><br>Time: <time><br>Reason: <reason>\">[MORE]</hover>`
 
-Формат каждого игнорирования из списка
+Формат каждого бана из списка
 
 #### `footer`
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
@@ -124,7 +124,7 @@ command-banlist:
 - "<fcolor:1>Date <date>"
 - "<fcolor:1>Click to unban"
 ```
-Список сообщений для формата игнорирования из списка, где:
+Список сообщений для формата бана из списка, где:
 - Первая строчка - название предмета
 - Остальные строчки - описание предмета
 
@@ -164,7 +164,7 @@ command-banlist:
 #### `line`
 - По умолчанию `<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Date: <date><br>Time: <time><br>Reason: <reason>\">[MORE]</hover>`
 
-Формат каждого игнорирования из списка
+Формат каждого бана из списка
 
 #### `footer`
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
@@ -187,7 +187,7 @@ command-banlist:
 - "<fcolor:1>Date <date>"
 - "<fcolor:1>Click to unban"
 ```
-Список сообщений для формата игнорирования из списка, где:
+Список сообщений для формата бана из списка, где:
 - Первая строчка - название предмета
 - Остальные строчки - описание предмета
 

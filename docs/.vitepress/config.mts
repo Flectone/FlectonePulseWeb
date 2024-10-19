@@ -93,7 +93,7 @@ export default defineConfig({
                             collapsed: true,
                             items: [
                               { text: 'Chat', link: '/en/messages/en_us/module/player/message/chat/' },
-                              { text: 'Formating', link: '/en/messages/en_us/module/player/message/format/' },
+                              { text: 'Formatting', link: '/en/messages/en_us/module/player/message/format/' },
                               { text: 'Bubble', link: '/en/messages/en_us/module/player/message/bubble/' },
                             ]
                           },
@@ -248,7 +248,7 @@ export default defineConfig({
                             collapsed: true,
                             items: [
                               { text: 'Chat', link: '/en/messages/ru_ru/module/player/message/chat/' },
-                              { text: 'Formating', link: '/en/messages/ru_ru/module/player/message/format/',},
+                              { text: 'Formatting', link: '/en/messages/ru_ru/module/player/message/format/',},
                               { text: 'Bubble', link: '/en/messages/ru_ru/module/player/message/bubble/' },
                             ]
                           },
@@ -418,7 +418,7 @@ export default defineConfig({
                         items: [
                           { text: 'Chat', link: '/en/config/module/player/message/chat/' },
                           {
-                            text: 'Formating',
+                            text: 'Formatting',
                             link: '/en/config/module/player/message/format/',
                             collapsed: true,
                             items: [

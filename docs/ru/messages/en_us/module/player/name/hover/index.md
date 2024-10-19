@@ -7,7 +7,7 @@
 
 ## Редактирование
 ```yaml
-<en_us.module.player.message.bubble>
+<en_us.module.player.name.hover>
 ```
 
 ### По умолчанию

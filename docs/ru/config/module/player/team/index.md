@@ -14,8 +14,8 @@
 team:
   enable: true
   name-visible: false
-  prefix: "<prefix>"
-  suffix: "<suffix>"
+  prefix: "<vault_prefix><stream_prefix>"
+  suffix: "<afk_suffix><vault_suffix>"
   color: "<white>"
   permission:
     name: "flectonepulse.module.player.team"

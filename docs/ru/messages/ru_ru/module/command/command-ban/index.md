@@ -14,7 +14,7 @@
 ```yaml
 command-ban:
   usage: "<fcolor:1>⚑ Использование: <fcolor:2>/<command> (игрок)"
-  cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>TEMPBAN</u> через <time>"
+  cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>BAN</u> через <time>"
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
   null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
   temporarily:

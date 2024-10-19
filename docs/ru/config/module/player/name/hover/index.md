@@ -1,4 +1,4 @@
-# Имя
+# При наведении
 Путь `config.yml > module.player.name.hover`
 
 ## Пояснение

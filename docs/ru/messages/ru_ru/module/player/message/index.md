@@ -1,4 +1,4 @@
-# Игрок
+# Сообщения
 Путь `messages > ru_ru.yml > module.player.message.*`
 
 ## Пояснение
