@@ -1,9 +1,9 @@
-# Сообщения
-Файл `messages`
+# Messages
+File `messages`
 
-## Пояснение
-Главная папка, в которой находятся все сообщения с разной локализацией плагина
-- [Английский](/ru/messages/en_us/)
-- [Русский](/ru/messages/ru_ru/)
+## Explanation
+Main folder, which contains all messages with different localization of the plugin
+- [English](/en/messages/en_us/)
+- [Russian](/en/messages/ru_ru/)
 
-<!--@include: @/ru/parts/locale.md-->
+<!--@include: @/en/parts/locale.md-->
