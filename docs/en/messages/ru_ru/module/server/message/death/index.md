@@ -132,7 +132,7 @@ Message when dying of shortness of breath
 Message when dying by block explosion
 
 #### `entity_explosion`
-- Default ``<color:#778899>🪦 <display_name> <fcolor:1>был взорван <fcolor:2><killer> <due_to>`
+- Default `<color:#778899>🪦 <display_name> <fcolor:1>был взорван <fcolor:2><killer> <due_to>`
 
 Message when dying from the explosion of a mob
 
@@ -246,6 +246,3 @@ Message on death from a player
 Example message when dying from a zombie if `mod-default: false` in the configuration
 
 :::
-
-
-
