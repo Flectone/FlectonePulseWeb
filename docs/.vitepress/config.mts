@@ -424,6 +424,7 @@ export default defineConfig({
                             items: [
                               { text: 'Mention', link: '/en/config/module/player/message/format/mention/' },
                               { text: 'Swear', link: '/en/config/module/player/message/format/swear/' },
+                              { text: 'Caps', link: '/en/config/module/player/message/format/caps/' },
                               { text: 'Ping', link: '/en/config/module/player/message/format/ping/' },
                               { text: 'Tps', link: '/en/config/module/player/message/format/tps/' },
                               { text: 'Online', link: '/en/config/module/player/message/format/online/' },
@@ -991,6 +992,7 @@ export default defineConfig({
                             items: [
                               { text: 'Упоминание', link: '/ru/config/module/player/message/format/mention/' },
                               { text: 'Ругательство', link: '/ru/config/module/player/message/format/swear/' },
+                              { text: 'Капс', link: '/ru/config/module/player/message/format/caps/' },
                               { text: 'Пинг', link: '/ru/config/module/player/message/format/ping/' },
                               { text: 'ТПС', link: '/ru/config/module/player/message/format/tps/' },
                               { text: 'Онлайн', link: '/ru/config/module/player/message/format/online/' },
