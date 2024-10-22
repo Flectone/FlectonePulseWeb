@@ -49,7 +49,7 @@ discord:
 
 - Configuration is here [Discord](/en/config/module/integration/discord/)
 
-### Плейсхолдеры
+### Placeholders
 
 You can use all the placeholders that are used in the initial message for minecraft
 ::: tip For example for ban message
