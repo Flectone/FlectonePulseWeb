@@ -14,7 +14,9 @@
 ```yaml
 discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel:
+  channel-info:
+    айди: "ТПС <tps>"
+  channel-message:
     CHAT:
       content: ""
       webhook:
@@ -65,7 +67,15 @@ discord:
 
 Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
 
-### `channel`
+### `channel-info`
+- По умолчанию 
+```yaml
+айди: "ТПС <tps>"
+```
+
+Список айди каналов и их названий
+
+### `channel-message`
 
 Список [сообщений](#типы-сообщении) с их настройкой
 

@@ -14,7 +14,9 @@ Messages integration with Discord
 ```yaml
 discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel:
+  channel-info:
+    айди: "ТПС <tps>"
+  channel-message:
     CHAT:
       content: ""
       webhook:
@@ -65,7 +67,15 @@ All placeholders from `PlaceholderAPI` and `FlectonePulse` will work too
 
 Format of the message that will be sent from Discord to Minecraft
 
-### `channel`
+### `channel-info`
+- Default
+```yaml
+айди: "ТПС <tps>"
+```
+
+List of channel ids and their names
+
+### `channel-message`
 
 List of [messages](#message-types)
 

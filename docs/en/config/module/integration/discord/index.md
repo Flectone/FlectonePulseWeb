@@ -19,7 +19,20 @@ Discord integration allows you to send messages:
 ```yaml
 discord:
   enable: false
-  channel:
+  presence:
+    enable: true
+    status: "ONLINE"
+    activity:
+      enable: true
+      type: "PLAYING"
+      name: "FlectonePulse"
+      url: "https://flectone.net/pulse/"
+  channel-info:
+    enable: true
+    ticker:
+      enable: true
+      period: 1200
+  channel-message:
     FROM_DISCORD_TO_MINECRAFT: ""
     CHAT: ""
 ```
@@ -38,7 +51,86 @@ discord:
 
 Enables or disables the functionality of the module
 
-### `channel`
+### `presence`
+
+![discord presence](/discordpresence.png)
+
+::: details Presence setting
+#### `enable`
+- Default `true`
+
+Enables or disables custom presence
+
+#### `status`
+- Default `ONLINE`
+
+Status type
+
+| Type             | Description                |
+|------------------|----------------------------|
+| `UNKNOWN`        | -                          |
+| `ONLINE`         | Online                     |
+| `DO_NOT_DISTURB` | Online with do not disturb |
+| `IDLE`           | Online, but idle           |
+| `INVISIBLE`      | Invisible                  |
+| `OFFLINE`        | Offline                    |
+
+#### `activity`
+
+Bot activity in Discord
+
+##### `enable`
+- Default `true`
+
+Enables or disables activity
+
+##### `type`
+- Default `PLAYING`
+
+Activity type
+
+| Type        | Description |
+|-------------|-------------|
+| `UNKNOWN`   | -           |
+| `STREAMING` | Streaming   |
+| `LISTENING` | Listening   |
+| `WATCHING`  | Watching    |
+| `CUSTOM`    | -           |
+| `COMPETING` | Competing   |
+
+##### `name`
+- Default `FlectonePulse`
+
+Activity name
+
+##### `url`
+- Default `https://flectone.net/pulse/`
+
+Activity url
+
+:::
+
+
+### `channel-info`
+
+![discord channel info](/discordchannelinfo.png)
+
+::: details Channel info setting
+#### `enable`
+- Default `true`
+
+### `ticker`
+- `enable: true`
+
+Whether message needs to be updated once every certain period of time
+
+- `period: 1200`
+
+How often in [ticks](https://minecraft.wiki/w/Tick) needs to be updated
+
+:::
+
+### `channel-message`
 
 List of [message types](#message-types) and [channel IDs](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) in Discord
 
@@ -47,7 +139,7 @@ List of [message types](#message-types) and [channel IDs](https://support.discor
 2. I write `CHAT: “1286666844358316083”`
 
 ```yaml
-channel:
+channel-message:
   CHAT: "1286666844358316083" // [!code highlight]
 ```
 :::
