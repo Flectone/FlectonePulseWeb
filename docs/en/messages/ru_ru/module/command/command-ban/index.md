@@ -87,17 +87,17 @@ Message for player
 Default reason if not entered
 
 #### `try-connect`
-- По умолчанию `<color:#ff7171>☠ Навсегда заблокированный <target> пытался подключиться`
+- Default `<color:#ff7171>☠ Навсегда заблокированный <target> пытался подключиться`
 
 Message if a banned player tried to connect
 
 #### `global`
-- По умолчанию `<color:#ff7171><br>⏵ Игрок <target> заблокирован навсегда <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>`
+- Default `<color:#ff7171><br>⏵ Игрок <target> заблокирован навсегда <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>`
 
 Message for all
 
 #### `player`
-- По умолчанию `<color:#ff7171>☠ Ты заблокирован навсегда, <br>Причина: <message>`
+- Default `<color:#ff7171>☠ Ты заблокирован навсегда, <br>Причина: <message>`
 
 Message for player
 

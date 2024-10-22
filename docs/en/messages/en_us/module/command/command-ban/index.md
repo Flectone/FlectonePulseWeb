@@ -87,17 +87,17 @@ Message for player
 Default reason if not entered
 
 #### `try-connect`
-- По умолчанию `<color:#ff7171>☠ Permanently banned <target> tried to log in`
+- Default `<color:#ff7171>☠ Permanently banned <target> tried to log in`
 
 Message if a banned player tried to connect
 
 #### `global`
-- По умолчанию `<color:#ff7171><br>⏵ Player <target> has been banned permanently <br>⏵ Reason: <message> <br>⏵ Moderator: <display_name><br>`
+- Default `<color:#ff7171><br>⏵ Player <target> has been banned permanently <br>⏵ Reason: <message> <br>⏵ Moderator: <display_name><br>`
 
 Message for all
 
 #### `player`
-- По умолчанию `<color:#ff7171>☠ You are banned permanently <br>Reason: <message>`
+- Default `<color:#ff7171>☠ You are banned permanently <br>Reason: <message>`
 
 Message for player
 
