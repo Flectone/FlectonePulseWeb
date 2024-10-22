@@ -18,15 +18,17 @@ command-ban:
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
   null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
   temporarily:
-    default-reason: "Ты временно заблокирован на этом сервере"
     try-connect: "<color:#ff7171>☠ Заблокированный <target> пытался подключиться, ему осталось <time>"
     global: "<color:#ff7171><br>⏵ Игрок <target> заблокирован на <time> <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>"
     player: "<color:#ff7171>☠ Ты заблокирован, осталось <time> <br>Причина: <message>"
+    reason:
+      default: "Ты временно заблокирован на этом сервере"
   permanent:
-    default-reason: "Ты заблокирован на этом сервере"
     try-connect: "<color:#ff7171>☠ Навсегда заблокированный <target> пытался подключиться"
     global: "<color:#ff7171><br>⏵ Игрок <target> заблокирован навсегда <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>"
     player: "<color:#ff7171>☠ Ты заблокирован навсегда, <br>Причина: <message>"
+    reason:
+      default: "Ты заблокирован на этом сервере"
 ```
 
 ## Options
@@ -56,10 +58,6 @@ Message if an impossible time is entered
 ### `temporarily`
 
 ::: details Messages for temporary ban
-#### `default-reason`
-- Default `Ты временно заблокирован на этом сервере`
-
-Default reason if not entered
 
 #### `try-connect`
 - Default `<color:#ff7171>☠ Заблокированный <target> пытался подключиться, ему осталось <time>`
@@ -76,15 +74,27 @@ Message for all
 
 Message for player
 
+#### `reason`
+- Default
+```yaml
+default: "Ты временно заблокирован на этом сервере"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/ban player 1d random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
+
 :::
 
 ### `permanent`
 
 ::: details Messages to ban permanently
-#### `default-reason`
-- Default `Ты заблокирован на этом сервере`
-
-Default reason if not entered
 
 #### `try-connect`
 - Default `<color:#ff7171>☠ Навсегда заблокированный <target> пытался подключиться`
@@ -100,6 +110,22 @@ Message for all
 - Default `<color:#ff7171>☠ Ты заблокирован навсегда, <br>Причина: <message>`
 
 Message for player
+
+#### `reason`
+- Default
+```yaml
+default: "Ты заблокирован на этом сервере"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/ban player random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
 
 :::
 

@@ -17,9 +17,10 @@ command-mute:
   cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>MUTE</u> через <time>"
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
   null-time: "<color:#ff7171><b>⁉</b> Невозможное время"
-  default-reason: "Ты был замучен на сервере"
   global: "<color:#ff7171><br>⏵ Игрок <target> замучен на <time> <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>"
   player: "<color:#ff7171>☠ Ты замучен, осталось <time>. Причина: <message>"
+  reason:
+    default: "Ты был замучен на сервере"
 ```
 
 ## Options
@@ -46,11 +47,6 @@ Message if the entered player is not found
 
 Message if an impossible time is entered
 
-### `default-reason`
-- Default `Ты был замучен на сервере`
-
-Default reason if not entered
-
 ### `global`
 - Default `<color:#ff7171><br>⏵ Игрок <target> замучен на <time> <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>`
 
@@ -61,3 +57,20 @@ Message for all
 
 Message for player
 
+### `reason`
+- Default
+```yaml
+default: "Ты был замучен на сервере"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/mute player 1d random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
+
+:::

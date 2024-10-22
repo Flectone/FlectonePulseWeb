@@ -22,11 +22,15 @@ command-ban:
     try-connect: "<color:#ff7171>☠ Banned <target> tried to log in, <time> left"
     global: "<color:#ff7171><br>⏵ Player <target> has been banned for <time> <br>⏵ Reason: <message> <br>⏵ Moderator: <display_name><br>"
     player: "<color:#ff7171>☠ You are banned, <time> left <br>Reason: <message>"
+    reason:
+      default: "You have been banned from this server"
   permanent:
     default-reason: "You have been banned permanent from this server"
     try-connect: "<color:#ff7171>☠ Permanently banned <target> tried to log in"
     global: "<color:#ff7171><br>⏵ Player <target> has been banned permanently <br>⏵ Reason: <message> <br>⏵ Moderator: <display_name><br>"
     player: "<color:#ff7171>☠ You are banned permanently <br>Reason: <message>"
+    reason:
+      default: "You have been banned permanent from this server"
 ```
 
 ## Options
@@ -56,10 +60,6 @@ Message if an impossible time is entered
 ### `temporarily`
 
 ::: details Messages for temporary ban
-#### `default-reason`
-- Default `You have been banned from this server`
-
-Default reason if not entered
 
 #### `try-connect`
 - Default `<color:#ff7171>☠ Banned <target> tried to log in, <time> left`
@@ -76,15 +76,27 @@ Message for all
 
 Message for player
 
+#### `reason`
+- Default
+```yaml
+default: "You have been banned from this server"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/ban player 1d random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
+
 :::
 
 ### `permanent`
 
 ::: details Messages to ban permanently
-#### `default-reason`
-- Default `You have been banned permanent from this server`
-
-Default reason if not entered
 
 #### `try-connect`
 - Default `<color:#ff7171>☠ Permanently banned <target> tried to log in`
@@ -100,6 +112,22 @@ Message for all
 - Default `<color:#ff7171>☠ You are banned permanently <br>Reason: <message>`
 
 Message for player
+
+#### `reason`
+- Default
+```yaml
+default: "You have been banned permanent from this server"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/ban player random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
 
 :::
 

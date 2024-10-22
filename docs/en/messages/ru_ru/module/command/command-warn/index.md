@@ -16,9 +16,10 @@ command-warn:
   usage: "<fcolor:1>⚑ Использование: <fcolor:2>/<command> (игрок)"
   cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>WARN</u> через <time>"
   null-player: "<color:#ff7171><b>⁉</b> Игрок не найден"
-  default-reason: "Ты получил предупреждение"
   global: "<color:#ff7171><br>⏵ Игрок <target> получил предупреждение на <time> <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>"
   player: "<color:#ff7171>☠ Ты получил предупреждение на <time>. Причина: <message>"
+  reason:
+    default: "Ты получил предупреждение"
 ```
 
 ## Options
@@ -45,11 +46,6 @@ Message if entered player is not found
 
 Message if an impossible time is entered
 
-### `default-reason`
-- Default `Ты получил предупреждение`
-
-Default reason if not entered
-
 ### `global`
 - Default `<color:#ff7171><br>⏵ Игрок <target> получил предупреждение на <time> <br>⏵ Причина: <message> <br>⏵ Модератор: <display_name><br>`
 
@@ -59,4 +55,22 @@ Message to all
 - Default `<color:#ff7171>☠ Ты получил предупреждение на <time>. Причина: <message>`
 
 Message for player
+
+### `reason`
+- Default
+```yaml
+default: "Ты получил предупреждение"
+```
+
+A list with keys and values, where key is a word and the value is a specific reason
+
+::: tip You can write your own reasons
+```yaml
+random_kek: "Random reason"
+```
+Then if I write `/warn player 1d random_kek`, the reason will be `Random reason`
+
+If no reason is specified, `default` will be used
+
+:::
 
