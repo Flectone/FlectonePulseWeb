@@ -26,7 +26,7 @@ export default defineConfig({
       description: "FlectonePulse documentation",
       themeConfig: {
         nav: [
-          { text: 'Version 0.0.5', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Version 0.0.6', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         outline: {
           level: [2, 3]
@@ -576,7 +576,7 @@ export default defineConfig({
       description: "FlectonePulse документация",
       themeConfig: {
         nav: [
-          { text: 'Версия 0.0.5', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Версия 0.0.6', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         lastUpdated: {
           text: 'Обновлено'

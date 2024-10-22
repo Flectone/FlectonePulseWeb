@@ -12,7 +12,7 @@ This category is responsible for customizing the plugin as a whole, without affe
 ### Default
 ```yaml
 plugin:
-  version: "0.0.5"
+  version: "0.0.6"
   language: "en_us"
   use-player-locale: true
   console-name: "FlectonePulseConsole"

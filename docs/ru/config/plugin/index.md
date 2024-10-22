@@ -12,7 +12,7 @@
 ### По умолчанию
 ```yaml
 plugin:
-  version: "0.0.5"
+  version: "0.0.6"
   language: "en_us"
   use-player-locale: true
   console-name: "FlectonePulseConsole"
