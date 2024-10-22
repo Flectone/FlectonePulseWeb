@@ -15,7 +15,6 @@
 ```yaml
 name:
   enable: true
-  display: "<prefix><fcolor:2><player></fcolor><suffix>"
   permission:
     name: "flectonepulse.module.player.name"
     type: TRUE

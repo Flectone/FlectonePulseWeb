@@ -37,12 +37,12 @@ Enables or disables the functionality of the module
 Enables or disables nickname above the player
 
 ### `prefix`
-- Default `<prefix>`
+- Default `<vault_prefix><stream_prefix>`
 
 Text to the player's nickname: `text TheFaser`
 
 ### `suffix`
-- Default `<suffix>`
+- Default `<afk_suffix><vault_suffix>`
 
 Text after the player's nickname: `TheFaser text`
 

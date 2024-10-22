@@ -37,12 +37,12 @@ team:
 Включает или выключает ник над игроком
 
 ### `prefix`
-- По умолчанию `<prefix>`
+- По умолчанию `<vault_prefix><stream_prefix>`
 
 Текст до ника игрока: `текст TheFaser`
 
 ### `suffix`
-- По умолчанию `<suffix>`
+- По умолчанию `<afk_suffix><vault_suffix>`
 
 Текст после ника игрока: `TheFaser текст`
 
