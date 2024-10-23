@@ -8,8 +8,9 @@
 | `DEATH`                       | Message from death                               |
 | `JOIN`                        | Message when a player has logged into the server |
 | `QUIT`                        | Message when a player has left the server        |
-| `FROM_DISCORD_TO_MINECRAFT`   | Message from Discord in Minecraft                |
-| `FROM_TWITCH_TO_MINECRAFT`    | Message from Twitch in Minecraft                 |
+| `FROM_DISCORD_TO_MINECRAFT`   | Message from Discord to Minecraft                |
+| `FROM_TWITCH_TO_MINECRAFT`    | Message from Twitch to Minecraft                 |
+| `FROM_TELEGRAM_TO_MINECRAFT`  | Message from Telegram to Minecraft               |
 | `COMMAND_ME`                  | Global message of the `/me` command              |
 | `COMMAND_BALL`                | Global message of the `/ball` command            |
 | `COMMAND_BAN`                 | Global message of the `/ban` command             |

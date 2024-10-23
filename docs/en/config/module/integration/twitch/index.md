@@ -26,7 +26,7 @@ twitch:
 
 ## Options
 
-- The final format of the post is changed here [Twitch](/en/messages/en_us/module/integration/twitch/)
+- The final format of message is changed here [Twitch](/en/messages/en_us/module/integration/twitch/)
 
 ### `enable`
 - Default `false`

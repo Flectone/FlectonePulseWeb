@@ -67,6 +67,7 @@ export default defineConfig({
                         items: [
                           { text: 'Discord', link: '/en/messages/en_us/module/integration/discord/' },
                           { text: 'Twitch', link: '/en/messages/en_us/module/integration/twitch/' },
+                          { text: 'Telegram', link: '/en/messages/en_us/module/integration/telegram/' },
                         ]
                       },
                       {
@@ -222,6 +223,7 @@ export default defineConfig({
                         items: [
                           { text: 'Discord', link: '/en/messages/ru_ru/module/integration/discord/' },
                           { text: 'Twitch', link: '/en/messages/ru_ru/module/integration/twitch/' },
+                          { text: 'Telegram', link: '/en/messages/ru_ru/module/integration/telegram/' },
                         ]
                       },
                       {
@@ -383,6 +385,7 @@ export default defineConfig({
                     items: [
                       { text: 'Discord', link: '/en/config/module/integration/discord/' },
                       { text: 'Twitch', link: '/en/config/module/integration/twitch/' },
+                      { text: 'Telegram', link: '/en/config/module/integration/telegram/' },
                       { text: 'PlaceholderAPI', link: '/en/config/module/integration/placeholderapi/' },
                       { text: 'LuckPerms', link: '/en/config/module/integration/luckperms/' },
                       { text: 'SimpleVoice', link: '/en/config/module/integration/simplevoice/' },
@@ -565,6 +568,7 @@ export default defineConfig({
               { text: 'Database', link: '/en/secrets/database/' },
               { text: 'Discord', link: '/en/secrets/discord/' },
               { text: 'Twitch', link: '/en/secrets/twitch/' },
+              { text: 'Telegram', link: '/en/secrets/telegram/' },
             ]
           },
         ],
@@ -635,6 +639,7 @@ export default defineConfig({
                         items: [
                           { text: 'Дискорд', link: '/ru/messages/en_us/module/integration/discord/' },
                           { text: 'Твич', link: '/ru/messages/en_us/module/integration/twitch/' },
+                          { text: 'Телеграм', link: '/ru/messages/en_us/module/integration/telegram/' },
                         ]
                       },
                       {
@@ -790,6 +795,7 @@ export default defineConfig({
                         items: [
                           { text: 'Дискорд', link: '/ru/messages/ru_ru/module/integration/discord/' },
                           { text: 'Твич', link: '/ru/messages/ru_ru/module/integration/twitch/' },
+                          { text: 'Телеграм', link: '/ru/messages/ru_ru/module/integration/telegram/' },
                         ]
                       },
                       {
@@ -951,6 +957,7 @@ export default defineConfig({
                     items: [
                       { text: 'Дискорд', link: '/ru/config/module/integration/discord/' },
                       { text: 'Твич', link: '/ru/config/module/integration/twitch/' },
+                      { text: 'Телеграм', link: '/ru/config/module/integration/telegram/' },
                       { text: 'PlaceholderAPI', link: '/ru/config/module/integration/placeholderapi/' },
                       { text: 'LuckPerms', link: '/ru/config/module/integration/luckperms/' },
                       { text: 'SimpleVoice', link: '/ru/config/module/integration/simplevoice/' },
@@ -1133,6 +1140,7 @@ export default defineConfig({
               { text: 'База данных', link: '/ru/secrets/database/' },
               { text: 'Дискорд', link: '/ru/secrets/discord/' },
               { text: 'Твич', link: '/ru/secrets/twitch/' },
+              { text: 'Телеграм', link: '/ru/secrets/telegram/' },
             ]
           },
         ],

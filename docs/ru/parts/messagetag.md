@@ -10,6 +10,7 @@
 | `QUIT`                        | Сообщение, когда игрок вышел с сервера       |
 | `FROM_DISCORD_TO_MINECRAFT`   | Сообщение из Discord в Minecraft             |
 | `FROM_TWITCH_TO_MINECRAFT`    | Сообщение из Twitch в Minecraft              |
+| `FROM_TELEGRAM_TO_MINECRAFT`  | Сообщение из Telegram в Minecraft            |
 | `COMMAND_ME`                  | Глобальное сообщение комманды `/me`          |
 | `COMMAND_BALL`                | Глобальное сообщение комманды `/ball`        |
 | `COMMAND_BAN`                 | Глобальное сообщение комманды `/ban`         |
