@@ -27,6 +27,8 @@ plugin:
     filter:
       - "Paper Async Command Builder"
       - "Caught previously unhandled exception :"
+      - "Error received from Telegram GetUpdates Request"
+      - "OkHttp TaskRunner"
 ```
 
 ## Параметры
