@@ -3,7 +3,7 @@
 
 ## Пояснение
 Сообщения интеграции с Телеграмом
-![telegrammessage](/telegrammessage.png)
+![telegrammessage](/telegrammessage1.png)
 
 ## Редактирование
 ```yaml

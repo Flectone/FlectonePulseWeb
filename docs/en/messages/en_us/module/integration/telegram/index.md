@@ -3,7 +3,7 @@ Path `messages > en_us.yml > module.integration.telegram`
 
 ## Explanation
 Messages integration with Telegram
-![telegrammessage](/telegrammessage.png)
+![telegrammessage](/telegrammessage1.png)
 
 ## Edit
 ```yaml
