@@ -17,7 +17,7 @@
 ### По умолчанию
 ```yaml
 mark:
-  enable: true
+  enable: false
   limit: true
   color: true
   range: 100
@@ -46,7 +46,7 @@ mark:
 ## Параметры
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 

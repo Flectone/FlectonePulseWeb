@@ -1,9 +1,9 @@
 # FlectonePulse project
+![flectonepulse](/flectonepulse.png)
 
 ## What's the project?
 
 FlectonePulse is a server-side message manager aimed at improving the server configuration experience
-![flectonepulse](/flectonepulse.png)
 
 Platforms are currently supported and tested:
 - Bukkit

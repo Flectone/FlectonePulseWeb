@@ -14,14 +14,20 @@ Message when a player receives an achievement
 ```yaml
 advancement:
   task:
-    hover: "<color:#4eff52><advancement_title> <br><advancement_description>"
-    format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>получил достижение <color:#4eff52>[<advancement>]"
+    format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>получил достижение <advancement>"
+    tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
   goal:
-    hover: "<color:#FFFF00><advancement_title> <br><advancement_description>"
-    format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>выполнил цель <color:#FFFF00>[<advancement>]"
+    format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>выполнил цель <advancement>"
+    tag: "<color:#FFFF00>[<hover:show_text:\"<color:#FFFF00><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
   challenge:
-    hover: "<color:#834eff><advancement_title> <br><advancement_description>"
-    format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <color:#834eff>[<advancement>]"
+    format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <advancement>"
+    tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
+  revoke:
+    many-to-one: "<fcolor:1>🌠 Отозвано <fcolor:2><number></fcolor:2> достижений у игрока <display_name>"
+    one-to-one: "<fcolor:1>🌠 Отозвано достижение <fcolor:2><advancement></fcolor:2> у игрока <display_name>"
+  grant:
+    many-to-one: "<fcolor:1>🌠 Выдано <fcolor:2><number></fcolor:2> достижений игроку <display_name>"
+    one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement></fcolor:2> выдано игроку <display_name>"
 ```
 
 ## Options
@@ -31,8 +37,8 @@ advancement:
 ### `task`
 - Default:
 ```yaml
-hover: "<color:#4eff52><advancement_title> <br><advancement_description>"
-format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>получил достижение <color:#4eff52>[<advancement>]"
+format: "<color:#4eff52>🌠 <fcolor:2><display_name> <fcolor:1>получил достижение <advancement>"
+tag: "<color:#4eff52>[<hover:show_text:\"<color:#4eff52><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
 ```
 
 Message when a task achievement is received
@@ -41,8 +47,8 @@ Message when a task achievement is received
 ### `goal`
 - Default:
 ```yaml
-hover: "<color:#FFFF00><advancement_title> <br><advancement_description>"
-format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>выполнил цель <color:#FFFF00>[<advancement>]"
+format: "<color:#FFFF00>🌠 <fcolor:2><display_name> <fcolor:1>выполнил цель <advancement>"
+tag: "<color:#FFFF00>[<hover:show_text:\"<color:#FFFF00><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
 ```
 
 Message when a goal is reached
@@ -51,9 +57,27 @@ Message when a goal is reached
 ### `challenge`
 - Default:
 ```yaml
-hover: "<color:#834eff><advancement_title> <br><advancement_description>"
-format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <color:#834eff>[<advancement>]"
+format: "<color:#834eff>🌠 <fcolor:2><display_name> <fcolor:1>завершил испытание <advancement>"
+tag: "<color:#834eff>[<hover:show_text:\"<color:#834eff><lang:<title>> <br><lang:<description>>\"><lang:<title>></hover>]"
 ```
 
 Message at challenge completion
 ![challenge](/challenge.png)
+
+### `revoke`
+- Default:
+```yaml
+many-to-one: "<fcolor:1>🌠 Отозвано <fcolor:2><number></fcolor:2> достижений у игрока <display_name>"
+one-to-one: "<fcolor:1>🌠 Отозвано достижение <fcolor:2><advancement></fcolor:2> у игрока <display_name>"
+```
+
+Message when using `/advancement revoke`
+
+### `grant`
+- Default:
+```yaml
+many-to-one: "<fcolor:1>🌠 Выдано <fcolor:2><number></fcolor:2> достижений игроку <display_name>"
+one-to-one: "<fcolor:1>🌠 Достижение <fcolor:2><advancement></fcolor:2> выдано игроку <display_name>"
+```
+
+Message when using `/advancement grant`

@@ -32,7 +32,7 @@ discord:
     ticker:
       enable: true
       period: 1200
-  channel-message:
+  message-channel:
     FROM_DISCORD_TO_MINECRAFT: ""
     CHAT: ""
 ```
@@ -130,7 +130,7 @@ How often in [ticks](https://minecraft.wiki/w/Tick) needs to be updated
 
 :::
 
-### `channel-message`
+### `message-channel`
 
 List of [message types](#message-types) and [channel IDs](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) in Discord
 
@@ -139,7 +139,7 @@ List of [message types](#message-types) and [channel IDs](https://support.discor
 2. I write `CHAT: “1286666844358316083”`
 
 ```yaml
-channel-message:
+message-channel:
   CHAT: "1286666844358316083" // [!code highlight]
 ```
 :::

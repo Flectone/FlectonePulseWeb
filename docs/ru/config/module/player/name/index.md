@@ -22,6 +22,8 @@ name:
 
 ## Параметры
 
+- Сообщения изменяются здесь [Имя](/ru/messages/ru_ru/module/player/name/)
+
 ### `enable`
 - По умолчанию `true`
 

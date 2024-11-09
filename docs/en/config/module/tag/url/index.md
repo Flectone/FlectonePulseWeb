@@ -29,7 +29,7 @@ url:
 
 ## Options
 
-- Message is being changed here [Url](/en/messages/ru_ru/module/tag/url/)
+- Message is being changed here [Url](/en/messages/en_us/module/tag/url/)
 
 ### `enable`
 - Default `true`

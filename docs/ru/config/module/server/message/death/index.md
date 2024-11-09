@@ -15,9 +15,6 @@
 ```yaml
 death:
   enable: true
-  visible: true
-  mob-default: true
-  entity-hover: true
   permission:
     name: "flectonepulse.module.server.message.death"
     type: TRUE
@@ -27,10 +24,6 @@ death:
     permission:
       name: "flectonepulse.module.server.message.death.sound"
       type: TRUE
-  listener:
-    PlayerInteractEvent: LOWEST
-    EntityDamageEvent: LOWEST
-    PlayerDeathEvent: LOWEST
 ```
 
 ## Параметры
@@ -41,25 +34,6 @@ death:
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
-
-### `visible`
-- По умолчанию `true`
-
-Включает отображение сообщения о смерти от плагина
-
-### `mob-default`
-- По умолчанию `true`
-
-Если включено, то для каждой смерти от любого моба используется одно [сообщение default]((/ru/messages/ru_ru/module/server/message/death/))
-![death mob](/deathmob.png)
-
-Если выключено, то для каждой смерти от моба нужно написать своё [сообщение]((/ru/messages/ru_ru/module/server/message/death/))
-
-### `entity-hover`
-- По умолчанию `true`
-
-Включает отображение информации о мобе при наведении на его имя
-![death hover](/deathhover.png)
 
 ### `permission`
 - Название `flectonepulse.module.server.message.death`
@@ -84,15 +58,3 @@ death:
 
 [Право](/ru/config/module/#пояснение) для проигрывания звука
 :::
-
-### `listener`
-- По умолчанию:
-```yaml
-PlayerInteractEvent: LOWEST
-EntityDamageEvent: LOWEST
-PlayerDeathEvent: LOWEST
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
-<!--@include: @/ru/parts/listener.md-->

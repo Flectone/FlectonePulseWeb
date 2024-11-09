@@ -17,7 +17,7 @@ The sword can be renamed in Anvil to [available-color](#available-colors), for e
 ### Default
 ```yaml
 mark:
-  enable: true
+  enable: false
   limit: true
   color: true
   range: 100
@@ -46,7 +46,7 @@ mark:
 ## Options
 
 ### `enable`
-- Default `true`
+- Default `false`
 
 Enables or disables the functionality of the module
 

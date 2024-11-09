@@ -13,239 +13,115 @@ Death messages
 ### Default
 ```yaml
 death:
-  entity-hover: "<fcolor:2><entity_name> <br><fcolor:1>Type: <fcolor:2><entity_type> <br><fcolor:1><entity_uuid>"
-  due-to: "<fcolor:1>due to <fcolor:2><killer>"
-  by-item: "<fcolor:1>using <fcolor:2>[<item_name>]"
-  natural:
-    contact: "<color:#778899>🪦 <display_name> <fcolor:1>was prickled to death by <fcolor:2><block_name> <due_to>"
-    entity_sweep_attack: "<color:#778899>🪦 <display_name> <fcolor:1>was swept off their feet <due_to>"
-    projectile: "<color:#778899>🪦 <display_name> <fcolor:1>was shot by a <fcolor:2><projectile_name> <due_to>"
-    suffocation: "<color:#778899>🪦 <display_name> <fcolor:1>suffocated in a wall <due_to>"
-    fall: "<color:#778899>🪦 <display_name> <fcolor:1>hit the ground too hard <due_to>"
-    fire: "<color:#778899>🪦 <display_name> <fcolor:1>went up in flames <due_to>"
-    fire_tick: "<color:#778899>🪦 <display_name> <fcolor:1>burned to death <due_to>"
-    melting: "<color:#778899>🪦 <display_name> <fcolor:1>melted <due_to>"
-    lava: "<color:#778899>🪦 <display_name> <fcolor:1>tried to swim in lava <due_to>"
-    drowning: "<color:#778899>🪦 <display_name> <fcolor:1>drowned <due_to>"
-    block_explosion: "<color:#778899>🪦 <display_name> <fcolor:1>was blown up by <fcolor:2><block_name> <due_to>"
-    entity_explosion: "<color:#778899>🪦 <display_name> <fcolor:1>was blown up by <fcolor:2><killer> <due_to>"
-    void: "<color:#778899>🪦 <display_name> <fcolor:1>fell out of the world <due_to>"
-    lightning: "<color:#778899>🪦 <display_name> <fcolor:1>was struck by lightning <due_to>"
-    suicide: "<color:#778899>🪦 <display_name> <fcolor:1>took their own life <due_to>"
-    starvation: "<color:#778899>🪦 <display_name> <fcolor:1>starved to death <due_to>"
-    poison: "<color:#778899>🪦 <display_name> <fcolor:1>died of poison <due_to>"
-    magic: "<color:#778899>🪦 <display_name> <fcolor:1>was hit by <fcolor:2><killer> <due_to>"
-    wither: "<color:#778899>🪦 <display_name> <fcolor:1>withered away <due_to>"
-    falling_block: "<color:#778899>🪦 <display_name> <fcolor:1>was squashed by a <fcolor:2><killer> <due_to>"
-    thorns: "<color:#778899>🪦 <display_name> <fcolor:1>was killed by thorns <due_to>"
-    dragon_breath: "<color:#778899>🪦 <display_name> <fcolor:1>was roasted in dragon's breath <due_to>"
-    custom: "<color:#778899>🪦 <display_name> <fcolor:1>died of unknown causes <due_to>"
-    fly_into_wall: "<color:#778899>🪦 <display_name> <fcolor:1>experienced kinetic energy <due_to>"
-    hot_floor: "<color:#778899>🪦 <display_name> <fcolor:1>discovered the floor was lava <due_to>"
-    cramming: "<color:#778899>🪦 <display_name> <fcolor:1>was squished too much <due_to>"
-    dryout: "<color:#778899>🪦 <display_name> <fcolor:1>died from dehydration <due_to>"
-    freeze: "<color:#778899>🪦 <display_name> <fcolor:1>froze to death <due_to>"
-    sonic_boom: "<color:#778899>🪦 <display_name> <fcolor:1>was obliterated by a sonically-charged shriek <due_to>"
-    kill: "<color:#778899>🪦 <display_name> <fcolor:1>was killed <due_to>"
-  mob:
-    default: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was slain by <fcolor:2><killer> <due_to>"
-    player: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was killed by player <fcolor:2><killer> <by_item>"
-    zombie: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was eaten by a <fcolor:2><killer> <due_to>"
+  death.attack.lava: "<color:#778899>🪦 <fcolor:1><display_name> tried to swim in lava"
+  death.attack.trident.item: "<color:#778899>🪦 <fcolor:1><display_name> was impaled by <killer> with <fcolor:2>[<i><by_item></i>]"
+  death.attack.starve: "<color:#778899>🪦 <fcolor:1><display_name> starved to death"
+  death.attack.fireball: "<color:#778899>🪦 <fcolor:1><display_name> was fireballed by <killer>"
+  death.attack.cactus: "<color:#778899>🪦 <fcolor:1><display_name> was pricked to death"
+  death.attack.fireworks.item: "<color:#778899>🪦 <fcolor:1><display_name> went off with a bang due to a firework fired from <fcolor:2>[<i><by_item></i>] by <killer>"
+  death.attack.hotFloor.player: "<color:#778899>🪦 <fcolor:1><display_name> walked into the danger zone due to <killer>"
+  death.attack.dryout: "<color:#778899>🪦 <fcolor:1><display_name> died from dehydration"
+  death.attack.genericKill: "<color:#778899>🪦 <fcolor:1><display_name> was killed"
+  death.attack.indirectMagic: "<color:#778899>🪦 <fcolor:1><display_name> was killed by <killer> using magic"
+  death.attack.sonic_boom.item: "<color:#778899>🪦 <fcolor:1><display_name> was obliterated by a sonically-charged shriek while trying to escape <killer> wielding <fcolor:2>[<i><by_item></i>]"
+  death.attack.fireball.item: "<color:#778899>🪦 <fcolor:1><display_name> was fireballed by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.onFire.item: "<color:#778899>🪦 <fcolor:1><display_name> was burned to a crisp while fighting <killer> wielding <fcolor:2>[<i><by_item></i>]"
+  death.attack.player: "<color:#778899>🪦 <fcolor:1><display_name> was slain by <killer>"
+  death.attack.cramming.player: "<color:#778899>🪦 <fcolor:1><display_name> was squashed by <killer>"
+  death.attack.inFire: "<color:#778899>🪦 <fcolor:1><display_name> went up in flames"
+  death.attack.magic.player: "<color:#778899>🪦 <fcolor:1><display_name> was killed by magic while trying to escape <killer>"
+  death.attack.outsideBorder.player: "<color:#778899>🪦 <fcolor:1><display_name> left the confines of this world while fighting <killer>"
+  death.fell.finish.item: "<color:#778899>🪦 <fcolor:1><display_name> fell too far and was finished by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.generic.player: "<color:#778899>🪦 <fcolor:1><display_name> died because of <killer>"
+  death.attack.sting: "<color:#778899>🪦 <fcolor:1><display_name> was stung to death"
+  death.attack.mob: "<color:#778899>🪦 <fcolor:1><display_name> was slain by <killer>"
+  death.fell.assist: "<color:#778899>🪦 <fcolor:1><display_name> was doomed to fall by <killer>"
+  death.attack.fall.player: "<color:#778899>🪦 <fcolor:1><display_name> hit the ground too hard while trying to escape <killer>"
+  death.attack.fallingStalactite: "<color:#778899>🪦 <fcolor:1><display_name> was skewered by a falling stalactite"
+  death.attack.outOfWorld: "<color:#778899>🪦 <fcolor:1><display_name> fell out of the world"
+  death.attack.thorns: "<color:#778899>🪦 <fcolor:1><display_name> was killed while trying to hurt <killer>"
+  death.attack.anvil: "<color:#778899>🪦 <fcolor:1><display_name> was squashed by a falling anvil"
+  death.attack.explosion: "<color:#778899>🪦 <fcolor:1><display_name> blew up"
+  death.attack.mace_smash: "<color:#778899>🪦 <fcolor:1><display_name> was smashed by <killer>"
+  death.fell.accident.twisting_vines: "<color:#778899>🪦 <fcolor:1><display_name> fell off some twisting vines"
+  death.attack.inFire.player: "<color:#778899>🪦 <fcolor:1><display_name> walked into fire while fighting <killer>"
+  death.attack.mob.item: "<color:#778899>🪦 <fcolor:1><display_name> was slain by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.thrown: "<color:#778899>🪦 <fcolor:1><display_name> was pummeled by <killer>"
+  death.attack.stalagmite: "<color:#778899>🪦 <fcolor:1><display_name> was impaled on a stalagmite"
+  death.attack.drown: "<color:#778899>🪦 <fcolor:1><display_name> drowned"
+  death.fell.accident.weeping_vines: "<color:#778899>🪦 <fcolor:1><display_name> fell off some weeping vines"
+  death.attack.fireworks: "<color:#778899>🪦 <fcolor:1><display_name> went off with a bang"
+  death.fell.accident.generic: "<color:#778899>🪦 <fcolor:1><display_name> fell from a high place"
+  death.attack.cactus.player: "<color:#778899>🪦 <fcolor:1><display_name> walked into a cactus while trying to escape <killer>"
+  death.fell.finish: "<color:#778899>🪦 <fcolor:1><display_name> fell too far and was finished by <killer>"
+  death.attack.even_more_magic: "<color:#778899>🪦 <fcolor:1><display_name> was killed by even more magic"
+  death.attack.fallingBlock.player: "<color:#778899>🪦 <fcolor:1><display_name> was squashed by a falling block while fighting <killer>"
+  death.fell.accident.vines: "<color:#778899>🪦 <fcolor:1><display_name> fell off some vines"
+  death.attack.dryout.player: "<color:#778899>🪦 <fcolor:1><display_name> died from dehydration while trying to escape <killer>"
+  death.attack.trident: "<color:#778899>🪦 <fcolor:1><display_name> was impaled by <killer>"
+  death.attack.freeze.player: "<color:#778899>🪦 <fcolor:1><display_name> was frozen to death by <killer>"
+  death.attack.outsideBorder: "<color:#778899>🪦 <fcolor:1><display_name> left the confines of this world"
+  death.attack.generic: "<color:#778899>🪦 <fcolor:1><display_name> died"
+  death.attack.wither: "<color:#778899>🪦 <fcolor:1><display_name> withered away"
+  death.attack.sonic_boom: "<color:#778899>🪦 <fcolor:1><display_name> was obliterated by a sonically-charged shriek"
+  death.attack.thrown.item: "<color:#778899>🪦 <fcolor:1><display_name> was pummeled by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.inWall: "<color:#778899>🪦 <fcolor:1><display_name> suffocated in a wall"
+  death.attack.starve.player: "<color:#778899>🪦 <fcolor:1><display_name> starved to death while fighting <killer>"
+  death.attack.explosion.item: "<color:#778899>🪦 <fcolor:1><display_name> was blown up by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.badRespawnPoint.message: "<color:#778899>🪦 <fcolor:1><display_name> was killed by <fcolor:2>[<click:open_url:\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"><hover:show_text:\"<fcolor:2>MCPE-28723\">Intentional Game Design</hover></click>]"
+  death.attack.explosion.player: "<color:#778899>🪦 <fcolor:1><display_name> was blown up by <killer>"
+  death.attack.explosion.player.item: "<color:#778899>🪦 <fcolor:1><display_name> was blown up by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.cramming: "<color:#778899>🪦 <fcolor:1><display_name> was squished too much"
+  death.attack.onFire: "<color:#778899>🪦 <fcolor:1><display_name> burned to death"
+  death.attack.drown.player: "<color:#778899>🪦 <fcolor:1><display_name> drowned while trying to escape <killer>"
+  death.fell.accident.other_climbable: "<color:#778899>🪦 <fcolor:1><display_name> fell while climbing"
+  death.attack.anvil.player: "<color:#778899>🪦 <fcolor:1><color:#778899>🪦 <fcolor:1> <display_name> was squashed by a falling anvil while fighting <killer>"
+  death.attack.sweetBerryBush: "<color:#778899>🪦 <fcolor:1><display_name> was poked to death by a sweet berry bush"
+  death.attack.freeze: "<color:#778899>🪦 <fcolor:1><display_name> froze to death"
+  death.attack.hotFloor: "<color:#778899>🪦 <fcolor:1><display_name> discovered the floor was lava"
+  death.attack.outOfWorld.player: "<color:#778899>🪦 <fcolor:1><display_name> didn't want to live in the same world as <killer>"
+  death.attack.fall: "<color:#778899>🪦 <fcolor:1><display_name> hit the ground too hard"
+  death.attack.flyIntoWall: "<color:#778899>🪦 <fcolor:1><display_name> experienced kinetic energy"
+  death.attack.sonic_boom.player: "<color:#778899>🪦 <fcolor:1><display_name> was obliterated by a sonically-charged shriek while trying to escape <killer>"
+  death.attack.sting.player: "<color:#778899>🪦 <fcolor:1><display_name> was stung to death by <killer>"
+  death.attack.thorns.item: "<color:#778899>🪦 <fcolor:1><display_name> was killed by <fcolor:2>[<i><by_item></i>]</fcolor:2> while trying to hurt <killer>"
+  death.attack.wither.player: "<color:#778899>🪦 <fcolor:1><display_name> withered away while fighting <killer>"
+  death.attack.magic: "<color:#778899>🪦 <fcolor:1><display_name> was killed by magic"
+  death.attack.arrow.item: "<color:#778899>🪦 <fcolor:1><display_name> was shot by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.dragonBreath.player: "<color:#778899>🪦 <fcolor:1><display_name> was roasted in dragon's breath by <killer>"
+  death.attack.fallingStalactite.player: "<color:#778899>🪦 <fcolor:1><display_name> was skewered by a falling stalactite while fighting <killer>"
+  death.attack.witherSkull: "<color:#778899>🪦 <fcolor:1><display_name> was shot by a skull from <killer>"
+  death.attack.arrow: "<color:#778899>🪦 <fcolor:1><display_name> was shot by <killer>"
+  death.attack.onFire.player: "<color:#778899>🪦 <fcolor:1><display_name> was burned to a crisp while fighting <killer>"
+  death.attack.inWall.player: "<color:#778899>🪦 <fcolor:1><display_name> suffocated in a wall while fighting <killer>"
+  death.attack.lightningBolt.player: "<color:#778899>🪦<fcolor:1> <display_name> was struck by lightning while fighting <killer>"
+  death.fell.accident.scaffolding: "<color:#778899>🪦 <fcolor:1><display_name> fell off scaffolding"
+  death.attack.witherSkull.item: "<color:#778899>🪦 <fcolor:1><display_name> was shot by a skull from <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.genericKill.player: "<color:#778899>🪦 <fcolor:1><display_name> was killed while fighting <killer>"
+  death.attack.flyIntoWall.player: "<color:#778899>🪦 <fcolor:1><display_name> experienced kinetic energy while trying to escape <killer>"
+  death.attack.sting.item: "<color:#778899>🪦 <fcolor:1><display_name> was stung to death by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.player.item: "<color:#778899>🪦 <fcolor:1><display_name> was slain by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.dragonBreath: "<color:#778899>🪦 <fcolor:1><display_name> was roasted in dragon's breath"
+  death.attack.lightningBolt: "<color:#778899>🪦 <fcolor:1><display_name> was struck by lightning"
+  death.attack.indirectMagic.item: "<color:#778899>🪦 <fcolor:1><display_name> was killed by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.mace_smash.item: "<color:#778899>🪦 <fcolor:1><display_name> was smashed by <killer> with <fcolor:2>[<i><by_item></i>]"
+  death.attack.fallingBlock: "<color:#778899>🪦 <fcolor:1><display_name> was squashed by a falling block"
+  death.fell.assist.item: "<color:#778899>🪦 <fcolor:1><display_name> was doomed to fall by <killer> using <fcolor:2>[<i><by_item></i>]"
+  death.attack.stalagmite.player: "<color:#778899>🪦 <fcolor:1><display_name> was impaled on a stalagmite while fighting <killer>"
+  death.fell.killer: "<color:#778899>🪦 <fcolor:1><display_name> was doomed to fall"
+  death.attack.lava.player: "<color:#778899>🪦 <fcolor:1><display_name> tried to swim in lava to escape <killer>"
+  death.attack.sweetBerryBush.player: "<color:#778899>🪦 <fcolor:1><display_name> was poked to death by a sweet berry bush while trying to escape <killer>"
+  death.fell.accident.ladder: "<color:#778899>🪦 <fcolor:1><display_name> fell off a ladder"
+  death.attack.fireworks.player: "<color:#778899>🪦 <fcolor:1><display_name> went off with a bang while fighting <killer>"
 ```
 
 ## Options
 
 - Configuration is here [Death](/en/config/module/server/message/death/)
 
-### `entity-hover`
-- Default `<fcolor:2><entity_name> <br><fcolor:1>Type: <fcolor:2><entity_type> <br><fcolor:1><entity_uuid>`
+### `death`
 
-Message when hovering over an entity
-
-### `due-to`
-- Default `<fcolor:1>due to <fcolor:2><killer>`
-
-A message that replaces the `<due_to>` tag if a player was killed because of someone
-
-### `by-item`
-- Default `<fcolor:1>using <fcolor:2>[<item_name>]`
-
-A message that replaces the `<by_item>` tag with name of item
-
-### `natural`
-
-::: details A list of natural deaths
-
-#### `contact`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was prickled to death by <fcolor:2><block_name> <due_to>`
-
-Message when dying from contact with block
-
-#### `entity_sweep_attack`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was swept off their feet <due_to>`
-
-Death message from sweeping
-
-#### `projectile`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was shot by a <fcolor:2><projectile_name> <due_to>`
-
-Message on death by projectile
-
-#### `suffocation`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>suffocated in a wall <due_to>`
-
-Message when dying in blocks
-
-#### `fall`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>hit the ground too hard <due_to>`
-
-Message at death due to altitude
-
-#### `fire`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>went up in flames <due_to>`
-
-Message when dying from a block of fire
-
-#### `fire_tick`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>burned to death <due_to>`
-
-Message when dying by burning
-
-#### `melting`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>melted <due_to>`
-
-Message when dying of heat
-
-#### `lava`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>tried to swim in lava <due_to>`
-
-Message when dying of lava
-
-#### `drowning`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>drowned <due_to>`
-
-Message when dying of shortness of breath
-
-#### `block_explosion`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was blown up by <fcolor:2><block_name> <due_to>`
-
-Message when dying by block explosion
-
-#### `entity_explosion`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was blown up by <fcolor:2><killer> <due_to>`
-
-Message when dying from the explosion of a mob
-
-#### `void`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>fell out of the world <due_to>`
-
-Message when dying of void
-
-#### `lightning`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was struck by lightning <due_to>`
-
-Message when dying from lightning
-
-#### `suicide`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>took their own life <due_to>`
-
-Message when dying by self
-
-#### `starvation`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>starved to death <due_to>`
-
-Message when dying of starvation
-
-#### `poison`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>died of poison <due_to>`
-
-Message when dying of poison
-
-#### `magic`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was hit by <fcolor:2><killer> <due_to>`
-
-Message when dying of magic
-
-#### `wither`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>withered away <due_to>`
-
-Message when dying by withering
-
-#### `falling_block`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was squashed by a <fcolor:2><killer> <due_to>`
-
-Message when dying from a falling block
-
-#### `thorns`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was killed by thorns <due_to>`
-
-Message when dying by thorns
-
-#### `dragon_breath`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was roasted in dragon's breath <due_to>`
-
-Message when dying by dragon's breath
-
-#### `custom`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>died of unknown causes <due_to>`
-
-Message when dying of unknown cause
-
-#### `fly_into_wall`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>experienced kinetic energy <due_to>`
-
-Message when dying from a collision with a wall
-
-#### `hot_floor`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>discovered the floor was lava <due_to>`
-
-Message when dying from altitude in lava
-
-#### `cramming`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was squished too much <due_to>`
-
-Message when dying from a large number of mobs in one block
-
-#### `dryout`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>died from dehydration <due_to>`
-
-Message when dying from lack of water
-
-#### `freeze`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>froze to death <due_to>`
-
-Message when dying of cold
-
-#### `sonic_boom`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was obliterated by a sonically-charged shriek <due_to>`
-
-Message when you die from a sonic charge
-
-#### `kill`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>was killed <due_to>`
-
-Message when you die by `/kill`
-:::
-
-### `mob`
-
-::: details List of deaths from mobs
-#### `default`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was slain by <fcolor:2><killer> <due_to>`
-
-Message on death from any mob if `mod-default: true` in the configuration
-
-#### `player`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was killed by player <fcolor:2><killer> <by_item>`
-
-Message on death from a player
-
-#### `zombie`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>was eaten by a <fcolor:2><killer> <due_to>`
-
-Example message when dying from a zombie if `mod-default: false` in the configuration
-
-:::
+List of deaths, where key is name of death and value is message to be used
 
 
 

@@ -15,9 +15,6 @@ A message from server when a player dies
 ```yaml
 death:
   enable: true
-  visible: true
-  mob-default: true
-  entity-hover: true
   permission:
     name: "flectonepulse.module.server.message.death"
     type: TRUE
@@ -27,10 +24,6 @@ death:
     permission:
       name: "flectonepulse.module.server.message.death.sound"
       type: TRUE
-  listener:
-    PlayerInteractEvent: LOWEST
-    EntityDamageEvent: LOWEST
-    PlayerDeathEvent: LOWEST
 ```
 
 ## Options
@@ -41,25 +34,6 @@ death:
 - Default `true`
 
 Enables or disables the functionality of the module
-
-### `visible`
-- Default `true`
-
-Enables the display of a death message from the plugin
-
-### `mob-default`
-- По умолчанию `true`
-
-If enabled, one [message default](/en/messages/en_us/module/server/message/death/) is used for each death from any mob
-![death mob](/deathmob.png)
-
-If off, you need to write a different [message]((/en/messages/ru_ru/module/server/message/death/)) for each death from a mob
-
-### `entity-hover`
-- Default `true`
-
-Enables displaying information about a mob when hovering over its name
-![death hover](/deathhover.png)
 
 ### `permission`
 - Name `flectonepulse.module.server.message.death`
@@ -84,15 +58,3 @@ Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of th
 
 [Permission](/en/config/module/#explanation) to play sound
 :::
-
-### `listener`
-- Default:
-```yaml
-PlayerInteractEvent: LOWEST
-EntityDamageEvent: LOWEST
-PlayerDeathEvent: LOWEST
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

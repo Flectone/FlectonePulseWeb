@@ -16,9 +16,9 @@ discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
   channel-info:
     id: "TPS <tps>"
-  channel-message:
+  message-channel:
     CHAT:
-      content: ""
+      content: "<final_message>"
       webhook:
         enable: false
         avatar: "https://mc-heads.net/avatar/<skin>/32.png"
@@ -75,7 +75,7 @@ id: "TPS <tps>"
 
 Список айди каналов и их названий
 
-### `channel-message`
+### `message-channel`
 
 Список [сообщений](#типы-сообщении) с их настройкой
 
@@ -193,7 +193,7 @@ id: "TPS <tps>"
 
 ::: tip Если хочешь добавить другое сообщение:
 1. Возьми название из [списка](#типы-сообщении)
-2. Вставь в `channel`
+2. Вставь в `message-channel`
 ```yaml
 название_сообщения:
   content: ""

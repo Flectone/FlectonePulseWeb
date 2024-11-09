@@ -1,9 +1,9 @@
 # Проект FlectonePulse
+![flectonepulse](/flectonepulse.png)
 
 ## Что за проект?
 
 FlectonePulse - это серверный менеджер сообщений, нацеленный на улучшение опыта настройки сервера
-![flectonepulse](/flectonepulse.png)
 
 В данный момент поддерживаются и протестированы платформы:
 - Bukkit

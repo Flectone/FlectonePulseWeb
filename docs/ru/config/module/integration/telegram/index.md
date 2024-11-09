@@ -20,7 +20,7 @@
 ```yaml
 telegram:
   enable: false
-  channel:
+  message-channel:
     CHAT: []
     FROM_TELEGRAM_TO_MINECRAFT: []
 ```
@@ -39,17 +39,17 @@ telegram:
 
 Включает или выключает работоспособность модуля
 
-### `channel`
+### `message-channel`
 
 Список [типов сообщений](#типы-сообщений) и айди чатов в Telegram
 
-::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение в Telegram
+::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Telegram
 1. Копирую айди чата, в которое нужно отправить сообщение (`-1002341720267_49`)
 ![telegram id](/telegramid.png)
 2. Прописываю:
 ```yaml
-channel:
-  CHAT:
+message-channel:
+  COMMAND_BAN:
     - "-1002341720267_49" // [!code highlight]
 ```
 

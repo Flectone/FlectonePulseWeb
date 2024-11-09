@@ -12,10 +12,10 @@
 ### По умолчанию
 ```yaml
 plugin:
-  version: "0.0.6"
+  version: "0.0.7"
   language: "en_us"
   use-player-locale: true
-  console-name: "FlectonePulseConsole"
+  console-name: "Console"
   database:
     type: SQLITE
   proxy:
@@ -67,7 +67,7 @@ plugin:
 :::
 
 ### `console-name`
-- По умолчанию `FlectonePulseConsole`
+- По умолчанию `Console`
 
 Используется для отображения имени, когда сообщения создано консолью
 ![console](/console.gif)

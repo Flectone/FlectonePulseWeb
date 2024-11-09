@@ -16,7 +16,7 @@
 ### По умолчанию
 ```yaml
 spit:
-  enable: true
+  enable: false
   message: true
   item: "WHITE_DYE"
   permission:
@@ -44,7 +44,7 @@ spit:
 - Сообщение попадания плевка изменяется тут [Плевок](/ru/messages/ru_ru/module/interaction/spit/)
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 

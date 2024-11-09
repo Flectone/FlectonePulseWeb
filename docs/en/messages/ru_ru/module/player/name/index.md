@@ -1,5 +1,5 @@
 # Name
-Path `messages > ru_ru.yml > module.player.name.*`
+Path `messages > ru_ru.yml > module.player.name`
 
 ## Explanation
 Category for messages related to a player's nickname
@@ -12,7 +12,10 @@ Category for messages related to a player's nickname
 
 ### Default
 ```yaml
-display: "<vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix>"
+name:
+  display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
+  entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Тип <fcolor:2><lang:<type>> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>"
+  unknown: "<fcolor:2><name></fcolor:2>"
 ```
 
 ## Options
@@ -20,7 +23,17 @@ display: "<vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><v
 - Configuration is here [Name](/en/config/module/player/name/)
 
 ### `display`
-- Default `<prefix><fcolor:2><player></fcolor><suffix>`
+- Default `<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Написать <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>`
 
-Tag `<display_name>`
+Name for player
 ![name display](/namedisplay.png)
+
+### `entity`
+- Default `<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Тип <fcolor:2><lang:<type>> <br><fcolor:1>Айди <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>`
+
+Name for entity
+
+### `unknown`
+- Default `<fcolor:2><name></fcolor:2>`
+
+Name for unknown entity

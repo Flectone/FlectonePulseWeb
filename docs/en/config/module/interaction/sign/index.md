@@ -13,7 +13,7 @@ The sign is created on the item by **LCM** on anvil if player holds the dye in *
 ### Default
 ```yaml
 sign:
-  enable: true
+  enable: false
   drop-dye: true
   block: "ANVIL"
   permission:
@@ -40,7 +40,7 @@ sign:
 - The sign message changes here [Sign](/en/messages/en_us/module/interaction/sign/)
 
 ### `enable`
-- Default `true`
+- Default `false`
 
 Enables or disables the functionality of the module
 

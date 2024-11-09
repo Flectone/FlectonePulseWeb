@@ -12,7 +12,7 @@
 ### По умолчанию
 ```yaml
 knock:
-  enable: true
+  enable: false
   permission:
     name: "flectonepulse.module.interaction.knock"
     type: TRUE
@@ -42,7 +42,7 @@ knock:
 ## Параметры
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 

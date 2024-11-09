@@ -17,21 +17,16 @@ advancement:
   permission:
     name: "flectonepulse.module.server.message.advancement"
     type: TRUE
-  announce:
-    enable: false
-    worlds: []
-  type:
-    TASK: true
-    GOAL: true
-    CHALLENGE: true
+  revoke:
+    enable: true
+  grant:
+    enable: true
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
     permission:
       name: "flectonepulse.module.server.message.advancement.sound"
       type: TRUE
-  listener:
-    PlayerAdvancementDoneEvent: LOWEST
 ```
 
 ## Options
@@ -49,33 +44,15 @@ Enables or disables the functionality of the module
 
 [Permission](/en/config/module/#explanation) to use the module
 
-### `announce`
-- Default `false`
+### `revoke`
+- `enbale: true`
 
-Enables vanilla display of achievements from server
+Enable changing messages for `/advancement revoke` command
 
-:::: danger Achievements are not shown after removing the plugin !?!?
-1. Reinstall the plugin
-2. Enable [`announce: true`](#announce)
-3. Turn on all worlds in `worlds` to `true`.
-4. Restart the server and you can delete the plugin!
+### `grant`
+- `enbale: true`
 
----
-or use the command `/execute in name_worlds run gamerule announceAdvancements true`.
-:::
-
-- `worlds` - list of world names with vanilla achievement mapping
-::: tip Need to understand
-If `announce: false`, then all worlds in `worlds` will hide the vanilla achievement display
-:::
-
-### `type`
-
-List of all [types](#types-achievements) and their displays
-
-::: tip For example, I want the normal achievements not to be displayed
-Then I change `TASK: false` and now default achievements will not be shown
-:::
+Enable changing messages for `/advancement grant` command
 
 ### `sound`
 - Default `false`
@@ -94,20 +71,3 @@ Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of th
 
 [Permission](/en/config/module/#explanation) to play sound
 :::
-
-### `listener`
-- Default:
-```yaml
-PlayerAdvancementDoneEvent: LOWEST
-```
-
-List of event listeners and their [priority](#event-priority)
-
-## Types achievements
-| Type        | In game                        |
-|-------------|--------------------------------|
-| `TASK`      | ![task](/task.png)             |
-| `GOAL`      | ![goal](/goal.png)             |
-| `CHALLENGE` | ![challenge](/challenge.png)   |
-
-<!--@include: @/en/parts/listener.md-->

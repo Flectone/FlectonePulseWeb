@@ -17,7 +17,7 @@ A player can only remove his sign
 ### Default
 ```yaml
 unsign:
-  enable: true
+  enable: false
   drop-dye: true
   block: "GRINDSTONE"
   permission:
@@ -42,7 +42,7 @@ unsign:
 ## Options
 
 ### `enable`
-- Default `true`
+- Default `false`
 
 Enables or disables the functionality of the module
 

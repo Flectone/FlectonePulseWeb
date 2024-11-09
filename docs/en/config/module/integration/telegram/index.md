@@ -20,7 +20,7 @@ Telegram integration allows you to send messages:
 ```yaml
 telegram:
   enable: false
-  channel:
+  message-channel:
     CHAT: []
     FROM_TELEGRAM_TO_MINECRAFT: []
 ```
@@ -39,7 +39,7 @@ telegram:
 
 Enables or disables the functionality of the module
 
-### `channel`
+### `message-channel`
 
 List of [message types](#message-types) and chat IDs
 
@@ -48,7 +48,7 @@ List of [message types](#message-types) and chat IDs
 ![telegram id](/telegramid.png)
 2. Writing:
 ```yaml
-channel:
+message-channel:
   CHAT:
     - "-1002341720267_49" // [!code highlight]
 ```

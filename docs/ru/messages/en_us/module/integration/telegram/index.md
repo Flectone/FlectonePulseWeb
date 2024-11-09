@@ -14,7 +14,7 @@
 ```yaml
 telegram:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel:
+  message-channel:
     CHAT: "<final_message>"
 ```
 
@@ -46,7 +46,7 @@ telegram:
 
 ::: tip Если хочешь добавить другое сообщение:
 1. Возьми название из [списка](#типы-сообщении)
-2. Вставь в `channel`
+2. Вставь в `message-channel`
 ```yaml
 название_сообщения: "<final_message>"
 ```

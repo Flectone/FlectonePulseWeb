@@ -13,7 +13,7 @@
 ### По умолчанию
 ```yaml
 sign:
-  enable: true
+  enable: false
   drop-dye: true
   block: "ANVIL"
   permission:
@@ -40,7 +40,7 @@ sign:
 - Сообщение подписи изменяется тут [Подпись](/ru/messages/ru_ru/module/interaction/sign/)
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 

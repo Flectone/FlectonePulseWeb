@@ -17,7 +17,7 @@
 ### По умолчанию
 ```yaml
 unsign:
-  enable: true
+  enable: false
   drop-dye: true
   block: "GRINDSTONE"
   permission:
@@ -42,7 +42,7 @@ unsign:
 ## Параметры
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 

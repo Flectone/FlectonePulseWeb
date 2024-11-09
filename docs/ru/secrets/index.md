@@ -6,3 +6,4 @@
 - [База данных](/ru/secrets/database/)
 - [Дискорд](/ru/secrets/discord/)
 - [Твич](/ru/secrets/twitch/)
+- [Телеграм](/ru/secrets/telegram/)

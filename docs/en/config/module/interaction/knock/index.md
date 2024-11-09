@@ -12,7 +12,7 @@ Knocks are created by **SHIFT** and **LCM** on a particular block, producing a s
 ### Default
 ```yaml
 knock:
-  enable: true
+  enable: false
   permission:
     name: "flectonepulse.module.interaction.knock"
     type: TRUE
@@ -42,7 +42,7 @@ knock:
 ## Options
 
 ### `enable`
-- Default `true`
+- Default `false`
 
 Enables or disables the functionality of the module
 

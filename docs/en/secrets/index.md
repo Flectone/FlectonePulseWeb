@@ -6,3 +6,4 @@ A file that contains all passwords, tokens:
 - [Database](/en/secrets/database/)
 - [Discord](/en/secrets/discord/)
 - [Twitch](/en/secrets/twitch/)
+- [Telegram](/en/secrets/telegram/)

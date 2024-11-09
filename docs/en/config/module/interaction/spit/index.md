@@ -16,7 +16,7 @@ If a spit hit a player, he will be written about it
 ### Default
 ```yaml
 spit:
-  enable: true
+  enable: false
   message: true
   item: "WHITE_DYE"
   permission:
@@ -44,7 +44,7 @@ spit:
 - The message of a spit hit is modified here [Spit](/en/messages/en_us/module/interaction/spit/)
 
 ### `enable`
-- Default `true`
+- Default `false`
 
 Enables or disables the functionality of the module
 

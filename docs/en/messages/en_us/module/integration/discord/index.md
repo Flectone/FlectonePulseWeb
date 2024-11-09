@@ -16,9 +16,9 @@ discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
   channel-info:
     id: "TPS <tps>"
-  channel-message:
+  message-channel:
     CHAT:
-      content: ""
+      content: "<final_message>"
       webhook:
         enable: false
         avatar: "https://mc-heads.net/avatar/<skin>/32.png"
@@ -75,7 +75,7 @@ id: "TPS <tps>"
 
 List of channel ids and their names
 
-### `channel-message`
+### `message-channel`
 
 List of [messages](#message-types)
 
@@ -193,7 +193,7 @@ Image at footer of `embed` message
 
 ::: tip If you want to add another message:
 1. Take the title from [list](#message-types)
-2. Insert it into `channel`
+2. Insert it into `message-channel`
 ```yaml
 message_name:
   content: ""

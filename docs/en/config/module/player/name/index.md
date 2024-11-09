@@ -22,6 +22,8 @@ name:
 
 ## Options
 
+- Message is being changed here [Name](/en/messages/en_us/module/player/name/)
+
 ### `enable`
 - Default `true`
 

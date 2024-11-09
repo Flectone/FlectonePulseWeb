@@ -13,236 +13,115 @@ Death messages
 ### Default
 ```yaml
 death:
-  entity-hover: "<fcolor:2><entity_name> <br><fcolor:1>Тип: <fcolor:2><entity_type> <br><fcolor:1><entity_uuid>"
-  due-to: "<fcolor:1>благодаря <fcolor:2><killer>"
-  by-item: "<fcolor:1>с помощью <fcolor:2>[<item_name>]"
-  natural:
-    contact: "<color:#778899>🪦 <display_name> <fcolor:1>исколот до смерти блоком <fcolor:2><block_name> <due_to>"
-    entity_sweep_attack: "<color:#778899>🪦 <display_name> <fcolor:1>сбит с ног <due_to>"
-    projectile: "<color:#778899>🪦 <display_name> <fcolor:1>застрелен <fcolor:2><projectile_name> <due_to>"
-    suffocation: "<color:#778899>🪦 <display_name> <fcolor:1>погребён заживо <due_to>"
-    fall: "<color:#778899>🪦 <display_name> <fcolor:1>разбился вдребезги <due_to>"
-    fire: "<color:#778899>🪦 <display_name> <fcolor:1>умер в огне <due_to>"
-    fire_tick: "<color:#778899>🪦 <display_name> <fcolor:1>сгорел заживо <due_to>"
-    melting: "<color:#778899>🪦 <display_name> <fcolor:1>расплавился <due_to>"
-    lava: "<color:#778899>🪦 <display_name> <fcolor:1>решил поплавать в лаве <due_to>"
-    drowning: "<color:#778899>🪦 <display_name> <fcolor:1>утонул <due_to>"
-    block_explosion: "<color:#778899>🪦 <display_name> <fcolor:1>был взорван блоком <fcolor:2><block_name> <due_to>"
-    entity_explosion: "<color:#778899>🪦 <display_name> <fcolor:1>был взорван <fcolor:2><killer> <due_to>"
-    void: "<color:#778899>🪦 <display_name> <fcolor:1>выпал из мира <due_to>"
-    lightning: "<color:#778899>🪦 <display_name> <fcolor:1>был поражён молнией <due_to>"
-    suicide: "<color:#778899>🪦 <display_name> <fcolor:1>покончил с собой <due_to>"
-    starvation: "<color:#778899>🪦 <display_name> <fcolor:1>умер от голода <due_to>"
-    poison: "<color:#778899>🪦 <display_name> <fcolor:1>отравился <due_to>"
-    magic: "<color:#778899>🪦 <display_name> <fcolor:1>умер от <fcolor:2><killer> <due_to>"
-    wither: "<color:#778899>🪦 <display_name> <fcolor:1>иссушён <due_to>"
-    falling_block: "<color:#778899>🪦 <display_name> <fcolor:1>раздавлен падающим блоком <fcolor:2><killer> <due_to>"
-    thorns: "<color:#778899>🪦 <display_name> <fcolor:1>был убит шипами <due_to>"
-    dragon_breath: "<color:#778899>🪦 <display_name> <fcolor:1>испарился в драконьем дыхании <due_to>"
-    custom: "<color:#778899>🪦 <display_name> <fcolor:1>умер по неизвестным причинам <due_to>"
-    fly_into_wall: "<color:#778899>🪦 <display_name> <fcolor:1>преобразовал кинетическую энергию во внутреннюю <due_to>"
-    hot_floor: "<color:#778899>🪦 <display_name> <fcolor:1>обнаружил, что пол — это лава <due_to>"
-    cramming: "<color:#778899>🪦 <display_name> <fcolor:1>расплющен в лепёшку <due_to>"
-    dryout: "<color:#778899>🪦 <display_name> <fcolor:1>умер от обезвоживания <due_to>"
-    freeze: "<color:#778899>🪦 <display_name> <fcolor:1>замёрз насмерть <due_to>"
-    sonic_boom: "<color:#778899>🪦 <display_name> <fcolor:1>был уничтожен звуковым зарядом <due_to>"
-    kill: "<color:#778899>🪦 <display_name> <fcolor:1>был убит <due_to>"
-  mob:
-    default: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был убит <fcolor:2><killer> <due_to>"
-    player: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был убит игроком <fcolor:2><killer> <by_item>"
-    zombie: "<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был съеден <fcolor:2><killer> <due_to>"
+  death.attack.lava: "<color:#778899>🪦 <fcolor:1><display_name> решил поплавать в лаве"
+  death.attack.trident.item: "<color:#778899>🪦 <fcolor:1><display_name> пронзён <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.starve: "<color:#778899>🪦 <fcolor:1><display_name> умер от голода"
+  death.attack.fireball: "<color:#778899>🪦 <fcolor:1><display_name> убит файерболом <killer>"
+  death.attack.cactus: "<color:#778899>🪦 <fcolor:1><display_name> исколот до смерти"
+  death.attack.fireworks.item: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся из-за фейерверка <killer>, выпущенного из <fcolor:2>[<i><by_item></i>]"
+  death.attack.hotFloor.player: "<color:#778899>🪦 <fcolor:1><display_name> зашёл в опасную зону из-за <killer>"
+  death.attack.dryout: "<color:#778899>🪦 <fcolor:1><display_name> умер от обезвоживания"
+  death.attack.genericKill: "<color:#778899>🪦 <fcolor:1><display_name> убит"
+  death.attack.indirectMagic: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью магии"
+  death.attack.sonic_boom.item: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом, спасаясь от <killer>, держащего <fcolor:2>[<i><by_item></i>]"
+  death.attack.fireball.item: "<color:#778899>🪦 <fcolor:1><display_name> убит файерболом <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.onFire.item: "<color:#778899>🪦 <fcolor:1><display_name> был сожжён дотла, пока боролся с <killer>, держащим <fcolor:2>[<i><by_item></i>]"
+  death.attack.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer>"
+  death.attack.cramming.player: "<color:#778899>🪦 <fcolor:1><display_name> расплющен <killer>"
+  death.attack.inFire: "<color:#778899>🪦 <fcolor:1><display_name> умер в огне"
+  death.attack.magic.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит магией, убегая от <killer>"
+  death.attack.outsideBorder.player: "<color:#778899>🪦 <fcolor:1><display_name> покинул пределы этого мира, пока боролся с <killer>"
+  death.fell.finish.item: "<color:#778899>🪦 <fcolor:1><display_name> упал с высоты и был добит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.generic.player: "<color:#778899>🪦 <fcolor:1><display_name> умер из-за <killer>"
+  death.attack.sting: "<color:#778899>🪦 <fcolor:1><display_name> изжален до смерти"
+  death.attack.mob: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer>"
+  death.fell.assist: "<color:#778899>🪦 <fcolor:1><display_name> свалился благодаря <killer>"
+  death.attack.fall.player: "<color:#778899>🪦 <fcolor:1><display_name> разбился вдребезги, спасаясь от <killer>"
+  death.attack.fallingStalactite: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён обрушившимся сталактитом"
+  death.attack.outOfWorld: "<color:#778899>🪦 <fcolor:1><display_name> выпал из мира"
+  death.attack.thorns: "<color:#778899>🪦 <fcolor:1><display_name> был убит, пытаясь навредить <killer>"
+  death.attack.anvil: "<color:#778899>🪦 <fcolor:1><display_name> раздавлен упавшей наковальней"
+  death.attack.explosion: "<color:#778899>🪦 <fcolor:1><display_name> взорвался"
+  death.attack.mace_smash: "<color:#778899>🪦 <fcolor:1><display_name> был сокрушён <killer>"
+  death.fell.accident.twisting_vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с вьющейся лозы"
+  death.attack.inFire.player: "<color:#778899>🪦 <fcolor:1><display_name> сгорел в огне, пока боролся с <killer>"
+  death.attack.mob.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.thrown: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer>"
+  death.attack.stalagmite: "<color:#778899>🪦 <fcolor:1><display_name> пронзён сталагмитом"
+  death.attack.drown: "<color:#778899>🪦 <fcolor:1><display_name> утонул"
+  death.fell.accident.weeping_vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с плакучей лозы"
+  death.attack.fireworks: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся"
+  death.fell.accident.generic: "<color:#778899>🪦 <fcolor:1><display_name> разбился насмерть"
+  death.attack.cactus.player: "<color:#778899>🪦 <fcolor:1><display_name> наткнулся на кактус, спасаясь от <killer>"
+  death.fell.finish: "<color:#778899>🪦 <fcolor:1><display_name> упал с высоты и был добит <killer>"
+  death.attack.even_more_magic: "<color:#778899>🪦 <fcolor:1><display_name> был убит неизведанной магией"
+  death.attack.fallingBlock.player: "<color:#778899>🪦 <fcolor:1><display_name> был раздавлен упавшим блоком, пока боролся с <killer>"
+  death.fell.accident.vines: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с лианы"
+  death.attack.dryout.player: "<color:#778899>🪦 <fcolor:1><display_name> умер от обезвоживания, спасаясь от <killer>"
+  death.attack.trident: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён <killer>"
+  death.attack.freeze.player: "<color:#778899>🪦 <fcolor:1><display_name> замёрз насмерть благодаря <killer>"
+  death.attack.outsideBorder: "<color:#778899>🪦 <fcolor:1><display_name> покинул пределы этого мира"
+  death.attack.generic: "<color:#778899>🪦 <fcolor:1><display_name> умер"
+  death.attack.wither: "<color:#778899>🪦 <fcolor:1><display_name> иссушён"
+  death.attack.sonic_boom: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом"
+  death.attack.thrown.item: "<color:#778899>🪦 <fcolor:1><display_name> был избит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.inWall: "<color:#778899>🪦 <fcolor:1><display_name> погребён заживо"
+  death.attack.starve.player: "<color:#778899>🪦 <fcolor:1><display_name> умер от голода, пока боролся с <killer>"
+  death.attack.explosion.item: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.badRespawnPoint.message: "<color:#778899>🪦 <fcolor:1><display_name> стал жертвой <fcolor:2>[<click:open_url:\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"><hover:show_text:\"<fcolor:2>MCPE-28723\">жестоких правил игры</hover></click>]"
+  death.attack.explosion.player: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer>"
+  death.attack.explosion.player.item: "<color:#778899>🪦 <fcolor:1><display_name> был взорван <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.cramming: "<color:#778899>🪦 <fcolor:1><display_name> расплющен в лепёшку"
+  death.attack.onFire: "<color:#778899>🪦 <fcolor:1><display_name> сгорел заживо"
+  death.attack.drown.player: "<color:#778899>🪦 <fcolor:1><display_name> утонул, спасаясь от <killer>"
+  death.fell.accident.other_climbable: "<color:#778899>🪦 <fcolor:1><display_name> сорвался"
+  death.attack.anvil.player: "<color:#778899>🪦 <fcolor:1><display_name> был раздавлен упавшей наковальней, пока боролся с <killer>"
+  death.attack.sweetBerryBush: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод"
+  death.attack.freeze: "<color:#778899>🪦 <fcolor:1><display_name> замёрз насмерть"
+  death.attack.hotFloor: "<color:#778899>🪦 <fcolor:1><display_name> обнаружил, что пол — это лава"
+  death.attack.outOfWorld.player: "<color:#778899>🪦 <fcolor:1><display_name> не захотел жить в том же мире, что и <killer>"
+  death.attack.fall: "<color:#778899>🪦 <fcolor:1><display_name> разбился вдребезги"
+  death.attack.flyIntoWall: "<color:#778899>🪦 <fcolor:1><display_name> преобразовал кинетическую энергию во внутреннюю"
+  death.attack.sonic_boom.player: "<color:#778899>🪦 <fcolor:1><display_name> был уничтожен звуковым зарядом, спасаясь от <killer>"
+  death.attack.sting.player: "<color:#778899>🪦 <fcolor:1><display_name> изжален до смерти <killer>"
+  death.attack.thorns.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <fcolor:2>[<i><by_item></i>]</fcolor:2>, пытаясь навредить <killer>"
+  death.attack.wither.player: "<color:#778899>🪦 <fcolor:1><display_name> был иссушён, пока боролся с <killer>"
+  death.attack.magic: "<color:#778899>🪦 <fcolor:1><display_name> был убит магией"
+  death.attack.arrow.item: "<color:#778899>🪦 <fcolor:1><display_name> застрелен <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.dragonBreath.player: "<color:#778899>🪦 <fcolor:1><display_name> сварился заживо в драконьем дыхании из-за <killer>"
+  death.attack.fallingStalactite.player: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён обрушившимся сталактитом, пока боролся с <killer>"
+  death.attack.witherSkull: "<color:#778899>🪦 <fcolor:1><display_name> был поражён черепом из <killer>"
+  death.attack.arrow: "<color:#778899>🪦 <fcolor:1><display_name> застрелен <killer>"
+  death.attack.onFire.player: "<color:#778899>🪦 <fcolor:1><display_name> был сожжён дотла, пока боролся с <killer>"
+  death.attack.inWall.player: "<color:#778899>🪦 <fcolor:1><display_name> был погребён заживо, пока боролся с <killer>"
+  death.attack.lightningBolt.player: "<color:#778899>🪦 <fcolor:1><display_name> был поражён молнией, пока боролся с <killer>"
+  death.fell.accident.scaffolding: "<color:#778899>🪦 <fcolor:1><display_name> сорвался с подмосток"
+  death.attack.witherSkull.item: "<color:#778899>🪦 <fcolor:1><display_name> был поражён черепом из <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.genericKill.player: "<color:#778899>🪦 <fcolor:1><display_name> был убит, сражаясь с <killer>"
+  death.attack.flyIntoWall.player: "<color:#778899>🪦 <fcolor:1><display_name> преобразовал кинетическую энергию во внутреннюю, спасаясь от <killer>"
+  death.attack.sting.item: "<color:#778899>🪦 <fcolor:1><display_name> был изжален до смерти <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.player.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.dragonBreath: "<color:#778899>🪦 <fcolor:1><display_name> испепелён дыханием дракона"
+  death.attack.lightningBolt: "<color:#778899>🪦 <fcolor:1><display_name> был поражён молнией"
+  death.attack.indirectMagic.item: "<color:#778899>🪦 <fcolor:1><display_name> был убит <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.mace_smash.item: "<color:#778899>🪦 <fcolor:1><display_name> был сокрушён <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.fallingBlock: "<color:#778899>🪦 <fcolor:1><display_name> раздавлен упавшим блоком"
+  death.fell.assist.item: "<color:#778899>🪦 <fcolor:1><display_name> был обречён на падение <killer> с помощью <fcolor:2>[<i><by_item></i>]"
+  death.attack.stalagmite.player: "<color:#778899>🪦 <fcolor:1><display_name> был пронзён сталагмитом, пока боролся с <killer>"
+  death.fell.killer: "<color:#778899>🪦 <fcolor:1><display_name> был обречён на падение"
+  death.attack.lava.player: "<color:#778899>🪦 <fcolor:1><display_name> упал в лаву, убегая от <killer>"
+  death.attack.sweetBerryBush.player: "<color:#778899>🪦 <fcolor:1><display_name> искололся до смерти в кустах сладких ягод, спасаясь от <killer>"
+  death.fell.accident.ladder: "<color:#778899>🪦 <fcolor:1><display_name> свалился с лестницы"
+  death.attack.fireworks.player: "<color:#778899>🪦 <fcolor:1><display_name> с треском разлетелся, пока боролся с <killer>"
 ```
 
 ## Options
 
 - Configuration is here [Death](/en/config/module/server/message/death/)
 
-### `entity-hover`
-- Default `<fcolor:2><entity_name> <br><fcolor:1>Тип: <fcolor:2><entity_type> <br><fcolor:1><entity_uuid>`
+### `death`
 
-Message when hovering over an entity
+List of deaths, where key is name of death and value is message to be used
 
-### `due-to`
-- Default `<fcolor:1>благодаря <fcolor:2><killer>`
 
-A message that replaces the `<due_to>` tag if a player was killed because of someone
 
-### `by-item`
-- Default `<fcolor:1>с помощью <fcolor:2>[<item_name>]`
-
-A message that replaces the `<by_item>` tag with name of item
-
-### `natural`
-
-::: details A list of natural deaths
-
-#### `contact`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>исколот до смерти блоком <fcolor:2><block_name> <due_to>`
-
-Message when dying from contact with block
-
-#### `entity_sweep_attack`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>сбит с ног <due_to>`
-
-Death message from sweeping
-
-#### `projectile`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>застрелен <fcolor:2><projectile_name> <due_to>`
-
-Message on death by projectile
-
-#### `suffocation`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>погребён заживо <due_to>`
-
-Message when dying in blocks
-
-#### `fall`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>разбился вдребезги <due_to>`
-
-Message at death due to altitude
-
-#### `fire`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>умер в огне <due_to>`
-
-Message when dying from a block of fire
-
-#### `fire_tick`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>сгорел заживо <due_to>`
-
-Message when dying by burning
-
-#### `melting`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>расплавился <due_to>`
-
-Message when dying of heat
-
-#### `lava`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>решил поплавать в лаве <due_to>`
-
-Message when dying of lava
-
-#### `drowning`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>утонул <due_to>`
-
-Message when dying of shortness of breath
-
-#### `block_explosion`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был взорван блоком <fcolor:2><block_name> <due_to>`
-
-Message when dying by block explosion
-
-#### `entity_explosion`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был взорван <fcolor:2><killer> <due_to>`
-
-Message when dying from the explosion of a mob
-
-#### `void`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>выпал из мира <due_to>`
-
-Message when dying of void
-
-#### `lightning`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был поражён молнией <due_to>`
-
-Message when dying from lightning
-
-#### `suicide`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>покончил с собой <due_to>`
-
-Message when dying by self
-
-#### `starvation`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>умер от голода <due_to>`
-
-Message when dying of starvation
-
-#### `poison`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>отравился <due_to>`
-
-Message when dying of poison
-
-#### `magic`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>умер от <fcolor:2><killer> <due_to>`
-
-Message when dying of magic
-
-#### `wither`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>иссушён <due_to>`
-
-Message when dying by withering
-
-#### `falling_block`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>раздавлен падающим блоком <fcolor:2><killer> <due_to>`
-
-Message when dying from a falling block
-
-#### `thorns`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был убит шипами <due_to>`
-
-Message when dying by thorns
-
-#### `dragon_breath`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>испарился в драконьем дыхании <due_to>`
-
-Message when dying by dragon's breath
-
-#### `custom`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>умер по неизвестным причинам <due_to>`
-
-Message when dying of unknown cause
-
-#### `fly_into_wall`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>преобразовал кинетическую энергию во внутреннюю <due_to>`
-
-Message when dying from a collision with a wall
-
-#### `hot_floor`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>обнаружил, что пол — это лава <due_to>`
-
-Message when dying from altitude in lava
-
-#### `cramming`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>расплющен в лепёшку <due_to>`
-
-Message when dying from a large number of mobs in one block
-
-#### `dryout`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>умер от обезвоживания <due_to>`
-
-Message when dying from lack of water
-
-#### `freeze`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>замёрз насмерть <due_to>`
-
-Message when dying of cold
-
-#### `sonic_boom`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был уничтожен звуковым зарядом <due_to>`
-
-Message when you die from a sonic charge
-
-#### `kill`
-- Default `<color:#778899>🪦 <display_name> <fcolor:1>был убит <due_to>`
-
-Message when you die by `/kill`
-:::
-
-### `mob`
-
-::: details List of deaths from mobs
-#### `default`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был убит <fcolor:2><killer> <due_to>`
-
-Message on death from any mob if `mod-default: true` in the configuration
-
-#### `player`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был убит игроком <fcolor:2><killer> <by_item>`
-
-Message on death from a player
-
-#### `zombie`
-- Default `<color:#778899>🪦 <fcolor:2><display_name> <fcolor:1>был съеден <fcolor:2><killer> <due_to>`
-
-Example message when dying from a zombie if `mod-default: false` in the configuration
-
-:::

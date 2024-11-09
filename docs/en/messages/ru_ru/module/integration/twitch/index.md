@@ -14,7 +14,7 @@ Messages integration with Twitch
 ```yaml
 twitch:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel:
+  message-channel:
     CHAT: "<final_message>"
 ```
 
@@ -40,13 +40,13 @@ All placeholders from `PlaceholderAPI` and `FlectonePulse` will work too
 
 Format of the message that will be sent from Twitch to Minecraft
 
-### `channel`
+### `message-channel`
 
 List of [messages](#message-types) with the format of the final message
 
 ::: tip If you want to add another message:
 1. Take title from [list](#message-types)
-2. Insert in `channel`
+2. Insert in `message-channel`
 ```yaml
 message_name: "<final_message>"
 ```

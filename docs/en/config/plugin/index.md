@@ -12,10 +12,10 @@ This category is responsible for customizing the plugin as a whole, without affe
 ### Default
 ```yaml
 plugin:
-  version: "0.0.6"
+  version: "0.0.7"
   language: "en_us"
   use-player-locale: true
-  console-name: "FlectonePulseConsole"
+  console-name: "Console"
   database:
     type: SQLITE
   proxy:
@@ -67,7 +67,7 @@ It should be done in all localizations, otherwise there may be visual errors
 :::
 
 ### `console-name`
-- Default `FlectonePulseConsole`
+- Default `Console`
 
 Used to display the name when messages are created by the console
 ![console](/console.gif)
