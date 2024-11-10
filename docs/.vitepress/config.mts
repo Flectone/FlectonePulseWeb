@@ -102,9 +102,6 @@ export default defineConfig({
                             text: 'Name',
                             link: '/en/messages/en_us/module/player/name/',
                             collapsed: true,
-                            items: [
-                              { text: 'Hover', link: '/en/messages/en_us/module/player/name/hover/' },
-                            ]
                           },
                           { text: 'Afk', link: '/en/messages/en_us/module/player/afk/' },
                         ]
@@ -265,9 +262,6 @@ export default defineConfig({
                             text: 'Name',
                             link: '/en/messages/ru_ru/module/player/name/',
                             collapsed: true,
-                            items: [
-                              { text: 'Hover', link: '/en/messages/ru_ru/module/player/name/hover/' },
-                            ]
                           },
                           { text: 'Afk', link: '/en/messages/ru_ru/module/player/afk/' },
                         ]
@@ -481,9 +475,6 @@ export default defineConfig({
                         text: 'Name',
                         link: '/en/config/module/player/name/',
                         collapsed: true,
-                        items: [
-                          { text: 'Hover', link: '/en/config/module/player/name/hover/' },
-                        ]
                       },
                     ]
                   },
@@ -694,10 +685,6 @@ export default defineConfig({
                           {
                             text: 'Имя',
                             link: '/ru/messages/en_us/module/player/name/',
-                            collapsed: true,
-                            items: [
-                              { text: 'При наведении', link: '/ru/messages/en_us/module/player/name/hover/' },
-                            ]
                           },
                           { text: 'Афк', link: '/ru/messages/en_us/module/player/afk/' },
                         ]
@@ -858,9 +845,6 @@ export default defineConfig({
                             text: 'Имя',
                             link: '/ru/messages/ru_ru/module/player/name/',
                             collapsed: true,
-                            items: [
-                              { text: 'При наведении', link: '/ru/messages/ru_ru/module/player/name/hover/' },
-                            ]
                           },
                           { text: 'Афк', link: '/ru/messages/ru_ru/module/player/afk/' },
                         ]
@@ -1074,9 +1058,6 @@ export default defineConfig({
                         text: 'Имя',
                         link: '/ru/config/module/player/name/',
                         collapsed: true,
-                        items: [
-                          { text: 'При наведении', link: '/ru/config/module/player/name/hover/' },
-                        ]
                       },
                     ]
                   },
