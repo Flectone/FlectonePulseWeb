@@ -1,40 +1,33 @@
-# Tags
-Path `config.yml > module.tag.*`
+# Теги
+Путь `config.yml > module.tag.*`
 
-## Explanation
-Tags are something that can be used anywhere in the plugin, like placeholders
+## Пояснение
+Теги это то, что можно использовать в любом месте плагина, как плейсхолдеры
 
-::: tip For example, there is a tag
+::: tip Например есть тег
 ```yaml
 house:
   enable: true
 ```
-So I can use `<house>` in [messages](/en/messages/)
+Значит я могу в [сообщениях](/en/messages/) использовать `<house>`
 :::
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.tag>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 tag:
   enable: true
-  permission:
-    name: "flectonepulse.module.tag"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/tag/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.tag`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

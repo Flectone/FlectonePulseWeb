@@ -18,7 +18,8 @@ deop:
 
 ## Параметры
 
-- Конфигурация происходит тут [Деоп](/ru/config/module/server/message/deop/)
+- [Конфиг](/ru/config/module/server/message/deop/)
+- [Права](/ru/permissions/module/server/message/deop/)
 
 ### `format`
 - По умолчанию `<fcolor:1>🤖 <display_name> больше не является оператором сервера`

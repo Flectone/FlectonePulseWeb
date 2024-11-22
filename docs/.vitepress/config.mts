@@ -26,7 +26,7 @@ export default defineConfig({
       description: "FlectonePulse documentation",
       themeConfig: {
         nav: [
-          { text: 'Version 0.0.7', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Version 0.0.8', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         outline: {
           level: [2, 3]
@@ -37,172 +37,12 @@ export default defineConfig({
         },
         sidebar: [
           {
-            text: 'Messages',
+            text: 'Folder messages/',
             link: '/en/messages/',
             collapsed: false,
             items: [
               {
-                text: 'English',
-                link: '/en/messages/en_us/',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'Modules',
-                    link: '/en/messages/en_us/module/',
-                    collapsed: true,
-                    items: [
-                      {
-                        text: 'Tags',
-                        link: '/en/messages/en_us/module/tag/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Url', link: '/en/messages/en_us/module/tag/url/' },
-                          { text: 'Spoiler', link: '/en/messages/en_us/module/tag/spoiler/' },
-                        ]
-                      },
-                      {
-                        text: 'Integrations',
-                        link: '/en/messages/en_us/module/integration/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Discord', link: '/en/messages/en_us/module/integration/discord/' },
-                          { text: 'Twitch', link: '/en/messages/en_us/module/integration/twitch/' },
-                          { text: 'Telegram', link: '/en/messages/en_us/module/integration/telegram/' },
-                        ]
-                      },
-                      {
-                        text: 'Interactions',
-                        link: '/en/messages/en_us/module/interaction/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Sign', link: '/en/messages/en_us/module/interaction/sign/' },
-                          { text: 'Un Sign', link: '/en/messages/en_us/module/interaction/unsign/' },
-                          { text: 'Spit', link: '/en/messages/en_us/module/interaction/spit/' },
-                          { text: 'Mark', link: '/en/messages/en_us/module/interaction/mark/' },
-                          { text: 'Knock', link: '/en/messages/en_us/module/interaction/knock/' },
-                          { text: 'Right click', link: '/en/messages/en_us/module/interaction/right-click/' },
-                        ]
-                      },
-                      {
-                        text: 'Player',
-                        link: '/en/messages/en_us/module/player/',
-                        collapsed: true,
-                        items: [
-                          {
-                            text: 'Messages',
-                            link: '/en/messages/en_us/module/player/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Chat', link: '/en/messages/en_us/module/player/message/chat/' },
-                              { text: 'Formatting', link: '/en/messages/en_us/module/player/message/format/' },
-                              { text: 'Bubble', link: '/en/messages/en_us/module/player/message/bubble/' },
-                            ]
-                          },
-                          {
-                            text: 'Name',
-                            link: '/en/messages/en_us/module/player/name/',
-                            collapsed: true,
-                          },
-                          { text: 'Afk', link: '/en/messages/en_us/module/player/afk/' },
-                        ]
-                      },
-                      {
-                        text: 'Server',
-                        link: '/en/messages/en_us/module/server/',
-                        collapsed: true,
-                        items: [
-                          {
-                            text: 'Messages',
-                            link: '/en/messages/en_us/module/server/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Advancement', link: '/en/messages/en_us/module/server/message/advancement/' },
-                              { text: 'Auto', link: '/en/messages/en_us/module/server/message/auto/' },
-                              { text: 'Clear', link: '/en/messages/en_us/module/server/message/clear/' },
-                              { text: 'Death', link: '/en/messages/en_us/module/server/message/death/' },
-                              { text: 'Deop', link: '/en/messages/en_us/module/server/message/deop/' },
-                              { text: 'Enchant', link: '/en/messages/en_us/module/server/message/enchant/' },
-                              { text: 'Gamemode', link: '/en/messages/en_us/module/server/message/gamemode/' },
-                              { text: 'Join', link: '/en/messages/en_us/module/server/message/join/' },
-                              { text: 'Op', link: '/en/messages/en_us/module/server/message/op/' },
-                              { text: 'Greeting', link: '/en/messages/en_us/module/server/message/greeting/' },
-                              { text: 'Quit', link: '/en/messages/en_us/module/server/message/quit/' },
-                              { text: 'Seed', link: '/en/messages/en_us/module/server/message/seed/' },
-                              { text: 'Setblock', link: '/en/messages/en_us/module/server/message/setblock/' },
-                              { text: 'Spawnpoint', link: '/en/messages/en_us/module/server/message/spawnpoint/' },
-                            ]
-                          },
-                          { text: 'Brand', link: '/en/messages/en_us/module/server/brand/' },
-                          {
-                            text: 'Tab',
-                            link: '/en/messages/en_us/module/server/tab/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Player list name', link: '/en/messages/en_us/module/server/tab/player-list-name/' },
-                              { text: 'Header', link: '/en/messages/en_us/module/server/tab/header/' },
-                              { text: 'Footer', link: '/en/messages/en_us/module/server/tab/footer/' },
-                            ]
-                          },
-                          { text: 'MOTD', link: '/en/messages/en_us/module/server/motd/' },
-                          { text: 'Player count', link: '/en/messages/en_us/module/server/player-count/' },
-                        ]
-                      },
-                      {
-                        text: 'Commands',
-                        link: '/en/messages/en_us/module/command/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Prompt', link: '/en/messages/en_us/module/command/prompt/' },
-                          { text: 'Me', link: '/en/messages/en_us/module/command/command-me/' },
-                          { text: 'Try', link: '/en/messages/en_us/module/command/command-try/' },
-                          { text: 'Dice', link: '/en/messages/en_us/module/command/command-dice/' },
-                          { text: 'Ball', link: '/en/messages/en_us/module/command/command-ball/' },
-                          { text: 'Online', link: '/en/messages/en_us/module/command/command-online/' },
-                          { text: 'Do', link: '/en/messages/en_us/module/command/command-do/' },
-                          { text: 'Coin', link: '/en/messages/en_us/module/command/command-coin/' },
-                          { text: 'Translateto', link: '/en/messages/en_us/module/command/command-translateto/' },
-                          { text: 'Geolocate', link: '/en/messages/en_us/module/command/command-geolocate/' },
-                          { text: 'Clearchat', link: '/en/messages/en_us/module/command/command-clearchat/' },
-                          { text: 'Broadcast', link: '/en/messages/en_us/module/command/command-broadcast/' },
-                          { text: 'Afk', link: '/en/messages/en_us/module/command/command-afk/' },
-                          { text: 'Mark', link: '/en/messages/en_us/module/command/command-mark/' },
-                          { text: 'Spit', link: '/en/messages/en_us/module/command/command-spit/' },
-                          { text: 'Spy', link: '/en/messages/en_us/module/command/command-spy/' },
-                          { text: 'Stream', link: '/en/messages/en_us/module/command/command-stream/' },
-                          { text: 'Kick', link: '/en/messages/en_us/module/command/command-kick/' },
-                          { text: 'Helper', link: '/en/messages/en_us/module/command/command-helper/' },
-                          { text: 'Tell', link: '/en/messages/en_us/module/command/command-tell/' },
-                          { text: 'Reply', link: '/en/messages/en_us/module/command/command-reply/' },
-                          { text: 'Poll', link: '/en/messages/en_us/module/command/command-poll/' },
-                          { text: 'Ignore', link: '/en/messages/en_us/module/command/command-ignore/' },
-                          { text: 'Ignorelist', link: '/en/messages/en_us/module/command/command-ignorelist/' },
-                          { text: 'Ban', link: '/en/messages/en_us/module/command/command-ban/' },
-                          { text: 'Unban', link: '/en/messages/en_us/module/command/command-unban/' },
-                          { text: 'Banlist', link: '/en/messages/en_us/module/command/command-banlist/' },
-                          { text: 'Mute', link: '/en/messages/en_us/module/command/command-mute/' },
-                          { text: 'Unmute', link: '/en/messages/en_us/module/command/command-unmute/' },
-                          { text: 'Mutelist', link: '/en/messages/en_us/module/command/command-mutelist/' },
-                          { text: 'Warn', link: '/en/messages/en_us/module/command/command-warn/' },
-                          { text: 'Unwarn', link: '/en/messages/en_us/module/command/command-unwarn/' },
-                          { text: 'Warnlist', link: '/en/messages/en_us/module/command/command-warnlist/' },
-                          { text: 'Flectonepulse', link: '/en/messages/en_us/module/command/command-flectonepulse/' },
-                          { text: 'Chatcolor', link: '/en/messages/en_us/module/command/command-chatcolor/' },
-                          { text: 'Chatsetting', link: '/en/messages/en_us/module/command/command-chatsetting/' },
-                          { text: 'Symbol', link: '/en/messages/en_us/module/command/command-symbol/' },
-                          { text: 'Mail', link: '/en/messages/en_us/module/command/command-mail/' },
-                          { text: 'Clearmail', link: '/en/messages/en_us/module/command/command-clearmail/' },
-                          { text: 'Tictactoe', link: '/en/messages/en_us/module/command/command-tictactoe/' },
-                          { text: 'Maintenance', link: '/en/messages/en_us/module/command/command-maintenance/' },
-                          { text: 'Rockpaperscissors', link: '/en/messages/en_us/module/command/command-rockpaperscissors/' },
-                        ]
-                      },
-                    ]
-                  },
-                  { text: 'Times', link: '/en/messages/en_us/time/' },
-                ]
-              },
-              {
-                text: 'Russian',
+                text: 'File ru_ru.yml',
                 link: '/en/messages/ru_ru/',
                 collapsed: true,
                 items: [
@@ -212,12 +52,48 @@ export default defineConfig({
                     collapsed: true,
                     items: [
                       {
-                        text: 'Tags',
-                        link: '/en/messages/ru_ru/module/tag/',
+                        text: 'Commands',
+                        link: '/en/messages/ru_ru/module/command/',
                         collapsed: true,
                         items: [
-                          { text: 'Url', link: '/en/messages/ru_ru/module/tag/url/' },
-                          { text: 'Spoiler', link: '/en/messages/ru_ru/module/tag/spoiler/' },
+                          { text: 'Ball', link: '/en/messages/ru_ru/module/command/ball/' },
+                          { text: 'Ban', link: '/en/messages/ru_ru/module/command/ban/' },
+                          { text: 'Banlist', link: '/en/messages/ru_ru/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/en/messages/ru_ru/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/en/messages/ru_ru/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/en/messages/ru_ru/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/en/messages/ru_ru/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/en/messages/ru_ru/module/command/clearmail/' },
+                          { text: 'Coin', link: '/en/messages/ru_ru/module/command/coin/' },
+                          { text: 'Dice', link: '/en/messages/ru_ru/module/command/dice/' },
+                          { text: 'Do', link: '/en/messages/ru_ru/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/en/messages/ru_ru/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/en/messages/ru_ru/module/command/geolocate/' },
+                          { text: 'Helper', link: '/en/messages/ru_ru/module/command/helper/' },
+                          { text: 'Ignore', link: '/en/messages/ru_ru/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/en/messages/ru_ru/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/en/messages/ru_ru/module/command/kick/' },
+                          { text: 'Mail', link: '/en/messages/ru_ru/module/command/mail/' },
+                          { text: 'Maintenance', link: '/en/messages/ru_ru/module/command/maintenance/' },
+                          { text: 'Me', link: '/en/messages/ru_ru/module/command/me/' },
+                          { text: 'Mute', link: '/en/messages/ru_ru/module/command/mute/' },
+                          { text: 'Mutelist', link: '/en/messages/ru_ru/module/command/mutelist/' },
+                          { text: 'Online', link: '/en/messages/ru_ru/module/command/online/' },
+                          { text: 'Poll', link: '/en/messages/ru_ru/module/command/poll/' },
+                          { text: 'Reply', link: '/en/messages/ru_ru/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/en/messages/ru_ru/module/command/rockpaperscissors/' },
+                          { text: 'Spy', link: '/en/messages/ru_ru/module/command/spy/' },
+                          { text: 'Stream', link: '/en/messages/ru_ru/module/command/stream/' },
+                          { text: 'Symbol', link: '/en/messages/ru_ru/module/command/symbol/' },
+                          { text: 'Tell', link: '/en/messages/ru_ru/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/en/messages/ru_ru/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/en/messages/ru_ru/module/command/translateto/' },
+                          { text: 'Try', link: '/en/messages/ru_ru/module/command/try/' },
+                          { text: 'Unban', link: '/en/messages/ru_ru/module/command/unban/' },
+                          { text: 'Unmute', link: '/en/messages/ru_ru/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/en/messages/ru_ru/module/command/unwarn/' },
+                          { text: 'Warn', link: '/en/messages/ru_ru/module/command/warn/' },
+                          { text: 'Warnlist', link: '/en/messages/ru_ru/module/command/warnlist/' },
                         ]
                       },
                       {
@@ -226,8 +102,8 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                           { text: 'Discord', link: '/en/messages/ru_ru/module/integration/discord/' },
-                          { text: 'Twitch', link: '/en/messages/ru_ru/module/integration/twitch/' },
                           { text: 'Telegram', link: '/en/messages/ru_ru/module/integration/telegram/' },
+                          { text: 'Twitch', link: '/en/messages/ru_ru/module/integration/twitch/' },
                         ]
                       },
                       {
@@ -235,12 +111,9 @@ export default defineConfig({
                         link: '/en/messages/ru_ru/module/interaction/',
                         collapsed: true,
                         items: [
+                          { text: 'Right click', link: '/en/messages/ru_ru/module/interaction/rightclick/' },
                           { text: 'Sign', link: '/en/messages/ru_ru/module/interaction/sign/' },
-                          { text: 'Un Sign', link: '/en/messages/ru_ru/module/interaction/unsign/' },
                           { text: 'Spit', link: '/en/messages/ru_ru/module/interaction/spit/' },
-                          { text: 'Mark', link: '/en/messages/ru_ru/module/interaction/mark/' },
-                          { text: 'Knock', link: '/en/messages/ru_ru/module/interaction/knock/' },
-                          { text: 'Right click', link: '/en/messages/ru_ru/module/interaction/right-click/' },
                         ]
                       },
                       {
@@ -248,22 +121,19 @@ export default defineConfig({
                         link: '/en/messages/ru_ru/module/player/',
                         collapsed: true,
                         items: [
-                          {
-                            text: 'Messages',
-                            link: '/en/messages/ru_ru/module/player/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Chat', link: '/en/messages/ru_ru/module/player/message/chat/' },
-                              { text: 'Formatting', link: '/en/messages/ru_ru/module/player/message/format/',},
-                              { text: 'Bubble', link: '/en/messages/ru_ru/module/player/message/bubble/' },
-                            ]
-                          },
-                          {
-                            text: 'Name',
-                            link: '/en/messages/ru_ru/module/player/name/',
-                            collapsed: true,
-                          },
-                          { text: 'Afk', link: '/en/messages/ru_ru/module/player/afk/' },
+                            { text: 'Afk', link: '/en/messages/ru_ru/module/player/afk/' },
+                            {
+                                text: 'Messagees',
+                                link: '/en/messages/ru_ru/module/player/message/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Bubble', link: '/en/messages/ru_ru/module/player/message/bubble/' },
+                                    { text: 'Chat', link: '/en/messages/ru_ru/module/player/message/chat/' },
+                                    { text: 'Formating', link: '/en/messages/ru_ru/module/player/message/format/' },
+                                ]
+                            },
+                            { text: 'Name', link: '/en/messages/ru_ru/module/player/name/' },
+                            { text: 'Team', link: '/en/messages/ru_ru/module/player/team/' },
                         ]
                       },
                       {
@@ -271,100 +141,206 @@ export default defineConfig({
                         link: '/en/messages/ru_ru/module/server/',
                         collapsed: true,
                         items: [
-                          {
-                            text: 'Messages',
-                            link: '/en/messages/ru_ru/module/server/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Advancement', link: '/en/messages/ru_ru/module/server/message/advancement/' },
-                              { text: 'Auto', link: '/en/messages/ru_ru/module/server/message/auto/' },
-                              { text: 'Clear', link: '/en/messages/ru_ru/module/server/message/clear/' },
-                              { text: 'Death', link: '/en/messages/ru_ru/module/server/message/death/' },
-                              { text: 'Deop', link: '/en/messages/ru_ru/module/server/message/deop/' },
-                              { text: 'Enchant', link: '/en/messages/ru_ru/module/server/message/enchant/' },
-                              { text: 'Gamemode', link: '/en/messages/ru_ru/module/server/message/gamemode/' },
-                              { text: 'Join', link: '/en/messages/ru_ru/module/server/message/join/' },
-                              { text: 'Op', link: '/en/messages/ru_ru/module/server/message/op/' },
-                              { text: 'Greeting', link: '/en/messages/ru_ru/module/server/message/greeting/' },
-                              { text: 'Quit', link: '/en/messages/ru_ru/module/server/message/quit/' },
-                              { text: 'Seed', link: '/en/messages/ru_ru/module/server/message/seed/' },
-                              { text: 'Setblock', link: '/en/messages/ru_ru/module/server/message/setblock/' },
-                              { text: 'Spawnpoint', link: '/en/messages/ru_ru/module/server/message/spawnpoint/' },
-                            ]
-                          },
-                          { text: 'Brand', link: '/en/messages/ru_ru/module/server/brand/' },
-                          {
-                            text: 'Tab',
-                            link: '/en/messages/ru_ru/module/server/tab/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Player list name', link: '/en/messages/ru_ru/module/server/tab/player-list-name/' },
-                              { text: 'Header', link: '/en/messages/ru_ru/module/server/tab/header/' },
-                              { text: 'Footer', link: '/en/messages/ru_ru/module/server/tab/footer/' },
-                            ]
-                          },
-                          { text: 'MOTD', link: '/en/messages/ru_ru/module/server/motd/' },
-                          { text: 'Player count', link: '/en/messages/ru_ru/module/server/player-count/' },
+                            { text: 'Brand', link: '/en/messages/ru_ru/module/server/brand/' },
+                            {
+                                text: 'Messages',
+                                link: '/en/messages/ru_ru/module/server/message/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Advancement', link: '/en/messages/ru_ru/module/server/message/advancement/' },
+                                  { text: 'Auto', link: '/en/messages/ru_ru/module/server/message/auto/' },
+                                  { text: 'Clear', link: '/en/messages/ru_ru/module/server/message/clear/' },
+                                  { text: 'Death', link: '/en/messages/ru_ru/module/server/message/death/' },
+                                  { text: 'Deop', link: '/en/messages/ru_ru/module/server/message/deop/' },
+                                  { text: 'Enchant', link: '/en/messages/ru_ru/module/server/message/enchant/' },
+                                  { text: 'Gamemode', link: '/en/messages/ru_ru/module/server/message/gamemode/' },
+                                  { text: 'Greeting', link: '/en/messages/ru_ru/module/server/message/greeting/' },
+                                  { text: 'Join', link: '/en/messages/ru_ru/module/server/message/join/' },
+                                  { text: 'Op', link: '/en/messages/ru_ru/module/server/message/op/' },
+                                  { text: 'Quit', link: '/en/messages/ru_ru/module/server/message/quit/' },
+                                  { text: 'Seed', link: '/en/messages/ru_ru/module/server/message/seed/' },
+                                  { text: 'Setblock', link: '/en/messages/ru_ru/module/server/message/setblock/' },
+                                  { text: 'Spawnpoint', link: '/en/messages/ru_ru/module/server/message/spawnpoint/' },
+                                ]
+                            },
+                            { text: 'MOTD', link: '/en/messages/ru_ru/module/server/motd/' },
+                            { text: 'Player count', link: '/en/messages/ru_ru/module/server/playercount/' },
+                            {
+                                text: 'Tab',
+                                link: '/en/messages/ru_ru/module/server/tab/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Player list name', link: '/en/messages/ru_ru/module/server/tab/playerlistname/' },
+                                  { text: 'Header', link: '/en/messages/ru_ru/module/server/tab/header/' },
+                                  { text: 'Footer', link: '/en/messages/ru_ru/module/server/tab/footer/' },
+                                ]
+                            },
                         ]
                       },
                       {
-                        text: 'Commands',
-                        link: '/en/messages/ru_ru/module/command/',
+                        text: 'Tags',
+                        link: '/en/messages/ru_ru/module/tag/',
                         collapsed: true,
                         items: [
-                          { text: 'Prompt', link: '/en/messages/ru_ru/module/command/prompt/' },
-                          { text: 'Me', link: '/en/messages/ru_ru/module/command/command-me/' },
-                          { text: 'Try', link: '/en/messages/ru_ru/module/command/command-try/' },
-                          { text: 'Dice', link: '/en/messages/ru_ru/module/command/command-dice/' },
-                          { text: 'Ball', link: '/en/messages/ru_ru/module/command/command-ball/' },
-                          { text: 'Online', link: '/en/messages/ru_ru/module/command/command-online/' },
-                          { text: 'Do', link: '/en/messages/ru_ru/module/command/command-do/' },
-                          { text: 'Coin', link: '/en/messages/ru_ru/module/command/command-coin/' },
-                          { text: 'Translateto', link: '/en/messages/ru_ru/module/command/command-translateto/' },
-                          { text: 'Geolocate', link: '/en/messages/ru_ru/module/command/command-geolocate/' },
-                          { text: 'Clearchat', link: '/en/messages/ru_ru/module/command/command-clearchat/' },
-                          { text: 'Broadcast', link: '/en/messages/ru_ru/module/command/command-broadcast/' },
-                          { text: 'Afk', link: '/en/messages/ru_ru/module/command/command-afk/' },
-                          { text: 'Mark', link: '/en/messages/ru_ru/module/command/command-mark/' },
-                          { text: 'Spit', link: '/en/messages/ru_ru/module/command/command-spit/' },
-                          { text: 'Spy', link: '/en/messages/ru_ru/module/command/command-spy/' },
-                          { text: 'Stream', link: '/en/messages/ru_ru/module/command/command-stream/' },
-                          { text: 'Kick', link: '/en/messages/ru_ru/module/command/command-kick/' },
-                          { text: 'Helper', link: '/en/messages/ru_ru/module/command/command-helper/' },
-                          { text: 'Tell', link: '/en/messages/ru_ru/module/command/command-tell/' },
-                          { text: 'Reply', link: '/en/messages/ru_ru/module/command/command-reply/' },
-                          { text: 'Poll', link: '/en/messages/ru_ru/module/command/command-poll/' },
-                          { text: 'Ignore', link: '/en/messages/ru_ru/module/command/command-ignore/' },
-                          { text: 'Ignorelist', link: '/en/messages/ru_ru/module/command/command-ignorelist/' },
-                          { text: 'Ban', link: '/en/messages/ru_ru/module/command/command-ban/' },
-                          { text: 'Unban', link: '/en/messages/ru_ru/module/command/command-unban/' },
-                          { text: 'Banlist', link: '/en/messages/ru_ru/module/command/command-banlist/' },
-                          { text: 'Mute', link: '/en/messages/ru_ru/module/command/command-mute/' },
-                          { text: 'Unmute', link: '/en/messages/ru_ru/module/command/command-unmute/' },
-                          { text: 'Mutelist', link: '/en/messages/ru_ru/module/command/command-mutelist/' },
-                          { text: 'Warn', link: '/en/messages/ru_ru/module/command/command-warn/' },
-                          { text: 'Unwarn', link: '/en/messages/ru_ru/module/command/command-unwarn/' },
-                          { text: 'Warnlist', link: '/en/messages/ru_ru/module/command/command-warnlist/' },
-                          { text: 'Flectonepulse', link: '/en/messages/ru_ru/module/command/command-flectonepulse/' },
-                          { text: 'Chatcolor', link: '/en/messages/ru_ru/module/command/command-chatcolor/' },
-                          { text: 'Chatsetting', link: '/en/messages/ru_ru/module/command/command-chatsetting/' },
-                          { text: 'Symbol', link: '/en/messages/ru_ru/module/command/command-symbol/' },
-                          { text: 'Mail', link: '/en/messages/ru_ru/module/command/command-mail/' },
-                          { text: 'Clearmail', link: '/en/messages/ru_ru/module/command/command-clearmail/' },
-                          { text: 'Tictactoe', link: '/en/messages/ru_ru/module/command/command-tictactoe/' },
-                          { text: 'Maintenance', link: '/en/messages/ru_ru/module/command/command-maintenance/' },
-                          { text: 'Rockpaperscissors', link: '/en/messages/ru_ru/module/command/command-rockpaperscissors/' },
+                          { text: 'Spoiler', link: '/en/messages/ru_ru/module/tag/spoiler/' },
                         ]
                       },
                     ]
                   },
-                  { text: 'Times', link: '/en/messages/ru_ru/time/' },
+                ]
+              },
+              {
+                text: 'File en_us.yml',
+                link: '/en/messages/en_us/',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Modules',
+                    link: '/en/messages/en_us/module/',
+                    collapsed: true,
+                    items: [
+                      {
+                        text: 'Commands',
+                        link: '/en/messages/en_us/module/command/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Ball', link: '/en/messages/en_us/module/command/ball/' },
+                          { text: 'Ban', link: '/en/messages/en_us/module/command/ban/' },
+                          { text: 'Banlist', link: '/en/messages/en_us/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/en/messages/en_us/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/en/messages/en_us/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/en/messages/en_us/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/en/messages/en_us/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/en/messages/en_us/module/command/clearmail/' },
+                          { text: 'Coin', link: '/en/messages/en_us/module/command/coin/' },
+                          { text: 'Dice', link: '/en/messages/en_us/module/command/dice/' },
+                          { text: 'Do', link: '/en/messages/en_us/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/en/messages/en_us/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/en/messages/en_us/module/command/geolocate/' },
+                          { text: 'Helper', link: '/en/messages/en_us/module/command/helper/' },
+                          { text: 'Ignore', link: '/en/messages/en_us/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/en/messages/en_us/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/en/messages/en_us/module/command/kick/' },
+                          { text: 'Mail', link: '/en/messages/en_us/module/command/mail/' },
+                          { text: 'Maintenance', link: '/en/messages/en_us/module/command/maintenance/' },
+                          { text: 'Me', link: '/en/messages/en_us/module/command/me/' },
+                          { text: 'Mute', link: '/en/messages/en_us/module/command/mute/' },
+                          { text: 'Mutelist', link: '/en/messages/en_us/module/command/mutelist/' },
+                          { text: 'Online', link: '/en/messages/en_us/module/command/online/' },
+                          { text: 'Poll', link: '/en/messages/en_us/module/command/poll/' },
+                          { text: 'Reply', link: '/en/messages/en_us/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/en/messages/en_us/module/command/rockpaperscissors/' },
+                          { text: 'Spy', link: '/en/messages/en_us/module/command/spy/' },
+                          { text: 'Stream', link: '/en/messages/en_us/module/command/stream/' },
+                          { text: 'Symbol', link: '/en/messages/en_us/module/command/symbol/' },
+                          { text: 'Tell', link: '/en/messages/en_us/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/en/messages/en_us/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/en/messages/en_us/module/command/translateto/' },
+                          { text: 'Try', link: '/en/messages/en_us/module/command/try/' },
+                          { text: 'Unban', link: '/en/messages/en_us/module/command/unban/' },
+                          { text: 'Unmute', link: '/en/messages/en_us/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/en/messages/en_us/module/command/unwarn/' },
+                          { text: 'Warn', link: '/en/messages/en_us/module/command/warn/' },
+                          { text: 'Warnlist', link: '/en/messages/en_us/module/command/warnlist/' },
+                        ]
+                      },
+                      {
+                        text: 'Integrations',
+                        link: '/en/messages/en_us/module/integration/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Discord', link: '/en/messages/en_us/module/integration/discord/' },
+                          { text: 'Telegram', link: '/en/messages/en_us/module/integration/telegram/' },
+                          { text: 'Twitch', link: '/en/messages/en_us/module/integration/twitch/' },
+                        ]
+                      },
+                      {
+                        text: 'Interactions',
+                        link: '/en/messages/en_us/module/interaction/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Right click', link: '/en/messages/en_us/module/interaction/rightclick/' },
+                          { text: 'Sign', link: '/en/messages/en_us/module/interaction/sign/' },
+                          { text: 'Spit', link: '/en/messages/en_us/module/interaction/spit/' },
+                        ]
+                      },
+                      {
+                        text: 'Player',
+                        link: '/en/messages/en_us/module/player/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Afk', link: '/en/messages/en_us/module/player/afk/' },
+                            {
+                                text: 'Messages',
+                                link: '/en/messages/en_us/module/player/message/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Bubble', link: '/en/messages/en_us/module/player/message/bubble/' },
+                                    { text: 'Chat', link: '/en/messages/en_us/module/player/message/chat/' },
+                                    { text: 'Formating', link: '/en/messages/en_us/module/player/message/format/' },
+                                ]
+                            },
+                            { text: 'Name', link: '/en/messages/en_us/module/player/name/' },
+                            { text: 'Team', link: '/en/messages/en_us/module/player/team/' },
+                        ]
+                      },
+                      {
+                        text: 'Server',
+                        link: '/en/messages/en_us/module/server/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Brand', link: '/en/messages/en_us/module/server/brand/' },
+                            {
+                                text: 'Messages',
+                                link: '/en/messages/en_us/module/server/message/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Advancement', link: '/en/messages/en_us/module/server/message/advancement/' },
+                                  { text: 'Auto', link: '/en/messages/en_us/module/server/message/auto/' },
+                                  { text: 'Clear', link: '/en/messages/en_us/module/server/message/clear/' },
+                                  { text: 'Death', link: '/en/messages/en_us/module/server/message/death/' },
+                                  { text: 'Deop', link: '/en/messages/en_us/module/server/message/deop/' },
+                                  { text: 'Enchant', link: '/en/messages/en_us/module/server/message/enchant/' },
+                                  { text: 'Gamemode', link: '/en/messages/en_us/module/server/message/gamemode/' },
+                                  { text: 'Greeting', link: '/en/messages/en_us/module/server/message/greeting/' },
+                                  { text: 'Join', link: '/en/messages/en_us/module/server/message/join/' },
+                                  { text: 'Op', link: '/en/messages/en_us/module/server/message/op/' },
+                                  { text: 'Quit', link: '/en/messages/en_us/module/server/message/quit/' },
+                                  { text: 'Seed', link: '/en/messages/en_us/module/server/message/seed/' },
+                                  { text: 'Setblock', link: '/en/messages/en_us/module/server/message/setblock/' },
+                                  { text: 'Spawnpoint', link: '/en/messages/en_us/module/server/message/spawnpoint/' },
+                                ]
+                            },
+                            { text: 'MOTD', link: '/en/messages/en_us/module/server/motd/' },
+                            { text: 'Player count', link: '/en/messages/en_us/module/server/playercount/' },
+                            {
+                                text: 'Tab',
+                                link: '/en/messages/en_us/module/server/tab/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Player list name', link: '/en/messages/en_us/module/server/tab/playerlistname/' },
+                                  { text: 'Header', link: '/en/messages/en_us/module/server/tab/header/' },
+                                  { text: 'Footer', link: '/en/messages/en_us/module/server/tab/footer/' },
+                                ]
+                            },
+                        ]
+                      },
+                      {
+                        text: 'Tags',
+                        link: '/en/messages/en_us/module/tag/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Spoiler', link: '/en/messages/en_us/module/tag/spoiler/' },
+                        ]
+                      },
+                    ]
+                  },
                 ]
               },
             ]
           },
           {
-            text: 'Configuration',
+            text: 'File config.yml',
             link: '/en/config/',
             collapsed: false,
             items: [
@@ -372,35 +348,24 @@ export default defineConfig({
               {
                 text: 'Modules',
                 link: '/en/config/module/',
-                collapsed: false,
+                collapsed: true,
                 items: [
-                  {
-                    text: 'Tags',
-                    link: '/en/config/module/tag/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Url', link: '/en/config/module/tag/url/' },
-                      { text: 'Image', link: '/en/config/module/tag/image/' },
-                      { text: 'Spoiler', link: '/en/config/module/tag/spoiler/' },
-                      { text: 'Emoji', link: '/en/config/module/tag/emoji/' },
-                      { text: 'Color', link: '/en/config/module/tag/color/' }
-                    ]
-                  },
                   {
                     text: 'Integrations',
                     link: '/en/config/module/integration/',
                     collapsed: true,
                     items: [
                       { text: 'Discord', link: '/en/config/module/integration/discord/' },
-                      { text: 'Twitch', link: '/en/config/module/integration/twitch/' },
-                      { text: 'Telegram', link: '/en/config/module/integration/telegram/' },
-                      { text: 'PlaceholderAPI', link: '/en/config/module/integration/placeholderapi/' },
+                      { text: 'InteractiveChat', link: '/en/config/module/integration/interactivechat/' },
                       { text: 'LuckPerms', link: '/en/config/module/integration/luckperms/' },
-                      { text: 'SimpleVoice', link: '/en/config/module/integration/simplevoice/' },
+                      { text: 'PlaceholderAPI', link: '/en/config/module/integration/placeholderapi/' },
                       { text: 'PlasmoVoice', link: '/en/config/module/integration/plasmovoice/' },
-                      { text: 'SuperVanish', link: '/en/config/module/integration/supervanish/' },
+                      { text: 'SimpleVoice', link: '/en/config/module/integration/simplevoice/' },
                       { text: 'SkinsRestorer', link: '/en/config/module/integration/skinsrestorer/' },
-                      { text: 'InteractiveChat', link: '/en/config/module/integration/interactivechat/' }
+                      { text: 'SuperVanish', link: '/en/config/module/integration/supervanish/' },
+                      { text: 'Telegram', link: '/en/config/module/integration/telegram/' },
+                      { text: 'Twitch', link: '/en/config/module/integration/twitch/' },
+                      { text: 'Vault', link: '/en/config/module/integration/vault/' },
                     ]
                   },
                   {
@@ -408,12 +373,12 @@ export default defineConfig({
                     link: '/en/config/module/interaction/',
                     collapsed: true,
                     items: [
-                      { text: 'Sign', link: '/en/config/module/interaction/sign/' },
-                      { text: 'Un Sign', link: '/en/config/module/interaction/unsign/' },
-                      { text: 'Mark', link: '/en/config/module/interaction/mark/' },
-                      { text: 'Spit', link: '/en/config/module/interaction/spit/' },
-                      { text: 'Knocks', link: '/en/config/module/interaction/knock/' },
-                      { text: 'Right click', link: '/en/config/module/interaction/right-click/' },
+                        { text: 'Knock', link: '/en/config/module/interaction/knock/' },
+                        { text: 'Mark', link: '/en/config/module/interaction/mark/' },
+                        { text: 'Right click', link: '/en/config/module/interaction/rightclick/' },
+                        { text: 'Sign', link: '/en/config/module/interaction/sign/' },
+                        { text: 'Spit', link: '/en/config/module/interaction/spit/' },
+                        { text: 'Un sign', link: '/en/config/module/interaction/unsign/' },
                     ]
                   },
                   {
@@ -427,55 +392,39 @@ export default defineConfig({
                         link: '/en/config/module/player/message/',
                         collapsed: true,
                         items: [
-                          { text: 'Chat', link: '/en/config/module/player/message/chat/' },
-                          {
-                            text: 'Formatting',
-                            link: '/en/config/module/player/message/format/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Mention', link: '/en/config/module/player/message/format/mention/' },
-                              { text: 'Swear', link: '/en/config/module/player/message/format/swear/' },
-                              { text: 'Caps', link: '/en/config/module/player/message/format/caps/' },
-                              { text: 'Ping', link: '/en/config/module/player/message/format/ping/' },
-                              { text: 'Tps', link: '/en/config/module/player/message/format/tps/' },
-                              { text: 'Online', link: '/en/config/module/player/message/format/online/' },
-                              { text: 'Coordinates', link: '/en/config/module/player/message/format/coords/' },
-                              { text: 'Statistics', link: '/en/config/module/player/message/format/stats/' },
-                              { text: 'Skin', link: '/en/config/module/player/message/format/skin/' },
-                              { text: 'Item', link: '/en/config/module/player/message/format/item/' },
-                              { text: 'Url', link: '/en/config/module/player/message/format/url/' },
-                              { text: 'Image', link: '/en/config/module/player/message/format/image/' },
-                              { text: 'Spoiler', link: '/en/config/module/player/message/format/spoiler/' },
-                              { text: 'Bold', link: '/en/config/module/player/message/format/bold/' },
-                              { text: 'Italic', link: '/en/config/module/player/message/format/italic/' },
-                              { text: 'Underline', link: '/en/config/module/player/message/format/underline/' },
-                              { text: 'Obfuscated', link: '/en/config/module/player/message/format/obfuscated/' },
-                              { text: 'Strikethrough', link: '/en/config/module/player/message/format/strikethrough/' },
-                              { text: 'Kyori Adventure', link: '/en/config/module/player/message/format/kyori/' },
-                            ]
-                          },
-                          { text: 'Anvil', link: '/en/config/module/player/message/anvil/' },
-                          { text: 'Book', link: '/en/config/module/player/message/book/' },
-                          { text: 'Sign', link: '/en/config/module/player/message/sign/' },
-                          { text: 'Bubble', link: '/en/config/module/player/message/bubble/' },
+                             { text: 'Anvil', link: '/en/config/module/player/message/anvil/' },
+                             { text: 'Book', link: '/en/config/module/player/message/book/' },
+                             { text: 'Bubble', link: '/en/config/module/player/message/bubble/' },
+                             { text: 'Chat', link: '/en/config/module/player/message/chat/' },
+                             {
+                                text: 'Formating',
+                                link: '/en/config/module/player/message/format/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Caps', link: '/en/config/module/player/message/format/caps/' },
+                                    { text: 'Mention', link: '/en/config/module/player/message/format/mention/' },
+                                    { text: 'Swear', link: '/en/config/module/player/message/format/swear/' },
+                                ]
+                             },
+                             { text: 'Sign', link: '/en/config/module/player/message/sign/' },
                         ]
                       },
-                      { text: 'Team', link: '/en/config/module/player/team/' },
-                      {
-                        text: 'Objectives',
-                        link: '/en/config/module/player/objective/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Player list', link: '/en/config/module/player/objective/player-list' },
-                          { text: 'Below name', link: '/en/config/module/player/objective/below-name' },
-                        ]
-                      },
-                      { text: 'World', link: '/en/config/module/player/world/' },
                       {
                         text: 'Name',
                         link: '/en/config/module/player/name/',
                         collapsed: true,
                       },
+                      {
+                        text: 'Object',
+                        link: '/en/config/module/player/objective/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Below name', link: '/en/config/module/player/objective/belowname/' },
+                            { text: 'Player list', link: '/en/config/module/player/objective/playerlist/' },
+                        ]
+                      },
+                      { text: 'Team', link: '/en/config/module/player/team/' },
+                      { text: 'World', link: '/en/config/module/player/world/' },
                     ]
                   },
                   {
@@ -483,89 +432,52 @@ export default defineConfig({
                     link: '/en/config/module/server/',
                     collapsed: true,
                     items: [
-                      {
-                        text: 'Messages',
-                        link: '/en/config/module/server/message/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Advancement', link: '/en/config/module/server/message/advancement/' },
-                          { text: 'Auto', link: '/en/config/module/server/message/auto/' },
-                          { text: 'Clear', link: '/en/config/module/server/message/clear/' },
-                          { text: 'Death', link: '/en/config/module/server/message/death/' },
-                          { text: 'Deop', link: '/en/config/module/server/message/deop/' },
-                          { text: 'Enchant', link: '/en/config/module/server/message/enchant/' },
-                          { text: 'Gamemode', link: '/en/config/module/server/message/gamemode/' },
-                          { text: 'Join', link: '/en/config/module/server/message/join/' },
-                          { text: 'Op', link: '/en/config/module/server/message/op/' },
-                          { text: 'Greeting', link: '/en/config/module/server/message/greeting/' },
-                          { text: 'Quit', link: '/en/config/module/server/message/quit/' },
-                          { text: 'Seed', link: '/en/config/module/server/message/seed/' },
-                          { text: 'Setblock', link: '/en/config/module/server/message/setblock/' },
-                          { text: 'Spawnpoint', link: '/en/config/module/server/message/spawnpoint/' },
-                        ]
-                      },
-                      { text: 'Brand', link: '/en/config/module/server/brand/' },
-                      {
-                        text: 'Tab',
-                        link: '/en/config/module/server/tab/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Player list name', link: '/en/config/module/server/tab/player-list-name/' },
-                          { text: 'Header', link: '/en/config/module/server/tab/header/' },
-                          { text: 'Footer', link: '/en/config/module/server/tab/footer' },
-                        ]
-                      },
-                      { text: 'Icon', link: '/en/config/module/server/icon/' },
-                      { text: 'MOTD', link: '/en/config/module/server/motd/' },
-                      { text: 'Player count', link: '/en/config/module/server/player-count/' },
+                        { text: 'Brand', link: '/en/config/module/server/brand/' },
+                        { text: 'Icon', link: '/en/config/module/server/icon/' },
+                        {
+                            text: 'Messages',
+                            link: '/en/config/module/server/message/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Advancement', link: '/en/config/module/server/message/advancement/' },
+                              { text: 'Auto', link: '/en/config/module/server/message/auto/' },
+                              { text: 'Clear', link: '/en/config/module/server/message/clear/' },
+                              { text: 'Death', link: '/en/config/module/server/message/death/' },
+                              { text: 'Deop', link: '/en/config/module/server/message/deop/' },
+                              { text: 'Enchant', link: '/en/config/module/server/message/enchant/' },
+                              { text: 'Gamemode', link: '/en/config/module/server/message/gamemode/' },
+                              { text: 'Greeting', link: '/en/config/module/server/message/greeting/' },
+                              { text: 'Join', link: '/en/config/module/server/message/join/' },
+                              { text: 'Op', link: '/en/config/module/server/message/op/' },
+                              { text: 'Quit', link: '/en/config/module/server/message/quit/' },
+                              { text: 'Seed', link: '/en/config/module/server/message/seed/' },
+                              { text: 'Setblock', link: '/en/config/module/server/message/setblock/' },
+                              { text: 'Spawnpoint', link: '/en/config/module/server/message/spawnpoint/' },
+                            ]
+                        },
+                        { text: 'MOTD', link: '/en/config/module/server/motd/' },
+                        { text: 'Player count', link: '/en/config/module/server/playercount/' },
+                        {
+                            text: 'Tab',
+                            link: '/en/config/module/server/tab/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Player list name', link: '/en/config/module/server/tab/playerlistname/' },
+                              { text: 'Header', link: '/en/config/module/server/tab/header/' },
+                              { text: 'Footer', link: '/en/config/module/server/tab/footer/' },
+                            ]
+                        },
                     ]
                   },
                   {
-                    text: 'Commands',
-                    link: '/en/config/module/command/',
+                    text: 'Tags',
+                    link: '/en/config/module/tag/',
                     collapsed: true,
                     items: [
-                      { text: 'Me', link: '/en/config/module/command/command-me/' },
-                      { text: 'Try', link: '/en/config/module/command/command-try/' },
-                      { text: 'Dice', link: '/en/config/module/command/command-dice/' },
-                      { text: 'Ball', link: '/en/config/module/command/command-ball/' },
-                      { text: 'Online', link: '/en/config/module/command/command-online/' },
-                      { text: 'Do', link: '/en/config/module/command/command-do/' },
-                      { text: 'Coin', link: '/en/config/module/command/command-coin/' },
-                      { text: 'Translateto', link: '/en/config/module/command/command-translateto/' },
-                      { text: 'Geolocate', link: '/en/config/module/command/command-geolocate/' },
-                      { text: 'Clearchat', link: '/en/config/module/command/command-clearchat/' },
-                      { text: 'Broadcast', link: '/en/config/module/command/command-broadcast/' },
-                      { text: 'Afk', link: '/en/config/module/command/command-afk/' },
-                      { text: 'Mark', link: '/en/config/module/command/command-mark/' },
-                      { text: 'Spit', link: '/en/config/module/command/command-spit/' },
-                      { text: 'Spy', link: '/en/config/module/command/command-spy/' },
-                      { text: 'Stream', link: '/en/config/module/command/command-stream/' },
-                      { text: 'Kick', link: '/en/config/module/command/command-kick/' },
-                      { text: 'Helper', link: '/en/config/module/command/command-helper/' },
-                      { text: 'Tell', link: '/en/config/module/command/command-tell/' },
-                      { text: 'Reply', link: '/en/config/module/command/command-reply/' },
-                      { text: 'Poll', link: '/en/config/module/command/command-poll/' },
-                      { text: 'Ignore', link: '/en/config/module/command/command-ignore/' },
-                      { text: 'Ignorelist', link: '/en/config/module/command/command-ignorelist/' },
-                      { text: 'Ban', link: '/en/config/module/command/command-ban/' },
-                      { text: 'Unban', link: '/en/config/module/command/command-unban/' },
-                      { text: 'Banlist', link: '/en/config/module/command/command-banlist/' },
-                      { text: 'Mute', link: '/en/config/module/command/command-mute/' },
-                      { text: 'Unmute', link: '/en/config/module/command/command-unmute/' },
-                      { text: 'Mutelist', link: '/en/config/module/command/command-mutelist/' },
-                      { text: 'Warn', link: '/en/config/module/command/command-warn/' },
-                      { text: 'Unwarn', link: '/en/config/module/command/command-unwarn/' },
-                      { text: 'Warnlist', link: '/en/config/module/command/command-warnlist/' },
-                      { text: 'Flectonepulse', link: '/en/config/module/command/command-flectonepulse/' },
-                      { text: 'Chatcolor', link: '/en/config/module/command/command-chatcolor/' },
-                      { text: 'Chatsetting', link: '/en/config/module/command/command-chatsetting/' },
-                      { text: 'Symbol', link: '/en/config/module/command/command-symbol/' },
-                      { text: 'Mail', link: '/en/config/module/command/command-mail/' },
-                      { text: 'Clearmail', link: '/en/config/module/command/command-clearmail/' },
-                      { text: 'Tictactoe', link: '/en/config/module/command/command-tictactoe/' },
-                      { text: 'Maintenance', link: '/en/config/module/command/command-maintenance/' },
-                      { text: 'Rockpaperscissors', link: '/en/config/module/command/command-rockpaperscissors/' },
+                        { text: 'Color', link: '/en/config/module/tag/color/' },
+                        { text: 'Emoji', link: '/en/config/module/tag/emoji/' },
+                        { text: 'Image', link: '/en/config/module/tag/image/' },
+                        { text: 'Spoiler', link: '/en/config/module/tag/spoiler/' },
                     ]
                   },
                 ]
@@ -573,14 +485,105 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Secrets',
+            text: 'File commands.yml',
+            link: '/en/commands/',
+            collapsed: false,
+            items: [
+              {
+                text: 'Modules',
+                link: '/en/commands/module/',
+                collapsed: true,
+                items: [
+                    {
+                      text: 'Commands',
+                      link: '/en/commands/module/command/',
+                      collapsed: true,
+                      items: [
+                          { text: 'Afk', link: '/en/commands/module/command/afk/' },
+                          { text: 'Ball', link: '/en/commands/module/command/ball/' },
+                          { text: 'Ban', link: '/en/commands/module/command/ban/' },
+                          { text: 'Banlist', link: '/en/commands/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/en/commands/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/en/commands/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/en/commands/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/en/commands/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/en/commands/module/command/clearmail/' },
+                          { text: 'Coin', link: '/en/commands/module/command/coin/' },
+                          { text: 'Dice', link: '/en/commands/module/command/dice/' },
+                          { text: 'Do', link: '/en/commands/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/en/commands/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/en/commands/module/command/geolocate/' },
+                          { text: 'Helper', link: '/en/commands/module/command/helper/' },
+                          { text: 'Ignore', link: '/en/commands/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/en/commands/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/en/commands/module/command/kick/' },
+                          { text: 'Mail', link: '/en/commands/module/command/mail/' },
+                          { text: 'Maintenance', link: '/en/commands/module/command/maintenance/' },
+                          { text: 'Mark', link: '/en/commands/module/command/mark/' },
+                          { text: 'Me', link: '/en/commands/module/command/me/' },
+                          { text: 'Mute', link: '/en/commands/module/command/mute/' },
+                          { text: 'Mutelist', link: '/en/commands/module/command/mutelist/' },
+                          { text: 'Online', link: '/en/commands/module/command/online/' },
+                          { text: 'Poll', link: '/en/commands/module/command/poll/' },
+                          { text: 'Reply', link: '/en/commands/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/en/commands/module/command/rockpaperscissors/' },
+                          { text: 'Spit', link: '/en/commands/module/command/spit/' },
+                          { text: 'Spy', link: '/en/commands/module/command/spy/' },
+                          { text: 'Stream', link: '/en/commands/module/command/stream/' },
+                          { text: 'Symbol', link: '/en/commands/module/command/symbol/' },
+                          { text: 'Tell', link: '/en/commands/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/en/commands/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/en/commands/module/command/translateto/' },
+                          { text: 'Try', link: '/en/commands/module/command/try/' },
+                          { text: 'Unban', link: '/en/commands/module/command/unban/' },
+                          { text: 'Unmute', link: '/en/commands/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/en/commands/module/command/unwarn/' },
+                          { text: 'Warn', link: '/en/commands/module/command/warn/' },
+                          { text: 'Warnlist', link: '/en/commands/module/command/warnlist/' },
+                      ]
+                    },
+                ]
+              },
+            ]
+          },
+          {
+            text: 'File permissions.yml',
+            link: '/en/permissions/',
+            collapsed: false,
+            items: [
+
+            ]
+          },
+          {
+            text: 'File secrets.yml',
             link: '/en/secrets/',
             collapsed: false,
             items: [
-              { text: 'Database', link: '/en/secrets/database/' },
-              { text: 'Discord', link: '/en/secrets/discord/' },
-              { text: 'Twitch', link: '/en/secrets/twitch/' },
-              { text: 'Telegram', link: '/en/secrets/telegram/' },
+              {
+                text: 'Plugin',
+                link: '/en/secrets/plugin/',
+                collapsed: true,
+                items: [
+                  { text: 'Database', link: '/en/secrets/plugin/database' },
+                ]
+              },
+              {
+                text: 'Modules',
+                link: '/en/secrets/module/',
+                collapsed: true,
+                items: [
+                    {
+                      text: 'Integrations',
+                      link: '/en/secrets/module/integration/',
+                      collapsed: true,
+                      items: [
+                         { text: 'Discord', link: '/en/secrets/module/integration/discord/' },
+                         { text: 'Telegram', link: '/en/secrets/module/integration/telegram/' },
+                         { text: 'Twitch', link: '/en/secrets/module/integration/twitch/' },
+                      ]
+                    },
+                ]
+              },
             ]
           },
         ],
@@ -593,7 +596,7 @@ export default defineConfig({
       description: "FlectonePulse документация",
       themeConfig: {
         nav: [
-          { text: 'Версия 0.0.7', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Версия 0.0.8', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         lastUpdated: {
           text: 'Обновлено'
@@ -621,171 +624,12 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: 'Сообщения',
+            text: 'Папка messages/',
             link: '/ru/messages/',
             collapsed: false,
             items: [
               {
-                text: 'Английский',
-                link: '/ru/messages/en_us/',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'Модули',
-                    link: '/ru/messages/en_us/module/',
-                    collapsed: true,
-                    items: [
-                      {
-                        text: 'Теги',
-                        link: '/ru/messages/en_us/module/tag/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Ссылка', link: '/ru/messages/en_us/module/tag/url/' },
-                          { text: 'Спойлер', link: '/ru/messages/en_us/module/tag/spoiler/' },
-                        ]
-                      },
-                      {
-                        text: 'Интеграции',
-                        link: '/ru/messages/en_us/module/integration/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Дискорд', link: '/ru/messages/en_us/module/integration/discord/' },
-                          { text: 'Твич', link: '/ru/messages/en_us/module/integration/twitch/' },
-                          { text: 'Телеграм', link: '/ru/messages/en_us/module/integration/telegram/' },
-                        ]
-                      },
-                      {
-                        text: 'Взаимодействия',
-                        link: '/ru/messages/en_us/module/interaction/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Подпись', link: '/ru/messages/en_us/module/interaction/sign/' },
-                          { text: 'Снятие подписи', link: '/ru/messages/en_us/module/interaction/unsign/' },
-                          { text: 'Плевок', link: '/ru/messages/en_us/module/interaction/spit/' },
-                          { text: 'Метка', link: '/ru/messages/en_us/module/interaction/mark/' },
-                          { text: 'Стуки', link: '/ru/messages/en_us/module/interaction/knock/' },
-                          { text: 'Правое нажатие', link: '/ru/messages/en_us/module/interaction/right-click/' },
-                        ]
-                      },
-                      {
-                        text: 'Игрок',
-                        link: '/ru/messages/en_us/module/player/',
-                        collapsed: true,
-                        items: [
-                          {
-                            text: 'Сообщения',
-                            link: '/ru/messages/en_us/module/player/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Чат', link: '/ru/messages/en_us/module/player/message/chat/' },
-                              { text: 'Форматирование', link: '/ru/messages/en_us/module/player/message/format/' },
-                              { text: 'Над головой', link: '/ru/messages/en_us/module/player/message/bubble/' },
-                            ]
-                          },
-                          {
-                            text: 'Имя',
-                            link: '/ru/messages/en_us/module/player/name/',
-                          },
-                          { text: 'Афк', link: '/ru/messages/en_us/module/player/afk/' },
-                        ]
-                      },
-                      {
-                        text: 'Сервер',
-                        link: '/ru/messages/en_us/module/server/',
-                        collapsed: true,
-                        items: [
-                          {
-                            text: 'Сообщения',
-                            link: '/ru/messages/en_us/module/server/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Достижение', link: '/ru/messages/en_us/module/server/message/advancement/' },
-                              { text: 'Автоматическое', link: '/ru/messages/en_us/module/server/message/auto/' },
-                              { text: 'Очищение', link: '/ru/messages/en_us/module/server/message/clear/' },
-                              { text: 'Смерть', link: '/ru/messages/en_us/module/server/message/death/' },
-                              { text: 'Деоп', link: '/ru/messages/en_us/module/server/message/deop/' },
-                              { text: 'Зачарование', link: '/ru/messages/en_us/module/server/message/enchant/' },
-                              { text: 'Режим игры', link: '/ru/messages/en_us/module/server/message/gamemode/' },
-                              { text: 'Подключение', link: '/ru/messages/en_us/module/server/message/join/' },
-                              { text: 'Оп', link: '/ru/messages/en_us/module/server/message/op/' },
-                              { text: 'Приветствие', link: '/ru/messages/en_us/module/server/message/greeting/' },
-                              { text: 'Отключение', link: '/ru/messages/en_us/module/server/message/quit/' },
-                              { text: 'Сид', link: '/ru/messages/en_us/module/server/message/seed/' },
-                              { text: 'Сетблок', link: '/ru/messages/en_us/module/server/message/setblock/' },
-                              { text: 'Спавнпоинт', link: '/ru/messages/en_us/module/server/message/spawnpoint/' },
-                            ]
-                          },
-                          { text: 'Бренд', link: '/ru/messages/en_us/module/server/brand/' },
-                          {
-                            text: 'Таб',
-                            link: '/ru/messages/en_us/module/server/tab/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Имя в списке', link: '/ru/messages/en_us/module/server/tab/player-list-name/' },
-                              { text: 'Верхнее', link: '/ru/messages/en_us/module/server/tab/header/' },
-                              { text: 'Нижнее', link: '/ru/messages/en_us/module/server/tab/footer/' },
-                            ]
-                          },
-                          { text: 'МОТД', link: '/ru/messages/en_us/module/server/motd/' },
-                          { text: 'Количество игроков', link: '/ru/messages/en_us/module/server/player-count/' },
-                        ]
-                      },
-                      {
-                        text: 'Комманды',
-                        link: '/ru/messages/en_us/module/command/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Подсказка', link: '/ru/messages/en_us/module/command/prompt/' },
-                          { text: 'Me', link: '/ru/messages/en_us/module/command/command-me/' },
-                          { text: 'Try', link: '/ru/messages/en_us/module/command/command-try/' },
-                          { text: 'Dice', link: '/ru/messages/en_us/module/command/command-dice/' },
-                          { text: 'Ball', link: '/ru/messages/en_us/module/command/command-ball/' },
-                          { text: 'Online', link: '/ru/messages/en_us/module/command/command-online/' },
-                          { text: 'Do', link: '/ru/messages/en_us/module/command/command-do/' },
-                          { text: 'Coin', link: '/ru/messages/en_us/module/command/command-coin/' },
-                          { text: 'Translateto', link: '/ru/messages/en_us/module/command/command-translateto/' },
-                          { text: 'Geolocate', link: '/ru/messages/en_us/module/command/command-geolocate/' },
-                          { text: 'Clearchat', link: '/ru/messages/en_us/module/command/command-clearchat/' },
-                          { text: 'Broadcast', link: '/ru/messages/en_us/module/command/command-broadcast/' },
-                          { text: 'Afk', link: '/ru/messages/en_us/module/command/command-afk/' },
-                          { text: 'Mark', link: '/ru/messages/en_us/module/command/command-mark/' },
-                          { text: 'Spit', link: '/ru/messages/en_us/module/command/command-spit/' },
-                          { text: 'Spy', link: '/ru/messages/en_us/module/command/command-spy/' },
-                          { text: 'Stream', link: '/ru/messages/en_us/module/command/command-stream/' },
-                          { text: 'Kick', link: '/ru/messages/en_us/module/command/command-kick/' },
-                          { text: 'Helper', link: '/ru/messages/en_us/module/command/command-helper/' },
-                          { text: 'Tell', link: '/ru/messages/en_us/module/command/command-tell/' },
-                          { text: 'Reply', link: '/ru/messages/en_us/module/command/command-reply/' },
-                          { text: 'Poll', link: '/ru/messages/en_us/module/command/command-poll/' },
-                          { text: 'Ignore', link: '/ru/messages/en_us/module/command/command-ignore/' },
-                          { text: 'Ignorelist', link: '/ru/messages/en_us/module/command/command-ignorelist/' },
-                          { text: 'Ban', link: '/ru/messages/en_us/module/command/command-ban/' },
-                          { text: 'Unban', link: '/ru/messages/en_us/module/command/command-unban/' },
-                          { text: 'Banlist', link: '/ru/messages/en_us/module/command/command-banlist/' },
-                          { text: 'Mute', link: '/ru/messages/en_us/module/command/command-mute/' },
-                          { text: 'Unmute', link: '/ru/messages/en_us/module/command/command-unmute/' },
-                          { text: 'Mutelist', link: '/ru/messages/en_us/module/command/command-mutelist/' },
-                          { text: 'Warn', link: '/ru/messages/en_us/module/command/command-warn/' },
-                          { text: 'Unwarn', link: '/ru/messages/en_us/module/command/command-unwarn/' },
-                          { text: 'Warnlist', link: '/ru/messages/en_us/module/command/command-warnlist/' },
-                          { text: 'Flectonepulse', link: '/ru/messages/en_us/module/command/command-flectonepulse/' },
-                          { text: 'Chatcolor', link: '/ru/messages/en_us/module/command/command-chatcolor/' },
-                          { text: 'Chatsetting', link: '/ru/messages/en_us/module/command/command-chatsetting/' },
-                          { text: 'Symbol', link: '/ru/messages/en_us/module/command/command-symbol/' },
-                          { text: 'Mail', link: '/ru/messages/en_us/module/command/command-mail/' },
-                          { text: 'Clearmail', link: '/ru/messages/en_us/module/command/command-clearmail/' },
-                          { text: 'Tictactoe', link: '/ru/messages/en_us/module/command/command-tictactoe/' },
-                          { text: 'Maintenance', link: '/ru/messages/en_us/module/command/command-maintenance/' },
-                          { text: 'Rockpaperscissors', link: '/ru/messages/en_us/module/command/command-rockpaperscissors/' },
-                        ]
-                      },
-                    ]
-                  },
-                  { text: 'Время', link: '/ru/messages/en_us/time/' },
-                ]
-              },
-              {
-                text: 'Русский',
+                text: 'Файл ru_ru.yml',
                 link: '/ru/messages/ru_ru/',
                 collapsed: true,
                 items: [
@@ -795,12 +639,48 @@ export default defineConfig({
                     collapsed: true,
                     items: [
                       {
-                        text: 'Теги',
-                        link: '/ru/messages/ru_ru/module/tag/',
+                        text: 'Комманды',
+                        link: '/ru/messages/ru_ru/module/command/',
                         collapsed: true,
                         items: [
-                          { text: 'Ссылка', link: '/ru/messages/ru_ru/module/tag/url/' },
-                          { text: 'Спойлер', link: '/ru/messages/ru_ru/module/tag/spoiler/' },
+                          { text: 'Ball', link: '/ru/messages/ru_ru/module/command/ball/' },
+                          { text: 'Ban', link: '/ru/messages/ru_ru/module/command/ban/' },
+                          { text: 'Banlist', link: '/ru/messages/ru_ru/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/ru/messages/ru_ru/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/ru/messages/ru_ru/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/ru/messages/ru_ru/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/ru/messages/ru_ru/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/ru/messages/ru_ru/module/command/clearmail/' },
+                          { text: 'Coin', link: '/ru/messages/ru_ru/module/command/coin/' },
+                          { text: 'Dice', link: '/ru/messages/ru_ru/module/command/dice/' },
+                          { text: 'Do', link: '/ru/messages/ru_ru/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/ru/messages/ru_ru/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/ru/messages/ru_ru/module/command/geolocate/' },
+                          { text: 'Helper', link: '/ru/messages/ru_ru/module/command/helper/' },
+                          { text: 'Ignore', link: '/ru/messages/ru_ru/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/ru/messages/ru_ru/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/ru/messages/ru_ru/module/command/kick/' },
+                          { text: 'Mail', link: '/ru/messages/ru_ru/module/command/mail/' },
+                          { text: 'Maintenance', link: '/ru/messages/ru_ru/module/command/maintenance/' },
+                          { text: 'Me', link: '/ru/messages/ru_ru/module/command/me/' },
+                          { text: 'Mute', link: '/ru/messages/ru_ru/module/command/mute/' },
+                          { text: 'Mutelist', link: '/ru/messages/ru_ru/module/command/mutelist/' },
+                          { text: 'Online', link: '/ru/messages/ru_ru/module/command/online/' },
+                          { text: 'Poll', link: '/ru/messages/ru_ru/module/command/poll/' },
+                          { text: 'Reply', link: '/ru/messages/ru_ru/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/ru/messages/ru_ru/module/command/rockpaperscissors/' },
+                          { text: 'Spy', link: '/ru/messages/ru_ru/module/command/spy/' },
+                          { text: 'Stream', link: '/ru/messages/ru_ru/module/command/stream/' },
+                          { text: 'Symbol', link: '/ru/messages/ru_ru/module/command/symbol/' },
+                          { text: 'Tell', link: '/ru/messages/ru_ru/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/ru/messages/ru_ru/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/ru/messages/ru_ru/module/command/translateto/' },
+                          { text: 'Try', link: '/ru/messages/ru_ru/module/command/try/' },
+                          { text: 'Unban', link: '/ru/messages/ru_ru/module/command/unban/' },
+                          { text: 'Unmute', link: '/ru/messages/ru_ru/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/ru/messages/ru_ru/module/command/unwarn/' },
+                          { text: 'Warn', link: '/ru/messages/ru_ru/module/command/warn/' },
+                          { text: 'Warnlist', link: '/ru/messages/ru_ru/module/command/warnlist/' },
                         ]
                       },
                       {
@@ -809,8 +689,8 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                           { text: 'Дискорд', link: '/ru/messages/ru_ru/module/integration/discord/' },
-                          { text: 'Твич', link: '/ru/messages/ru_ru/module/integration/twitch/' },
                           { text: 'Телеграм', link: '/ru/messages/ru_ru/module/integration/telegram/' },
+                          { text: 'Твич', link: '/ru/messages/ru_ru/module/integration/twitch/' },
                         ]
                       },
                       {
@@ -818,12 +698,9 @@ export default defineConfig({
                         link: '/ru/messages/ru_ru/module/interaction/',
                         collapsed: true,
                         items: [
+                          { text: 'Правое нажатие', link: '/ru/messages/ru_ru/module/interaction/rightclick/' },
                           { text: 'Подпись', link: '/ru/messages/ru_ru/module/interaction/sign/' },
-                          { text: 'Снятие подписи', link: '/ru/messages/ru_ru/module/interaction/unsign/' },
                           { text: 'Плевок', link: '/ru/messages/ru_ru/module/interaction/spit/' },
-                          { text: 'Метка', link: '/ru/messages/ru_ru/module/interaction/mark/' },
-                          { text: 'Стуки', link: '/ru/messages/ru_ru/module/interaction/knock/' },
-                          { text: 'Правое нажатие', link: '/ru/messages/ru_ru/module/interaction/right-click/' },
                         ]
                       },
                       {
@@ -831,22 +708,19 @@ export default defineConfig({
                         link: '/ru/messages/ru_ru/module/player/',
                         collapsed: true,
                         items: [
-                          {
-                            text: 'Сообщения',
-                            link: '/ru/messages/ru_ru/module/player/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Чат', link: '/ru/messages/ru_ru/module/player/message/chat/' },
-                              { text: 'Форматирование', link: '/ru/messages/ru_ru/module/player/message/format/' },
-                              { text: 'Над головой', link: '/ru/messages/ru_ru/module/player/message/bubble/' },
-                            ]
-                          },
-                          {
-                            text: 'Имя',
-                            link: '/ru/messages/ru_ru/module/player/name/',
-                            collapsed: true,
-                          },
-                          { text: 'Афк', link: '/ru/messages/ru_ru/module/player/afk/' },
+                            { text: 'Афк', link: '/ru/messages/ru_ru/module/player/afk/' },
+                            {
+                                text: 'Сообщения',
+                                link: '/ru/messages/ru_ru/module/player/message/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Над головой', link: '/ru/messages/ru_ru/module/player/message/bubble/' },
+                                    { text: 'Чат', link: '/ru/messages/ru_ru/module/player/message/chat/' },
+                                    { text: 'Форматирование', link: '/ru/messages/ru_ru/module/player/message/format/' },
+                                ]
+                            },
+                            { text: 'Имя', link: '/ru/messages/ru_ru/module/player/name/' },
+                            { text: 'Команда', link: '/ru/messages/ru_ru/module/player/team/' },
                         ]
                       },
                       {
@@ -854,100 +728,206 @@ export default defineConfig({
                         link: '/ru/messages/ru_ru/module/server/',
                         collapsed: true,
                         items: [
-                          {
-                            text: 'Сообщения',
-                            link: '/ru/messages/ru_ru/module/server/message/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Достижение', link: '/ru/messages/ru_ru/module/server/message/advancement/' },
-                              { text: 'Автоматическое', link: '/ru/messages/ru_ru/module/server/message/auto/' },
-                              { text: 'Очищение', link: '/ru/messages/ru_ru/module/server/message/clear/' },
-                              { text: 'Смерть', link: '/ru/messages/ru_ru/module/server/message/death/' },
-                              { text: 'Деоп', link: '/ru/messages/ru_ru/module/server/message/deop/' },
-                              { text: 'Зачарование', link: '/ru/messages/ru_ru/module/server/message/enchant/' },
-                              { text: 'Режим игры', link: '/ru/messages/ru_ru/module/server/message/gamemode/' },
-                              { text: 'Подключение', link: '/ru/messages/ru_ru/module/server/message/join/' },
-                              { text: 'Оп', link: '/ru/messages/ru_ru/module/server/message/op/' },
-                              { text: 'Приветствие', link: '/ru/messages/ru_ru/module/server/message/greeting/' },
-                              { text: 'Отключение', link: '/ru/messages/ru_ru/module/server/message/quit/' },
-                              { text: 'Сид', link: '/ru/messages/ru_ru/module/server/message/seed/' },
-                              { text: 'Сетблок', link: '/ru/messages/ru_ru/module/server/message/setblock/' },
-                              { text: 'Спавнпоинт', link: '/ru/messages/ru_ru/module/server/message/spawnpoint/' },
-                            ]
-                          },
-                          { text: 'Бренд', link: '/ru/messages/ru_ru/module/server/brand/' },
-                          {
-                            text: 'Таб',
-                            link: '/ru/messages/ru_ru/module/server/tab/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Имя в списке', link: '/ru/messages/ru_ru/module/server/tab/player-list-name/' },
-                              { text: 'Верхнее', link: '/ru/messages/ru_ru/module/server/tab/header/' },
-                              { text: 'Нижнее', link: '/ru/messages/ru_ru/module/server/tab/footer/' },
-                            ]
-                          },
-                          { text: 'МОТД', link: '/ru/messages/ru_ru/module/server/motd/' },
-                          { text: 'Количество игроков', link: '/ru/messages/ru_ru/module/server/player-count/' },
+                            { text: 'Бренд', link: '/ru/messages/ru_ru/module/server/brand/' },
+                            {
+                                text: 'Сообщения',
+                                link: '/ru/messages/ru_ru/module/server/message/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Достижение', link: '/ru/messages/ru_ru/module/server/message/advancement/' },
+                                  { text: 'Автоматическое', link: '/ru/messages/ru_ru/module/server/message/auto/' },
+                                  { text: 'Очищение', link: '/ru/messages/ru_ru/module/server/message/clear/' },
+                                  { text: 'Смерть', link: '/ru/messages/ru_ru/module/server/message/death/' },
+                                  { text: 'Деоп', link: '/ru/messages/ru_ru/module/server/message/deop/' },
+                                  { text: 'Зачарование', link: '/ru/messages/ru_ru/module/server/message/enchant/' },
+                                  { text: 'Режим игры', link: '/ru/messages/ru_ru/module/server/message/gamemode/' },
+                                  { text: 'Приветствие', link: '/ru/messages/ru_ru/module/server/message/greeting/' },
+                                  { text: 'Подключение', link: '/ru/messages/ru_ru/module/server/message/join/' },
+                                  { text: 'Оп', link: '/ru/messages/ru_ru/module/server/message/op/' },
+                                  { text: 'Отключение', link: '/ru/messages/ru_ru/module/server/message/quit/' },
+                                  { text: 'Сид', link: '/ru/messages/ru_ru/module/server/message/seed/' },
+                                  { text: 'Сетблок', link: '/ru/messages/ru_ru/module/server/message/setblock/' },
+                                  { text: 'Спавнпоинт', link: '/ru/messages/ru_ru/module/server/message/spawnpoint/' },
+                                ]
+                            },
+                            { text: 'МОТД', link: '/ru/messages/ru_ru/module/server/motd/' },
+                            { text: 'Количество игроков', link: '/ru/messages/ru_ru/module/server/playercount/' },
+                            {
+                                text: 'Таб',
+                                link: '/ru/messages/ru_ru/module/server/tab/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Имя в списке', link: '/ru/messages/ru_ru/module/server/tab/playerlistname/' },
+                                  { text: 'Верхнее', link: '/ru/messages/ru_ru/module/server/tab/header/' },
+                                  { text: 'Нижнее', link: '/ru/messages/ru_ru/module/server/tab/footer/' },
+                                ]
+                            },
                         ]
                       },
                       {
-                        text: 'Комманды',
-                        link: '/ru/messages/ru_ru/module/command/',
+                        text: 'Теги',
+                        link: '/ru/messages/ru_ru/module/tag/',
                         collapsed: true,
                         items: [
-                          { text: 'Подсказка', link: '/ru/messages/ru_ru/module/command/prompt/' },
-                          { text: 'Me', link: '/ru/messages/ru_ru/module/command/command-me/' },
-                          { text: 'Try', link: '/ru/messages/ru_ru/module/command/command-try/' },
-                          { text: 'Dice', link: '/ru/messages/ru_ru/module/command/command-dice/' },
-                          { text: 'Ball', link: '/ru/messages/ru_ru/module/command/command-ball/' },
-                          { text: 'Online', link: '/ru/messages/ru_ru/module/command/command-online/' },
-                          { text: 'Do', link: '/ru/messages/ru_ru/module/command/command-do/' },
-                          { text: 'Coin', link: '/ru/messages/ru_ru/module/command/command-coin/' },
-                          { text: 'Translateto', link: '/ru/messages/ru_ru/module/command/command-translateto/' },
-                          { text: 'Geolocate', link: '/ru/messages/ru_ru/module/command/command-geolocate/' },
-                          { text: 'Clearchat', link: '/ru/messages/ru_ru/module/command/command-clearchat/' },
-                          { text: 'Broadcast', link: '/ru/messages/ru_ru/module/command/command-broadcast/' },
-                          { text: 'Afk', link: '/ru/messages/ru_ru/module/command/command-afk/' },
-                          { text: 'Mark', link: '/ru/messages/ru_ru/module/command/command-mark/' },
-                          { text: 'Spit', link: '/ru/messages/ru_ru/module/command/command-spit/' },
-                          { text: 'Spy', link: '/ru/messages/ru_ru/module/command/command-spy/' },
-                          { text: 'Stream', link: '/ru/messages/ru_ru/module/command/command-stream/' },
-                          { text: 'Kick', link: '/ru/messages/ru_ru/module/command/command-kick/' },
-                          { text: 'Helper', link: '/ru/messages/ru_ru/module/command/command-helper/' },
-                          { text: 'Tell', link: '/ru/messages/ru_ru/module/command/command-tell/' },
-                          { text: 'Reply', link: '/ru/messages/ru_ru/module/command/command-reply/' },
-                          { text: 'Poll', link: '/ru/messages/ru_ru/module/command/command-poll/' },
-                          { text: 'Ignore', link: '/ru/messages/ru_ru/module/command/command-ignore/' },
-                          { text: 'Ignorelist', link: '/ru/messages/ru_ru/module/command/command-ignorelist/' },
-                          { text: 'Ban', link: '/ru/messages/ru_ru/module/command/command-ban/' },
-                          { text: 'Unban', link: '/ru/messages/ru_ru/module/command/command-unban/' },
-                          { text: 'Banlist', link: '/ru/messages/ru_ru/module/command/command-banlist/' },
-                          { text: 'Mute', link: '/ru/messages/ru_ru/module/command/command-mute/' },
-                          { text: 'Unmute', link: '/ru/messages/ru_ru/module/command/command-unmute/' },
-                          { text: 'Mutelist', link: '/ru/messages/ru_ru/module/command/command-mutelist/' },
-                          { text: 'Warn', link: '/ru/messages/ru_ru/module/command/command-warn/' },
-                          { text: 'Unwarn', link: '/ru/messages/ru_ru/module/command/command-unwarn/' },
-                          { text: 'Warnlist', link: '/ru/messages/ru_ru/module/command/command-warnlist/' },
-                          { text: 'Flectonepulse', link: '/ru/messages/ru_ru/module/command/command-flectonepulse/' },
-                          { text: 'Chatcolor', link: '/ru/messages/ru_ru/module/command/command-chatcolor/' },
-                          { text: 'Chatsetting', link: '/ru/messages/ru_ru/module/command/command-chatsetting/' },
-                          { text: 'Symbol', link: '/ru/messages/ru_ru/module/command/command-symbol/' },
-                          { text: 'Mail', link: '/ru/messages/ru_ru/module/command/command-mail/' },
-                          { text: 'Clearmail', link: '/ru/messages/ru_ru/module/command/command-clearmail/' },
-                          { text: 'Tictactoe', link: '/ru/messages/ru_ru/module/command/command-tictactoe/' },
-                          { text: 'Maintenance', link: '/ru/messages/ru_ru/module/command/command-maintenance/' },
-                          { text: 'Rockpaperscissors', link: '/ru/messages/ru_ru/module/command/command-rockpaperscissors/' },
+                          { text: 'Спойлер', link: '/ru/messages/ru_ru/module/tag/spoiler/' },
                         ]
                       },
                     ]
                   },
-                  { text: 'Время', link: '/ru/messages/ru_ru/time/' },
+                ]
+              },
+              {
+                text: 'Файл en_us.yml',
+                link: '/ru/messages/en_us/',
+                collapsed: true,
+                items: [
+                  {
+                    text: 'Модули',
+                    link: '/ru/messages/en_us/module/',
+                    collapsed: true,
+                    items: [
+                      {
+                        text: 'Комманды',
+                        link: '/ru/messages/en_us/module/command/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Ball', link: '/ru/messages/en_us/module/command/ball/' },
+                          { text: 'Ban', link: '/ru/messages/en_us/module/command/ban/' },
+                          { text: 'Banlist', link: '/ru/messages/en_us/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/ru/messages/en_us/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/ru/messages/en_us/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/ru/messages/en_us/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/ru/messages/en_us/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/ru/messages/en_us/module/command/clearmail/' },
+                          { text: 'Coin', link: '/ru/messages/en_us/module/command/coin/' },
+                          { text: 'Dice', link: '/ru/messages/en_us/module/command/dice/' },
+                          { text: 'Do', link: '/ru/messages/en_us/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/ru/messages/en_us/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/ru/messages/en_us/module/command/geolocate/' },
+                          { text: 'Helper', link: '/ru/messages/en_us/module/command/helper/' },
+                          { text: 'Ignore', link: '/ru/messages/en_us/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/ru/messages/en_us/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/ru/messages/en_us/module/command/kick/' },
+                          { text: 'Mail', link: '/ru/messages/en_us/module/command/mail/' },
+                          { text: 'Maintenance', link: '/ru/messages/en_us/module/command/maintenance/' },
+                          { text: 'Me', link: '/ru/messages/en_us/module/command/me/' },
+                          { text: 'Mute', link: '/ru/messages/en_us/module/command/mute/' },
+                          { text: 'Mutelist', link: '/ru/messages/en_us/module/command/mutelist/' },
+                          { text: 'Online', link: '/ru/messages/en_us/module/command/online/' },
+                          { text: 'Poll', link: '/ru/messages/en_us/module/command/poll/' },
+                          { text: 'Reply', link: '/ru/messages/en_us/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/ru/messages/en_us/module/command/rockpaperscissors/' },
+                          { text: 'Spy', link: '/ru/messages/en_us/module/command/spy/' },
+                          { text: 'Stream', link: '/ru/messages/en_us/module/command/stream/' },
+                          { text: 'Symbol', link: '/ru/messages/en_us/module/command/symbol/' },
+                          { text: 'Tell', link: '/ru/messages/en_us/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/ru/messages/en_us/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/ru/messages/en_us/module/command/translateto/' },
+                          { text: 'Try', link: '/ru/messages/en_us/module/command/try/' },
+                          { text: 'Unban', link: '/ru/messages/en_us/module/command/unban/' },
+                          { text: 'Unmute', link: '/ru/messages/en_us/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/ru/messages/en_us/module/command/unwarn/' },
+                          { text: 'Warn', link: '/ru/messages/en_us/module/command/warn/' },
+                          { text: 'Warnlist', link: '/ru/messages/en_us/module/command/warnlist/' },
+                        ]
+                      },
+                      {
+                        text: 'Интеграции',
+                        link: '/ru/messages/en_us/module/integration/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Дискорд', link: '/ru/messages/en_us/module/integration/discord/' },
+                          { text: 'Телеграм', link: '/ru/messages/en_us/module/integration/telegram/' },
+                          { text: 'Твич', link: '/ru/messages/en_us/module/integration/twitch/' },
+                        ]
+                      },
+                      {
+                        text: 'Взаимодействия',
+                        link: '/ru/messages/en_us/module/interaction/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Правое нажатие', link: '/ru/messages/en_us/module/interaction/rightclick/' },
+                          { text: 'Подпись', link: '/ru/messages/en_us/module/interaction/sign/' },
+                          { text: 'Плевок', link: '/ru/messages/en_us/module/interaction/spit/' },
+                        ]
+                      },
+                      {
+                        text: 'Игрок',
+                        link: '/ru/messages/en_us/module/player/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Афк', link: '/ru/messages/en_us/module/player/afk/' },
+                            {
+                                text: 'Сообщения',
+                                link: '/ru/messages/en_us/module/player/message/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Над головой', link: '/ru/messages/en_us/module/player/message/bubble/' },
+                                    { text: 'Чат', link: '/ru/messages/en_us/module/player/message/chat/' },
+                                    { text: 'Форматирование', link: '/ru/messages/en_us/module/player/message/format/' },
+                                ]
+                            },
+                            { text: 'Имя', link: '/ru/messages/en_us/module/player/name/' },
+                            { text: 'Команда', link: '/ru/messages/en_us/module/player/team/' },
+                        ]
+                      },
+                      {
+                        text: 'Сервер',
+                        link: '/ru/messages/en_us/module/server/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Бренд', link: '/ru/messages/en_us/module/server/brand/' },
+                            {
+                                text: 'Сообщения',
+                                link: '/ru/messages/en_us/module/server/message/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Достижение', link: '/ru/messages/en_us/module/server/message/advancement/' },
+                                  { text: 'Автоматическое', link: '/ru/messages/en_us/module/server/message/auto/' },
+                                  { text: 'Очищение', link: '/ru/messages/en_us/module/server/message/clear/' },
+                                  { text: 'Смерть', link: '/ru/messages/en_us/module/server/message/death/' },
+                                  { text: 'Деоп', link: '/ru/messages/en_us/module/server/message/deop/' },
+                                  { text: 'Зачарование', link: '/ru/messages/en_us/module/server/message/enchant/' },
+                                  { text: 'Режим игры', link: '/ru/messages/en_us/module/server/message/gamemode/' },
+                                  { text: 'Приветствие', link: '/ru/messages/en_us/module/server/message/greeting/' },
+                                  { text: 'Подключение', link: '/ru/messages/en_us/module/server/message/join/' },
+                                  { text: 'Оп', link: '/ru/messages/en_us/module/server/message/op/' },
+                                  { text: 'Отключение', link: '/ru/messages/en_us/module/server/message/quit/' },
+                                  { text: 'Сид', link: '/ru/messages/en_us/module/server/message/seed/' },
+                                  { text: 'Сетблок', link: '/ru/messages/en_us/module/server/message/setblock/' },
+                                  { text: 'Спавнпоинт', link: '/ru/messages/en_us/module/server/message/spawnpoint/' },
+                                ]
+                            },
+                            { text: 'МОТД', link: '/ru/messages/en_us/module/server/motd/' },
+                            { text: 'Количество игроков', link: '/ru/messages/en_us/module/server/playercount/' },
+                            {
+                                text: 'Таб',
+                                link: '/ru/messages/en_us/module/server/tab/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Имя в списке', link: '/ru/messages/en_us/module/server/tab/playerlistname/' },
+                                  { text: 'Верхнее', link: '/ru/messages/en_us/module/server/tab/header/' },
+                                  { text: 'Нижнее', link: '/ru/messages/en_us/module/server/tab/footer/' },
+                                ]
+                            },
+                        ]
+                      },
+                      {
+                        text: 'Теги',
+                        link: '/ru/messages/en_us/module/tag/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Спойлер', link: '/ru/messages/en_us/module/tag/spoiler/' },
+                        ]
+                      },
+                    ]
+                  },
                 ]
               },
             ]
           },
           {
-            text: 'Конфигурация',
+            text: 'Файл config.yml',
             link: '/ru/config/',
             collapsed: false,
             items: [
@@ -955,35 +935,24 @@ export default defineConfig({
               {
                 text: 'Модули',
                 link: '/ru/config/module/',
-                collapsed: false,
+                collapsed: true,
                 items: [
-                  {
-                    text: 'Теги',
-                    link: '/ru/config/module/tag/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Ссылка', link: '/ru/config/module/tag/url/' },
-                      { text: 'Изображение', link: '/ru/config/module/tag/image/' },
-                      { text: 'Спойлер', link: '/ru/config/module/tag/spoiler/' },
-                      { text: 'Смайлики', link: '/ru/config/module/tag/emoji/' },
-                      { text: 'Цвета', link: '/ru/config/module/tag/color/' }
-                    ]
-                  },
                   {
                     text: 'Интеграции',
                     link: '/ru/config/module/integration/',
                     collapsed: true,
                     items: [
                       { text: 'Дискорд', link: '/ru/config/module/integration/discord/' },
-                      { text: 'Твич', link: '/ru/config/module/integration/twitch/' },
-                      { text: 'Телеграм', link: '/ru/config/module/integration/telegram/' },
-                      { text: 'PlaceholderAPI', link: '/ru/config/module/integration/placeholderapi/' },
+                      { text: 'InteractiveChat', link: '/ru/config/module/integration/interactivechat/' },
                       { text: 'LuckPerms', link: '/ru/config/module/integration/luckperms/' },
-                      { text: 'SimpleVoice', link: '/ru/config/module/integration/simplevoice/' },
+                      { text: 'PlaceholderAPI', link: '/ru/config/module/integration/placeholderapi/' },
                       { text: 'PlasmoVoice', link: '/ru/config/module/integration/plasmovoice/' },
-                      { text: 'SuperVanish', link: '/ru/config/module/integration/supervanish/' },
+                      { text: 'SimpleVoice', link: '/ru/config/module/integration/simplevoice/' },
                       { text: 'SkinsRestorer', link: '/ru/config/module/integration/skinsrestorer/' },
-                      { text: 'InteractiveChat', link: '/ru/config/module/integration/interactivechat/' }
+                      { text: 'SuperVanish', link: '/ru/config/module/integration/supervanish/' },
+                      { text: 'Телеграм', link: '/ru/config/module/integration/telegram/' },
+                      { text: 'Твич', link: '/ru/config/module/integration/twitch/' },
+                      { text: 'Vault', link: '/ru/config/module/integration/vault/' },
                     ]
                   },
                   {
@@ -991,12 +960,12 @@ export default defineConfig({
                     link: '/ru/config/module/interaction/',
                     collapsed: true,
                     items: [
-                      { text: 'Подпись', link: '/ru/config/module/interaction/sign/' },
-                      { text: 'Снятие подписи', link: '/ru/config/module/interaction/unsign/' },
-                      { text: 'Метка', link: '/ru/config/module/interaction/mark/' },
-                      { text: 'Плевок', link: '/ru/config/module/interaction/spit/' },
-                      { text: 'Стуки', link: '/ru/config/module/interaction/knock/' },
-                      { text: 'Правое нажатие', link: '/ru/config/module/interaction/right-click/' },
+                        { text: 'Стуки', link: '/ru/config/module/interaction/knock/' },
+                        { text: 'Метка', link: '/ru/config/module/interaction/mark/' },
+                        { text: 'Правое нажатие', link: '/ru/config/module/interaction/rightclick/' },
+                        { text: 'Подпись', link: '/ru/config/module/interaction/sign/' },
+                        { text: 'Плевок', link: '/ru/config/module/interaction/spit/' },
+                        { text: 'Снятие подписи', link: '/ru/config/module/interaction/unsign/' },
                     ]
                   },
                   {
@@ -1010,55 +979,39 @@ export default defineConfig({
                         link: '/ru/config/module/player/message/',
                         collapsed: true,
                         items: [
-                          { text: 'Чат', link: '/ru/config/module/player/message/chat/' },
-                          {
-                            text: 'Форматирование',
-                            link: '/ru/config/module/player/message/format/',
-                            collapsed: true,
-                            items: [
-                              { text: 'Упоминание', link: '/ru/config/module/player/message/format/mention/' },
-                              { text: 'Ругательство', link: '/ru/config/module/player/message/format/swear/' },
-                              { text: 'Капс', link: '/ru/config/module/player/message/format/caps/' },
-                              { text: 'Пинг', link: '/ru/config/module/player/message/format/ping/' },
-                              { text: 'ТПС', link: '/ru/config/module/player/message/format/tps/' },
-                              { text: 'Онлайн', link: '/ru/config/module/player/message/format/online/' },
-                              { text: 'Координаты', link: '/ru/config/module/player/message/format/coords/' },
-                              { text: 'Статистика', link: '/ru/config/module/player/message/format/stats/' },
-                              { text: 'Скин', link: '/ru/config/module/player/message/format/skin/' },
-                              { text: 'Предмет', link: '/ru/config/module/player/message/format/item/' },
-                              { text: 'Ссылка', link: '/ru/config/module/player/message/format/url/' },
-                              { text: 'Изображение', link: '/ru/config/module/player/message/format/image/' },
-                              { text: 'Спойлер', link: '/ru/config/module/player/message/format/spoiler/' },
-                              { text: 'Жирный', link: '/ru/config/module/player/message/format/bold/' },
-                              { text: 'Курсив', link: '/ru/config/module/player/message/format/italic/' },
-                              { text: 'Нижнее подчёркивание', link: '/ru/config/module/player/message/format/underline/' },
-                              { text: 'Обфусцирование', link: '/ru/config/module/player/message/format/obfuscated/' },
-                              { text: 'Перечёркивание', link: '/ru/config/module/player/message/format/strikethrough/' },
-                              { text: 'Kyori Adventure', link: '/ru/config/module/player/message/format/kyori/' },
-                            ]
-                          },
-                          { text: 'Наковальня', link: '/ru/config/module/player/message/anvil/' },
-                          { text: 'Книга', link: '/ru/config/module/player/message/book/' },
-                          { text: 'Табличка', link: '/ru/config/module/player/message/sign/' },
-                          { text: 'Над головой', link: '/ru/config/module/player/message/bubble/' },
+                             { text: 'Наковальня', link: '/ru/config/module/player/message/anvil/' },
+                             { text: 'Книга', link: '/ru/config/module/player/message/book/' },
+                             { text: 'Над головой', link: '/ru/config/module/player/message/bubble/' },
+                             { text: 'Чат', link: '/ru/config/module/player/message/chat/' },
+                             {
+                                text: 'Форматирование',
+                                link: '/ru/config/module/player/message/format/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Капс', link: '/ru/config/module/player/message/format/caps/' },
+                                    { text: 'Упоминание', link: '/ru/config/module/player/message/format/mention/' },
+                                    { text: 'Ругательство', link: '/ru/config/module/player/message/format/swear/' },
+                                ]
+                             },
+                             { text: 'Табличка', link: '/ru/config/module/player/message/sign/' },
                         ]
                       },
-                      { text: 'Команда', link: '/ru/config/module/player/team/' },
-                      {
-                        text: 'Значения',
-                        link: '/ru/config/module/player/objective/',
-                        collapsed: true,
-                        items: [
-                          { text: 'В списке', link: '/ru/config/module/player/objective/player-list' },
-                          { text: 'Под ником', link: '/ru/config/module/player/objective/below-name' },
-                        ]
-                      },
-                      { text: 'Измерение', link: '/ru/config/module/player/world/' },
                       {
                         text: 'Имя',
                         link: '/ru/config/module/player/name/',
                         collapsed: true,
                       },
+                      {
+                        text: 'Значения',
+                        link: '/ru/config/module/player/objective/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Под ником', link: '/ru/config/module/player/objective/belowname/' },
+                            { text: 'В списке', link: '/ru/config/module/player/objective/playerlist/' },
+                        ]
+                      },
+                      { text: 'Команда', link: '/ru/config/module/player/team/' },
+                      { text: 'Измерение', link: '/ru/config/module/player/world/' },
                     ]
                   },
                   {
@@ -1066,89 +1019,52 @@ export default defineConfig({
                     link: '/ru/config/module/server/',
                     collapsed: true,
                     items: [
-                      {
-                        text: 'Сообщения',
-                        link: '/ru/config/module/server/message/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Достижение', link: '/ru/config/module/server/message/advancement/' },
-                          { text: 'Автоматическое', link: '/ru/config/module/server/message/auto/' },
-                          { text: 'Очищение', link: '/ru/config/module/server/message/clear/' },
-                          { text: 'Смерть', link: '/ru/config/module/server/message/death/' },
-                          { text: 'Деоп', link: '/ru/config/module/server/message/deop/' },
-                          { text: 'Зачарование', link: '/ru/config/module/server/message/enchant/' },
-                          { text: 'Режим игры', link: '/ru/config/module/server/message/gamemode/' },
-                          { text: 'Подключение', link: '/ru/config/module/server/message/join/' },
-                          { text: 'Оп', link: '/ru/config/module/server/message/op/' },
-                          { text: 'Приветствие', link: '/ru/config/module/server/message/greeting/' },
-                          { text: 'Отключение', link: '/ru/config/module/server/message/quit/' },
-                          { text: 'Сид', link: '/ru/config/module/server/message/seed/' },
-                          { text: 'Сетблок', link: '/ru/config/module/server/message/setblock/' },
-                          { text: 'Спавнпоинт', link: '/ru/config/module/server/message/spawnpoint/' },
-                        ]
-                      },
-                      { text: 'Бренд', link: '/ru/config/module/server/brand/' },
-                      {
-                        text: 'Таб',
-                        link: '/ru/config/module/server/tab/',
-                        collapsed: true,
-                        items: [
-                          { text: 'Имя в списке', link: '/ru/config/module/server/tab/player-list-name/' },
-                          { text: 'Верхнее', link: '/ru/config/module/server/tab/header/' },
-                          { text: 'Нижнее', link: '/ru/config/module/server/tab/footer' },
-                        ]
-                      },
-                      { text: 'Иконка', link: '/ru/config/module/server/icon/' },
-                      { text: 'МОТД', link: '/ru/config/module/server/motd/' },
-                      { text: 'Количество игроков', link: '/ru/config/module/server/player-count/' },
+                        { text: 'Бренд', link: '/ru/config/module/server/brand/' },
+                        { text: 'Иконка', link: '/ru/config/module/server/icon/' },
+                        {
+                            text: 'Сообщения',
+                            link: '/ru/config/module/server/message/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Достижение', link: '/ru/config/module/server/message/advancement/' },
+                              { text: 'Автоматическое', link: '/ru/config/module/server/message/auto/' },
+                              { text: 'Очищение', link: '/ru/config/module/server/message/clear/' },
+                              { text: 'Смерть', link: '/ru/config/module/server/message/death/' },
+                              { text: 'Деоп', link: '/ru/config/module/server/message/deop/' },
+                              { text: 'Зачарование', link: '/ru/config/module/server/message/enchant/' },
+                              { text: 'Режим игры', link: '/ru/config/module/server/message/gamemode/' },
+                              { text: 'Приветствие', link: '/ru/config/module/server/message/greeting/' },
+                              { text: 'Подключение', link: '/ru/config/module/server/message/join/' },
+                              { text: 'Оп', link: '/ru/config/module/server/message/op/' },
+                              { text: 'Отключение', link: '/ru/config/module/server/message/quit/' },
+                              { text: 'Сид', link: '/ru/config/module/server/message/seed/' },
+                              { text: 'Сетблок', link: '/ru/config/module/server/message/setblock/' },
+                              { text: 'Спавнпоинт', link: '/ru/config/module/server/message/spawnpoint/' },
+                            ]
+                        },
+                        { text: 'МОТД', link: '/ru/config/module/server/motd/' },
+                        { text: 'Количество игроков', link: '/ru/config/module/server/playercount/' },
+                        {
+                            text: 'Таб',
+                            link: '/ru/config/module/server/tab/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Имя в списке', link: '/ru/config/module/server/tab/playerlistname/' },
+                              { text: 'Верхнее', link: '/ru/config/module/server/tab/header/' },
+                              { text: 'Нижнее', link: '/ru/config/module/server/tab/footer/' },
+                            ]
+                        },
                     ]
                   },
                   {
-                    text: 'Комманды',
-                    link: '/ru/config/module/command/',
+                    text: 'Теги',
+                    link: '/ru/config/module/tag/',
                     collapsed: true,
                     items: [
-                      { text: 'Me', link: '/ru/config/module/command/command-me/' },
-                      { text: 'Try', link: '/ru/config/module/command/command-try/' },
-                      { text: 'Dice', link: '/ru/config/module/command/command-dice/' },
-                      { text: 'Ball', link: '/ru/config/module/command/command-ball/' },
-                      { text: 'Online', link: '/ru/config/module/command/command-online/' },
-                      { text: 'Do', link: '/ru/config/module/command/command-do/' },
-                      { text: 'Coin', link: '/ru/config/module/command/command-coin/' },
-                      { text: 'Translateto', link: '/ru/config/module/command/command-translateto/' },
-                      { text: 'Geolocate', link: '/ru/config/module/command/command-geolocate/' },
-                      { text: 'Clearchat', link: '/ru/config/module/command/command-clearchat/' },
-                      { text: 'Broadcast', link: '/ru/config/module/command/command-broadcast/' },
-                      { text: 'Afk', link: '/ru/config/module/command/command-afk/' },
-                      { text: 'Mark', link: '/ru/config/module/command/command-mark/' },
-                      { text: 'Spit', link: '/ru/config/module/command/command-spit/' },
-                      { text: 'Spy', link: '/ru/config/module/command/command-spy/' },
-                      { text: 'Stream', link: '/ru/config/module/command/command-stream/' },
-                      { text: 'Kick', link: '/ru/config/module/command/command-kick/' },
-                      { text: 'Helper', link: '/ru/config/module/command/command-helper/' },
-                      { text: 'Tell', link: '/ru/config/module/command/command-tell/' },
-                      { text: 'Reply', link: '/ru/config/module/command/command-reply/' },
-                      { text: 'Poll', link: '/ru/config/module/command/command-poll/' },
-                      { text: 'Ignore', link: '/ru/config/module/command/command-ignore/' },
-                      { text: 'Ignorelist', link: '/ru/config/module/command/command-ignorelist/' },
-                      { text: 'Ban', link: '/ru/config/module/command/command-ban/' },
-                      { text: 'Unban', link: '/ru/config/module/command/command-unban/' },
-                      { text: 'Banlist', link: '/ru/config/module/command/command-banlist/' },
-                      { text: 'Mute', link: '/ru/config/module/command/command-mute/' },
-                      { text: 'Unmute', link: '/ru/config/module/command/command-unmute/' },
-                      { text: 'Mutelist', link: '/ru/config/module/command/command-mutelist/' },
-                      { text: 'Warn', link: '/ru/config/module/command/command-warn/' },
-                      { text: 'Unwarn', link: '/ru/config/module/command/command-unwarn/' },
-                      { text: 'Warnlist', link: '/ru/config/module/command/command-warnlist/' },
-                      { text: 'Flectonepulse', link: '/ru/config/module/command/command-flectonepulse/' },
-                      { text: 'Chatcolor', link: '/ru/config/module/command/command-chatcolor/' },
-                      { text: 'Chatsetting', link: '/ru/config/module/command/command-chatsetting/' },
-                      { text: 'Symbol', link: '/ru/config/module/command/command-symbol/' },
-                      { text: 'Mail', link: '/ru/config/module/command/command-mail/' },
-                      { text: 'Clearmail', link: '/ru/config/module/command/command-clearmail/' },
-                      { text: 'Tictactoe', link: '/ru/config/module/command/command-tictactoe/' },
-                      { text: 'Maintenance', link: '/ru/config/module/command/command-maintenance/' },
-                      { text: 'Rockpaperscissors', link: '/ru/config/module/command/command-rockpaperscissors/' },
+                        { text: 'Цвета', link: '/ru/config/module/tag/color/' },
+                        { text: 'Смайлики', link: '/ru/config/module/tag/emoji/' },
+                        { text: 'Изображение', link: '/ru/config/module/tag/image/' },
+                        { text: 'Спойлер', link: '/ru/config/module/tag/spoiler/' },
                     ]
                   },
                 ]
@@ -1156,14 +1072,289 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Секреты',
+            text: 'Файл commands.yml',
+            link: '/ru/commands/',
+            collapsed: false,
+            items: [
+              {
+                text: 'Модули',
+                link: '/ru/commands/module/',
+                collapsed: true,
+                items: [
+                    {
+                      text: 'Комманды',
+                      link: '/ru/commands/module/command/',
+                      collapsed: true,
+                      items: [
+                          { text: 'Afk', link: '/ru/commands/module/command/afk/' },
+                          { text: 'Ball', link: '/ru/commands/module/command/ball/' },
+                          { text: 'Ban', link: '/ru/commands/module/command/ban/' },
+                          { text: 'Banlist', link: '/ru/commands/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/ru/commands/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/ru/commands/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/ru/commands/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/ru/commands/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/ru/commands/module/command/clearmail/' },
+                          { text: 'Coin', link: '/ru/commands/module/command/coin/' },
+                          { text: 'Dice', link: '/ru/commands/module/command/dice/' },
+                          { text: 'Do', link: '/ru/commands/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/ru/commands/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/ru/commands/module/command/geolocate/' },
+                          { text: 'Helper', link: '/ru/commands/module/command/helper/' },
+                          { text: 'Ignore', link: '/ru/commands/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/ru/commands/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/ru/commands/module/command/kick/' },
+                          { text: 'Mail', link: '/ru/commands/module/command/mail/' },
+                          { text: 'Maintenance', link: '/ru/commands/module/command/maintenance/' },
+                          { text: 'Mark', link: '/ru/commands/module/command/mark/' },
+                          { text: 'Me', link: '/ru/commands/module/command/me/' },
+                          { text: 'Mute', link: '/ru/commands/module/command/mute/' },
+                          { text: 'Mutelist', link: '/ru/commands/module/command/mutelist/' },
+                          { text: 'Online', link: '/ru/commands/module/command/online/' },
+                          { text: 'Poll', link: '/ru/commands/module/command/poll/' },
+                          { text: 'Reply', link: '/ru/commands/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/ru/commands/module/command/rockpaperscissors/' },
+                          { text: 'Spit', link: '/ru/commands/module/command/spit/' },
+                          { text: 'Spy', link: '/ru/commands/module/command/spy/' },
+                          { text: 'Stream', link: '/ru/commands/module/command/stream/' },
+                          { text: 'Symbol', link: '/ru/commands/module/command/symbol/' },
+                          { text: 'Tell', link: '/ru/commands/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/ru/commands/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/ru/commands/module/command/translateto/' },
+                          { text: 'Try', link: '/ru/commands/module/command/try/' },
+                          { text: 'Unban', link: '/ru/commands/module/command/unban/' },
+                          { text: 'Unmute', link: '/ru/commands/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/ru/commands/module/command/unwarn/' },
+                          { text: 'Warn', link: '/ru/commands/module/command/warn/' },
+                          { text: 'Warnlist', link: '/ru/commands/module/command/warnlist/' },
+                      ]
+                    },
+                ]
+              },
+            ]
+          },
+          {
+            text: 'Файл permissions.yml',
+            link: '/ru/permissions/',
+            collapsed: false,
+            items: [
+              {
+                text: 'Модули',
+                link: '/ru/permissions/module/',
+                collapsed: true,
+                items: [
+                    {
+                      text: 'Комманды',
+                      link: '/ru/permissions/module/command/',
+                      collapsed: true,
+                      items: [
+                          { text: 'Afk', link: '/ru/permissions/module/command/afk/' },
+                          { text: 'Ball', link: '/ru/permissions/module/command/ball/' },
+                          { text: 'Ban', link: '/ru/permissions/module/command/ban/' },
+                          { text: 'Banlist', link: '/ru/permissions/module/command/banlist/' },
+                          { text: 'Broadcast', link: '/ru/permissions/module/command/broadcast/' },
+                          { text: 'Chatcolor', link: '/ru/permissions/module/command/chatcolor/' },
+                          { text: 'Chatsetting', link: '/ru/permissions/module/command/chatsetting/' },
+                          { text: 'Clearchat', link: '/ru/permissions/module/command/clearchat/' },
+                          { text: 'Clearmail', link: '/ru/permissions/module/command/clearmail/' },
+                          { text: 'Coin', link: '/ru/permissions/module/command/coin/' },
+                          { text: 'Dice', link: '/ru/permissions/module/command/dice/' },
+                          { text: 'Do', link: '/ru/permissions/module/command/do/' },
+                          { text: 'Flectonepulse', link: '/ru/permissions/module/command/flectonepulse/' },
+                          { text: 'Geolocate', link: '/ru/permissions/module/command/geolocate/' },
+                          { text: 'Helper', link: '/ru/permissions/module/command/helper/' },
+                          { text: 'Ignore', link: '/ru/permissions/module/command/ignore/' },
+                          { text: 'Ignorelist', link: '/ru/permissions/module/command/ignorelist/' },
+                          { text: 'Kick', link: '/ru/permissions/module/command/kick/' },
+                          { text: 'Mail', link: '/ru/permissions/module/command/mail/' },
+                          { text: 'Maintenance', link: '/ru/permissions/module/command/maintenance/' },
+                          { text: 'Mark', link: '/ru/permissions/module/command/mark/' },
+                          { text: 'Me', link: '/ru/permissions/module/command/me/' },
+                          { text: 'Mute', link: '/ru/permissions/module/command/mute/' },
+                          { text: 'Mutelist', link: '/ru/permissions/module/command/mutelist/' },
+                          { text: 'Online', link: '/ru/permissions/module/command/online/' },
+                          { text: 'Poll', link: '/ru/permissions/module/command/poll/' },
+                          { text: 'Reply', link: '/ru/permissions/module/command/reply/' },
+                          { text: 'Rockpaperscissors', link: '/ru/permissions/module/command/rockpaperscissors/' },
+                          { text: 'Spit', link: '/ru/permissions/module/command/spit/' },
+                          { text: 'Spy', link: '/ru/permissions/module/command/spy/' },
+                          { text: 'Stream', link: '/ru/permissions/module/command/stream/' },
+                          { text: 'Symbol', link: '/ru/permissions/module/command/symbol/' },
+                          { text: 'Tell', link: '/ru/permissions/module/command/tell/' },
+                          { text: 'Tictactoe', link: '/ru/permissions/module/command/tictactoe/' },
+                          { text: 'Translateto', link: '/ru/permissions/module/command/translateto/' },
+                          { text: 'Try', link: '/ru/permissions/module/command/try/' },
+                          { text: 'Unban', link: '/ru/permissions/module/command/unban/' },
+                          { text: 'Unmute', link: '/ru/permissions/module/command/unmute/' },
+                          { text: 'Unwarn', link: '/ru/permissions/module/command/unwarn/' },
+                          { text: 'Warn', link: '/ru/permissions/module/command/warn/' },
+                          { text: 'Warnlist', link: '/ru/permissions/module/command/warnlist/' },
+                      ]
+                    },
+                      {
+                        text: 'Интеграции',
+                        link: '/ru/permissions/module/integration/',
+                        collapsed: true,
+                        items: [
+                          { text: 'Дискорд', link: '/ru/permissions/module/integration/discord/' },
+                          { text: 'InteractiveChat', link: '/ru/permissions/module/integration/interactivechat/' },
+                          { text: 'LuckPerms', link: '/ru/permissions/module/integration/luckperms/' },
+                          { text: 'PlaceholderAPI', link: '/ru/permissions/module/integration/placeholderapi/' },
+                          { text: 'PlasmoVoice', link: '/ru/permissions/module/integration/plasmovoice/' },
+                          { text: 'SimpleVoice', link: '/ru/permissions/module/integration/simplevoice/' },
+                          { text: 'SkinsRestorer', link: '/ru/permissions/module/integration/skinsrestorer/' },
+                          { text: 'SuperVanish', link: '/ru/permissions/module/integration/supervanish/' },
+                          { text: 'Телеграм', link: '/ru/permissions/module/integration/telegram/' },
+                          { text: 'Твич', link: '/ru/permissions/module/integration/twitch/' },
+                          { text: 'Vault', link: '/ru/permissions/module/integration/vault/' },
+                        ]
+                      },
+                      {
+                        text: 'Взаимодействия',
+                        link: '/ru/permissions/module/interaction/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Стуки', link: '/ru/permissions/module/interaction/knock/' },
+                            { text: 'Метка', link: '/ru/permissions/module/interaction/mark/' },
+                            { text: 'Правое нажатие', link: '/ru/permissions/module/interaction/rightclick/' },
+                            { text: 'Подпись', link: '/ru/permissions/module/interaction/sign/' },
+                            { text: 'Плевок', link: '/ru/permissions/module/interaction/spit/' },
+                            { text: 'Снятие подписи', link: '/ru/permissions/module/interaction/unsign/' },
+                        ]
+                      },
+                      {
+                        text: 'Игрок',
+                        collapsed: true,
+                        link: '/ru/permissions/module/player/',
+                        items: [
+                          { text: 'Афк', link: '/ru/permissions/module/player/afk/' },
+                          {
+                            text: 'Сообщения',
+                            link: '/ru/permissions/module/player/message/',
+                            collapsed: true,
+                            items: [
+                                 { text: 'Наковальня', link: '/ru/permissions/module/player/message/anvil/' },
+                                 { text: 'Книга', link: '/ru/permissions/module/player/message/book/' },
+                                 { text: 'Над головой', link: '/ru/permissions/module/player/message/bubble/' },
+                                 { text: 'Чат', link: '/ru/permissions/module/player/message/chat/' },
+                                 {
+                                    text: 'Форматирование',
+                                    link: '/ru/permissions/module/player/message/format/',
+                                    collapsed: true,
+                                    items: [
+                                        { text: 'Капс', link: '/ru/permissions/module/player/message/format/caps/' },
+                                        { text: 'Упоминание', link: '/ru/permissions/module/player/message/format/mention/' },
+                                        { text: 'Ругательство', link: '/ru/permissions/module/player/message/format/swear/' },
+                                    ]
+                                 },
+                                 { text: 'Табличка', link: '/ru/permissions/module/player/message/sign/' },
+                            ]
+                          },
+                          {
+                            text: 'Имя',
+                            link: '/ru/permissions/module/player/name/',
+                            collapsed: true,
+                          },
+                          {
+                            text: 'Значения',
+                            link: '/ru/permissions/module/player/objective/',
+                            collapsed: true,
+                            items: [
+                                { text: 'Под ником', link: '/ru/permissions/module/player/objective/belowname/' },
+                                { text: 'В списке', link: '/ru/permissions/module/player/objective/playerlist/' },
+                            ]
+                          },
+                          { text: 'Команда', link: '/ru/permissions/module/player/team/' },
+                          { text: 'Измерение', link: '/ru/permissions/module/player/world/' },
+                        ]
+                      },
+                      {
+                        text: 'Сервер',
+                        link: '/ru/permissions/module/server/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Бренд', link: '/ru/permissions/module/server/brand/' },
+                            { text: 'Иконка', link: '/ru/permissions/module/server/icon/' },
+                            {
+                                text: 'Сообщения',
+                                link: '/ru/permissions/module/server/message/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Достижение', link: '/ru/permissions/module/server/message/advancement/' },
+                                  { text: 'Автоматическое', link: '/ru/permissions/module/server/message/auto/' },
+                                  { text: 'Очищение', link: '/ru/permissions/module/server/message/clear/' },
+                                  { text: 'Смерть', link: '/ru/permissions/module/server/message/death/' },
+                                  { text: 'Деоп', link: '/ru/permissions/module/server/message/deop/' },
+                                  { text: 'Зачарование', link: '/ru/permissions/module/server/message/enchant/' },
+                                  { text: 'Режим игры', link: '/ru/permissions/module/server/message/gamemode/' },
+                                  { text: 'Приветствие', link: '/ru/permissions/module/server/message/greeting/' },
+                                  { text: 'Подключение', link: '/ru/permissions/module/server/message/join/' },
+                                  { text: 'Оп', link: '/ru/permissions/module/server/message/op/' },
+                                  { text: 'Отключение', link: '/ru/permissions/module/server/message/quit/' },
+                                  { text: 'Сид', link: '/ru/permissions/module/server/message/seed/' },
+                                  { text: 'Сетблок', link: '/ru/permissions/module/server/message/setblock/' },
+                                  { text: 'Спавнпоинт', link: '/ru/permissions/module/server/message/spawnpoint/' },
+                                ]
+                            },
+                            { text: 'МОТД', link: '/ru/permissions/module/server/motd/' },
+                            { text: 'Количество игроков', link: '/ru/permissions/module/server/playercount/' },
+                            {
+                                text: 'Таб',
+                                link: '/ru/permissions/module/server/tab/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Имя в списке', link: '/ru/permissions/module/server/tab/playerlistname/' },
+                                  { text: 'Верхнее', link: '/ru/permissions/module/server/tab/header/' },
+                                  { text: 'Нижнее', link: '/ru/permissions/module/server/tab/footer/' },
+                                ]
+                            },
+                        ]
+                      },
+                      {
+                        text: 'Теги',
+                        link: '/ru/permissions/module/tag/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Цвета', link: '/ru/permissions/module/tag/color/' },
+                            { text: 'Смайлики', link: '/ru/permissions/module/tag/emoji/' },
+                            { text: 'Изображение', link: '/ru/permissions/module/tag/image/' },
+                            { text: 'Спойлер', link: '/ru/permissions/module/tag/spoiler/' },
+                        ]
+                      },
+                ]
+              },
+            ]
+          },
+          {
+            text: 'Файл secrets.yml',
             link: '/ru/secrets/',
             collapsed: false,
             items: [
-              { text: 'База данных', link: '/ru/secrets/database/' },
-              { text: 'Дискорд', link: '/ru/secrets/discord/' },
-              { text: 'Твич', link: '/ru/secrets/twitch/' },
-              { text: 'Телеграм', link: '/ru/secrets/telegram/' },
+              {
+                text: 'Плагин',
+                link: '/ru/secrets/plugin/',
+                collapsed: true,
+                items: [
+                  { text: 'Датабаза', link: '/ru/secrets/plugin/database' },
+                ]
+              },
+              {
+                text: 'Модули',
+                link: '/ru/secrets/module/',
+                collapsed: true,
+                items: [
+                    {
+                      text: 'Интеграции',
+                      link: '/ru/secrets/module/integration/',
+                      collapsed: true,
+                      items: [
+                         { text: 'Дискорд', link: '/ru/secrets/module/integration/discord/' },
+                         { text: 'Телеграм', link: '/ru/secrets/module/integration/telegram/' },
+                         { text: 'Твич', link: '/ru/secrets/module/integration/twitch/' },
+                      ]
+                    },
+                ]
+              },
             ]
           },
         ],

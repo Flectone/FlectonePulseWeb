@@ -1,49 +1,34 @@
-# Footer
-Path `messages > en_us.yml > module.server.tab.footer`
+# Нижнее
+Путь `messages > en_us.yml > module.server.tab.footer`
 
-## Explanation
-Messages responsible for bottom of the TAB
+## Пояснение
+Сообщения, отвечающие за нижнюю часть ТАБа
 ![footer](/footer.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.tab.footer>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 footer:
-  format:
-    1:
-      - " "
-      - "<fcolor:1>FlectonePulse"
-      - " "
-    2:
-      - " "
-      - "<fcolor:1>TPS <tps>, Online <online>"
-      - " "
+  values:
+    - "<br><fcolor:1>TPS <tps>, Online <online><br>"
+    - "<br><fcolor:1>Hello <fcolor:2><player></fcolor:2>!<br>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Footer](/en/config/module/server/tab/footer/)
+- [Конфиг](/en/config/module/server/tab/footer/)
+- [Права](/en/permissions/module/server/tab/footer/)
 
 ### `format`
-- Default:
+- По умолчанию:
 ```yaml
-1:
-  - " "
-  - "<fcolor:1>FlectonePulse"
-  - " "
-2:
-  - " "
-  - "<fcolor:1>TPS <tps>, Online <online>"
-  - " "
+- "<br><fcolor:1>TPS <tps>, Online <online><br>"
+- "<br><fcolor:1>Hello <fcolor:2><player></fcolor:2>!<br>"
 ```
 
-List of indexes and messages
-
-::: danger Mandatory
-Indexes should be in order without skips, i.e. `1`, `2`, `3`, `4`, etc.
-:::
+Список сообщений
 

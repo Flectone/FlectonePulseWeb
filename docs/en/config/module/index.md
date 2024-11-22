@@ -1,23 +1,23 @@
-# Modules
-Path `config.yml > module.*`
+# Модули
+Путь `config.yml > module.*`
 
-## Explanation
-This category is the main customization of what happens in the game, and here's what you need to know:
-- Each module has a parent (the one above it)
+## Пояснение
+Эта категория является основной настройкой того, что происходит в игре, и вот что нужно знать:
+- Каждый модуль имеет родителя (тот, кто выше находится)
 
-::: tip For example
+::: tip Например есть
 ```yaml
 house:
   door:
   chair:
 ```
 
-`house` is the parent of `door` and `chair`
+`house` является родителем для `door` и `chair`
 :::
 
-- Each module depends on the `enable` of its parent
+- Каждый модуль зависит от `enable` родителя
 
-::: tip For example
+::: tip Например есть
 ```yaml
 house:
   enable: false // [!code highlight]
@@ -27,48 +27,25 @@ house:
     enable: true
 ```
 
-`house` is off, so regardless of whether `door` and `chair` are on, they will also be off
+`house` выключен, значит внезависимости от того, включены ли `door` и `chair` - они тоже будут выключены
 :::
 
-- Each module has a permission to be used with a base type:
-1. `TRUE` - for any player
-2. `FALSE` - only if issued with permissions plugins (e.g. LuckPerms)
-3. `OP` - available to server operators
-4. `NOT_OP` - only if issued with permissions plugins (e.g. LuckPerms)
-
-::: tip For example
-```yaml
-house:
-  permission:
-    name: "plugin.house.use"
-    type: TRUE
-```
-Here the `house` module has the `plugin.house.use` permission and its base type is `TRUE`
-:::
-
-## Edit
+## Редактирование
 ```yaml
 <config.module>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 module:
   enable: true
-  permission:
-    name: "flectonepulse.module"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module`
-- Type `TRUE`
-
-[Permission](#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

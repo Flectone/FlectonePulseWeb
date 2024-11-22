@@ -1,53 +1,45 @@
-# Header
-Path `config.yml > module.server.tab.header`
+# Верхнее
+Путь `config.yml > module.server.tab.header`
 
-## Explanation
-Module for text at top of TAB
+## Пояснение
+Модуль, отвечающий за текст в верхней части ТАБа
 ![header](/header.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.tab.header>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 header:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.tab.header"
-    type: TRUE
   ticker:
     enable: true
     period: 100
 ```
 
-## Options
+## Параметры
 
-- Message changes here [Header](/en/messages/en_us/module/server/tab/header/)
+- [Сообщения](/en/messages/ru_ru/module/server/tab/header/)
+- [Права](/en/permissions/module/server/tab/header/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `random`
-- Default `true`
+- По умолчанию `true`
 
-If enabled, message will be selected randomly, otherwise in order
-
-### `permission`
-- Name `flectonepulse.module.server.tab.header`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Если включено, то сообщение будет выбираться случайным образом, иначе по порядку
 
 ### `ticker`
 - `enable: true`
 
-Whether message needs to be updated once every certain period of time
+Нужно ли обновлять сообщение раз в какой-то промежуток времени
 
 - `period: 100`
 
-How often the name in [ticks](https://minecraft.wiki/w/Tick) needs to be updated
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно обновлять сообщение

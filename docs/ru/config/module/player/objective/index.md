@@ -11,21 +11,15 @@
 
 ### По умолчанию
 ```yaml
-enable: true
-permission:
-  name: "flectonepulse.module.player.objective"
-  type: TRUE
+objective:
+  enable: true
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/player/objective/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.player.objective`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

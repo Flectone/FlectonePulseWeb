@@ -15,20 +15,15 @@
 mention:
   enable: true
   trigger: "@"
-  permission:
-    name: "flectonepulse.module.player.message.format.mention"
-    type: TRUE
   sound:
     enable: true
     type: "ENTITY_EXPERIENCE_ORB_PICKUP:0.1:0.1"
-    permission:
-      name: "flectonepulse.module.player.message.format.mention.sound"
-      type: TRUE
 ```
 
 ## Параметры
 
-- Формат упоминания изменяется тут [Упоминание](/ru/messages/ru_ru/module/player/message/mention/)
+- [Сообщения](/ru/messages/ru_ru/module/player/message/format/mention/)
+- [Права](/ru/permissions/module/player/message/format/mention/)
 
 ### `enable`
 - По умолчанию `true`
@@ -43,13 +38,6 @@ mention:
 Если я хочу упомянуть `Flectone`, то я должен написать `@Flectone`
 ![mention](/mention.png)
 :::
-
-### `permission`
-- Название `flectonepulse.module.player.message.format.mention`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
 ### `sound`
 - По умолчанию `true`
 
@@ -60,10 +48,4 @@ mention:
 - По умолчанию `ENTITY_EXPERIENCE_ORB_PICKUP:0.1:0.1`
 
 Определяет тип (`ENTITY_EXPERIENCE_ORB_PICKUP`), громкость (`0.1`) и тональность (`0.1`) звука через `:`
-
-### `permission`
-- Название `flectonepulse.module.player.message.format.mention.sound`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для проигрывания звука
 :::

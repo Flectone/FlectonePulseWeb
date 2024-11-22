@@ -13,20 +13,13 @@
 ```yaml
 player:
   enable: true
-  permission:
-    name: "flectonepulse.module.player"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/player)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.player`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

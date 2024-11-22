@@ -1,59 +1,42 @@
-# Setblock
-Path `config.yml > module.server.message.setblock`
+# Сетблок
+Путь `config.yml > module.server.message.setblock`
 
-## Explanation
-Message from server when using `/setblock`
+## Пояснение
+Сообщение от сервера при использовании `/setblock`
 ![setblock](/setblock.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.setblock>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 setblock:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.setblock"
-    type: TRUE
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.setblock.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Setblock](/en/messages/en_us/module/server/message/setblock/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/setblock/)
+- [Права](/en/permissions/module/server/message/setblock/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.setblock`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.setblock.sound`
-- Typ `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::

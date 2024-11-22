@@ -23,13 +23,14 @@ twitch:
     CHAT: []
     FROM_TWITCH_TO_MINECRAFT: []
   follow-channel:
-    channel_name:
-      - "stream start twitch.tv"
+    faseri4ka:
+      - "stream start https://twitch.tv/faseri4ka"
 ```
 
 ## Параметры
 
-- Итоговый формат сообщения изменяется тут [Твич](/ru/messages/ru_ru/module/integration/twitch/)
+- [Сообщения](/ru/messages/ru_ru/module/integration/twitch/)
+- [Права](/ru/permissions/module/integration/twitch/)
 
 ### `enable`
 - По умолчанию `false`

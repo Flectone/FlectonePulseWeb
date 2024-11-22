@@ -3,6 +3,7 @@
 
 ## Пояснение
 Категория, отвечающая за сообщения созданные игроку
+- [Афк](/ru/messages/ru_ru/module/player/afk/)
 - [Сообщения](/ru/messages/ru_ru/module/player/message/)
 - [Имя](/ru/messages/ru_ru/module/player/name/)
-- [Афк](/ru/messages/ru_ru/module/player/afk/)
+- [Команда](/ru/messages/ru_ru/module/player/team/)

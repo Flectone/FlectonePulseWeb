@@ -1,97 +1,83 @@
-# Formatting
-Path `messages > en_us.yml > module.player.message.chat`
+# Форматирование
+Путь `messages > en_us.yml > module.player.message.format`
 
-## Explanation
-Messages that are formatted
+## Пояснение
+Сообщения, которые форматируются
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.player.message.format>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 format:
-  mention: "<fcolor:2>@<player></fcolor>"
-  swear: "❤"
-  url: "<url:\"<message>\"><u>🗗 Url</u></url>"
+  url: "<click:open_url:\"<message>\"><hover:show_text:\"<fcolor:2>Open url <br><u><message>\"><fcolor:2><u>🗗 Url</u></fcolor:2></hover></click>"
   image: "<image:\"<message>\"><u>🖃 Image</u></image>"
   ping: "<fcolor:2><ping></fcolor>"
   tps: "<fcolor:2><tps></fcolor>"
   online: "<fcolor:2><online></fcolor>"
   coords: "<fcolor:2><x> <y> <z></fcolor>"
   stats: "<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖"
-  skin: "<image:\"<message>><u>👨 Skin</u></image>"
+  skin: "<image:\"<message>\"><u>👨 Skin</u></image>"
   item: "<fcolor:2>[<message>]</fcolor>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Formatting](/en/config/module/player/message/format/)
-
-### `mention`
-- Default `<fcolor:2>@<player></fcolor>`
-
-Message if it is a mention of a player
-![mention](/mention.png)
-
-
-### `swear`
-- Default `❤`
-
-The symbol with which each letter of wear word is replaced
-![swear](/swear.png)
+- [Конфиг](/en/config/module/player/message/format/)
+- [Права](/en/permissions/module/player/message/format/)
 
 ### `url`
-- Default `<url:\"<message>\"><u>🗗 Url</u></url>`
+- По умолчанию `<click:open_url:\"<message>\"><hover:show_text:\"<fcolor:2>Open url <br><u><message>\"><fcolor:2><u>🗗 Url</u></fcolor:2></hover></click>`
 
-Message if it's a link
+Сообщение, если это ссылка
 ![url](/url.png)
 
 ### `image`
-- Default `<image:\"<message>\"><u>🖃 Image</u></image>`
+- По умолчанию `<image:\"<message>\"><u>🖃 Image</u></image>`
 
-Message if it's an image
+Сообщение, если это изображение
 ![image](/image.png)
 
 ### `ping`
-- Default `<fcolor:2><ping></fcolor>`
+- По умолчанию `<fcolor:2><ping></fcolor>`
 
-Message if it's a ping
+Сообщение, если это пинг
 ![ping](/ping.png)
 
 ### `tps`
-- Default `<fcolor:2><tps></fcolor>`
+- По умолчанию `<fcolor:2><tps></fcolor>`
 
-Message if it's a TPS
+Сообщение, если это ТПС
 ![tps](/tps.png)
 
 ### `online`
-- Default `<fcolor:2><online></fcolor>`
+- По умолчанию `<fcolor:2><online></fcolor>`
 
-Message if it's a online
+Сообщение, если это онлайн
 ![online](/online.png)
 
 ### `coords`
-- Default `<fcolor:2><x> <y> <z></fcolor>`
+- По умолчанию `<fcolor:2><x> <y> <z></fcolor>`
 
-Message if it's a coords
+Сообщение, если это координаты
 ![coords](/coords.png)
 
 ### `stats`
-- Default `<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖`
+- По умолчанию `<color:#ff7171><hp>♥</color> <color:#3de0d8><armor>🛡 <color:#e33059><attack>🗡 <color:#4eff52><exp>⏺ <color:#f0a01f><food>🍖`
 
-Message if it's a stats
+Сообщение, если это статистика
 ![stats](/stats.png)
 
 ### `skin`
-- Default `<image:\"<message>><u>👨 Skin</u></image>`
+- По умолчанию `<image:\"<message>\"><u>👨 Skin</u></image>`
 
-Message if it's a skin
+Сообщение, если это скин
 ![skin](/skin.png)
 
 ### `item`
-- Default `<fcolor:2>[<message>]</fcolor>`
+- По умолчанию `<fcolor:2>[<message>]</fcolor>`
 
-Message if it's an item
+Сообщение, если это предмет
 ![item](/item.png)

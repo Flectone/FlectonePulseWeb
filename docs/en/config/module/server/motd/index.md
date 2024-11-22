@@ -1,53 +1,33 @@
-# MOTD
-Path `config.yml > module.server.motd`
+# МОТД
+Путь `config.yml > module.server.motd`
 
-## Explanation
-Module for welcome message of server
+## Пояснение
+Модуль отвечающий за приветственное сообщение сервера
 ![motd](/motd.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.motd>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 motd:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.motd"
-    type: TRUE
-  listener:
-    ServerListPingEvent: NORMAL
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [MOTD](/en/messages/en_us/module/server/motd/)
+- [Сообщения](/en/messages/ru_ru/module/server/motd/)
+- [Права](/en/permissions/module/server/motd/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `random`
-- Default `true`
+- По умолчанию `true`
 
-If enabled, message will be selected randomly, otherwise in order
-
-### `permission`
-- Name `flectonepulse.module.server.motd`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-ServerListPingEvent: NORMAL
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Если включено, то сообщение будет выбираться случайным образом, иначе по порядку

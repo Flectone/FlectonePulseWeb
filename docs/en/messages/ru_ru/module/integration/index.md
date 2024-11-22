@@ -1,7 +1,8 @@
-# Integrations
-Path `messages > ru_ru.yml > module.integration.*`
+# Интеграции
+Путь `messages > ru_ru.yml > module.integration.*`
 
-## Explanation
-Category for integration messages
-- [Discord](/en/messages/ru_ru/module/integration/discord/)
-- [Twitch](/en/messages/ru_ru/module/integration/twitch/)
+## Пояснение
+Категория, отвечающая за сообщения интеграций
+- [Дискорд](/en/messages/ru_ru/module/integration/discord/)
+- [Телеграм](/en/messages/ru_ru/module/integration/telegram/)
+- [Твич](/en/messages/ru_ru/module/integration/twitch/)

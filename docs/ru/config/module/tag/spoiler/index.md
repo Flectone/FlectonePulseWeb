@@ -20,14 +20,12 @@
 spoiler:
   enable: true
   color: "<fcolor:2>"
-  permission:
-    name: "flectonepulse.module.tag.spoiler"
-    type: TRUE
 ```
 
 ## Параметры
 
-- Сообщение и символ изменяются тут [Спойлер](/ru/messages/ru_ru/module/tag/spoiler/)
+- [Сообщения](/ru/messages/ru_ru/module/tag/spoiler/)
+- [Права](/ru/permissions/module/server/tag/spoiler/)
 
 ### `enable`
 - По умолчанию `true`
@@ -45,9 +43,3 @@ spoiler:
 Здесь `дом` будет иметь цвет `<fcolor:2>`
 
 :::
-
-### `permission`
-- Название `flectonepulse.module.tag.spoiler`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

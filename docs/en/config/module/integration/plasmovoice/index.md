@@ -1,25 +1,27 @@
 # PlasmoVoice
-Path `config.yml > module.integration.plasmovoice`
+Путь `config.yml > module.integration.plasmovoice`
 
-## Explanation
-Integration with PlasmoVoice allows you to mute players who have been muted with `/mute`
+## Пояснение
+Интеграция с PlasmoVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
 ![mute](/mute.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.plasmovoice>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 plasmovoice:
   enable: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/plasmovoice/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 

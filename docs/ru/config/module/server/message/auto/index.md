@@ -13,28 +13,23 @@
 ### По умолчанию
 ```yaml
 auto:
-  enable: true
+  enable: false
   random: true
-  permission:
-    name: "flectonepulse.module.server.message.auto"
-    type: TRUE
-  sound:
-    enable: false
-    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.auto.sound"
-      type: TRUE
   ticker:
     enable: true
     period: 9000
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
 ## Параметры
 
-- Сообщения изменяются тут [Автоматическое](/ru/messages/ru_ru/module/server/message/auto/)
+- [Сообщения](/ru/messages/ru_ru/module/server/message/auto/)
+- [Права](/ru/permissions/module/server/message/auto/)
 
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 
@@ -43,11 +38,14 @@ auto:
 
 Если включено, то сообщения для отправки будут выбираться случайным образом, иначе по порядку
 
-### `permission`
-- Название `flectonepulse.module.server.message.auto`
-- Тип `TRUE`
+### `ticker`
+- `enable: true`
 
-[Право](/ru/config/module/#пояснение) для использования модуля
+Нужно ли отправлять сообщение раз в какой-то промежуток времени
+
+- `period: 9000`
+
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно отправлять сообщение
 
 ### `sound`
 - По умолчанию `false`
@@ -59,19 +57,4 @@ auto:
 - По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
 Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
-
-### `permission`
-- Название `flectonepulse.module.server.message.auto.sound`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для проигрывания звука
 :::
-
-### `ticker`
-- `enable: true`
-
-Нужно ли отправлять сообщение раз в какой-то промежуток времени
-
-- `period: 9000`
-
-Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно отправлять сообщение

@@ -14,14 +14,15 @@
 chat:
   null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
   null-recipient: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
-  type:
+  types:
     global: "<display_name> <world_prefix>»<fcolor:4> <message>"
-    local: "<fcolor:2><display_name><fcolor:3>: <message>"
+    local: "<display_name><fcolor:3>: <message>"
 ```
 
 ## Параметры
 
-- Конфигурация происходит тут [Чат](/ru/config/module/player/message/chat/)
+- [Конфиг](/ru/config/module/player/message/chat/)
+- [Права](/ru/permissions/module/player/message/chat/)
 
 ### `null-chat`
 - По умолчанию `<color:#ff7171><b>⁉</b> На сервер выключен чат`
@@ -33,7 +34,7 @@ chat:
 
 Сообщение, если никто не увидел сообщение игрока
 
-### `type`
+### `types`
 - По умолчанию
 ```yaml
 global: "<display_name> <world_prefix>»<fcolor:4> <message>"

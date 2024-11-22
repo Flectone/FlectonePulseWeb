@@ -13,37 +13,22 @@
 ### По умолчанию
 ```yaml
 footer:
-  format:
-    1:
-      - " "
-      - "<fcolor:1>FlectonePulse"
-      - " "
-    2:
-      - " "
-      - "<fcolor:1>ТПС <tps>, Онлайн <online>"
-      - " "
+  values:
+    - "<br><fcolor:1>ТПС <tps>, Онлайн <online><br>"
+    - "<br><fcolor:1><br><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br><br>"
 ```
 
 ## Параметры
 
-- Конфигурация происходит тут [Нижнее](/ru/config/module/server/tab/footer/)
+- [Конфиг](/ru/config/module/server/tab/footer/)
+- [Права](/ru/permissions/module/server/tab/footer/)
 
 ### `format`
 - По умолчанию:
 ```yaml
-1:
-  - " "
-  - "<fcolor:1>FlectonePulse"
-  - " "
-2:
-  - " "
-  - "<fcolor:1>ТПС <tps>, Онлайн <online>"
-  - " "
+- "<br><fcolor:1>ТПС <tps>, Онлайн <online><br>"
+- "<br><fcolor:1><br><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br><br>"
 ```
 
-Список индексов и сообщений, которые им соответствуют
-
-::: danger Обязательно
-Индексы должны идти по порядку без пропусков, т.е. `1`, `2`, `3`, `4` и т.д.
-:::
+Список сообщений
 

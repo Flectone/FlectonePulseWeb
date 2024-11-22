@@ -1,24 +1,26 @@
 # InteractiveChat
-Path `config.yml > module.integration.interactivechat`
+Путь `config.yml > module.integration.interactivechat`
 
-## Explanation
-Integration with InteractiveChat fixes compatibility issues as much as possible
+## Пояснение
+Интеграция с InteractiveChat исправляет проблемы совместимости, насколько это возможно
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.interactivechat>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 interactivechat:
   enable: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/interactivechat/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 

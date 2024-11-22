@@ -14,17 +14,13 @@
 team:
   enable: true
   name-visible: false
-  prefix: "<vault_prefix><stream_prefix>"
-  suffix: "<afk_suffix><vault_suffix>"
   color: "<white>"
-  permission:
-    name: "flectonepulse.module.player.team"
-    type: TRUE
-  listener:
-    PlayerJoinEvent: NORMAL
 ```
 
 ## Параметры
+
+- [Сообщения](/ru/messages/ru_ru/module/player/team/)
+- [Права](/ru/permissions/module/player/team/)
 
 ### `enable`
 - По умолчанию `true`
@@ -36,35 +32,9 @@ team:
 
 Включает или выключает ник над игроком
 
-### `prefix`
-- По умолчанию `<vault_prefix><stream_prefix>`
-
-Текст до ника игрока: `текст TheFaser`
-
-### `suffix`
-- По умолчанию `<afk_suffix><vault_suffix>`
-
-Текст после ника игрока: `TheFaser текст`
-
 ### `color`
 - По умолчанию `<white>`
 
 Цвет команды игрока из [доступных](#доступные-цвета)
 
-### `permission`
-- Название `flectonepulse.module.player.team`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `listener`
-- По умолчанию:
-```yaml
-AsyncPlayerChatEvent: MONITOR
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
 <!--@include: @/ru/parts/color.md-->
-
-<!--@include: @/ru/parts/listener.md-->

@@ -1,26 +1,27 @@
-# Seed
+# Сид
 Путь `messages > en_us.yml > module.server.message.seed`
 
-## Explanation
-Message when using `/seed`
+## Пояснение
+Сообщение при использовании `/seed`
 ![seed](/seed.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.seed>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 seed:
   format: "<fcolor:1>🌐 Seed: [<fcolor:2><hover:show_text:'<fcolor:2>Click to Copy to Clipboard'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Seed](/en/config/module/server/message/seed/)
+- [Конфиг](/en/config/module/server/message/seed/)
+- [Права](/en/permissions/module/server/message/seed/)
 
 ### `format`
-- Default `<fcolor:1>🌐 Seed: [<fcolor:2><hover:show_text:'<fcolor:2>Click to Copy to Clipboard'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]`
+- По умолчанию `<fcolor:1>🌐 Seed: [<fcolor:2><hover:show_text:'<fcolor:2>Click to Copy to Clipboard'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]`
 
-Message to be sent
+Сообщение, которое будет отправлено

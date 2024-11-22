@@ -21,20 +21,13 @@ house:
 ```yaml
 tag:
   enable: true
-  permission:
-    name: "flectonepulse.module.tag"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/tag/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.tag`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

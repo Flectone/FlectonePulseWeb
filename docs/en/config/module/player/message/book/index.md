@@ -1,45 +1,26 @@
-# Book
-Path `config.yml > module.player.message.book`
+# Книга
+Путь `config.yml > module.player.message.book`
 
-## Explanation
-Module for messages in a book and the title of that book
+## Пояснение
+Модуль, отвечающий за сообщения в книге и названии этой книги
 ![book](/book.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.book>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 book:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message.book"
-    type: TRUE
-  listener:
-    PlayerEditBookEvent: NORMAL
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player/message/book/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables module functionality
-
-### `permission`
-- Name `flectonepulse.module.player.message.book`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-PlayerEditBookEvent: NORMAL
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Включает или выключает работоспособность модуля

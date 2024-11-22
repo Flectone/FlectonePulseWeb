@@ -1,33 +1,26 @@
-# TAB
-Path `config.yml > module.server.tab.*`
+# Таб
+Путь `config.yml > module.server.tab.*`
 
-## Explanation
-Module for setting up the TAB
+## Пояснение
+Модуль, отвечающий за настройку ТАБа
 ![tab](/tab.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.tab>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 tab:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.tab"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/server/tab/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.server.tab`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

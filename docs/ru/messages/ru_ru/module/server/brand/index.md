@@ -13,25 +13,26 @@
 ### По умолчанию
 ```yaml
 brand:
-  format:
-    - "<white>FlectonePulse"
-    - "<aqua>FlectonePulse"
+  values:
+    - "<white>Майнкрафт"
+    - "<aqua>Майнкрафт"
 ```
 
 ## Параметры
 
-- Конфигурация происходит тут [Бренд](/ru/config/module/server/brand/)
+- [Конфиг](/ru/config/module/server/brand/)
+- [Права](/ru/permissions/module/server/brand/)
 
-### `format`
+### `values`
 - По умолчанию:
 ```yaml
-- "<white>FlectonePulse"
-- "<aqua>FlectonePulse"
+- "<white>Майнкрафт"
+- "<aqua>Майнкрафт"
 ```
 
 Список сообщений для бренда
 
-::: warning Важно понимать
+::: warning ВАЖНО
 В сообщение можно вставлять только [обычные цвета](#доступные-цвета)
 :::
 

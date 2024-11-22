@@ -1,49 +1,34 @@
-# Header
-Path `messages > ru_ru.yml > module.server.tab.header`
+# Верхнее
+Путь `messages > ru_ru.yml > module.server.tab.header`
 
-## Explanation
-Messages responsible for top of the TAB
+## Пояснение
+Сообщения, отвечающие за верхнюю часть ТАБа
 ![header](/header.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.tab.header>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 header:
-  format:
-    1:
-      - " "
-      - "<fcolor:1>❤"
-      - " "
-    2:
-      - " "
-      - "<fcolor:1>👾"
-      - " "
+  values:
+    - "<br><fcolor:1>👾<br>"
+    - "<br><fcolor:1>❤<br>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Header](/en/config/module/server/tab/header/)
+- [Конфиг](/en/config/module/server/tab/header/)
+- [Права](/en/permissions/module/server/tab/header/)
 
 ### `format`
-- Default:
+- По умолчанию:
 ```yaml
-1:
-  - " "
-  - "<fcolor:1>❤"
-  - " "
-2:
-  - " "
-  - "<fcolor:1>👾"
-  - " "
+- "<br><fcolor:1>👾<br>"
+- "<br><fcolor:1>❤<br>"
 ```
 
-List of indexes and messages
-
-::: danger Mandatory
-Indexes should be in order without skips, i.e. `1`, `2`, `3`, `4`, etc.
-:::
+Список сообщений
 

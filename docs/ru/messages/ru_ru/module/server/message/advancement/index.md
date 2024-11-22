@@ -32,7 +32,8 @@ advancement:
 
 ## Параметры
 
-- Конфигурация происходит тут [Достижение](/ru/config/module/server/message/advancement/)
+- [Конфиг](/ru/config/module/server/message/advancement/)
+- [Права](/ru/permissions/module/server/message/advancement/)
 
 ### `task`
 - По умолчанию:

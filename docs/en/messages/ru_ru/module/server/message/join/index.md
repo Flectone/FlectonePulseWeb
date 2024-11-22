@@ -1,32 +1,33 @@
-# Join
-Path `messages > ru_ru.yml > module.server.message.join`
+# Подключение
+Путь `messages > ru_ru.yml > module.server.message.join`
 
-## Explanation
-Messages that a player has connected
+## Пояснение
+Сообщения о том, что игрок подключился
 ![join](/join.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.join>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 join:
   format: "<color:#4eff52>→ <display_name>"
-  format-first: "<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!"
+  format-first-time: "<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Join](/en/config/module/server/message/join/)
+- [Конфиг](/en/config/module/server/message/join/)
+- [Права](/en/permissions/module/server/message/join/)
 
 ### `format`
-- Default  `<color:#4eff52>→ <display_name>`
+- По умолчанию `<color:#4eff52>→ <display_name>`
 
-Message when connecting to the server
+Сообщение при подключении на сервер
 
-### `format-first`
-- Default `<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!`
+### `format-first-time`
+- По умолчанию `<color:#4eff52>→ <display_name> <fcolor:1>впервые тут!`
 
-Message when connecting to the server for first time
+Сообщение при первом подключении на сервер

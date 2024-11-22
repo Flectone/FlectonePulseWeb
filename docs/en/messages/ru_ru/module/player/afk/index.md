@@ -1,16 +1,16 @@
-# Afk
-Path `messages > ru_ru.yml > module.player.afk`
+# Афк
+Путь `messages > ru_ru.yml > module.player.afk`
 
-## Explanation
-Messages when changing the AFK mode
+## Пояснение
+Сообщения при изменении режима АФК
 ![afk](/afkglobalmessage.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.player.message.bubble>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 afk:
   suffix: " <color:#FFFF00>⌚</color>"
@@ -22,24 +22,25 @@ afk:
     local: "<gradient:#ffd500:#FFFF00>⌚ Ты вернулся в игру"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Afk](/en/config/module/player/afk/)
+- [Конфиг](/en/config/module/player/afk/)
+- [Права](/en/permissions/module/player/afk/)
 
 ### `suffix`
-- Default `" <color:#FFFF00>⌚</color>"`
+- По умолчанию `" <color:#FFFF00>⌚</color>"`
 
-Suffix that is given to a player if he AFK
+Суффикс, который выдаётся игроку, если он встал в АФК
 ![afksuffix](/afksuffix.png)
 
 ### `format-true`
-- Default:
+- По умолчанию:
 ```yaml
 global: "<gradient:#ffd500:#FFFF00>⌚ <player> отошёл"
 local: "<gradient:#ffd500:#FFFF00>⌚ Ты отошёл от игры"
 ```
 
-Message if a player has AFK
+Сообщение, если игрок отошёл
 
 ### `format-false`
 - По умолчанию:
@@ -48,4 +49,4 @@ global: "<gradient:#ffd500:#FFFF00>⌚ <player> вернулся"
 local: "<gradient:#ffd500:#FFFF00>⌚ Ты вернулся в игру"
 ```
 
-Message if a player has returned
+Сообщение, если игрок вернулся

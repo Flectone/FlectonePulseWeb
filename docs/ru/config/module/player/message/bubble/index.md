@@ -19,11 +19,6 @@ bubble:
   max-per-line: 35
   handicap-chars: 10
   read-speed: 800
-  permission:
-    name: "flectonepulse.module.player.message.bubble"
-    type: TRUE
-  listener:
-    AsyncPlayerChatEvent: MONITOR
 ```
 
 ## Длительность сообщения
@@ -47,7 +42,8 @@ int countStrings = messageLength / maxPerLine;
 
 ## Параметры
 
-- Формат сообщения изменяется тут [Над головой](/ru/messages/ru_ru/module/player/message/bubble/)
+- [Сообщения](/ru/messages/ru_ru/module/player/message/bubble/)
+- [Права](/ru/permissions/module/player/message/bubble/)
 
 ### `enable`
 - По умолчанию `true`
@@ -68,19 +64,3 @@ int countStrings = messageLength / maxPerLine;
 - По умолчанию `800`
 
 Скорость чтения символов сообщения
-
-### `permission`
-- Название `flectonepulse.module.player.message.bubble`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `listener`
-- По умолчанию:
-```yaml
-AsyncPlayerChatEvent: MONITOR
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
-<!--@include: @/ru/parts/listener.md-->

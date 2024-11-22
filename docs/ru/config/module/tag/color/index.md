@@ -18,11 +18,8 @@
 ```yaml
 color:
   enable: true
-  use-player-colors: true
-  permission:
-    name: "flectonepulse.module.tag.color"
-    type: TRUE
-  list:
+  use-recipient-colors: true
+  values:
     1: "#ADD8E6"
     2: "#87CEFA"
     3: "#A9A9A9"
@@ -31,12 +28,14 @@ color:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/tag/color/)
+
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `use-player-colors`
+### `use-recipient-colors`
 - По умолчанию `true`
 
 Если включено, то любое сообщение, которое содержит `<fcolor:номер>`, будет отформатировано относительно получателя
@@ -45,17 +44,9 @@ color:
 Иначе цвет будет зависеть от цветов отправителя
 ![color false](/colorfalse.gif)
 
-
-### `permission`
-- Название `flectonepulse.module.tag.color`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `list`
+### `values`
 
 Список всех используемых цветов, где номер является ключом к цвету по умолчанию
-
 
 ::: tip Например есть цвет
 ```yaml

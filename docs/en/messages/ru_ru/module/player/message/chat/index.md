@@ -1,43 +1,44 @@
-# Chat
-Path `messages > ru_ru.yml > module.player.message.chat`
+# Чат
+Путь `messages > ru_ru.yml > module.player.message.chat`
 
-## Explanation
-Messages when a player uses chat
+## Пояснение
+Сообщения при использовании чата игроком
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.player.message.chat>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 chat:
   null-chat: "<color:#ff7171><b>⁉</b> На сервер выключен чат"
   null-recipient: "<color:#ff7171><b>⁉</b> Тебя никто не услышал"
-  type:
+  types:
     global: "<display_name> <world_prefix>»<fcolor:4> <message>"
-    local: "<fcolor:2><display_name><fcolor:3>: <message>"
+    local: "<display_name><fcolor:3>: <message>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Chat](/en/config/module/player/message/chat/)
+- [Конфиг](/en/config/module/player/message/chat/)
+- [Права](/en/permissions/module/player/message/chat/)
 
 ### `null-chat`
-- Default `<color:#ff7171><b>⁉</b> На сервер выключен чат`
+- По умолчанию `<color:#ff7171><b>⁉</b> На сервер выключен чат`
 
-Message if chat empty or disabled
+Сообщение, если в чат ничего не удалось отправить
 
 ### `null-recipient`
-- Default `<color:#ff7171><b>⁉</b> Тебя никто не услышал`
+- По умолчанию `<color:#ff7171><b>⁉</b> Тебя никто не услышал`
 
-Message if no one has seen a player's message
+Сообщение, если никто не увидел сообщение игрока
 
-### `type`
-- Default
+### `types`
+- По умолчанию
 ```yaml
 global: "<display_name> <world_prefix>»<fcolor:4> <message>"
-local: "<fcolor:2><display_name>:<fcolor:3> <message>"
+local: "<fcolor:2><display_name><fcolor:3>: <message>"
 ```
 
-List of chats and their format
+Список чатов и их формат

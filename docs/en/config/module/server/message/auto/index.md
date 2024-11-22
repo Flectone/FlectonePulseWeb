@@ -1,77 +1,60 @@
-# Auto
-Path `config.yml > module.server.message.auto`
+# Автоматическое
+Путь `config.yml > module.server.message.auto`
 
-## Explanation
-A message from server once every certain period of time
+## Пояснение
+Сообщение от сервера раз в какой-то промежуток времени
 ![auto](/auto.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.auto>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 auto:
-  enable: true
+  enable: false
   random: true
-  permission:
-    name: "flectonepulse.module.server.message.auto"
-    type: TRUE
-  sound:
-    enable: false
-    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.auto.sound"
-      type: TRUE
   ticker:
     enable: true
     period: 9000
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Auto](/en/messages/en_us/module/server/message/auto/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/auto/)
+- [Права](/en/permissions/module/server/message/auto/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `random`
-- Default `true`
+- По умолчанию `true`
 
-If enabled, message will be selected randomly, otherwise in order
-
-### `permission`
-- Name `flectonepulse.module.server.message.auto`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `sound`
-- Default `false`
-
-Turns on sound playback when using
-
-::: details Sound setting
-### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
-
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.auto.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
-:::
+Если включено, то сообщения для отправки будут выбираться случайным образом, иначе по порядку
 
 ### `ticker`
 - `enable: true`
 
-Whether to send a message once every certain period of time
+Нужно ли отправлять сообщение раз в какой-то промежуток времени
 
 - `period: 9000`
 
-How often in [ticks](https://minecraft.wiki/w/Tick) needs to sent
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно отправлять сообщение
+
+### `sound`
+- По умолчанию `false`
+
+Включает проигрывание звука при использовании
+
+::: details Настройка звука
+### `type`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
+
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
+:::

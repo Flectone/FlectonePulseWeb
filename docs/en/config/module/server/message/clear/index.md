@@ -1,8 +1,8 @@
-# Clear
-Path `config.yml > module.server.message.clear`
+# Очищение
+Путь `config.yml > module.server.message.clear`
 
-## Explanation
-Message from server when using `/clear`
+## Пояснение
+Сообщение от сервера при использовании `/clear`
 ![clear](/clear.png)
 
 ## Редактирование
@@ -10,50 +10,33 @@ Message from server when using `/clear`
 <config.module.server.message.clear>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 clear:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.clear"
-    type: TRUE
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.clear.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Clear](/en/messages/en_us/module/server/message/clear/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/clear/)
+- [Права](/en/permissions/module/server/message/clear/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.clear`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.clear.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::

@@ -1,60 +1,51 @@
-# Death
-Path `config.yml > module.server.message.death`
+# Смерть
+Путь `config.yml > module.server.message.death`
 
-## Explanation
-A message from server when a player dies
+## Пояснение
+Сообщение от сервера, когда игрок умирает
 ![death server](/deathserver.png)
 ![death player](/deathplayer.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.death>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 death:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.death"
-    type: TRUE
+  range: -1
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.death.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Death](/en/messages/en_us/module/server/message/death/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/death/)
+- [Права](/en/permissions/module/server/message/death/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `permission`
-- Name `flectonepulse.module.server.message.death`
-- Type `TRUE`
+### `range`
+- По умолчанию `-1`
 
-[Permission](/en/config/module/#explanation) to use the module
+[Диапазон](#виды-диапазонов), насколько далеко в блоках отобразится сообщение
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `"flectonepulse.module.server.message.death.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
+
+<!--@include: @/en/parts/range.md-->

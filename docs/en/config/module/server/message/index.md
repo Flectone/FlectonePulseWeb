@@ -1,32 +1,25 @@
-# Message
-Path `config.yml > module.server.message.*`
+# Сообщения
+Путь `config.yml > module.server.message.*`
 
-## Explanation
-Module for messages that are sent by the server
+## Пояснение
+Этот модуль отвечает за сообщения, которые отправлены сервером
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 message:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/server/message/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.server.message`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

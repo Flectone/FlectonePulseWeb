@@ -1,16 +1,16 @@
-# Gamemode
-Path `messages > en_us.yml > module.server.message.gamemode`
+# Режим игры
+Путь `messages > en_us.yml > module.server.message.gamemode`
 
-## Options
-Message when using `/gamemode`
+## Пояснение
+Сообщение при использовании `/gamemode`
 ![gamemode](/gamemode.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.gamemode>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 gamemode:
   self:
@@ -25,12 +25,13 @@ gamemode:
     spectator: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Spectator Mode"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Gamemode](/en/config/module/server/message/gamemode/)
+- [Конфиг](/en/config/module/server/message/gamemode/)
+- [Права](/en/permissions/module/server/message/gamemode/)
 
 ### `self`
-- Default:
+- По умолчанию:
 ```yaml
 creative: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Creative Mode"
 survival: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Survival Mode"
@@ -38,10 +39,10 @@ adventure: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Adventure Mode"
 spectator: "<fcolor:1>🗘 Set own game mode to <fcolor:2>Spectator Mode"
 ```
 
-Message when changing gamemode to yourself or to recipient when its mode has been changed
+Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
 
 ### `multiple`
-- Default:
+- По умолчанию:
 ```yaml
 creative: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Creative Mode"
 survival: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Survival Mode"
@@ -49,4 +50,4 @@ adventure: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Adventure
 spectator: "<fcolor:1>🗘 Set <display_name>'s game mode to <fcolor:2>Spectator Mode"
 ```
 
-Message when changing gamemode to another player
+Сообщение при смене режима игры другому игроку

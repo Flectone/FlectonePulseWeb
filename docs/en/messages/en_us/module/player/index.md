@@ -1,8 +1,9 @@
-# Player
-Path `messages > en_us.yml > module.player.*`
+# Игрок
+Путь `messages > en_us.yml > module.player.*`
 
-## Explanation
-Category for messages created to a player
-- [Messages](/en/messages/en_us/module/player/message/)
-- [Name](/en/messages/en_us/module/player/name/)
-- [Afk](/en/messages/en_us/module/player/afk/)
+## Пояснение
+Категория, отвечающая за сообщения созданные игроку
+- [Афк](/en/messages/en_us/module/player/afk/)
+- [Сообщения](/en/messages/en_us/module/player/message/)
+- [Имя](/en/messages/en_us/module/player/name/)
+- [Команда](/en/messages/en_us/module/player/team/)

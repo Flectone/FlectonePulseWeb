@@ -20,7 +20,8 @@ twitch:
 
 ## Параметры
 
-- Конфигурация происходит тут [Твич](/ru/config/module/integration/twitch/)
+- [Конфиг](/ru/config/module/integration/twitch/)
+- [Права](/ru/permissions/module/integration/twitch/)
 
 ### Плейсхолдеры
 
@@ -31,6 +32,7 @@ twitch:
 
 Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
 - `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
 - `<player>` ник игрока, который отправил сообщение
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать

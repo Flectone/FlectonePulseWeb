@@ -1,22 +1,22 @@
-# Telegram
-Path `config.yml > module.integration.telegram`
+# Телеграм
+Путь `config.yml > module.integration.telegram`
 
-## Explanation
-Telegram integration allows you to send messages:
-- from Minecraft to Telegram
-- from Telegram to Minecraft
+## Пояснение
+Интеграция с Telegram позволяет отправлять сообщения:
+- из Minecraft в Telegram
+- из Telegram в Minecraft
 
 ![telegram message 1](/telegrammessage1.png)
 ![telegram message 2](/telegrammessage2.png)
 ![minecraft message](/telegramminecraftmessage.png)
 
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.telegram>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 telegram:
   enable: false
@@ -25,45 +25,46 @@ telegram:
     FROM_TELEGRAM_TO_MINECRAFT: []
 ```
 
-## Options
+## Параметры
 
-- The final format of message is changed here [Telegram](/en/messages/en_us/module/integration/telegram/)
+- [Сообщения](/en/messages/ru_ru/module/integration/telegram/)
+- [Права](/en/permissions/module/integration/telegram/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-::: warning Important
-- Before enabling, insert the **token** of the Telegram bot in [secrets](/en/secrets/telegram/)
-- After enabling, **MUST** restart the server
+::: warning Важно
+- Перед включением, вставь **токен** бота Telegram в [секретах](/en/secrets/telegram/)
+- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер
 :::
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `message-channel`
 
-List of [message types](#message-types) and chat IDs
+Список [типов сообщений](#типы-сообщений) и айди чатов в Telegram
 
-::: tip For example, I want Minecraft to send a message to Telegram
-1. I copy ID of chat to send a message to (`-1002341720267_49`)
+::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Telegram
+1. Копирую айди чата, в которое нужно отправить сообщение (`-1002341720267_49`)
 ![telegram id](/telegramid.png)
-2. Writing:
+2. Прописываю:
 ```yaml
 message-channel:
-  CHAT:
+  COMMAND_BAN:
     - "-1002341720267_49" // [!code highlight]
 ```
 
-You can have as many chats, as bot can access them from [secrets](/en/secrets/telegram/)
+Чатов может быть сколько угодно, главное, чтобы к ним был доступ у бота из [секреты](/en/secrets/telegram/)
 :::
 
-::: danger If your channel is a Forum (Topic)
+::: danger Если ваш канал является Форумом (Топиком)
 
-ID of **Main** channel should be without `_`
+Айди **ГЛАВНОГО** канала нужно указывать без `_`
 
-1. ID of my main channel (it always ends in `_1`) is `-1002341720267_1`
-2. Put in **ONLY** `-1002341720267`
+1. Айди моего главного канала (он всегда заканчивается на `_1`) это `-1002341720267_1` 
+2. Значит вписывать нужно **ТОЛЬКО** `-1002341720267`
 
-For other chats from channel, this rule does not apply and you must enter **full ID**
+Для других чатов из форума это правило не действует и нужно вписывать **ПОЛНЫЙ** айди
 
 :::
 

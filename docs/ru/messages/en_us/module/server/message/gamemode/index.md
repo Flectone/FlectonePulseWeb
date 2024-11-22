@@ -27,7 +27,8 @@ gamemode:
 
 ## Параметры
 
-- Конфигурация происходит тут [Режим игры](/ru/config/module/server/message/gamemode/)
+- [Конфиг](/ru/config/module/server/message/gamemode/)
+- [Права](/ru/permissions/module/server/message/gamemode/)
 
 ### `self`
 - По умолчанию:

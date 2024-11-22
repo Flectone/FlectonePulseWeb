@@ -1,22 +1,21 @@
-# Twitch
-Path `config.yml > module.integration.twitch`
+# Твич
+Путь `config.yml > module.integration.twitch`
 
-## Explanation
-Twitch integration allows you to send messages:
-- send messages from Minecraft to Twitch
-- send messages from Twitch to Minecraft
-- follow of Twitch streams
+## Пояснение
+Интеграция с Twitch позволяет:
+- отправлять сообщения из Minecraft в Twitch
+- отправлять сообщения из Twitch в Minecraft
+- подписываться на начало трансляции Twitch
 
 ![twitch message](/twitchmessage.png)
 ![minecraft message](/twitchminecraftmessage.png)
 
-
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.twitch>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 twitch:
   enable: false
@@ -24,55 +23,56 @@ twitch:
     CHAT: []
     FROM_TWITCH_TO_MINECRAFT: []
   follow-channel:
-    channel_name:
-      - "stream start twitch.tv"
+    faseri4ka:
+      - "stream start https://twitch.tv/faseri4ka"
 ```
 
-## Options
+## Параметры
 
-- The final format of message is changed here [Twitch](/en/messages/en_us/module/integration/twitch/)
+- [Сообщения](/en/messages/ru_ru/module/integration/twitch/)
+- [Права](/en/permissions/module/integration/twitch/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-::: warning Important
-- Before enabling, insert the **token** and **ID of the Twitch client** in [secrets](/en/secrets/twitch/)
-- After enabling, **MUST** restart the server
+::: warning Важно
+- Перед включением, вставь **токен** и **ID клиента** Twitch в [секретах](/en/secrets/twitch/)
+- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер, иначе плагин может вызвать зависание
 :::
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `message-channel`
 
-List of [message types](#message-types) and channel names on Twitch
+Список [типов сообщений](#типы-сообщений) и названий каналов на Twitch
 
-::: tip For example, I want Minecraft to send a message to Twitch
-1. I copy the names of Twitch channels to send a message to (`faseri4ka`)
-2. Writing:
+::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Twitch
+1. Копирую названия каналов Twitch, в которые нужно отправить сообщение (`faseri4ka`)
+2. Прописываю:
 ```yaml
 message-channel:
-  CHAT:
+  COMMAND_BAN:
     - "faseri4ka" // [!code highlight]
 ```
 
-You can have as many channels, as the client can access them from [secrets](/en/secrets/twitch/)
+Каналов может быть сколько угодно, главное, чтобы к ним был доступ у клиента из [секреты](/en/secrets/twitch/)
 :::
 
 ### `follow-channel`
 
-List, where key is channel name and value is list of commands to be executed at stream startup
+Список, где ключом является имя канала, а значением список комманд, которые выполняться при старте трансляции
 
-::: tip For example, I want to follow the start of `faseri4ka`'s stream and write `stream start https://twitch.tv/faseri4ka`
-1. Copy channel name `faseri4ka`
-2. Writing:
+::: tip Например я хочу отслеживать начало стрима у `faseri4ka` и писать `stream start https://twitch.tv/faseri4ka`
+1. Копирую названия канала `faseri4ka`
+2. Прописываю:
 ```yaml
 follow-channel:
   faseri4ka:
     - "stream start https://twitch.tv/faseri4ka"
 ```
 
-- Channels can be up to 10 at a time, as the client can access them from [secrets](/en/secrets/twitch/)
-- Commands, when stream starts, can be as many and as many as you like
+- Каналов может быть до 10 одновременно, главное, чтобы к ним был доступ у клиента из [секреты](/en/secrets/twitch/)
+- Комманд, при начале трансляции, может быть сколько угодно и какие угодно
 :::
 
 <!--@include: @/en/parts/messagetag.md-->

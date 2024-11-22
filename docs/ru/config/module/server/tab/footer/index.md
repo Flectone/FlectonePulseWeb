@@ -15,9 +15,6 @@
 footer:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.tab.footer"
-    type: TRUE
   ticker:
     enable: true
     period: 100
@@ -25,7 +22,8 @@ footer:
 
 ## Параметры
 
-- Сообщение изменяется тут [Нижнее](/ru/messages/ru_ru/module/server/tab/footer/)
+- [Сообщения](/ru/messages/ru_ru/module/server/tab/footer/)
+- [Права](/ru/permissions/module/server/tab/footer/)
 
 ### `enable`
 - По умолчанию `true`
@@ -36,12 +34,6 @@ footer:
 - По умолчанию `true`
 
 Если включено, то сообщение будет выбираться случайным образом, иначе по порядку
-
-### `permission`
-- Название `flectonepulse.module.server.tab.footer`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
 
 ### `ticker`
 - `enable: true`

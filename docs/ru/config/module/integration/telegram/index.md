@@ -27,7 +27,8 @@ telegram:
 
 ## Параметры
 
-- Итоговый формат сообщения изменяется тут [Телеграм](/ru/messages/ru_ru/module/integration/telegram/)
+- [Сообщения](/ru/messages/ru_ru/module/integration/telegram/)
+- [Права](/ru/permissions/module/integration/telegram/)
 
 ### `enable`
 - По умолчанию `false`

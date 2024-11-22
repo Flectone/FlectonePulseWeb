@@ -18,7 +18,8 @@ op:
 
 ## Параметры
 
-- Конфигурация происходит тут [Оп](/ru/config/module/server/message/op/)
+- [Конфиг](/ru/config/module/server/message/op/)
+- [Права](/ru/permissions/module/server/message/op/)
 
 ### `format`
 - По умолчанию `<fcolor:1>🤖 <display_name> назначен оператором сервера`

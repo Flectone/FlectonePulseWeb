@@ -1,25 +1,27 @@
 # SimpleVoice
-Path `config.yml > module.integration.simplevoice`
+Путь `config.yml > module.integration.simplevoice`
 
-## Explanation
-Integration with SimpleVoice allows you to mute players who have been muted with `/mute`
+## Пояснение
+Интеграция с SimpleVoice позволяет мутить игроков, которые были замучены с помощью `/mute`
 ![mute](/mute.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.simplevoice>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 simplevoice:
   enable: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/simplevoice/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 

@@ -2,7 +2,7 @@
 
 
 <div class="center-row" style="font-size: 19px; font-weight: bold;">
-    Supported Bukkit-platforms
+    Поддерживаемые Bukkit-платформы
 </div>
 <div class="center-row">
     <a href="https://www.spigotmc.org/"><img src="/bukkit.svg" alt="bukkit" class="hover-brightness"></a>
@@ -15,16 +15,16 @@
 <br>
 
 <div class="center-row" style="font-size: 19px; font-weight: bold;">
-    Supported Proxy-platforms
+    Поддерживаемые Proxy-платформы
 </div>
 <div class="center-row">
     <a href="https://www.spigotmc.org/wiki/bungeecord/"><img src="/bungeecord.svg" alt="bungeecord" class="hover-brightness"></a>
     <a href="https://papermc.io/software/velocity"><img src="/velocity.svg" alt="velocity" class="hover-brightness"></a>
 </div>
 
-## What's the project?
+## Что за проект?
 
-FlectonePulse is a server-side message manager aimed at improving the server configuration experience
+FlectonePulse - это серверный менеджер сообщений, нацеленный на улучшение опыта настройки сервера
 
 <div class="center-row" style="justify-content: left;">
     <a href="https://github.com/flectone/FlectonePulse"><img src="/github.svg" alt="github" class="hover-brightness"></a>
@@ -35,29 +35,32 @@ FlectonePulse is a server-side message manager aimed at improving the server con
     <a href="https://boosty.to/thefaser"><img src="/boosty.svg" alt="boosty" class="hover-brightness"></a>
 </div>
 
-::: tip INFO
-If your server is a fork of Bukkit/Spigot, you will most likely have the plugin working for you
+::: tip НУЖНО ПОНИМАТЬ
+Если ваш сервер на ядре, которое является форком Bukkit/Spigot, то скорее всего у вас будет работать FlectonePulse, **но это не точно**
 :::
 
-## Structure
+
+
+## Структура
 ```php
-FlectonePulse/ # plugin folder
-├─ icons/ # icon folder
-│   ├─ maintenance.png # icon for technical work
-│   ├─ server-icon-1.png # custom icon 1
-│   └─ server-icon-2.png # custom icon 2
-├─ libraries/... # folder of downloaded libraries
-├─ messages/ # messages folder
-│   ├─ en_us.yml # English messages
-│   └─ ru_ru.yml # Russian messages
-├─ config.yml # main plugin settings
-└─ secrets.yml # passwords, tokens, etc.
+FlectonePulse/ # папка плагина
+├─ icons/ # папка иконок
+│  ├─ maintenance.png # иконка для технических работ
+│  ├─ server-icon-1.png # кастомная иконка 1
+│  └─ server-icon-2.png # кастомная иконка 2
+├─ libraries/... # папка скачанных библиотек
+├─ messages/ # папка сообщений
+│  ├─ en_us.yml # английские сообщения
+│  └─ ru_ru.yml # русские сообщения
+├─ config.yml # главная настройка плагина
+└─ secrets.yml # пароли, токены и т.д.
 ```
 
-## Setting
-- [Configuration](/en/config/) - All main customization
-- [Messages](/en/messages/) - All plugin messages
-- [Secrets](/en/secrets/) - Passwords, tokens, etc.
+## Настройка
+- [Конфигурация](/en/config/) - Вся главная настройка
+- [Сообщения](/en/messages/) - Все сообщения плагина
+- [Секреты](/en/secrets/) - Пароли, токены и т.д.
+
 
 <style>
 .center-row {

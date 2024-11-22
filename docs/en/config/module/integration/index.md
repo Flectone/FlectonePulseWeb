@@ -1,36 +1,29 @@
-# Integrations
-Path `config.yml > module.integration.*`
+# Интеграции
+Путь `config.yml > module.integration.*`
 
-## Explanation
-Integration is the ability to work with a technology that is optional for a plugin
+## Пояснение
+Интеграцией называется возможность работы с технологией, которая необязательна для плагина
 
-Why it's needed
-- For more functionality and usability of the plugin
-- To fix incompatibilities between plugin and technology
+Зачем это нужно?
+- Для большего функционала и удобства плагина
+- Для исправления несовместимостей плагина и технологии
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 integration:
   enable: true
-  permission:
-    name: "flectonepulse.module.integration"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.integration`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

@@ -1,20 +1,20 @@
-# Discord
-Path `messages > en_us.yml > module.integration.discord`
+# Дискорд
+Путь `messages > en_us.yml > module.integration.discord`
 
-## Explanation
-Messages integration with Discord
+## Пояснение
+Сообщения интеграции с Дискордом
 ![discordmessage](/discordmessage.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.integration.discord>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel-info:
+  info-channel:
     id: "TPS <tps>"
   message-channel:
     CHAT:
@@ -22,7 +22,7 @@ discord:
       webhook:
         enable: false
         avatar: "https://mc-heads.net/avatar/<skin>/32.png"
-        content: "<message>"
+        content: ""
       embed:
         enable: false
         color: ""
@@ -35,9 +35,9 @@ discord:
         description: ""
         thumbnail: ""
         fields:
-          - name: ""
+          - anme: ""
             value: ""
-            inline: false
+            inline: "false"
         image: ""
         timestamp: true
         footer:
@@ -45,157 +45,159 @@ discord:
           icon-url: "https://mc-heads.net/avatar/<skin>/16.png"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Discord](/en/config/module/integration/discord/)
+- [Конфиг](/en/config/module/integration/discord/)
+- [Права](/en/permissions/module/integration/discord/)
 
-### Placeholders
+### Плейсхолдеры
 
-You can use all the placeholders that are used in the initial message for minecraft
-::: tip For example for ban message
-There's a `<reason>` placeholder, so I can use `<reason>` inside Discord messages
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip Например для сообщения о блокировке 
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри дискорд сообщений
 :::
 
-There are also placeholders that are REALLY going to be replaced in any message
-- `<final_message>` the message sent to minecraft
-- `<player>` the nickname of the player who sent the message
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
 
-All placeholders from `PlaceholderAPI` and `FlectonePulse` will work too
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
 ### `for-minecraft`
-- Default `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
+- По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
-Format of the message that will be sent from Discord to Minecraft
+Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
 
-### `channel-info`
-- Default
+### `info-channel`
+- По умолчанию 
 ```yaml
 id: "TPS <tps>"
 ```
 
-List of channel ids and their names
+Список айди каналов и их названий
 
 ### `message-channel`
 
-List of [messages](#message-types)
+Список [сообщений](#типы-сообщении) с их настройкой
 
-::: details Setting message
+::: details Настройка сообщения
 
 ![discord](https://docs.discord4j.com/img/embed-preview.png)
 
-If option is empty, it will not be used in the final message
+Если параметр пустой, то он не будет использован в итоговом сообщении
 
 #### `content`
 
-The content of a message on behalf of a discord bot
+Содержание обычного сообщения от лица бота дискорда
 ![discord content](/discordcontent.png)
 
 #### `webhook`
 
-Discord webhook
+Дискорд вебхук
 ![discord webhook](/discordwebhook.png)
 
 
 ##### `enable`
 
-If enabled, the message will be a webhook
+Если включено, то сообщение будет являться вебхуком
 
 ##### `avatar`
 
-Url to create a player avatar. If you change it to your own, url must contain `<skin>`
+Ссылка для создания аватарки игрока. Если будешь менять на свою, то ссылка должна содержать `<skin>`
 
 ##### `content`
 
-Content of the webhook message
+Содержание сообщения вебхука
 
 #### `embed`
 
-Discord embed message
+Дискорд эмбед сообщение
 ![discord embed](/discordembed.png)
 
 ##### `enable`
 
-If enabled, the message will contain `embed`
+Если включено, то сообщение будет содержать `embed`
 
 ##### `color`
 
-`embeded` color of message
+Цвет `embed` сообщения
 
 ##### `title`
 
-Title `embed` of message
+Название `embed` сообщения
 
 ##### `url`
 
-Url for `embed` message
+Ссылка для `embed` сообщения
 
 ##### `author`
 
-Author `embed` message
+Автор `embed` сообщения
 
 ###### `name`
 
-Author's name `embed` message
+Название автора `embed` сообщения
 
 ###### `url`
 
-Url to author of `embed` message
+Ссылка на автора `embed` сообщения
 
 ###### `icon-url`
 
-Url to the avatar of the author of the `embedded` post. If you change it to your own, url must contain `<skin>`
+Ссылка на аватарку автора `embed` сообщения. Если будешь менять на свою, то ссылка должна содержать `<skin>`
 
 ##### `description`
 
-Description of `embed` message
+Описание `embed` сообщения
 
 ##### `thumbnail`
 
-A small image inside an `embeded` message
+Маленькое изображение внутри `embed` сообщения
 
 ##### `fields`
 
-List of fields inside `embed` of message
+Список полей внутри `embed` сообщения
 
 ###### `name`
 
-Name of field inside `embed` of message
+Название поля внутри `embed` сообщения
 
 ###### `value`
 
-Value of field inside `embed` of message
+Значение поля внутри `embed` сообщения
 
 ###### `inline`
 
-If enabled, the field will be arranged in a column with other fields
+Если включено, то поле будет расположен в столбик с другими полями
 
 ##### `image`
 
-Main image `embed` the message
+Главное изображение `embed` сообщения
 
 ##### `timestamp`
 
-If enabled, `embed` message will include creation time
+Если включено, то `embed` сообщение будет включать время создания
 
 ##### `footer`
 
-Footer part of `embed` message
+Нижняя часть `embed` сообщения
 
 ###### `text`
 
-Text at footer of `embed` message
+Текст в нижней части `embed` сообщения
 
 ###### `icon-url`
 
-Image at footer of `embed` message
+Изображение в нижней части `embed` сообщения
 
 :::
 
-::: tip If you want to add another message:
-1. Take the title from [list](#message-types)
-2. Insert it into `message-channel`
+::: tip Если хочешь добавить другое сообщение:
+1. Возьми название из [списка](#типы-сообщении)
+2. Вставь в `message-channel`
 ```yaml
-message_name:
+название_сообщения:
   content: ""
   webhook:
     enable: false

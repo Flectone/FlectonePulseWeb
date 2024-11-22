@@ -1,68 +1,49 @@
-# Icon
-Path `config.yml > module.server.icon`
+# Иконка
+Путь `config.yml > module.server.icon`
 
-## Explanation
-Module for server image
+## Пояснение
+Модуль отвечающий за изображение сервера
 ![server icon](/servericon.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.icon>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 icon:
-  enable: true
+  enable: false
   random: true
-  permission:
-    name: "flectonepulse.module.server.icon"
-    type: TRUE
-  list:
+  values:
     - "server-icon-1.png"
     - "server-icon-2.png"
-  listener:
-    ServerListPingEvent: NORMAL
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/server/icon/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `random`
-- Default `true`
+- По умолчанию `true`
 
-If enabled, the image will be selected randomly, otherwise in order
+Если включено, то изображение будет выбираться случайным образом, иначе по порядку
 
-### `permission`
-- Name `flectonepulse.module.server`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `list`
+### `values`
 
 `server-icon-1.png` ![server icon 1](/server-icon-1.png) 
 
 
 `server-icon-2.png` ![server icon 2](/server-icon-2.png)
 
-List of image names to be displayed
+Список названий изображений, которые должны отображаться
 
-::: danger Image must:
-1. Be inside the `/FlectonePulse/icons/` folder. 2.
-2. **SIZED** `64x64`.
+::: danger Изображение должно:
+1. Находиться внутри папки `/FlectonePulse/icons/`
+2. Иметь размер **ТОЛЬКО** `64x64`
 :::
-
-### `listener`
-- Default:
-```yaml
-ServerListPingEvent: NORMAL
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

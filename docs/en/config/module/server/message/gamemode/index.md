@@ -1,59 +1,42 @@
-# Gamemode
-Path `config.yml > module.server.message.gamemode`
+# Режим игры
+Путь `config.yml > module.server.message.gamemode`
 
-## Explanation
-Message from server when using `/gamemode`
+## Пояснение
+Сообщение от сервера, когда игрок изменил режим игры
 ![gamemode](/gamemode.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.gamemode>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 gamemode:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.gamemode"
-    type: TRUE
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.gamemode.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Gamemode](/en/messages/en_us/module/server/message/gamemode/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/gamemode/)
+- [Права](/en/permissions/module/server/message/gamemode/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.gamemode`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.gamemode.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::

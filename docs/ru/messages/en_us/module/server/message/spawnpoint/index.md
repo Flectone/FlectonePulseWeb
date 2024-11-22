@@ -19,7 +19,8 @@ spawnpoint:
 
 ## Параметры
 
-- Конфигурация происходит тут [Спавнпоинт](/ru/config/module/server/message/spawnpoint/)
+- [Конфиг](/ru/config/module/server/message/spawnpoint/)
+- [Права](/ru/permissions/module/server/message/spawnpoint/)
 
 ### `single`
 - По умолчанию `<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <display_name>`

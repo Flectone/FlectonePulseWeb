@@ -14,49 +14,36 @@
 ```yaml
 swear:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message.format.swear"
-    type: TRUE
-  permission-ignore:
-    name: "flectonepulse.module.player.message.format.swear.ignore"
-    type: OP
-  permission-see:
-    name: "flectonepulse.module.player.message.format.swear.see"
-    type: OP
   trigger:
     - "((у|[нз]а|(хитро|не)?вз?[ыьъ]|с[ьъ]|(и|ра)[зс]ъ?|(о[тб]|под)[ьъ]?|(.\\B)+?[оаеи])?-?([её]б(?!о[рй])|и[пб][ае][тц]).*?|(н[иеа]|([дп]|верт)о|ра[зс]|з?а|с(ме)?|о(т|дно)?|апч)?-?ху([яйиеёю]|ли(?!ган)).*?|(в[зы]|(три|два|четыре)жды|(н|сук)а)?-?бл(я(?!(х|ш[кн]|мб)[ауеыио]).*?|[еэ][дт]ь?)|(ра[сз]|[зн]а|[со]|вы?|п(ере|р[оие]|од)|и[зс]ъ?|[ао]т)?п[иеё]зд.*?|(за)?п[ие]д[аое]?р([оа]м|(ас)?(ну.*?|и(ли)?[нщктл]ь?)?|(о(ч[еи])?|ас)?к(ой)|юг)[ауеы]?|манд([ауеыи](л(и[сзщ])?[ауеиы])?|ой|[ао]вошь?(е?к[ауе])?|юк(ов|[ауи])?)|муд([яаио].*?|е?н([ьюия]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[еёо]й))(?=[\\s,.:;\"']|$)"
     - "(([уyu]|[нзnz3][аa]|(хитро|не)?[вvwb][зz3]?[ыьъi]|[сsc][ьъ']|(и|[рpr][аa4])[зсzs]ъ?|([оo0][тбtb6]|[пp][оo0][дd9])[ьъ']?|(.\\B)+?[оаеиeo])?-?([еёe][бb6](?!о[рй])|и[пб][ае][тц]).*?|([нn][иеаaie]|([дпdp]|[вv][еe3][рpr][тt])[оo0]|[рpr][аa][зсzc3]|[з3z]?[аa]|с(ме)?|[оo0]([тt]|дно)?|апч)?-?[хxh][уuy]([яйиеёюuie]|ли(?!ган)).*?|([вvw][зы3z]|(три|два|четыре)жды|(н|[сc][уuy][кk])[аa])?-?[бb6][лl]([яy](?!(х|ш[кн]|мб)[ауеыио]).*?|[еэe][дтdt][ь']?)|([рp][аa][сзc3z]|[знzn][аa]|[соsc]|[вv][ыi]?|[пp]([еe][рpr][еe]|[рrp][оиioеe]|[оo0][дd])|и[зс]ъ?|[аоao][тt])?[пpn][иеёieu][зz3][дd9].*?|([зz3][аa])?[пp][иеieu][дd][аоеaoe]?[рrp](ну.*?|[оаoa][мm]|([аa][сcs])?([иiu]([лl][иiu])?[нщктлtlsn]ь?)?|([оo](ч[еиei])?|[аa][сcs])?[кk]([оo]й)?|[юu][гg])[ауеыauyei]?|[мm][аa][нnh][дd]([ауеыayueiи]([лl]([иi][сзc3щ])?[ауеыauyei])?|[оo][йi]|[аоao][вvwb][оo](ш|sh)[ь']?([e]?[кk][ауеayue])?|юк(ов|[ауи])?)|[мm][уuy][дd6]([яyаиоaiuo0].*?|[еe]?[нhn]([ьюия'uiya]|ей))|мля([тд]ь)?|лять|([нз]а|по|пи)х|м[ао]л[ао]фь([яию]|[её]й))(?=[\\s,.:;\"']|$)"
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
 ## Параметры
 
-- Заменяемый символ ругательства изменяется тут [Ругательство](/ru/messages/ru_ru/module/player/message/swear/)
+- [Сообщения](/ru/messages/ru_ru/module/player/message/format/swear/)
+- [Права](/ru/permissions/module/player/message/format/swear/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `permission`
-- Название `flectonepulse.module.player.message.format.swear`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `permission-ignore`
-- Название `flectonepulse.module.player.message.format.swear.ignore`
-- Тип `OP`
-
-[Право](/ru/config/module/#пояснение) для игнорирования проверки ругательства
-
-### `permission-see`
-- Название `flectonepulse.module.player.message.format.swear.see`
-- Тип `OP`
-
-[Право](/ru/config/module/#пояснение) для просмотра, какое ругательство было отформатировано
-![swear see](/swearsee.png)
-
-
 ### `trigger`
 
 Список [регулярных выражений](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java) для того, чтобы определять ругательство
+
+### `sound`
+- По умолчанию `false`
+
+Включает проигрывание звука при использовании
+
+::: details Настройка звука
+### `type`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
+
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
+:::

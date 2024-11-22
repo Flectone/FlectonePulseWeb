@@ -17,6 +17,8 @@ supervanish:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/integration/supervanish/)
+
 ### `enable`
 - По умолчанию `true`
 

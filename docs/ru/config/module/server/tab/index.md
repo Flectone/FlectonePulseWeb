@@ -14,20 +14,13 @@
 ```yaml
 tab:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.tab"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/server/tab/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.server.tab`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

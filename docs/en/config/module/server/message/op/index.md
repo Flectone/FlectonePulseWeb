@@ -1,59 +1,42 @@
-# Op
-Path `config.yml > module.server.message.op`
+# Оп
+Путь `config.yml > module.server.message.op`
 
-## Explanation
-Message from server when using `/op`
+## Пояснение
+Сообщение от сервера при использовании `/op`
 ![op](/op.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.op>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 op:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.op"
-    type: TRUE
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.op.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Op](/en/messages/en_us/module/server/message/op/) 
+- [Сообщения](/en/messages/ru_ru/module/server/message/op/)
+- [Права](/en/permissions/module/server/message/op/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.op`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.op.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::

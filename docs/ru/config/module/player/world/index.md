@@ -16,23 +16,19 @@
 world:
   enable: true
   mode: TYPE
-  permission:
-    name: "flectonepulse.module.player.world"
-    type: TRUE
-  type:
+  values:
     normal: "<color:#98FB98>"
     nether: "<color:#F08080>"
     the_end: "<color:#9370DB>"
     custom: "<color:#98FB98>"
-  name:
     world: "<color:#98FB98>"
     world_nether: "<color:#F08080>"
     world_the_end: "<color:#9370DB>"
-  listener:
-    PlayerChangedWorldEvent: HIGHEST
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/player/world/)
 
 ### `enable`
 - По умолчанию `true`
@@ -44,46 +40,22 @@ world:
 
 Режим определения мира из [доступных](#режимы-определения)
 
-### `type`
+### `values`
 - По умолчанию:
 ```yaml
-type:
-  normal: "<color:#98FB98>"
-  nether: "<color:#F08080>"
-  the_end: "<color:#9370DB>"
-  custom: "<color:#98FB98>"
+normal: "<color:#98FB98>"
+nether: "<color:#F08080>"
+the_end: "<color:#9370DB>"
+custom: "<color:#98FB98>"
+world: "<color:#98FB98>"
+world_nether: "<color:#F08080>"
+world_the_end: "<color:#9370DB>"
 ```
 
-Список миров и их `<world_prefix>`, если `mode: TYPE`
-
-### `name`
-```yaml
-name:
-  world: "<color:#98FB98>"
-  world_nether: "<color:#F08080>"
-  world_the_end: "<color:#9370DB>"
-```
-
-Список миров и их `<world_prefix>`, если `mode: NAME`
-
-### `permission`
-- Название `flectonepulse.module.player`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `listener`
-- По умолчанию:
-```yaml
-PlayerChangedWorldEvent: HIGHEST
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
+Список миров и их `<world_prefix>`
 
 ## Режимы определения
 | Режим    | Описание                                                                 |
 |----------|--------------------------------------------------------------------------|
 | `TYPE`   | Мир определяется по названию его типа, например обычный мир это `normal` |
 | `NAME`   | Мир определяется по названию его папки                                   |
-
-<!--@include: @/ru/parts/listener.md-->

@@ -1,49 +1,28 @@
-# Greeting
-Path `messages > ru_ru.yml > module.server.message.greeting`
+# Приветствие
+Путь `messages > ru_ru.yml > module.server.message.greeting`
 
-## Explanation
-Private message to a player when connecting to the server
+## Пояснение
+Личное сообщение игроку при подключении на сервер
 ![greeting](/greeting.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.greeting>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 greeting:
-  format:
-    - " "
-    - "[#][#][#][#][#][#][#][#]"
-    - "[#][#][#][#][#][#][#][#]"
-    - "[#][#][#][#][#][#][#][#]"
-    - "[#][#][#][#][#][#][#][#]"
-    - "[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,"
-    - "[#][#][#][#][#][#][#][#]  <player>"
-    - "[#][#][#][#][#][#][#][#]"
-    - "[#][#][#][#][#][#][#][#]"
-    - " "
+  format: "<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,<br>[#][#][#][#][#][#][#][#]  <player><br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Greeting](/en/config/module/server/message/greeting/)
+- [Конфиг](/en/config/module/server/message/greeting/)
+- [Права](/en/permissions/module/server/message/greeting/)
 
 ### `format`
-- Default:
-```yaml
-- " "
-- "[#][#][#][#][#][#][#][#]"
-- "[#][#][#][#][#][#][#][#]"
-- "[#][#][#][#][#][#][#][#]"
-- "[#][#][#][#][#][#][#][#]"
-- "[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,"
-- "[#][#][#][#][#][#][#][#]  <player>"
-- "[#][#][#][#][#][#][#][#]"
-- "[#][#][#][#][#][#][#][#]"
-- " "
-```
+- По умолчанию `<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]  <fcolor:1>Привет,<br>[#][#][#][#][#][#][#][#]  <player><br>[#][#][#][#][#][#][#][#]<br>[#][#][#][#][#][#][#][#]<br>`
 
-Private message to the player when connecting
+Личное сообщение игроку при подключении
 ![greeting](/greeting.png)

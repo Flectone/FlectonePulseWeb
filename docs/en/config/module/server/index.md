@@ -1,32 +1,25 @@
-# Server
-Path `config.yml > module.server.*`
+# Сервер
+Путь `config.yml > module.server.*`
 
-## Explanation
-Module contains everything that happens on the server
+## Пояснение
+Этот модуль содержит в себе всё, что происходит на сервере и благодаря серверу
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 server:
   enable: true
-  permission:
-    name: "flectonepulse.module.server"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/server/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.server`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

@@ -1,39 +1,40 @@
-# Name
-Path `messages > en_us.yml > module.player.name`
+# Имя
+Путь `messages > en_us.yml > module.player.name`
 
-## Explanation
-Category for messages related to a player's nickname
-- [Hover](/en/messages/en_us/module/player/name/hover/)
+## Пояснение
+Категория, отвечающая за сообщения связанные с ником игрока
+- [При наведении](/en/messages/en_us/module/player/name/hover/)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.player.name>
 ```
 
-### Default
+### По умолчанию
 ```yaml
-name:
+name-:
   display: "<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>"
   entity: "<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Type <fcolor:2><lang:<type>> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>"
   unknown: "<fcolor:2><name></fcolor:2>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Name](/en/config/module/player/name/)
+- [Конфиг](/en/config/module/player/name/)
+- [Права](/en/permissions/module/player/name/)
 
 ### `display`
-- Default `<prefix><fcolor:2><player></fcolor><suffix>`
+- По умолчанию `<click:suggest_command:\"/msg <player> \"><hover:show_text:\"<fcolor:2>Write to <player>\"><vault_prefix><stream_prefix><fcolor:2><player></fcolor><afk_suffix><vault_suffix></hover></click>`
 
-Name for player
+Отвечает за имя игрока
 ![name display](/namedisplay.png)
 
 ### `entity`
-- Default `<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Type <fcolor:2><lang:<type>> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>`
+- По умолчанию `<fcolor:2><hover:show_text:\"<fcolor:2><lang:<name>> <br><fcolor:1>Type <fcolor:2><lang:<type>> <br><fcolor:1>ID <fcolor:2><uuid>\"><lang:<name>></hover></fcolor:2>`
 
-Name for entity
+Отвечает за имя сущности
 
 ### `unknown`
-- Default `<fcolor:2><name></fcolor:2>`
+- По умолчанию `<fcolor:2><name></fcolor:2>`
 
-Name for unknown entity
+Отвечает за неизвестное имя

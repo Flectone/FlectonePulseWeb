@@ -12,32 +12,34 @@
 ### По умолчанию
 ```yaml
 plugin:
-  version: "0.0.7"
+  console: "Console"
+  version: "0.0.8"
   language: "en_us"
-  use-player-locale: true
-  console-name: "Console"
-  database:
-    type: SQLITE
-  proxy:
-    bungee: false
-    velocity: false
-  bstats:
-    enable: true
-  logger:
-    filter:
-      - "Paper Async Command Builder"
-      - "Caught previously unhandled exception :"
-      - "Error received from Telegram GetUpdates Request"
-      - "OkHttp TaskRunner"
+  language-player: true
+  metrics: true
+  bungeecord: false
+  velocity: false
+  database: SQLITE
+  log-filter:
+    - "Paper Async Command Builder"
+    - "Caught previously unhandled exception :"
+    - "Error received from Telegram GetUpdates Request"
+    - "OkHttp TaskRunner"
 ```
 
 ## Параметры
+
+### `console`
+- По умолчанию `Console`
+
+Используется для отображения имени, когда сообщения создано консолью
+![console](/console.gif)
 
 ### `version`
 
 Текущая версия плагина, используемая для корректного перехода между версиями плагина
 
-::: warning Предупреждение
+::: warning ПРЕДУПРЕЖДЕНИЕ
 Не изменяй версию плагина, если не знаешь, что делаешь!
 :::
 
@@ -46,14 +48,13 @@ plugin:
 
 Локализация, используемая для всех сообщений плагина
 
-::: warning Важно
+::: warning ПРЕДУПРЕЖДЕНИЕ
 Выбираемая локализация должна быть из [доступных](/ru/messages/)
 :::
 
 <!--@include: @/ru/parts/locale.md-->
 
-
-### `use-player-locale`
+### `language-player`
 - По умолчанию `true`
 
 Если включено, то у каждого игрока будет проверяться его локализация майнкрафта и взависимости от этого будет показываться [сообщение](/ru/messages/)
@@ -62,32 +63,17 @@ plugin:
 
 Если такой локализации нет, то будет использована из [конфигурации](#language)
 
-::: danger Если ты изменяешь списки сообщений с включенным `use-player-locale`
-То это нужно делать во всех локализациях, иначе возможны визуальные ошибки
+::: danger ОЧЕНЬ ВАЖНО ПОНИМАТЬ
+Если ты изменяешь списки сообщений с включенным `language-player`, то это нужно делать во всех локализациях, иначе возможны визуальные ошибки
 :::
 
-### `console-name`
-- По умолчанию `Console`
+### `metrics`
+- По умолчанию `true`
 
-Используется для отображения имени, когда сообщения создано консолью
-![console](/console.gif)
+Позволяет плагину собирать [статистику](https://bstats.org/plugin/bukkit/FlectonePulse/21076) сервера и параметров плагина
+[![bstats](https://bstats.org/signatures/bukkit/FlectonePulse.svg)](https://bstats.org/plugin/bukkit/FlectonePulse/21076)
 
-### `database`
-- По умолчанию `SQLITE`
-
-::: warning Важно
-Название датабазы должно быть указано в верхнем регистре без кавычек
-:::
-
-В данный момент поддерживаются:
-- `SQLite` - локальная
-- `MySQL` - серверная, нyжно **обязательно** настроить подключение в [секретах](/ru/secrets/)
-
-### `proxy`
-
-Плагин поддерживает режим работы в прокси, чтобы можно было отправлять **меж-серверные** сообщения
-
-`bungee`
+### `bungeecord`
 - По умолчанию `false`
 
 ::: tip Чтобы плагин работал на **BungeeCord**:
@@ -96,7 +82,7 @@ plugin:
 3. Перезапусти **BungeeCord** и сервера, где стоит **FlectonePulse**
 :::
 
-`velocity`
+### `velocity`
 - По умолчанию `false`
 
 ::: tip Чтобы плагин работал на **Velocity**:
@@ -105,13 +91,18 @@ plugin:
 3. Перезапусти **Velocity** и сервера, где стоит **FlectonePulse**
 :::
 
-### `bstats`
-- По умолчанию `true`
+### `database`
+- По умолчанию `SQLITE`
 
-Позволяет плагину собирать [статистику](https://bstats.org/plugin/bukkit/FlectonePulse/21076) сервера и параметров плагина
-[![bstats](https://bstats.org/signatures/bukkit/FlectonePulse.svg)](https://bstats.org/plugin/bukkit/FlectonePulse/21076)
+::: warning ВАЖНО
+Название датабазы должно быть указано в верхнем регистре без кавычек
+:::
 
-### `logger`
+В данный момент поддерживаются:
+- `SQLite` - локальная
+- `MySQL` - серверная, нyжно **обязательно** настроить подключение в [секретах](/ru/secrets/)
+
+### `log-filter`
 
 Идея взята [отсюда](https://github.com/Whitescan/ConsoleFilter/blob/master/src/main/java/dev/whitescan/consolefilter/share/LogFilter.java), спасибо @Whitescan
 
@@ -120,6 +111,6 @@ plugin:
 ::: tip Например я хочу отфильтровать
 ![filter](/filter.png)
 
-Значит в `filter` нужно вписать:
+Значит нужно вписать:
 `Unknown or incomplete command` или `command` или `Unknown`
 :::

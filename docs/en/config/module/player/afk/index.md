@@ -1,105 +1,76 @@
-# Afk
-Path `config.yml > module.player.afk`
+# Афк
+Путь `config.yml > module.player.afk`
 
-## Explanation
-A player becomes AFK if he does nothing for a period of time
+## Пояснение
+Игрок становится АФК, если ничего не делает какой-то промежуток времени
 ![afk global message](/afkglobalmessage.png)
 
-If a player is AFK, they are given a specific suffix
+Если человек АФК, то ему выдаётся определённый суффикс
 ![afk suffix](/afksuffix.png)
 
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.afk>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 afk:
   enable: true
+  global: true
   delay: 3000
   ignore:
     - "afk"
-  permission:
-    name: "flectonepulse.module.player.afk"
-    type: TRUE
-  message:
-    enable: true
-    global: true
   ticker:
     enable: true
     period: 20
-  listener:
-    AsyncPlayerChatEvent: LOWEST
-    PlayerCommandPreprocessEvent: LOWEST
 ```
 
-## Options
+## Параметры
 
-- Messages and AFK suffix are changed here [AFK](/en/messages/ru_ru/module/player/afk/)
+- [Сообщения](/en/messages/ru_ru/module/player/afk/)
+- [Права](/en/permissions/module/player/afk/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `delay`
-- Default `3000`
+### `global`
+- По умолчанию `true`
 
-How many [ticks](https://minecraft.wiki/w/Tick) player doesn't have to do anything to stand in AFK
-
-### `ignore`
-- Default `afk`
-
-List of actions that are ignored and do not affect the AFK mode
-
-| Actions that can be ignored        |
-|------------------------------------|
-| Any command names                  |
-| `chat` - when a player is chatting |
-| `quit` - when a player quit        |
-
-::: tip For example
-If I put the `tell` command in the list and the player is in AFK mode, he can use the `tell` command and will not be kicked out of AFK mode
-:::
-
-
-### `permission`
-- Name `flectonepulse.module.player.afk`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `message`
-- `enable: true`
-
-Turns on a message when a player has stepped away
-
-- `global: true`
-
-Indicates that this message should be sent to all
+Обозначает, что это сообщение должно быть отправлено всему серверу
 ![afk global message](/afkglobalmessage.png)
 
-If `false`, only the player himself will receive the message
+Если `false`, то сообщение получит только сам игрок
 ![afk local message](/afklocalmessage.png)
+
+### `delay`
+- По умолчанию `3000`
+
+Сколько времени в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) игрок ничего не должен делать, чтобы встать в АФК
+
+### `ignore`
+- По умолчанию `afk`
+
+Список действий, которые игнорируются и не влияют на режим АФК
+
+| Действия, которые можно игнорировать |
+|--------------------------------------|
+| Любые названия комманд               |
+| `chat` - когда игрок пишет в чат     |
+| `quit` - когда игрок выходит         |
+
+::: tip Например
+Если я впишу в список комманду `tell` и игрок будет в режиме АФК, то он сможет использовать комманду `tell` и его не выкинет с режима АФК
+:::
 
 ### `ticker`
 - `enable: true`
 
-Check that a player has returned or joined the AFC
+Нужно ли проверять что игрок вернулся или встал в АФК
 
 - `period: 20`
 
-How often in [ticks](https://minecraft.wiki/w/Tick) is necessary to check that a player is AFK or not
-
-### `listener`
-- Default:
-```yaml
-AsyncPlayerChatEvent: LOWEST
-PlayerCommandPreprocessEvent: LOWEST
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно проверять, что игрок АФК или нет

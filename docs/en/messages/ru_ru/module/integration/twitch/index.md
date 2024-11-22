@@ -1,16 +1,16 @@
-# Twitch
-Path `messages > ru_ru.yml > module.integration.twitch`
+# Твич
+Путь `messages > ru_ru.yml > module.integration.twitch`
 
-## Explanation
-Messages integration with Twitch
+## Пояснение
+Сообщения интеграции с Твичом
 ![twitchmessage](/twitchmessage.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.integration.twitch>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 twitch:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
@@ -18,37 +18,39 @@ twitch:
     CHAT: "<final_message>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Twitch](/en/config/module/integration/twitch/)
+- [Конфиг](/en/config/module/integration/twitch/)
+- [Права](/en/permissions/module/integration/twitch/)
 
-### Placeholders
+### Плейсхолдеры
 
-You can use all the placeholders that are used in the initial message for minecraft
-::: tip For example for ban message
-There's a `<reason>` placeholder, so I can use `<reason>` inside Twitch messages
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip Например для сообщения о блокировке
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри твич сообщений
 :::
 
-There are also placeholders that are REALLY going to be replaced in any message
-- `<final_message>` the message sent to minecraft
-- `<player>` the nickname of the player who sent the message
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
 
-All placeholders from `PlaceholderAPI` and `FlectonePulse` will work too
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
 ### `for-minecraft`
-- Default `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
+- По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
-Format of the message that will be sent from Twitch to Minecraft
+Формат сообщения, которое будет отправлено из Твича в Майнкрафт
 
 ### `message-channel`
 
-List of [messages](#message-types) with the format of the final message
+Список [сообщений](#типы-сообщении) с форматом итогового сообщения
 
-::: tip If you want to add another message:
-1. Take title from [list](#message-types)
-2. Insert in `message-channel`
+::: tip Если хочешь добавить другое сообщение:
+1. Возьми название из [списка](#типы-сообщении)
+2. Вставь в `message-channel`
 ```yaml
-message_name: "<final_message>"
+название_сообщения: "<final_message>"
 ```
 :::
 

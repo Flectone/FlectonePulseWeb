@@ -18,7 +18,8 @@ bubble:
 
 ## Параметры
 
-- Конфигурация происходит тут [Над головой](/ru/config/module/player/message/bubble/)
+- [Конфиг](/ru/config/module/player/message/bubble/)
+- [Права](/ru/permissions/module/player/message/bubble/)
 
 ### `format`
 - По умолчанию `<fcolor:3><message>`

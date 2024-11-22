@@ -1,52 +1,45 @@
-# Image
-Path `config.yml > module.tag.image`
+# Изображение
+Путь `config.yml > module.tag.image`
 
-## Explanation
-The `image` tag is used to display images
+## Пояснение
+Тег `image` используется для отображения изображений
 
-Usage: `<image:link> message </image>`
+Использование: `<image:ссылка> сообщение </image>`
 
 ![image](https://i.imgur.com/hX8U4T7.png)
 ![image message](/imagemessage.png)
 ![image minecraft](/imageminecraft.png)
 
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.tag.image>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 image:
   enable: true
   color: "<fcolor:2>"
-  permission:
-    name: "flectonepulse.module.tag.image"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/tag/image/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `color`
-- Default `<fcolor:2>`
+- По умолчанию `<fcolor:2>`
 
-Color of the message containing the link
+Определяет цвет сообщения, содержащее ссылку
 
-::: tip Example
-`<image:link> house </image>`.
+::: tip Пример
+`<image:ссылка> дом </image>`
 
-Here `home` will have a color of `<fcolor:2>`
+Здесь `дом` будет иметь цвет `<fcolor:2>`
 
 :::
-
-### `permission`
-- Name `flectonepulse.module.tag.image`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module

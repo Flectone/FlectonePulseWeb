@@ -1,60 +1,37 @@
-# Auto
-Path `messages > en_us.yml > module.server.message.auto`
+# Автоматическое
+Путь `messages > en_us.yml > module.server.message.auto`
 
-## Explanation
-Automatic message once every certain period of time
+## Пояснение
+Автоматическое сообщение раз в какой-то промежуток времени
 ![auto](/auto.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.auto>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 auto:
-  format:
-    1:
-      - " "
-      - "<fcolor:1>◇ This server uses <url:\"https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</url> :)"
-      - " "
-    2:
-      - " "
-      - "<fcolor:1>      ❝ Join our discord ❠ "
-      - "<fcolor:2>   <u><url:https://discord.flectone.net>https://discord.flectone.net</url></u>"
-      - " "
-    3:
-      - " "
-      - "<fcolor:1>⚡ Support <fcolor:2>FlectonePulse</fcolor:2> on Boosty "
-      - "<fcolor:1>⚡ <u><url:\"https://boosty.to/thefaser/\">https://boosty.to/thefaser/</url></u>"
-      - " "
+  values:
+    - "<br><fcolor:1>      ✉ Join our telegram ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
+    - "<br><fcolor:1>⚡ Support <fcolor:2>FlectonePulse</fcolor:2> on Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+    - "<br><fcolor:1>      ❝ Join our discord ❠ <br><fcolor:2>   <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
+    - "<br><fcolor:1>◇ This server uses <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Auto](/en/config/module/server/message/auto/)
+- [Конфиг](/en/config/module/server/message/auto/)
+- [Права](/en/permissions/module/server/message/auto/)
 
-### `format`
-- Default:
+### `values`
+- По умолчанию:
 ```yaml
-1:
-  - " "
-  - "<fcolor:1>◇ This server uses <url:\"https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</url> :)"
-  - " "
-2:
-  - " "
-  - "<fcolor:1>      ❝ Join our discord ❠ "
-  - "<fcolor:2>   <u><url:https://discord.flectone.net>https://discord.flectone.net</url></u>"
-  - " "
-3:
-  - " "
-  - "<fcolor:1>⚡ Support <fcolor:2>FlectonePulse</fcolor:2> on Boosty "
-  - "<fcolor:1>⚡ <u><url:\"https://boosty.to/thefaser/\">https://boosty.to/thefaser/</url></u>"
-  - " "
+- "<br><fcolor:1>      ✉ Join our telegram ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
+- "<br><fcolor:1>⚡ Support <fcolor:2>FlectonePulse</fcolor:2> on Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+- "<br><fcolor:1>      ❝ Join our discord ❠ <br><fcolor:2>   <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
+- "<br><fcolor:1>◇ This server uses <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
 ```
 
-List of indexes and messages
-
-::: danger Mandatory
-Indexes should be in order without skips, i.e. `1`, `2`, `3`, `4`, etc.
-:::
+Список автоматических сообщений

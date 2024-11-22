@@ -18,7 +18,8 @@ seed:
 
 ## Параметры
 
-- Конфигурация происходит тут [Сид](/ru/config/module/server/message/seed/)
+- [Конфиг](/ru/config/module/server/message/seed/)
+- [Права](/ru/permissions/module/server/message/seed/)
 
 ### `format`
 - По умолчанию `<fcolor:1>🌐 Seed: [<fcolor:2><hover:show_text:'<fcolor:2>Click to Copy to Clipboard'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]`

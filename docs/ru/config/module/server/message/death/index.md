@@ -15,31 +15,26 @@
 ```yaml
 death:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.death"
-    type: TRUE
+  range: -1
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.death.sound"
-      type: TRUE
 ```
 
 ## Параметры
 
-- Сообщения изменяются тут [Смерть](/ru/messages/ru_ru/module/server/message/death/)
+- [Сообщения](/ru/messages/ru_ru/module/server/message/death/)
+- [Права](/ru/permissions/module/server/message/death/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `permission`
-- Название `flectonepulse.module.server.message.death`
-- Тип `TRUE`
+### `range`
+- По умолчанию `-1`
 
-[Право](/ru/config/module/#пояснение) для использования модуля
+[Диапазон](#виды-диапазонов), насколько далеко в блоках отобразится сообщение
 
 ### `sound`
 - По умолчанию `false`
@@ -51,10 +46,6 @@ death:
 - По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
 Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
-
-### `permission`
-- Название `"flectonepulse.module.server.message.death.sound`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для проигрывания звука
 :::
+
+<!--@include: @/ru/parts/range.md-->

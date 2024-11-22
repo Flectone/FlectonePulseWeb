@@ -28,7 +28,7 @@ discord:
       name: "FlectonePulse"
       url: "https://flectone.net/pulse/"
   channel-info:
-    enable: true
+    enable: false
     ticker:
       enable: true
       period: 1200
@@ -39,7 +39,8 @@ discord:
 
 ## Параметры
 
-- Итоговый формат сообщения изменяется тут [Дискорд](/ru/messages/ru_ru/module/integration/discord/)
+- [Сообщения](/ru/messages/ru_ru/module/integration/discord/)
+- [Права](/ru/permissions/module/integration/discord/)
 
 ### `enable`
 - По умолчанию `false`

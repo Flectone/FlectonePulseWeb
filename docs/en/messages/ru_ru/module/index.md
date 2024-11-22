@@ -1,11 +1,48 @@
-# Modules
-Path `messages > ru_ru.yml > module.*`
+# Модули
+Путь `messages > ru_ru.yml > module.*`
 
-## Explanation
-The main category of all messages:
-- [Tags](/en/messages/ru_ru/module/tag/)
-- [Integrations](/en/messages/ru_ru/module/integration/)
-- [Interactions](/en/messages/ru_ru/module/interaction/)
-- [Player](/en/messages/ru_ru/module/player/)
-- [Server](/en/messages/ru_ru/module/server/)
-- [Commands](/en/messages/ru_ru/module/command/)
+## Пояснение
+Главная категория всех сообщений, а именно:
+- [Комманды](/en/messages/ru_ru/module/command/)
+- [Интеграции](/en/messages/ru_ru/module/integration/)
+- [Взаимодействия](/en/messages/ru_ru/module/interaction/)
+- [Игрок](/en/messages/ru_ru/module/player/)
+- [Сервер](/en/messages/ru_ru/module/server/)
+- [Теги](/en/messages/ru_ru/module/tag/)
+
+## Редактирование
+```yaml
+<ru_ru.module>
+```
+
+### По умолчанию
+```yaml
+module:
+  cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, попробуй через <time>"
+  time:
+    day: "д"
+    hour: "ч"
+    minute: "м"
+    second: "с"
+```
+
+## Параметры
+
+- [Конфиг](/en/config/module/)
+- [Права](/en/permissions/module/)
+
+### `cooldown`
+- По умолчанию `<color:#ff7171><b>⁉</b> Слишком быстро, попробуй через <time>`
+
+Сообщение, которое показывается при слишком частом использовании, если включен `cooldown`
+
+### `time`
+- По умолчанию:
+```yaml
+day: "д"
+hour: "ч"
+minute: "м"
+second: "с"
+```
+
+Форматирование времени

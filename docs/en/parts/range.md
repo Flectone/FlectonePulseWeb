@@ -1,12 +1,12 @@
-## Range types
+## Виды диапазонов
 
-| Range               | Description                                                                                                  |
-|---------------------|--------------------------------------------------------------------------------------------------------------|
-| `-2`                | A message will be sent to all players on the server and on [Proxy](/en/config/plugin/#proxy)                 |
-| `-1`                | A message will be sent to all players on the server                                                          |
-| `0`                 | A message will only be sent to the sender                                                                    |
-| any number ` > 0`   | A message will be sent to players who have a distance between them and the sender **lower** than this number |
+| Значение           | Объяснение                                                                                                |
+|--------------------|-----------------------------------------------------------------------------------------------------------|
+| `-2`               | Сообщение будет отправлено всем игрокам на сервере и на [Proxy](/en/config/plugin/#proxy)                 |
+| `-1`               | Сообщение будет отправлено всем игрокам на сервере                                                        |
+| `0`                | Сообщение будет отправлено только отправителю                                                             |
+| любое число ` > 0` | Сообщение будет отправлено игрокам, у которых расстояние между ними и отправителем **меньше** этого числа |
 
-::: tip We need to understand
-If a range of `> 0` is specified, such as `100`, then the recipients must also be in the same dimension as the sender
+::: tip Нужно понимать
+Если указан диапазон `> 0`, например `100`, то получатели также должны находиться в одном измерении с отправителем
 :::

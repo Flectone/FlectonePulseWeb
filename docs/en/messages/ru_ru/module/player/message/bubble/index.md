@@ -1,26 +1,27 @@
-# Bubble
-Path `messages > ru_ru.yml > module.player.message.bubble`
+# Над головой
+Путь `messages > ru_ru.yml > module.player.message.bubble`
 
-## Explanation
-Overhead messages when a player is using chat
+## Пояснение
+Сообщения над головой при использовании чата игроком
 ![bubble](/bubble.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.player.message.bubble>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 bubble:
   format: "<fcolor:3><message>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Bubble](/en/config/module/player/message/bubble/)
+- [Конфиг](/en/config/module/player/message/bubble/)
+- [Права](/en/permissions/module/player/message/bubble/)
 
 ### `format`
-- Default `<fcolor:3><message>`
+- По умолчанию `<fcolor:3><message>`
 
-Overhead message format
+Формат сообщения над головой

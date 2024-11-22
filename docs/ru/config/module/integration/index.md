@@ -17,20 +17,13 @@
 ```yaml
 integration:
   enable: true
-  permission:
-    name: "flectonepulse.module.integration"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/integration/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.integration`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

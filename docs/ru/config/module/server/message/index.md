@@ -13,20 +13,13 @@
 ```yaml
 message:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/server/message/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.server.message`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

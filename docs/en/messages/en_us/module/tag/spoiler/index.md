@@ -1,32 +1,33 @@
-# Spoiler
-Path `messages > en_us.yml > module.tag.spoiler`
+# Спойлер
+Путь `messages > en_us.yml > module.tag.spoiler`
 
-## Explanation
-Spoiler messages
+## Пояснение
+Сообщения для спойлера
 ![spoiler](/spoiler.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.tag.spoiler>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 spoiler:
   symbol: "█"
   hover: "<fcolor:2><message>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Spoiler](/en/config/module/tag/spoiler/)
+- [Конфиг](/en/config/module/tag/spoiler/)
+- [Права](/en/permissions/module/tag/spoiler/)
 
 ### `symbol`
-- Default `█`
+- По умолчанию `█`
 
-Symbol to which each letter is replaced
+Символ, на который заменяется каждая буква
 
 ### `hover`
-- Default `<fcolor:2><message>`
+- По умолчанию `<fcolor:2><message>`
 
-The message that is shown when you hover
+Сообщение, которое показывается при наведении

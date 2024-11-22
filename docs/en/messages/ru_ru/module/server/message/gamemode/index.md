@@ -1,16 +1,16 @@
-# Gamemode
-Path `messages > ru_ru.yml > module.server.message.gamemode`
+# Режим игры
+Путь `messages > ru_ru.yml > module.server.message.gamemode`
 
-## Options
-Message when using `/gamemode`
+## Пояснение
+Сообщение при использовании `/gamemode`
 ![gamemode](/gamemode.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.gamemode>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 gamemode:
   self:
@@ -25,12 +25,13 @@ gamemode:
     spectator: "<fcolor:1>🗘 Режим игры игрока <display_name> изменён на <fcolor:2>Режим наблюдателя"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Gamemode](/en/config/module/server/message/gamemode/)
+- [Конфиг](/en/config/module/server/message/gamemode/)
+- [Права](/en/permissions/module/server/message/gamemode/)
 
 ### `self`
-- Default:
+- По умолчанию:
 ```yaml
 creative: "<fcolor:1>🗘 Твой режим игры изменён на <fcolor:2>Творческий режим"
 survival: "<fcolor:1>🗘 Твой режим игры изменён на <fcolor:2>Режим выживания"
@@ -38,10 +39,10 @@ adventure: "<fcolor:1>🗘 Твой режим игры изменён на <fco
 spectator: "<fcolor:1>🗘 Твой режим игры изменён на <fcolor:2>Режим наблюдателя"
 ```
 
-Message when changing gamemode to yourself or to recipient when its mode has been changed
+Сообщение при смене режима игры самому себе или получателю, когда его режим изменён
 
 ### `multiple`
-- Default:
+- По умолчанию:
 ```yaml
 creative: "<fcolor:1>🗘 Режим игры игрока <display_name> изменён на <fcolor:2>Творческий режим"
 survival: "<fcolor:1>🗘 Режим игры игрока <display_name> изменён на <fcolor:2>Режим выживания"
@@ -49,4 +50,4 @@ adventure: "<fcolor:1>🗘 Режим игры игрока <display_name> из�
 spectator: "<fcolor:1>🗘 Режим игры игрока <display_name> изменён на <fcolor:2>Режим наблюдателя"
 ```
 
-Message when changing gamemode to another player
+Сообщение при смене режима игры другому игроку

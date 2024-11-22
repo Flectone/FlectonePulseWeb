@@ -15,9 +15,6 @@
 brand:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.brand"
-    type: TRUE
   ticker:
     enable: true
     period: 100
@@ -25,7 +22,8 @@ brand:
 
 ## Параметры
 
-- Сообщения изменяются тут [Бренд](/ru/messages/ru_ru/module/server/brand/)
+- [Сообщения](/ru/messages/ru_ru/module/server/brand/)
+- [Права](/ru/permissions/module/server/brand/)
 
 ### `enable`
 - По умолчанию `true`
@@ -36,12 +34,6 @@ brand:
 - По умолчанию `true`
 
 Если включено, то сообщение бренда будет выбираться случайным образом, иначе по порядку
-
-### `permission`
-- Название `flectonepulse.module.server.brand`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
 
 ### `ticker`
 - `enable: true`

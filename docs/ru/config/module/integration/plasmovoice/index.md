@@ -18,6 +18,8 @@ plasmovoice:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/integration/plasmovoice/)
+
 ### `enable`
 - По умолчанию `true`
 

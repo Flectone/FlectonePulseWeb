@@ -1,32 +1,33 @@
-# Quit
-Path `messages > ru_ru.yml > module.server.message.quit`
+# Отключение
+Путь `messages > ru_ru.yml > module.server.message.quit`
 
-## Explanation
-Messages that a player has disconnected
+## Пояснение
+Сообщения о том, что игрок отключился
 ![quit](/quit.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.quit>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 quit:
   format: "<color:#ff4e4e>← <display_name>"
-  format-first: "<color:#ff4e4e>← <display_name> <fcolor:1>впервые вышел!"
+  format-first-time: "<color:#ff4e4e>← <display_name> <fcolor:1>впервые вышел!"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Quit](/en/config/module/server/message/quit/)
+- [Конфиг](/en/config/module/server/message/quit/)
+- [Права](/en/permissions/module/server/message/quit/)
 
 ### `format`
-- Default `<color:#ff4e4e>← <display_name>`
+- По умолчанию `<color:#ff4e4e>← <display_name>`
 
-Message when disconnecting from the server
+Сообщение при отключении с сервера
 
-### `format-first`
-- Default `<color:#ff4e4e>← <display_name> <fcolor:1>впервые вышел!`
+### `format-first-time`
+- По умолчанию `<color:#ff4e4e>← <display_name> <fcolor:1>впервые вышел!`
 
-Message when disconnecting from the server for first time 
+Сообщение при первом отключении с сервера   

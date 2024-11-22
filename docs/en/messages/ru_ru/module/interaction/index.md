@@ -1,11 +1,8 @@
-# Interaction
-Path `messages > ru_ru.yml > module.interaction.*`
+# Взаимодействия
+Путь `messages > ru_ru.yml > module.interaction.*`
 
-## Explanation
-Category for messages mouse interactions
-- [Sign](/en/messages/ru_ru/module/interaction/sign/)
-- [Un Sign](/en/messages/ru_ru/module/interaction/unsign/)
-- [Spit](/en/messages/ru_ru/module/interaction/spit/)
-- [Mark](/en/messages/ru_ru/module/interaction/mark/)
-- [Knock](/en/messages/ru_ru/module/interaction/knock/)
-- [Right click](/en/messages/ru_ru/module/interaction/right-click/)
+## Пояснение
+Категория, отвечающая за сообщения взаимодействий с помощью мыши
+- [Правое нажатие](/en/messages/ru_ru/module/interaction/right-click/)
+- [Подпись](/en/messages/ru_ru/module/interaction/sign/)
+- [Плевок](/en/messages/ru_ru/module/interaction/spit/)

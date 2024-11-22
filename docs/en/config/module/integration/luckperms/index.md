@@ -1,33 +1,34 @@
 # LuckPerms
-Path `config.yml > module.integration.luckperms`
+Путь `config.yml > module.integration.luckperms`
 
-## Explanation
-Integration with LuckPerms allows you to:
-- Check the rights of **offline players**
-- Sort players in TAB by [group weight](https://luckperms.net/wiki/Weight)
+## Пояснение
+Интеграция с LuckPerms позволяет:
+- Проверять права у **оффлайн игроков** 
+- Сортировать игроков в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.luckperms>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 luckperms:
   enable: true
-  sort: true
-  group: {}
+  tab-sort: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/luckperms/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `sort`
-- Default `true`
+### `tab-sort`
+- По умолчанию `true`
 
-Enables or disables sorting in TAB by [group weight](https://luckperms.net/wiki/Weight)
+Включает или выключает сортировку в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)
 

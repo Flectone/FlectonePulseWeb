@@ -1,110 +1,64 @@
-# Emoji
-Path `config.yml > module.tag.emoji`
+# Смайлики
+Путь `config.yml > module.tag.emoji`
 
-## Explanation
-The `emoji` tag is used to replace text emoticons with Unicode emoticons
+## Пояснение
+Тег `emoji` используется для замены текстовых смайликов в юникод смайлики
 
-Usage: `emoji`
+Использование: `смайлик`
 
 ![emoji message](/emojimessage.png)
 ![emoji minecraft](/emojiminecraft.png)
 
-When you click on such an emoticon, it will be copied into the chat room
+При нажатии на такой смайлик, он скопируется в чат
 ![emoji gif](/emoji.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.tag.emoji>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 emoji:
   enable: true
-  permission:
-    name: "flectonepulse.module.tag.emoji"
-    type: TRUE
-  list:
-    - target: ":)"
-      replacement: "☺"
-      hover: "<fcolor:1>:)"
-    - target: ":D"
-      replacement: "☻"
-      hover: "<fcolor:1>:D"
-    - target: ":("
-      replacement: "☹"
-      hover: "<fcolor:1>:("
-    - target: ":ok:"
-      replacement: "🖒"
-      hover: "<fcolor:1>:ok:"
-    - target: ":+1:"
-      replacement: "🖒"
-      hover: "<fcolor:1>:+1:"
-    - target: ":-1:"
-      replacement: "🖓"
-      hover: "<fcolor:1>:-1:"
-    - target: ":cool:"
-      replacement: "😎"
-      hover: "<fcolor:1>:cool:"
-    - target: "B)"
-      replacement: "😎"
-      hover: "<fcolor:1>B)"
-    - target: ":clown:"
-      replacement: "🤡"
-      hover: "<fcolor:1>:clown:"
-    - target: "<3"
-      replacement: "❤"
-      hover: "<fcolor:1><3"
-    - target: "XD"
-      replacement: "😆"
-      hover: "<fcolor:1>XD"
-    - target: "%)"
-      replacement: "😵"
-      hover: "<fcolor:1>%)"
-    - target: "=D"
-      replacement: "😃"
-      hover: "<fcolor:1>=D"
-    - target: ">:("
-      replacement: "😡"
-      hover: "<fcolor:1>>:("
-    - target: ":idk:"
-      replacement: "¯\\_(ツ)_/¯"
-      hover: "<fcolor:1>:idk:"
-    - target: ":angry:"
-      replacement: "(╯°□°)╯︵ ┻━┻"
-      hover: "<fcolor:1>:angry:"
-    - target: ":happy:"
-      replacement: "＼(＾O＾)／"
-      hover: "<fcolor:1>:happy:"
+  values:
+     :): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
+     :D: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
+     :(: "<click:suggest_command:\":(\"><hover:show_text:\":(\">☹</hover></click>"
+    :ok:: "<click:suggest_command:\":ok:\"><hover:show_text:\":ok:\">🖒</hover></click>"
+    :+1:: "<click:suggest_command:\":+1:\"><hover:show_text:\":+1:\">🖒</hover></click>"
+    :-1:: "<click:suggest_command:\":-1:\"><hover:show_text:\":-1:\">🖓</hover></click>"
+    :cool:: "<click:suggest_command:\":cool:\"><hover:show_text:\":cool:\">😎</hover></click>"
+     B): "<click:suggest_command:\"B)\"><hover:show_text:\"B)\">😎</hover></click>"
+    :clown:: "<click:suggest_command:\":clown:\"><hover:show_text:\":clown:\">🤡</hover></click>"
+     <3: "<click:suggest_command:\"<3\"><hover:show_text:\"<3\">❤</hover></click>"
+     XD: "<click:suggest_command:\"XD\"><hover:show_text:\"XD\">😆</hover></click>"
+    %): "<click:suggest_command:\"%)\"><hover:show_text:\"%)\">😵</hover></click>"
+     =D: "<click:suggest_command:\"=D\"><hover:show_text:\"=D\">😃</hover></click>"
+    >:(: "<click:suggest_command:\">:(\"><hover:show_text:\">:(\">😡</hover></click>"
+    :idk:: "<click:suggest_command:\":idk:\"><hover:show_text:\":idk:\">¯\\_(ツ)_/¯</hover></click>"
+    :angry:: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
+    :happy:: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/tag/emoji/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `permission`
-- Name `flectonepulse.module.tag.emoji`
-- Type `TRUE`
+### `values`
 
-[Permission](/en/config/module/#explanation) to use the module
+Список всех доступных смайликов, где ключ - какой текст нужно заменить, а значение - на какой текст нужно заменить
 
-### `list`
-
-A list of all available emoticons, each with:
-- `target` - what text to replace with
-- `replacement` - what text to replace with
-- `hover` - hover message
-
-::: tip For example, there is a smiley
+::: tip Например есть смайлик
 ```yaml
-target: ":)"
-replacement: "☺"
-hover: "<fcolor:1>:)"
+:): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
 ```
 
-The message `:)` will be replaced by `☺`.
+Сообщение `:)` заменится на `☺`
 ![emoji minecraft](/emojiminecraft.png)
 :::

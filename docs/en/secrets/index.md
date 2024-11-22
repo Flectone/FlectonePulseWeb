@@ -1,9 +1,6 @@
-# Secrets
-File `secrets.yml`
+# Файл `secrets.yml`
 
-## Explanation
-A file that contains all passwords, tokens:
-- [Database](/en/secrets/database/)
-- [Discord](/en/secrets/discord/)
-- [Twitch](/en/secrets/twitch/)
-- [Telegram](/en/secrets/telegram/)
+## Пояснение
+Файл, который содержит в себе все пароли, токены и доступ к сторонним технологиям:
+- [Плагин](/en/secrets/plugin/)
+- [Модули](/en/secrets/module/)

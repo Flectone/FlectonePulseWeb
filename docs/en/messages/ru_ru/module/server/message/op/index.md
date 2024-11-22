@@ -1,26 +1,27 @@
-# Op
-Path `messages > ru_ru.yml > module.server.message.op`
+# Оп
+Путь `messages > ru_ru.yml > module.server.message.op`
 
-## Explanation
-Message when using `/op`
+## Пояснение
+Сообщение при использовании `/op`
 ![op](/op.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.op>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 op:
   format: "<fcolor:1>🤖 <display_name> назначен оператором сервера"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Op](/en/config/module/server/message/op/)
+- [Конфиг](/en/config/module/server/message/op/)
+- [Права](/en/permissions/module/server/message/op/)
 
 ### `format`
-- Default `<fcolor:1>🤖 <display_name> назначен оператором сервера`
+- По умолчанию `<fcolor:1>🤖 <display_name> назначен оператором сервера`
 
-Message to be sent
+Сообщение, которое будет отправлено

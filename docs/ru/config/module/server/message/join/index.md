@@ -14,33 +14,26 @@
 ```yaml
 join:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.join"
-    type: TRUE
+  first: true
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.join.sound"
-      type: TRUE
-  listener:
-    PlayerJoinEvent: HIGHEST
 ```
 
 ## Параметры
 
-- Сообщения изменяются тут [Подключение](/ru/messages/ru_ru/module/server/message/join/)
+- [Сообщения](/ru/messages/ru_ru/module/server/message/join/)
+- [Права](/ru/permissions/module/server/message/join/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `permission`
-- Название `flectonepulse.module.server.message.join`
-- Тип `TRUE`
+### `first`
+- По умолчанию `true`
 
-[Право](/ru/config/module/#пояснение) для использования модуля
+Включает сообщение о самом первом подключении игрока на сервер
 
 ### `sound`
 - По умолчанию `false`
@@ -52,20 +45,4 @@ join:
 - По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
 Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
-
-### `permission`
-- Название `"flectonepulse.module.server.message.join.sound`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для проигрывания звука
 :::
-
-### `listener`
-- По умолчанию:
-```yaml
-PlayerJoinEvent: HIGHEST
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
-<!--@include: @/ru/parts/listener.md-->

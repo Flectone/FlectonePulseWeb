@@ -1,32 +1,25 @@
-# Player
-Path `config.yml > module.player.*`
+# Игрок
+Путь `config.yml > module.player.*`
 
-## Explanation
-This module contains everything that happens because of player
+## Пояснение
+Этот модуль содержит в себе всё, что происходит благодаря игроку
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 player:
   enable: true
-  permission:
-    name: "flectonepulse.module.player"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.player`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

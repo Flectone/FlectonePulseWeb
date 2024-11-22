@@ -1,59 +1,42 @@
-# Spawnpoint
-Path `config.yml > module.server.message.spawnpoint`
+# Спавнпоинт
+Путь `config.yml > module.server.message.spawnpoint`
 
-## Explanation
-Message from server when using `/spawnpoint`
+## Пояснение
+Сообщение от сервера при использовании `/spawnpoint`
 ![spawnpoint](/spawnpoint.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.spawnpoint>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 spawnpoint:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.setblock"
-    type: TRUE
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.setblock.sound"
-      type: TRUE
 ```
 
 ## Options
 
-- Messages are changed here [Spawnpoint](/en/messages/en_us/module/server/message/spawnpoint/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/spawnpoint/)
+- [Права](/en/permissions/module/server/message/spawnpoint/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.spawnpoint`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.spawnpoint.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::

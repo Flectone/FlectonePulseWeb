@@ -1,69 +1,51 @@
-# Mention
-Path `config.yml > module.player.message.format.mention`
+# Упоминание
+Путь `config.yml > module.player.message.format.mention`
 
-## Explanation
-This formatting allows you to mention (ping) player in the message
+## Пояснение
+Это форматирование позволяет упоминать (пинговать) человека в сообщении
 ![mention](/mention.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.format.mention>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 mention:
   enable: true
   trigger: "@"
-  permission:
-    name: "flectonepulse.module.player.message.format.mention"
-    type: TRUE
   sound:
     enable: true
     type: "ENTITY_EXPERIENCE_ORB_PICKUP:0.1:0.1"
-    permission:
-      name: "flectonepulse.module.player.message.format.mention.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Format of the mention is changed here [Mention](/en/messages/en_us/module/player/message/mention/)
+- [Сообщения](/en/messages/ru_ru/module/player/message/format/mention/)
+- [Права](/en/permissions/module/player/message/format/mention/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `trigger`
-- Default `@`
+- По умолчанию `@`
 
-Character with which the mention message should begin
-::: tip For example
-If I want to mention `Flectone`, I should write `@Flectone`
+Символ, с которого должно начинаться сообщение упоминания
+::: tip Например
+Если я хочу упомянуть `Flectone`, то я должен написать `@Flectone`
 ![mention](/mention.png)
 :::
-
-### `permission`
-- Name `flectonepulse.module.player.message.format.mention`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
 ### `sound`
-- Default `true`
+- По умолчанию `true`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `ENTITY_EXPERIENCE_ORB_PICKUP:0.1:0.1`
+- По умолчанию `ENTITY_EXPERIENCE_ORB_PICKUP:0.1:0.1`
 
-Specifies the type (`ENTITY_EXPERIENCE_ORB_PICKUP`), volume (`0.1`), and tone (`0.1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.player.message.format.mention.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`ENTITY_EXPERIENCE_ORB_PICKUP`), громкость (`0.1`) и тональность (`0.1`) звука через `:`
 :::

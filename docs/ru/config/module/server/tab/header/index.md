@@ -15,9 +15,6 @@
 header:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.tab.header"
-    type: TRUE
   ticker:
     enable: true
     period: 100
@@ -25,7 +22,8 @@ header:
 
 ## Параметры
 
-- Сообщение изменяется тут [Верхнее](/ru/messages/ru_ru/module/server/tab/header/)
+- [Сообщения](/ru/messages/ru_ru/module/server/tab/header/)
+- [Права](/ru/permissions/module/server/tab/header/)
 
 ### `enable`
 - По умолчанию `true`
@@ -36,12 +34,6 @@ header:
 - По умолчанию `true`
 
 Если включено, то сообщение будет выбираться случайным образом, иначе по порядку
-
-### `permission`
-- Название `flectonepulse.module.server.tab.header`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
 
 ### `ticker`
 - `enable: true`

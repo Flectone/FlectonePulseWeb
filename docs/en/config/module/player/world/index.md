@@ -1,89 +1,63 @@
-# World
-Path `config.yml > module.player.world`
+# Измерение
+Путь `config.yml > module.player.world`
 
-## Explanation
-The module for `<world_prefix>` tag
+## Пояснение
+Модуль, отвечающий за тег `<world_prefix>` т.е. за цвет измерения
 ![world tab](/worldtab.png)
 ![world chat](/worldchat.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.world>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 world:
   enable: true
   mode: TYPE
-  permission:
-    name: "flectonepulse.module.player.world"
-    type: TRUE
-  type:
+  values:
     normal: "<color:#98FB98>"
     nether: "<color:#F08080>"
     the_end: "<color:#9370DB>"
     custom: "<color:#98FB98>"
-  name:
     world: "<color:#98FB98>"
     world_nether: "<color:#F08080>"
     world_the_end: "<color:#9370DB>"
-  listener:
-    PlayerChangedWorldEvent: HIGHEST
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player/world/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `mode`
-- Default `TYPE`
+- По умолчанию `TYPE`
 
-World definition mode from [available](#definition-modes)
+Режим определения мира из [доступных](#режимы-определения)
 
-### `type`
-- Default:
+### `values`
+- По умолчанию:
 ```yaml
-type:
-  normal: "<color:#98FB98>"
-  nether: "<color:#F08080>"
-  the_end: "<color:#9370DB>"
-  custom: "<color:#98FB98>"
+normal: "<color:#98FB98>"
+nether: "<color:#F08080>"
+the_end: "<color:#9370DB>"
+custom: "<color:#98FB98>"
+world: "<color:#98FB98>"
+world_nether: "<color:#F08080>"
+world_the_end: "<color:#9370DB>"
 ```
 
-List of worlds and their `<world_prefix>` if `mode: TYPE`
+Список миров и их `<world_prefix>`
 
-### `name`
-```yaml
-name:
-  world: "<color:#98FB98>"
-  world_nether: "<color:#F08080>"
-  world_the_end: "<color:#9370DB>"
-```
-
-List of worlds and their `<world_prefix>` if `mode: NAME`
-
-### `permission`
-- Name `flectonepulse.module.player`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-PlayerChangedWorldEvent: HIGHEST
-```
-
-List of event listeners and their [priority](#event-priority)
-
-## Definition modes
-| Mode   | Description                                                                 |
-|--------|-----------------------------------------------------------------------------|
-| `TYPE` | A world is defined by the name of its type, e.g. a normal world is `normal` |
-| `NAME` | A world is defined by the name of its folder                                |
+## Режимы определения
+| Режим    | Описание                                                                 |
+|----------|--------------------------------------------------------------------------|
+| `TYPE`   | Мир определяется по названию его типа, например обычный мир это `normal` |
+| `NAME`   | Мир определяется по названию его папки                                   |
 
 <!--@include: @/en/parts/listener.md-->

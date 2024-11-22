@@ -1,32 +1,33 @@
-# Enchant
-Path `messages > en_us.yml > module.server.message.enchant`
+# Зачарование
+Путь `messages > en_us.yml > module.server.message.enchant`
 
-## Explanation
-Message when using `/enchant`
+## Пояснение
+Сообщение при использовании `/enchant`
 ![enchant](/enchant.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.enchant>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 enchant:
   single: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <display_name>'s item"
   multiple: "<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <fcolor:2><count></fcolor:2> entities"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Enchant](/en/config/module/server/message/enchant/)
+- [Конфиг](/en/config/module/server/message/enchant/)
+- [Права](/en/permissions/module/server/message/enchant/)
 
 ### `single`
-- Default `<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <display_name>'s item`
+- По умолчанию `<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <display_name>'s item`
 
-Message if command is applied to a specific player
+Сообщение, если команда применяется для конкретного игрока
 
 ### `multiple`
-- Default `<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <fcolor:2><count></fcolor:2> entities`
+- По умолчанию `<fcolor:1>📖 Applied enchantment «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» to <fcolor:2><count></fcolor:2> entities`
 
-Message if command is applied to many entities
+Сообщение, если команда применяется для многих сущностей

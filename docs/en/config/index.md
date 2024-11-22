@@ -1,9 +1,8 @@
-# Configuration
-File `config.yml`
+# Файл `config.yml`
 
-## Explanation
-The main customization file for the `FlectonePulse` plugin, which has two global categories:
-- [Plugin](/en/config/plugin/)
-- [Modules](/en/config/module/)
+## Пояснение
+Главный файл по настройке плагина `FlectonePulse`, который имеет две глобальных категории:
+- [Плагин](/en/config/plugin/)
+- [Модули](/en/config/module/)
 
-All messages that the player sees are in [Messages](/en/messages/)
+Все сообщения, которые видит игрок, находятся в [Сообщения](/en/messages/)

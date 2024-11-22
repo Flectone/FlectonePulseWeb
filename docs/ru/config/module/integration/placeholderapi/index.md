@@ -32,21 +32,14 @@
 ```yaml
 placeholderapi:
   enable: true
-  permission:
-    name: "flectonepulse.module.integration.placeholderapi"
-    type: OP
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/integration/placeholderapi/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
-
-### `permission`
-- Название `flectonepulse.module.integration.placeholderapi`
-- Тип `OP`
-
-Право для использования плейсхолдеров прямо в сообщениях
 

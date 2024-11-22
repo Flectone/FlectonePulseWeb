@@ -1,21 +1,21 @@
-# Discord
-Path `config.yml > module.integration.discord`
+# Дискорд
+Путь `config.yml > module.integration.discord`
 
-## Explanation
-Discord integration allows you to send messages:
-- from Minecraft to Discord
-- from Discord to Minecraft
+## Пояснение
+Интеграция с Discord позволяет отправлять сообщения:
+- из Minecraft в Discord
+- из Discord в Minecraft
 
 ![discord message](/discordmessage.png)
 ![minecraft message](/discordminecraftmessage.png)
 
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.discord>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 discord:
   enable: false
@@ -28,7 +28,7 @@ discord:
       name: "FlectonePulse"
       url: "https://flectone.net/pulse/"
   channel-info:
-    enable: true
+    enable: false
     ticker:
       enable: true
       period: 1200
@@ -37,76 +37,77 @@ discord:
     CHAT: ""
 ```
 
-## Options
+## Параметры
 
-- The final message format is changed here [Discord](/en/messages/en_us/module/integration/discord/)
+- [Сообщения](/en/messages/ru_ru/module/integration/discord/)
+- [Права](/en/permissions/module/integration/discord/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-::: warning Important
-- Before enabling, insert the **token** of Discord bot in [secrets](/en/secrets/discord/)
-- After enabling, **MUST** restart server
+::: warning Важно
+- Перед включением, вставь **токен** бота Discord в [секретах](/en/secrets/discord/)
+- После включения, **ЖЕЛАТЕЛЬНО** перезагрузить сервер, иначе плагин может вызвать зависание
 :::
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `presence`
 
 ![discord presence](/discordpresence.png)
 
-::: details Presence setting
+::: details Настройка статуса бота
 #### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables custom presence
+Включает или выключает кастомный статус бота
 
 #### `status`
-- Default `ONLINE`
+- По умолчанию `ONLINE`
 
-Status type
+Режим статуса
 
-| Type             | Description                |
-|------------------|----------------------------|
-| `UNKNOWN`        | -                          |
-| `ONLINE`         | Online                     |
-| `DO_NOT_DISTURB` | Online with do not disturb |
-| `IDLE`           | Online, but idle           |
-| `INVISIBLE`      | Invisible                  |
-| `OFFLINE`        | Offline                    |
+| Режим            | Пояснение                       |
+|------------------|---------------------------------|
+| `UNKNOWN`        | -                               |
+| `ONLINE`         | В сети                          |
+| `DO_NOT_DISTURB` | В сети, с режимом не беспокоить |
+| `IDLE`           | В сети, но отошёл               |
+| `INVISIBLE`      | Невидимый                       |
+| `OFFLINE`        | Не в сети                       |
 
 #### `activity`
 
-Bot activity in Discord
+Активность бота в дискорде
 
 ##### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables activity
+Включает или выключает активность
 
 ##### `type`
-- Default `PLAYING`
+- По умолчанию `PLAYING`
 
-Activity type
+Тип активности
 
-| Type        | Description |
+| Тип         | Пояснение   |
 |-------------|-------------|
 | `UNKNOWN`   | -           |
-| `STREAMING` | Streaming   |
-| `LISTENING` | Listening   |
-| `WATCHING`  | Watching    |
+| `STREAMING` | Стримит     |
+| `LISTENING` | Слушает     |
+| `WATCHING`  | Смотрит     |
 | `CUSTOM`    | -           |
-| `COMPETING` | Competing   |
+| `COMPETING` | Соревнуется |
 
 ##### `name`
-- Default `FlectonePulse`
+- По умолчанию `FlectonePulse`
 
-Activity name
+Название активности
 
 ##### `url`
-- Default `https://flectone.net/pulse/`
+- По умолчанию `https://flectone.net/pulse/`
 
-Activity url
+Ссылка на активности
 
 :::
 
@@ -115,32 +116,32 @@ Activity url
 
 ![discord channel info](/discordchannelinfo.png)
 
-::: details Channel info setting
+::: details Настройка каналов с информацией
 #### `enable`
-- Default `true`
+- По умолчанию `true`
 
 ### `ticker`
 - `enable: true`
 
-Whether message needs to be updated once every certain period of time
+Нужно ли обновлять канал раз в какой-то промежуток времени
 
 - `period: 1200`
 
-How often in [ticks](https://minecraft.wiki/w/Tick) needs to be updated
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно обновлять
 
 :::
 
 ### `message-channel`
 
-List of [message types](#message-types) and [channel IDs](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID) in Discord
+Список [типов сообщений](#типы-сообщений) и [ID каналов](https://support.discord.com/hc/en/articles/206346498-%D0%93%D0%B4%D0%B5-%D0%BC%D0%BD%D0%B5-%D0%BD%D0%B0%D0%B9%D1%82%D0%B8-ID-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F) в Discord
 
-::: tip For example, I want Minecraft to send a message to Discord
-1. I copy the channel ID in discord `1286666844358316083`
-2. I write `CHAT: “1286666844358316083”`
+::: tip Например я хочу, чтобы из Minecraft отправлялось сообщение комманды `/ban` в Discord
+1. Копирую ID канала в дискорде `1286666844358316083`
+2. Прописываю `CHAT: "1286666844358316083"`
 
 ```yaml
 message-channel:
-  CHAT: "1286666844358316083" // [!code highlight]
+  COMMAND_BAN: "1286666844358316083" // [!code highlight]
 ```
 :::
 

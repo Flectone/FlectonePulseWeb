@@ -13,22 +13,19 @@
 ### По умолчанию
 ```yaml
 icon:
-  enable: true
+  enable: false
   random: true
-  permission:
-    name: "flectonepulse.module.server.icon"
-    type: TRUE
-  list:
+  values:
     - "server-icon-1.png"
     - "server-icon-2.png"
-  listener:
-    ServerListPingEvent: NORMAL
 ```
 
 ## Параметры
 
+- [Права](/ru/permissions/module/server/icon/)
+
 ### `enable`
-- По умолчанию `true`
+- По умолчанию `false`
 
 Включает или выключает работоспособность модуля
 
@@ -37,13 +34,7 @@ icon:
 
 Если включено, то изображение будет выбираться случайным образом, иначе по порядку
 
-### `permission`
-- Название `flectonepulse.module.server`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `list`
+### `values`
 
 `server-icon-1.png` ![server icon 1](/server-icon-1.png) 
 
@@ -56,13 +47,3 @@ icon:
 1. Находиться внутри папки `/FlectonePulse/icons/`
 2. Иметь размер **ТОЛЬКО** `64x64`
 :::
-
-### `listener`
-- По умолчанию:
-```yaml
-ServerListPingEvent: NORMAL
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
-<!--@include: @/ru/parts/listener.md-->

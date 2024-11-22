@@ -1,53 +1,45 @@
-# Spoiler
-Path `config.yml > module.tag.spoiler`
+# Спойлер
+Путь `config.yml > module.tag.spoiler`
 
-## Explanation
-The `spoiler` tag is used to hide a message before hovering over it
+## Пояснение
+Тег `spoiler` используется для скрытия сообщения, до наведения на него
 
-Usage: `<spoiler:message>`
+Использование: `<spoiler:сообщение>`
 
 ![spoiler message](/spoilermessage.png)
 ![spoiler minecraft](/spoilerminecraft.png)
 
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.tag.spoiler>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 spoiler:
   enable: true
   color: "<fcolor:2>"
-  permission:
-    name: "flectonepulse.module.tag.spoiler"
-    type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Message and symbol are changed here [Spoiler](/en/messages/ru_ru/module/tag/spoiler/)
+- [Сообщения](/en/messages/ru_ru/module/tag/spoiler/)
+- [Права](/en/permissions/module/server/tag/spoiler/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `color`
-- Default `<fcolor:2>`
+- По умолчанию `<fcolor:2>`
 
-Color of the message containing the spoiler
+Определяет цвет сообщения, содержащее спойлер
 
-::: tip Example
-`<spoiler:home>`.
+::: tip Пример
+`<spoiler:дом>`
 
-Here `house` will have the color `<fcolor:2>`.
+Здесь `дом` будет иметь цвет `<fcolor:2>`
 
 :::
-
-### `permission`
-- Name `flectonepulse.module.tag.spoiler`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module

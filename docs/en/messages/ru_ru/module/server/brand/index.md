@@ -1,38 +1,39 @@
-# Brand
-Path `messages > ru_ru.yml > module.server.brand`
+# Бренд
+Путь `messages > ru_ru.yml > module.server.brand`
 
-## Explanation
-Server brand messages
+## Пояснение
+Сообщения бренда сервера
 ![brand](/brand.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.brand>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 brand:
-  format:
-    - "<white>FlectonePulse"
-    - "<aqua>FlectonePulse"
+  values:
+    - "<white>Майнкрафт"
+    - "<aqua>Майнкрафт"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Brand](/en/config/module/server/brand/)
+- [Конфиг](/en/config/module/server/brand/)
+- [Права](/en/permissions/module/server/brand/)
 
-### `format`
-- Default:
+### `values`
+- По умолчанию:
 ```yaml
-- "<white>FlectonePulse"
-- "<aqua>FlectonePulse"
+- "<white>Майнкрафт"
+- "<aqua>Майнкрафт"
 ```
 
-Brand message list
+Список сообщений для бренда
 
-:::: warning Important
-Only [normal colors](#available-colors) can be inserted into the message
+::: warning ВАЖНО
+В сообщение можно вставлять только [обычные цвета](#доступные-цвета)
 :::
 
 <!--@include: @/en/parts/color.md-->

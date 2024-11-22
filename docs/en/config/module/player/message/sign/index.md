@@ -1,45 +1,29 @@
-# Sign
-Path `config.yml > module.player.message.sign`
+# Табличка
+Путь `config.yml > module.player.message.sign`
 
-## Explanation
-Module for messages on sign
+## Пояснение
+Модуль, отвечающий за сообщения на табличке
 ![sign](/signoak.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.sign>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 sign:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message.sign"
-    type: TRUE
-  listener:
-    SignChangeEvent: NORMAL
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player/message/sign/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.player.message.sign`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-SignChangeEvent: NORMAL
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Включает или выключает работоспособность модуля

@@ -1,25 +1,27 @@
 # SkinsRestorer
-Path `config.yml > module.integration.skinsrestorer`
+Путь `config.yml > module.integration.skinsrestorer`
 
-## Explanation
-Integration with SkinsRestorer allows you to get skins of **offline players**
+## Пояснение
+Интеграция с SkinsRestorer позволяет получать скины **оффлайн игроков**
 ![skinsrestorer](/skinsrestorer.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.skinsrestorer>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 skinsrestorer:
   enable: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/skinsrestorer/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 

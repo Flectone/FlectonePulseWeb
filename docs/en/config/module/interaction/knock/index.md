@@ -1,113 +1,73 @@
-# Knocks
-Path `config.yml > module.interaction.knock`
+# Стуки
+Путь `config.yml > module.interaction.knock`
 
-## Explanation
-Knocks are created by **SHIFT** and **LCM** on a particular block, producing a sound
+## Пояснение
+Стуки создаются с помощью **ШИФТ** и **ЛКМ** по конкретному блоку, производя звук
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.interaction.knock>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 knock:
   enable: false
-  permission:
-    name: "flectonepulse.module.interaction.knock"
-    type: TRUE
   cooldown:
     enable: false
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.interaction.knock.cooldown.ignore"
-      type: OP
-  type:
+  types:
     GLASS:
       enable: true
       type: "BLOCK_GLASS_PLACE:1:1"
-      permission:
-        name: "flectonepulse.module.interaction.knock.sound.glass"
-        type: TRUE
     DOOR:
       enable: true
       type: "BLOCK_WOOD_PLACE:1:1"
-      permission:
-        name: "flectonepulse.module.interaction.knock.sound.door"
-        type: TRUE
-  listener:
-    PlayerInteractEvent: NORMAL
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/interaction/knock/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.interaction.knock`
-- Type `TRUE`
-
-[Permission](#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `cooldown`
-- Default `false`
+- По умолчанию `false`
 
-Enables cooldown for the player between uses
+Включает задержку для игрока между использованиями
 
-::: details Cooldown setting
+::: details Настройка задержки
 #### `duration: 60`
 
-How many [ticks](https://minecraft.wiki/w/Tick) must elapse between uses
-
-#### `permission-ignore`
-- Name `flectonepulse.module.interaction.knock.cooldown.ignore`
-- Type `OP`
-
-[Permission](/en/config/module/#explanation) to ignore the delay
+Сколько должно пройти [тиков](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) между использованиями
 :::
 
 ### `type`
 
-List of block names and knock sounds
+Список названий блоков и звуков стука
 
-You can create your own knocks and the block name can be incomplete, but only contain the keyword
+Можно создавать свои стуки и название блока может быть неполным, а лишь содержать ключевое слово
 
-::: tip For example, I want to make a knock for all kinds of glass
-Then I will write the name `GLASS`
+::: tip Например я хочу сделать стук для всех видов стекла
+Тогда я напишу название `GLASS`, потому что оно встречается во всех названиях стёкл
 
 ```yaml
 GLASS:
   enable: true
   type: "BLOCK_GLASS_PLACE:1:1"
-  permission:
-    name: "flectonepulse.module.interaction.knock.sound.glass"
-    type: TRUE            
 ```
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
+  
+Включает проигрывание звука при использовании
 
-Enables sound when using
-
-::: details Sound setting
+::: details Настройка звука
 #### `type`
-- Default `BLOCK_GLASS_PLACE:1:1`
+- По умолчанию `BLOCK_GLASS_PLACE:1:1`
 
-Specifies the type (`BLOCK_GLASS_PLACE`), volume (`1`) and tone (`1`) of the sound via `:`
-
-#### `permission`
-- Name `flectonepulse.module.interaction.knock.sound.glass`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_GLASS_PLACE`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
-
-### `listener`
-- Default `PlayerInteractEvent: NORMAL`
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

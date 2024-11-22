@@ -14,7 +14,7 @@
 ```yaml
 discord:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
-  channel-info:
+  info-channel:
     id: "TPS <tps>"
   message-channel:
     CHAT:
@@ -22,7 +22,7 @@ discord:
       webhook:
         enable: false
         avatar: "https://mc-heads.net/avatar/<skin>/32.png"
-        content: "<message>"
+        content: ""
       embed:
         enable: false
         color: ""
@@ -35,9 +35,9 @@ discord:
         description: ""
         thumbnail: ""
         fields:
-          - name: ""
+          - anme: ""
             value: ""
-            inline: false
+            inline: "false"
         image: ""
         timestamp: true
         footer:
@@ -47,7 +47,8 @@ discord:
 
 ## Параметры
 
-- Конфигурация происходит тут [Дискорд](/ru/config/module/integration/discord/)
+- [Конфиг](/ru/config/module/integration/discord/)
+- [Права](/ru/permissions/module/integration/discord/)
 
 ### Плейсхолдеры
 
@@ -58,6 +59,7 @@ discord:
 
 Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
 - `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
 - `<player>` ник игрока, который отправил сообщение
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
@@ -67,8 +69,8 @@ discord:
 
 Формат сообщения, которое будет отправлено из Дискорда в Майнкрафт
 
-### `channel-info`
-- По умолчанию
+### `info-channel`
+- По умолчанию 
 ```yaml
 id: "TPS <tps>"
 ```

@@ -24,7 +24,8 @@ afk:
 
 ## Параметры
 
-- Конфигурация происходит тут [Афк](/ru/config/module/player/afk/)
+- [Конфиг](/ru/config/module/player/afk/)
+- [Права](/ru/permissions/module/player/afk/)
 
 ### `suffix`
 - По умолчанию `" <color:#FFFF00>⌚</color>"`

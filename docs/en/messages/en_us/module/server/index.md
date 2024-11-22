@@ -1,10 +1,10 @@
-# Server
-Path `messages > en_us.yml > module.server.*`
+# Сервер
+Путь `messages > en_us.yml > module.server.*`
 
-## Explanation
-Category for messages created to or from the server
-- [Messages](/en/messages/en_us/module/server/message/)
-- [Brand](/en/messages/en_us/module/server/brand/)
-- [Tab](/en/messages/en_us/module/server/tab/)
-- [MOTD](/en/messages/en_us/module/server/motd/)
-- [Player count](/en/messages/en_us/module/server/player-count/)
+## Пояснение
+Категория, отвечающая за сообщения созданные серверу или от сервера
+- [Бренд](/en/messages/en_us/module/server/brand/)
+- [Сообщения](/en/messages/en_us/module/server/message/)
+- [МОТД](/en/messages/en_us/module/server/motd/)
+- [Количество игроков](/en/messages/en_us/module/server/playercount/)
+- [Таб](/en/messages/en_us/module/server/tab/)

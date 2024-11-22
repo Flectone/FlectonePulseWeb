@@ -1,45 +1,26 @@
-# Anvil
-Path `config.yml > module.player.message.anvil`
+# Наковальня
+Путь `config.yml > module.player.message.anvil`
 
-## Explanation
-Module for messages in anvil when renaming
+## Пояснение
+Модуль, отвечающий за сообщения в наковальне при переименовании
 ![anvil](/anvil.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.anvil>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 anvil:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message.anvil"
-    type: TRUE
-  listener:
-    InventoryClickEvent: NORMAL
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player/message/anvil/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.player.message.anvil`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-InventoryClickEvent: NORMAL
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Включает или выключает работоспособность модуля

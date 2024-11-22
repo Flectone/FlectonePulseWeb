@@ -1,36 +1,28 @@
-# Name
-Path `config.yml > module.player.name.*`
+# Имя
+Путь `config.yml > module.player.name.*`
 
-## Explanation
-Module for player's name
+## Пояснение
+Модуль, отвечающий за имя игрока
 ![name tab](/nametab.png)
 ![name display](/namedisplay.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.name>
 ```
 
-### Default
+### По умолчанию
 ```yaml
-name:
+name-:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.name"
-    type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Message is being changed here [Name](/en/messages/en_us/module/player/name/)
+- [Сообщения](/en/messages/ru_ru/module/player/name/)
+- [Права](/en/permissions/module/player/name/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.player.name`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

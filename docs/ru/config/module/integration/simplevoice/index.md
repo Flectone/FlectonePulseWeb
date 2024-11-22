@@ -18,6 +18,8 @@ simplevoice:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/integration/simplevoice/)
+
 ### `enable`
 - По умолчанию `true`
 

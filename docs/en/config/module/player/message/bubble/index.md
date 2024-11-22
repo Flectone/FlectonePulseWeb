@@ -1,86 +1,66 @@
-# Bubble
-Path `config.yml > module.player.message.bubble`
+# Над головой
+Путь `config.yml > module.player.message.bubble`
 
-## Explanation
-Module for overhead messages
+## Пояснение
+Модуль, отвечающий за сообщения над головой
 ![bubble](/bubble.gif)
 
-Idea taken from [LightChatBubbles](https://github.com/atesin/LightChatBubbles), thanks @atesin
+Идея взята из [LightChatBubbles](https://github.com/atesin/LightChatBubbles), спасибо @atesin
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.bubble>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 bubble:
   enable: true
   max-per-line: 35
   handicap-chars: 10
   read-speed: 800
-  permission:
-    name: "flectonepulse.module.player.message.bubble"
-    type: TRUE
-  listener:
-    AsyncPlayerChatEvent: MONITOR
 ```
 
-## Message duration
+## Длительность сообщения
 
-### Duration formula
+### Формула длительности
 
 ```java
 int duration = (messageLength + handicapChars * countStrings) * 1200 / readSpeed;
 ```
 
-Duration = <br>
-(`message length` + [`handicap-chars`](#handicap-chars) * [`number of lines`](#formula-number-of-lines)) * `1200` / [`read-speed`](#read-speed)
+Длительность = <br>
+(`длина сообщения` + [`handicap-chars`](#handicap-chars) * [`количество строк`](#формула-количества-строк)) * `1200` / [`read-speed`](#read-speed)
 
-### Formula number of lines
+### Формула количества строк
 
 ```java
 int countStrings = messageLength / maxPerLine;
 ```
 
-This value is roughly equal to `message length` / [`max-per-line`](#max-per-line)
+Грубо говоря, это значение примерно равно `длина сообщения` / [`max-per-line`](#max-per-line)
 
-## Options
+## Параметры
 
-- Format of the message is changed here [Bubble](/en/messages/en_us/module/player/message/bubble/)
+- [Сообщения](/en/messages/ru_ru/module/player/message/bubble/)
+- [Права](/en/permissions/module/player/message/bubble/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables module functionality
+Включает или выключает работоспособность модуля
 
 ### `max-per-line`
-- Default `35`
+- По умолчанию `35`
 
-Maximum number of characters per line
+Максимальное количество символов на одной строчке
 
 ### `handicap-chars`
-- Default `10`
+- По умолчанию `10`
 
-Additional time to notice the message
+Дополнительное время, чтобы заметить сообщение
 
 ### `read-speed`
-- Default `800`
+- По умолчанию `800`
 
-Speed of reading message characters
-
-### `permission`
-- Name `flectonepulse.module.player.message.bubble`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `listener`
-- Default:
-```yaml
-AsyncPlayerChatEvent: MONITOR
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
+Скорость чтения символов сообщения

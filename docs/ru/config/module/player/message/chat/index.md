@@ -13,59 +13,39 @@
 ```yaml
 chat:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message.chat"
-    type: TRUE
-  type:
+  types:
     local:
       enable: true
-      range: 100
-      priority: 0
       null-recipient: true
       cancel: true
+      range: 100
+      priority: 0
       trigger: ""
-      permission:
-        name: "flectonepulse.module.player.message.chat.local"
-        type: TRUE
       cooldown:
         enable: false
         duration: 60
-        permission-ignore:
-          name: "flectonepulse.module.player.message.chat.local.cooldown.ignore"
-          type: OP
       sound:
         enable: false
         type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-        permission:
-          name: "flectonepulse.module.player.message.chat.local.sound"
-          type: TRUE
     global:
       enable: true
-      range: -2
-      priority: 5
       null-recipient: true
       cancel: false
+      range: -2
+      priority: 5
       trigger: "!"
-      permission:
-        name: "flectonepulse.module.player.message.chat.global"
-        type: TRUE
       cooldown:
         enable: false
         duration: 60
-        permission-ignore:
-          name: "flectonepulse.module.player.message.chat.global.cooldown.ignore"
-          type: OP
       sound:
         enable: false
         type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-        permission:
-          name: "flectonepulse.module.player.message.chat.global.sound"
-          type: TRUE
-listener:
-  AsyncPlayerChatEvent: NORMAL
 ```
 
 ## Параметры
+
+- [Сообщения](/ru/messages/ru_ru/module/player/message/chat/)
+- [Права](/ru/permissions/module/player/message/chat/)
 
 ### `enable`
 - По умолчанию `true`
@@ -82,70 +62,29 @@ listener:
 
 Список всех чатов с их [настройкой](#настройка-чата), можно добавлять свои
 
-### `listener`
-- По умолчанию:
-```yaml
-AsyncPlayerChatEvent: NORMAL
-```
-
-Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
 ## Настройка чата
-
-- Формат сообщения изменяется тут [Чат](/ru/messages/ru_ru/module/player/message/chat/)
 
 Любой чат по умолчанию выглядит так
 
 ```yaml
 название_чата:
   enable: true
-  range: число
-  priority: число
   null-recipient: true
   cancel: true
-  trigger: "триггер"
-  permission:
-    name: "flectonepulse.module.player.message.chat.название_чата"
-    type: TRUE
+  range: число
+  priority: число
+  trigger: ""
   cooldown:
     enable: false
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.player.message.chat.название_чата.cooldown.ignore"
-      type: OP
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.player.message.chat.название_чата.sound"
-      type: TRUE
 ```
 
 ### `enable`
 
 Включает работоспособность чата
-
-### `range`
-
-[Диапазон](#виды-диапазонов) чата, насколько далеко в блоках должен работать чат
-
-
-### `priority`
-
-Приоритет чата, который используется для выбора, когда у нескольких чатов одинаковый `trigger`. Выбирается тот, у кого приоритет больше
-
-::: tip Например есть чаты
-```yaml
-admin:
-  priority: 20
-  trigger: "!" // [!code highlight]
-helper:
-  priority: 10
-  trigger: "!" // [!code highlight]
-```
-
-Если игрок имеет право на оба чата, то плагином выбран будет `admin` т.к. у него больше `priority`
-:::
 
 ### `null-recipient`
 
@@ -166,6 +105,27 @@ helper:
 ![chat console](/chatconsole.png)
 :::
 
+### `range`
+
+[Диапазон](#виды-диапазонов) чата, насколько далеко в блоках должен работать чат
+
+### `priority`
+
+Приоритет чата, который используется для выбора, когда у нескольких чатов одинаковый `trigger`. Выбирается тот, у кого приоритет больше
+
+::: tip Например есть чаты
+```yaml
+admin:
+  priority: 20
+  trigger: "!" // [!code highlight]
+helper:
+  priority: 10
+  trigger: "!" // [!code highlight]
+```
+
+Если игрок имеет право на оба чата, то плагином выбран будет `admin` т.к. у него больше `priority`
+:::
+
 ### `trigger`
 
 Сообщение, с которого должно начинаться отправленное сообщение для [типа](#type) чата
@@ -177,10 +137,6 @@ helper:
 
 В итоговом сообщении `trigger` удаляется, т.е. если игрок отправил `!привет`, в итоге будет `привет` без `!`
 
-### `permission`
-
-[Право](/ru/config/module/#пояснение) для использования чата
-
 ### `cooldown`
 
 Включает задержку для игрока между использованием чата
@@ -189,10 +145,6 @@ helper:
 #### `duration`
 
 Сколько должно пройти [тиков](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) между использованием
-
-#### `permission-ignore`
-
-[Право](/ru/config/module/#пояснение) для игнорирования задержки
 :::
 
 ### `sound`
@@ -202,13 +154,7 @@ helper:
 ::: details Настройка звука
 #### `type`
 
-Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
-
-#### `permission`
-
-[Право](/ru/config/module/#пояснение) для проигрывания звука
+Определяет тип, громкость и тональность звука через `:`
 :::
-
-<!--@include: @/ru/parts/listener.md-->
 
 <!--@include: @/ru/parts/range.md-->

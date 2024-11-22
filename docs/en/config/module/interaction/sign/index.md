@@ -1,105 +1,69 @@
-# Sign
-Path `config.yml > module.interaction.sign`
+# Подпись
+Путь `config.yml > module.interaction.sign`
 
-## Explanation
-The sign is created on the item by **LCM** on anvil if player holds the dye in **additional** hand and the item in **main** hand
+## Пояснение
+Подпись создаётся на предмете с помощью **ЛКМ** по наковальне, если игрок держит в **дополнительной** руке краситель и в **главной** предмет
 ![sign](/sign.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.interaction.sign>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 sign:
   enable: false
   drop-dye: true
   block: "ANVIL"
-  permission:
-    name: "flectonepulse.module.interaction.sign"
-    type: TRUE
   cooldown:
     enable: false
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.interaction.sign.cooldown.ignore"
-      type: OP
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.interaction.sign.sound"
-      type: TRUE
-  listener:
-    PlayerInteractEvent: NORMAL
 ```
 
-## Options
+## Параметры
 
-- The sign message changes here [Sign](/en/messages/en_us/module/interaction/sign/)
+- [Сообщения](/en/messages/ru_ru/module/interaction/sign/)
+- [Права](/en/permissions/module/interaction/sign/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `drop-dye`
-- Default `true`
+- По умолчанию `true`
 
-Enable dye drop if resign
+Включает выкидывание красителя прошлой подписи, если подпись переделывается
 ![resign](/resign.gif)
 
 ### `block`
-- Default `ANVIL`
+- По умолчанию `ANVIL`
 
-Block to be clicked on for sign
-
-### `permission`
-- Name `flectonepulse.module.interaction.sign`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
+Блок, на который нужно нажать, для подписи
 
 ### `cooldown`
-- Default `false`
+- По умолчанию `false`
 
-Enables cooldown for the player between uses
+Включает задержку для игрока между использованиями
 
-::: details Cooldown setting
+::: details Настройка задержки
 #### `duration: 60`
 
-How many [ticks](https://minecraft.wiki/w/Tick) must elapse between uses
-
-#### `permission-ignore`
-- Name `flectonepulse.module.interaction.sign.cooldown.ignore`
-- Type `OP`
-
-[Permission](/en/config/module/#explanation) to ignore the delay
+Сколько должно пройти [тиков](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) между использованиями
 :::
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 #### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-#### `permission`
-- Name `flectonepulse.module.interaction.sign.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
-
-### `listener`
-- Default `PlayerInteractEvent: NORMAL`
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

@@ -19,29 +19,18 @@ spit:
   enable: false
   message: true
   item: "WHITE_DYE"
-  permission:
-    name: "flectonepulse.module.interaction.spit"
-    type: TRUE
   cooldown:
     enable: true
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.interaction.spit.cooldown.ignore"
-      type: OP
   sound:
     enable: true
     type: "ENTITY_LLAMA_SPIT:0.3:1"
-    permission:
-      name: "flectonepulse.module.interaction.spit.sound"
-      type: TRUE
-  listener:
-    PlayerInteractEvent: NORMAL
-    ProjectileHitEvent: LOWEST
 ```
 
 ## Параметры
 
-- Сообщение попадания плевка изменяется тут [Плевок](/ru/messages/ru_ru/module/interaction/spit/)
+- [Сообщения](/ru/messages/ru_ru/module/interaction/spit/)
+- [Права](/ru/permissions/module/interaction/spit/)
 
 ### `enable`
 - По умолчанию `false`
@@ -109,5 +98,3 @@ ProjectileHitEvent: LOWEST
 ```
 
 Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
-
-<!--@include: @/ru/parts/listener.md-->

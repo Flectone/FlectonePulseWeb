@@ -19,7 +19,8 @@ clear:
 
 ## Параметры
 
-- Конфигурация происходит тут [Очищение](/ru/config/module/server/message/clear/)
+- [Конфиг](/ru/config/module/server/message/clear/)
+- [Права](/ru/permissions/module/server/message/clear/)
 
 ### `single`
 - По умолчанию `<fcolor:1>🌊 Удалено <fcolor:2><number></fcolor:2> предметов у игрока <display_name>`

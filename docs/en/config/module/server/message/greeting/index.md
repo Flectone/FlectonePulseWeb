@@ -1,71 +1,42 @@
-# Greeting
-Path `config.yml > module.server.message.greeting`
+# Приветствие
+Путь `config.yml > module.server.message.greeting`
 
-## Explanation
-A message from server to player personally when he has connected
+## Пояснение
+Сообщение от сервера лично игроку, когда он подключился
 ![greeting](/greeting.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.greeting>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 greeting:
-  enable: true
-  permission:
-    name: "flectonepulse.module.server.message.greeting"
-    type: TRUE
+  enable: false
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.greeting.sound"
-      type: TRUE
-  listener:
-    PlayerJoinEvent: MONITOR
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Greeting](/en/messages/en_us/module/server/message/greeting/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/greeting/)
+- [Права](/en/permissions/module/server/message/greeting/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.greeting`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `"flectonepulse.module.server.message.greeting.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
-
-### `listener`
-- Default:
-```yaml
-PlayerJoinEvent: MONITOR
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

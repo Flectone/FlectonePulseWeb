@@ -20,7 +20,8 @@ telegram:
 
 ## Параметры
 
-- Конфигурация происходит тут [Телеграм](/ru/config/module/integration/telegram/)
+- [Конфиг](/ru/config/module/integration/telegram/)
+- [Права](/ru/permissions/module/integration/telegram/)
 
 ### Плейсхолдеры
 
@@ -31,6 +32,7 @@ telegram:
 
 Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
 - `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
 - `<player>` ник игрока, который отправил сообщение
 
 Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать

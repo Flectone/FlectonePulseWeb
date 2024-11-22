@@ -13,24 +13,16 @@
 
 ### По умолчанию
 ```yaml
-name:
+name-:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.name"
-    type: TRUE
 ```
 
 ## Параметры
 
-- Сообщения изменяются здесь [Имя](/ru/messages/ru_ru/module/player/name/)
+- [Сообщения](/ru/messages/ru_ru/module/player/name/)
+- [Права](/ru/permissions/module/player/name/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.player.name`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

@@ -13,20 +13,13 @@
 ```yaml
 interaction:
   enable: true
-  permission:
-    name: "flectonepulse.module.interaction"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/interaction)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля и его наследников
-
-### `permission`
-- Название `flectonepulse.module.interaction`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

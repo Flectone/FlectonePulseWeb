@@ -1,32 +1,33 @@
-# Clear
-Path `messages > en_us.yml > module.server.message.clear`
+# Очищение
+Путь `messages > en_us.yml > module.server.message.clear`
 
-## Explanation
-Message when using `/clear`
+## Пояснение
+Сообщение при использовании `/clear`
 ![clear](/clear.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.clear>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 clear:
   single: "<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from player <display_name>"
   multiple: "<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from <fcolor:2><count></fcolor:2> players"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Clear](/en/config/module/server/message/clear/)
+- [Конфиг](/en/config/module/server/message/clear/)
+- [Права](/en/permissions/module/server/message/clear/)
 
 ### `single`
-- Default `<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from player <display_name>`
+- По умолчанию `<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from player <display_name>`
 
-Message if a specific player's inventory is cleared
+Сообщение, если команда применяется для конкретного игрока
 
 ### `multiple`
-- Default `<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from <fcolor:2><count></fcolor:2> players`
+- По умолчанию `<fcolor:1>🌊 Removed <fcolor:2><number></fcolor:2> item(s) from <fcolor:2><count></fcolor:2> players`
 
-Message if inventory of many players is cleared
+Сообщение, если команда применяется для многих игроков

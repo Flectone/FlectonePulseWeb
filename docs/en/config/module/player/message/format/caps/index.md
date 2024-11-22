@@ -1,54 +1,39 @@
-# Caps
-Path `config.yml > module.player.message.format.caps`
+# Капс
+Путь `config.yml > module.player.message.format.caps`
 
-## Explanation
-This formatting removes caps in message
+## Пояснение
+Это форматирование убирает капс в сообщении
 ![caps](/caps.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message.format.caps>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 caps:
   enable: true
   trigger: 0.7
-  permission:
-    name: "flectonepulse.module.player.message.format.caps"
-    type: TRUE
-  permission-ignore:
-    name: "flectonepulse.module.player.message.format.caps.ignore"
-    type: OP
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
-## Options
+## Параметры
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `trigger`
-- Default `0.7`
+- По умолчанию `0.7`
 
-Percentage of letters that must be in uppercase for message to be changed
+Процент букв, которые должны быть в верхнем регистре, чтобы сообщение было изменено
 
-::: tip How to write a percentage correctly
-`0.7` is `70%`
+::: tip Как правильно написать процент
+`0.7` это `70%`
 
-`1.0` is `100%` i.e. all message
+`1.0` это `100%` т.е всё сообщение
 :::
-
-### `permission`
-- Name `flectonepulse.module.player.message.format.caps`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
-### `permission-ignore`
-- Name `flectonepulse.module.player.message.format.caps.ignore`
-- Type `OP`
-
-[Permission](/en/config/module/#explanation) to ignore check

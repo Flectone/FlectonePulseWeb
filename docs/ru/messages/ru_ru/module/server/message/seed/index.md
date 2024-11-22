@@ -18,7 +18,8 @@ seed:
 
 ## Параметры
 
-- Конфигурация происходит тут [Сид](/ru/config/module/server/message/seed/)
+- [Конфиг](/ru/config/module/server/message/seed/)
+- [Права](/ru/permissions/module/server/message/seed/)
 
 ### `format`
 - По умолчанию `<fcolor:1>🌐 Ключ генератора: [<fcolor:2><hover:show_text:'<fcolor:2>Нажми, чтобы скопировать в буфер обмена'><click:copy_to_clipboard:<seed>><seed></click></fcolor:2>]`

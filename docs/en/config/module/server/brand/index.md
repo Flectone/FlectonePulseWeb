@@ -1,53 +1,45 @@
-# Brand
-Path `config.yml > module.server.brand`
+# Бренд
+Путь `config.yml > module.server.brand`
 
-## Explanation
-Module for brand message in F3
+## Пояснение
+Модуль, отвечающий за сообщение бренда в F3
 ![brand](/brand.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.brand>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 brand:
   enable: true
   random: true
-  permission:
-    name: "flectonepulse.module.server.brand"
-    type: TRUE
   ticker:
     enable: true
     period: 100
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Brand](/en/messages/en_us/module/server/brand/)
+- [Сообщения](/en/messages/ru_ru/module/server/brand/)
+- [Права](/en/permissions/module/server/brand/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `random`
-- Default `true`
+- По умолчанию `true`
 
-If enabled, brand message will be selected randomly, otherwise in order
-
-### `permission`
-- Name `flectonepulse.module.server.brand`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Если включено, то сообщение бренда будет выбираться случайным образом, иначе по порядку
 
 ### `ticker`
 - `enable: true`
 
-Does brand need to be sent once every certain period of time
+Нужно ли отправлять бренд раз в какой-то промежуток времени
 
 - `period: 100`
 
-How often in [ticks](https://minecraft.wiki/w/Tick) needs to be updated
+Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно отправлять бренд

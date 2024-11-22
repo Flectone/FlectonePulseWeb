@@ -18,7 +18,8 @@ setblock:
 
 ## Параметры
 
-- Конфигурация происходит тут [Сетблок](/ru/config/module/server/message/setblock/)
+- [Конфиг](/ru/config/module/server/message/setblock/)
+- [Права](/ru/permissions/module/server/message/setblock/)
 
 ### `format`
 - По умолчанию `<fcolor:1>⏹ Изменён блок в точке <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2>`

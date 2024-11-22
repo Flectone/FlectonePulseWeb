@@ -21,88 +21,42 @@
 ```yaml
 emoji:
   enable: true
-  permission:
-    name: "flectonepulse.module.tag.emoji"
-    type: TRUE
-  list:
-    - target: ":)"
-      replacement: "☺"
-      hover: "<fcolor:1>:)"
-    - target: ":D"
-      replacement: "☻"
-      hover: "<fcolor:1>:D"
-    - target: ":("
-      replacement: "☹"
-      hover: "<fcolor:1>:("
-    - target: ":ok:"
-      replacement: "🖒"
-      hover: "<fcolor:1>:ok:"
-    - target: ":+1:"
-      replacement: "🖒"
-      hover: "<fcolor:1>:+1:"
-    - target: ":-1:"
-      replacement: "🖓"
-      hover: "<fcolor:1>:-1:"
-    - target: ":cool:"
-      replacement: "😎"
-      hover: "<fcolor:1>:cool:"
-    - target: "B)"
-      replacement: "😎"
-      hover: "<fcolor:1>B)"
-    - target: ":clown:"
-      replacement: "🤡"
-      hover: "<fcolor:1>:clown:"
-    - target: "<3"
-      replacement: "❤"
-      hover: "<fcolor:1><3"
-    - target: "XD"
-      replacement: "😆"
-      hover: "<fcolor:1>XD"
-    - target: "%)"
-      replacement: "😵"
-      hover: "<fcolor:1>%)"
-    - target: "=D"
-      replacement: "😃"
-      hover: "<fcolor:1>=D"
-    - target: ">:("
-      replacement: "😡"
-      hover: "<fcolor:1>>:("
-    - target: ":idk:"
-      replacement: "¯\\_(ツ)_/¯"
-      hover: "<fcolor:1>:idk:"
-    - target: ":angry:"
-      replacement: "(╯°□°)╯︵ ┻━┻"
-      hover: "<fcolor:1>:angry:"
-    - target: ":happy:"
-      replacement: "＼(＾O＾)／"
-      hover: "<fcolor:1>:happy:"
+  values:
+     :): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
+     :D: "<click:suggest_command:\":D\"><hover:show_text:\":D\">☻</hover></click>"
+     :(: "<click:suggest_command:\":(\"><hover:show_text:\":(\">☹</hover></click>"
+    :ok:: "<click:suggest_command:\":ok:\"><hover:show_text:\":ok:\">🖒</hover></click>"
+    :+1:: "<click:suggest_command:\":+1:\"><hover:show_text:\":+1:\">🖒</hover></click>"
+    :-1:: "<click:suggest_command:\":-1:\"><hover:show_text:\":-1:\">🖓</hover></click>"
+    :cool:: "<click:suggest_command:\":cool:\"><hover:show_text:\":cool:\">😎</hover></click>"
+     B): "<click:suggest_command:\"B)\"><hover:show_text:\"B)\">😎</hover></click>"
+    :clown:: "<click:suggest_command:\":clown:\"><hover:show_text:\":clown:\">🤡</hover></click>"
+     <3: "<click:suggest_command:\"<3\"><hover:show_text:\"<3\">❤</hover></click>"
+     XD: "<click:suggest_command:\"XD\"><hover:show_text:\"XD\">😆</hover></click>"
+    %): "<click:suggest_command:\"%)\"><hover:show_text:\"%)\">😵</hover></click>"
+     =D: "<click:suggest_command:\"=D\"><hover:show_text:\"=D\">😃</hover></click>"
+    >:(: "<click:suggest_command:\">:(\"><hover:show_text:\">:(\">😡</hover></click>"
+    :idk:: "<click:suggest_command:\":idk:\"><hover:show_text:\":idk:\">¯\\_(ツ)_/¯</hover></click>"
+    :angry:: "<click:suggest_command:\":angry:\"><hover:show_text:\":angry:\">(╯°□°)╯︵ ┻━┻</hover></click>"
+    :happy:: "<click:suggest_command:\":happy:\"><hover:show_text:\":happy:\">＼(＾O＾)／</hover></click>"
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/tag/emoji/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `permission`
-- Название `flectonepulse.module.tag.emoji`
-- Тип `TRUE`
+### `values`
 
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `list`
-
-Список всех доступных смайликов, каждый из которых имеет:
-- `target` - какой текст нужно заменить
-- `replacement` - на какой текст нужно заменить
-- `hover` - сообщение при наведении
+Список всех доступных смайликов, где ключ - какой текст нужно заменить, а значение - на какой текст нужно заменить
 
 ::: tip Например есть смайлик
 ```yaml
-target: ":)"
-replacement: "☺"
-hover: "<fcolor:1>:)"
+:): "<click:suggest_command:\":)\"><hover:show_text:\":)\">☺</hover></click>"
 ```
 
 Сообщение `:)` заменится на `☺`

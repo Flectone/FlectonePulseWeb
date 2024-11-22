@@ -1,73 +1,62 @@
-# Advancement
-Path `config.yml > module.server.message.advancement`
+# Достижение
+Путь `config.yml > module.server.message.advancement`
 
-## Explanation
-A message from server when a player gets an achievement
+## Пояснение
+Сообщение от сервера, когда игрок получает достижение
 ![task](/task.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.advancement>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 advancement:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.advancement"
-    type: TRUE
-  revoke:
-    enable: true
-  grant:
-    enable: true
+  grant: true
+  revoke: true
+  range: -1
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.advancement.sound"
-      type: TRUE
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Advancement](/en/messages/en_us/module/server/message/advancement/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/advancement/)
+- [Права](/en/permissions/module/server/message/advancement/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
-
-### `permission`
-- Name `flectonepulse.module.server.message.advancement`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля
 
 ### `revoke`
 - `enbale: true`
 
-Enable changing messages for `/advancement revoke` command
+Включает изменение сообщения у комманды `/advancement revoke`
 
 ### `grant`
 - `enbale: true`
 
-Enable changing messages for `/advancement grant` command
+Включает изменение сообщения у комманды `/advancement grant`
+
+### `range`
+- По умолчанию `-1`
+
+[Диапазон](#виды-диапазонов), насколько далеко в блоках отобразится сообщение
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Name `flectonepulse.module.server.message.advancement.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
+
+<!--@include: @/en/parts/range.md-->

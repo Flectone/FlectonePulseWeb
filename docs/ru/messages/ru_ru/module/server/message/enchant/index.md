@@ -19,7 +19,8 @@ enchant:
 
 ## Параметры
 
-- Конфигурация происходит тут [Зачарование](/ru/config/module/server/message/enchant/)
+- [Конфиг](/ru/config/module/server/message/enchant/)
+- [Права](/ru/permissions/module/server/message/enchant/)
 
 ### `single`
 - По умолчанию `<fcolor:1>📖 Наложены чары «<fcolor:2><lang:<enchant>> <lang:<level>></fcolor:2>» на предмет <display_name>`

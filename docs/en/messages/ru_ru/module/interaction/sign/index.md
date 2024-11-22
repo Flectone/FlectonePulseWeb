@@ -1,32 +1,27 @@
-# Sign
-Path `messages > ru_ru.yml > module.interaction.sign`
+# Подпись
+Путь `messages > ru_ru.yml > module.interaction.sign`
 
-## Explanation
-Messages when signing an item
+## Пояснение
+Сообщения при подписи предмета
 ![sign](/sign.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.interaction.sign>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 sign:
-  cooldown: "<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>SIGN</u> через <time>"
   format: "<dye><italic>#<player>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Sign](/en/config/module/interaction/sign/)
-
-### `cooldown`
-- Default `<color:#ff7171><b>⁉</b> Слишком быстро, ты сможешь использовать <u>SIGN</u> через <time>`
-
-Message to a player who attempted to perform an action without delay if `cooldown` is enabled
+- [Конфиг](/en/config/module/interaction/sign/)
+- [Права](/en/permissions/module/interaction/sign/)
 
 ### `format`
-- Default `<dye><italic>#<player>`
+- По умолчанию `<dye><italic>#<player>`
 
-Message in the item description as a sign
+Сообщение, которое будет занесено в описание предмета, как подпись

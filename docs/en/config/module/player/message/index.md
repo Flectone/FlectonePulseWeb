@@ -1,32 +1,25 @@
-# Message
-Path `config.yml > module.player.message.*`
+# Сообщения
+Путь `config.yml > module.player.message.*`
 
-## Explanation
-This module for messages that are sent by the player
+## Пояснение
+Этот модуль отвечает за сообщения, которые отправлены игроком
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.player.message>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 message:
   enable: true
-  permission:
-    name: "flectonepulse.module.player.message"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/player/message/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.player.message`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

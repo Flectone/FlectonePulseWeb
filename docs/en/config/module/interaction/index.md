@@ -1,32 +1,25 @@
-# Interactions
-Path `config.yml > module.interaction.*`
+# Взаимодействия
+Путь `config.yml > module.interaction.*`
 
-## Explanation
-An interaction is a module that depends on mouse clicks
+## Пояснение
+Взаимодействием называется модуль, который зависит от нажатия мыши
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.interaction>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 interaction:
   enable: true
-  permission:
-    name: "flectonepulse.module.interaction"
-    type: TRUE
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/interaction)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module and its children
-
-### `permission`
-- Name `flectonepulse.module.interaction`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
+Включает или выключает работоспособность модуля и его наследников

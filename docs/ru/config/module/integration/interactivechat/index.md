@@ -17,6 +17,8 @@ interactivechat:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/integration/interactivechat/)
+
 ### `enable`
 - По умолчанию `true`
 

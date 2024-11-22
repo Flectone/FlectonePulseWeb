@@ -1,113 +1,102 @@
-# Spit
-Path `config.yml > module.interaction.spit`
+# Плевок
+Путь `config.yml > module.interaction.spit`
 
-## Explanation
-To spit, you hold **white dye** in your hand and press **RCM**
+## Пояснение
+Чтобы плюнуть, нужно держать в руке **белый краситель** и нажать **ПКМ**
 ![spit](/spit.gif)
 
-If a spit hit a player, he will be written about it
+Если плевок попал в игрока, ему напишется об этом
 ![spit message](/spit.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.interaction.spit>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 spit:
   enable: false
   message: true
   item: "WHITE_DYE"
-  permission:
-    name: "flectonepulse.module.interaction.spit"
-    type: TRUE
   cooldown:
     enable: true
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.interaction.spit.cooldown.ignore"
-      type: OP
   sound:
     enable: true
     type: "ENTITY_LLAMA_SPIT:0.3:1"
-    permission:
-      name: "flectonepulse.module.interaction.spit.sound"
-      type: TRUE
-  listener:
-    PlayerInteractEvent: NORMAL
-    ProjectileHitEvent: LOWEST
 ```
 
-## Options
+## Параметры
 
-- The message of a spit hit is modified here [Spit](/en/messages/en_us/module/interaction/spit/)
+- [Сообщения](/en/messages/ru_ru/module/interaction/spit/)
+- [Права](/en/permissions/module/interaction/spit/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `message`
-- Default `true`
+- По умолчанию `true`
 
-Enable message of spit hitting the player
+Включает сообщение попадания плевка в игрока
 ![spit message](/spit.png)
 
 ### `item`
-- Default `WHITE_DYE`
+- По умолчанию `WHITE_DYE`
 
-The material used to create the spit
+Предмет, который используется для создания плевка
 
 ### `permission`
-- Name `flectonepulse.module.interaction.spit`
-- Type `TRUE`
+- Название `flectonepulse.module.interaction.spit`
+- Тип `TRUE`
 
-[Permission](/en/config/module/#explanation) to use the module
+[Право](/en/config/module/#пояснение) для использования модуля
 
 
 ### `cooldown`
-- Default `true`
+- По умолчанию `true`
 
-Enables cooldown for the player between uses
+Включает задержку для игрока между использованиями
 
-::: details Cooldown setting
+::: details Настройка задержки
 #### `duration: 60`
 
-How many [ticks](https://minecraft.wiki/w/Tick) must elapse between uses
+Сколько должно пройти [тиков](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) между использованиями
 
 #### `permission-ignore`
-- Name `flectonepulse.module.interaction.spit.cooldown.ignore`
-- Type `OP`
+- Название `flectonepulse.module.interaction.spit.cooldown.ignore`
+- Тип `OP`
 
-[Permission](/en/config/module/#explanation) to ignore the delay
+[Право](/en/config/module/#пояснение) для игнорирования задержки
 :::
 
 ### `sound`
-- Default `true`
+- По умолчанию `true`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 #### `type`
-- Default `ENTITY_LLAMA_SPIT:0.3:1`
+- По умолчанию `ENTITY_LLAMA_SPIT:0.3:1`
 
-Specifies the type (`ENTITY_LLAMA_SPIT`), volume (`0.3`) and tone (`1`) of the sound via `:`
+Определяет тип (`ENTITY_LLAMA_SPIT`), громкость (`0.3`) и тональность (`1`) звука через `:`
 
 #### `permission`
-- Name `flectonepulse.module.interaction.spit.sound`
-- Type `TRUE`
+- Название `flectonepulse.module.interaction.spit.sound`
+- Тип `TRUE`
 
-[Permission](/en/config/module/#explanation) to play sound
+[Право](/en/config/module/#пояснение) для проигрывания звука
 :::
 
 ### `listener`
-- Default:
+- По умолчанию:
 ```yaml
 PlayerInteractEvent: NORMAL
 ProjectileHitEvent: LOWEST
 ```
 
-List of event listeners and their [priority](#event-priority)
+Список слушателей событий и их [приоритет выполнения](#приоритет-выполнения)
 
 <!--@include: @/en/parts/listener.md-->

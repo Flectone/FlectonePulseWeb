@@ -1,20 +1,20 @@
-# Mark
-Path `config.yml > module.interaction.mark`
+# Метка
+Путь `config.yml > module.interaction.mark`
 
-## Explanation
-The mark is created with **RCM** and a wooden sword in the main hand
+## Пояснение
+Марка создаётся c помощью **ПКМ** и деревянного меча в главной руке
 ![mark](/mark.gif)
 
-::: info Condition
-The sword can be renamed in Anvil to [available-color](#available-colors), for example `RED` and the mark will be red
+::: info Условие
+Меч можно переименовать в наковальне на [доступный цвет](#доступные-цвета), например `RED` и метка будет красной
 :::
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.interaction.mark>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 mark:
   enable: false
@@ -24,108 +24,74 @@ mark:
   duration: 60
   item: "WOODEN_SWORD"
   entity: "MAGMA_CUBE"
-  permission:
-    name: "flectonepulse.module.interaction.mark"
-    type: TRUE
   cooldown:
     enable: false
     duration: 60
-    permission-ignore:
-      name: "flectonepulse.module.interaction.mark.cooldown.ignore"
-      type: OP
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.interaction.mark.sound"
-      type: TRUE
-  listener:
-    PlayerInteractEvent: NORMAL
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/interaction/mark/)
 
 ### `enable`
-- Default `false`
+- По умолчанию `false`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
 ### `limit`
-- Default `true`
+- По умолчанию `true`
 
-Does not allow you to make more than one tag as long as it exists
+Не позволяет сделать больше одной метки, пока она существует
 
 ### `color`
-- Default `true`
+- По умолчанию `true`
 
-Enables the ability to color mark. Sword must be renamed to one of [available-colors](#available-colors)
+Включает возможность цветных меток. Для этого меч нужно переименовать в один из [доступных цветов](#доступные-цвета)
 
 ### `range`
-- Default `100`
+- По умолчанию `100`
 
-Distance in blocks, how far you can place the tag
+Расстояние в блоках, насколько далеко можно разместить метку
 
 ### `duration`
-- Default `60`
+- По умолчанию `60`
 
-How many [ticks](https://minecraft.wiki/w/Tick) will be [limit](#limit)
+Сколько времени в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) будет [лимит](#limit)
 
 ### `item`
-- Default `WOODEN_SWORD`
+- По умолчанию `WOODEN_SWORD`
 
-Material with which the mark is placed
+Предмет, с помощью которого ставится метка
 
 ### `entity`
-- Default `MAGMA_CUBE`
+- По умолчанию `MAGMA_CUBE`
 
-The mob's hitbox, which is used to create mark
-
-### `permission`
-- Название `flectonepulse.module.interaction.mark`
-- Тип `TRUE`
-
-[Permission](/en/config/module/#explanation) to use the module
-
+Хитбокс моба, который используется для создания метки
 
 ### `cooldown`
-- Default `false`
+- По умолчанию `false`
 
-Enables cooldown for the player between uses
+Включает задержку для игрока между использованиями
 
-::: details Cooldown setting
+::: details Настройка задержки
 #### `duration: 60`
 
-How many [ticks](https://minecraft.wiki/w/Tick) must elapse between uses
-
-#### `permission-ignore`
-- Name `flectonepulse.module.interaction.mark.cooldown.ignore`
-- Type `OP`
-
-[Permission](/en/config/module/#explanation) to ignore the delay
+Сколько должно пройти [тиков](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) между использованиями
 :::
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 #### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-#### `permission`
-- Name `flectonepulse.module.interaction.mark.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
 
-### `listener`
-- Default `PlayerInteractEvent: NORMAL`
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->
 <!--@include: @/en/parts/color.md-->

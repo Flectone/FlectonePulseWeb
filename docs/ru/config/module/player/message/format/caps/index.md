@@ -15,12 +15,9 @@
 caps:
   enable: true
   trigger: 0.7
-  permission:
-    name: "flectonepulse.module.player.message.format.caps"
-    type: TRUE
-  permission-ignore:
-    name: "flectonepulse.module.player.message.format.caps.ignore"
-    type: OP
+  sound:
+    enable: false
+    type: "BLOCK_NOTE_BLOCK_BELL:1:1"
 ```
 
 ## Параметры
@@ -40,15 +37,3 @@ caps:
 
 `1.0` это `100%` т.е всё сообщение
 :::
-
-### `permission`
-- Название `flectonepulse.module.player.message.format.caps`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля
-
-### `permission-ignore`
-- Название `flectonepulse.module.player.message.format.caps.ignore`
-- Тип `OP`
-
-[Право](/ru/config/module/#пояснение) для игнорирования проверки капса

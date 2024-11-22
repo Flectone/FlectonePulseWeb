@@ -18,6 +18,8 @@ skinsrestorer:
 
 ## Параметры
 
+- [Права](/ru/permissions/module/integration/skinsrestorer/)
+
 ### `enable`
 - По умолчанию `true`
 

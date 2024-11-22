@@ -1,26 +1,27 @@
-# Deop
-Path `messages > ru_ru.yml > module.server.message.deop`
+# Деоп
+Путь `messages > ru_ru.yml > module.server.message.deop`
 
-## Options
-Message when using `/deop`
+## Пояснение
+Сообщение при использовании `/deop`
 ![deop](/deop.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.server.message.deop>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 deop:
   format: "<fcolor:1>🤖 <display_name> больше не является оператором сервера"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Deop](/en/config/module/server/message/deop/)
+- [Конфиг](/en/config/module/server/message/deop/)
+- [Права](/en/permissions/module/server/message/deop/)
 
 ### `format`
-- Default `<fcolor:1>🤖 <display_name> больше не является оператором сервера`
+- По умолчанию `<fcolor:1>🤖 <display_name> больше не является оператором сервера`
 
-Message to be sent
+Сообщение, которое будет отправлено

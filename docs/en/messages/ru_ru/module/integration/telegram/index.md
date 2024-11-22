@@ -1,16 +1,16 @@
-# Telegram
-Path `messages > ru_ru.yml > module.integration.telegram`
+# Телеграм
+Путь `messages > ru_ru.yml > module.integration.telegram`
 
-## Explanation
-Messages integration with Telegram
+## Пояснение
+Сообщения интеграции с Телеграмом
 ![telegrammessage](/telegrammessage1.png)
 
-## Edit
+## Редактирование
 ```yaml
 <ru_ru.module.integration.telegram>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 telegram:
   for-minecraft: "<fcolor:2><name> <fcolor:1>» <fcolor:4><message>"
@@ -18,37 +18,39 @@ telegram:
     CHAT: "<final_message>"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Telegram](/en/config/module/integration/telegram/)
+- [Конфиг](/en/config/module/integration/telegram/)
+- [Права](/en/permissions/module/integration/telegram/)
 
 ### Плейсхолдеры
 
-You can use all the placeholders that are used in the initial message for minecraft
-::: tip For example for ban message
-There's a `<reason>` placeholder, so I can use `<reason>` inside Telegram messages
+Ты можешь использовать все плейсхолдеры, которые используются в начальном сообщении для майнкрафта
+::: tip Например для сообщения о блокировке
+Там есть плейсхолдер `<reason>`, значит я могу использовать `<reason>` внутри телеграм сообщений
 :::
 
-There are also placeholders that are REALLY going to be replaced in any message
-- `<final_message>` the message sent to minecraft
-- `<player>` the nickname of the player who sent the message
+Также есть плейсхолдеры, которые ТОЧНО будут заменяться в любом сообщении
+- `<final_message>` сообщение, отправленное в майнкрафт
+- `<final_clear_message>` сообщение, отправленное в майнкрафт без unicode-смайлов
+- `<player>` ник игрока, который отправил сообщение
 
-All placeholders from `PlaceholderAPI` and `FlectonePulse` will work too
+Очевидно, что все плейсхолдеры из `PlaceholderAPI` и `FlectonePulse` тоже будут работать
 
 ### `for-minecraft`
-- Default `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
+- По умолчанию `<fcolor:2><name> <fcolor:1>» <fcolor:4><message>`
 
-Format of the message that will be sent from Telegram to Minecraft
+Формат сообщения, которое будет отправлено из Телеграма в Майнкрафт
 
 ### `message-channel`
 
-List of [messages](#message-types) with the format of the final message
+Список [сообщений](#типы-сообщении) с форматом итогового сообщения
 
-::: tip If you want to add another message:
-1. Take title from [list](#message-types)
-2. Insert in `message-channel`
+::: tip Если хочешь добавить другое сообщение:
+1. Возьми название из [списка](#типы-сообщении)
+2. Вставь в `message-channel`
 ```yaml
-message_name: "<final_message>"
+название_сообщения: "<final_message>"
 ```
 :::
 

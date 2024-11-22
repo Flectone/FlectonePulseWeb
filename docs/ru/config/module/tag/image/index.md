@@ -21,12 +21,11 @@
 image:
   enable: true
   color: "<fcolor:2>"
-  permission:
-    name: "flectonepulse.module.tag.image"
-    type: TRUE
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/tag/image/)
 
 ### `enable`
 - По умолчанию `true`
@@ -44,9 +43,3 @@ image:
 Здесь `дом` будет иметь цвет `<fcolor:2>`
 
 :::
-
-### `permission`
-- Название `flectonepulse.module.tag.image`
-- Тип `TRUE`
-
-[Право](/ru/config/module/#пояснение) для использования модуля

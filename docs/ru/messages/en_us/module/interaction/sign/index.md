@@ -13,18 +13,13 @@
 ### По умолчанию
 ```yaml
 sign:
-  cooldown: "<color:#ff7171><b>⁉</b> Too fast, you'll be able to use <u>SIGN</u> in <time>"
   format: "<dye><italic>#<player>"
 ```
 
 ## Параметры
 
-- Конфигурация происходит тут [Подпись](/ru/config/module/interaction/sign/)
-
-### `cooldown`
-- По умолчанию `<color:#ff7171><b>⁉</b> Too fast, you'll be able to use <u>SIGN</u> in <time>`
-
-Сообщение, которое будет отправлено игроку, пытавшемуся выполнить действие без задержки, если включен `cooldown`
+- [Конфиг](/ru/config/module/interaction/sign/)
+- [Права](/ru/permissions/module/interaction/sign/)
 
 ### `format`
 - По умолчанию `<dye><italic>#<player>`

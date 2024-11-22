@@ -1,24 +1,26 @@
 # SuperVanish
-Path `config.yml > module.integration.supervanish`
+Путь `config.yml > module.integration.supervanish`
 
-## Explanation
-Integration with SuperVanish (and PremiumVanish) hides players' actions in vanish
+## Пояснение
+Интеграция с SuperVanish (и PremiumVanish) скрывает действия игроков в ванише
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.integration.supervanish>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 supervanish:
   enable: true
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/integration/supervanish/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 

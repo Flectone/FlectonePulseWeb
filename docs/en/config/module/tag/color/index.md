@@ -1,66 +1,57 @@
-# Color
-Path `config.yml > module.tag.color`
+# Цвета
+Путь `config.yml > module.tag.color`
 
-## Explanation
-The `fcolor` tag is used for individual color settings on each player
+## Пояснение
+Тег `fcolor` используется для индивидуальных настроек цвета у каждого игрока
 
-Usage: `<fcolor:number>`
+Использование: `<fcolor:номер>`
 
 ![color message](/colormessage.png)
 ![color](/color.gif)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.tag.color>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 color:
   enable: true
-  use-player-colors: true
-  permission:
-    name: "flectonepulse.module.tag.color"
-    type: TRUE
-  list:
+  use-recipient-colors: true
+  values:
     1: "#ADD8E6"
     2: "#87CEFA"
     3: "#A9A9A9"
     4: "#FFFAFA"
 ```
 
-## Options
+## Параметры
+
+- [Права](/en/permissions/module/tag/color/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `use-player-colors`
-- Default `true`
+### `use-recipient-colors`
+- По умолчанию `true`
 
-If enabled, any message that contains `<fcolor:number>` will be formatted relative to the recipient
+Если включено, то любое сообщение, которое содержит `<fcolor:номер>`, будет отформатировано относительно получателя
 ![color true](/colortrue.gif)
 
-Otherwise, the color will depend on the sender's colors
+Иначе цвет будет зависеть от цветов отправителя
 ![color false](/colorfalse.gif)
 
+### `values`
 
-### `permission`
-- Name `flectonepulse.module.tag.color`
-- Type `TRUE`
+Список всех используемых цветов, где номер является ключом к цвету по умолчанию
 
-[Permission](/en/config/module/#explanation) to use the module
-
-### `list`
-
-A list of all colors used, where the number is the key to the default color
-
-
-::: tip For example, there is a color
+::: tip Например есть цвет
 ```yaml
 1: "#ADD8E6"
 ```
-`1` is the number for color `#ADD8E6` <br><br>
-To use such a tag, you must write `<fcolor:1>`
+`1` - номер для цвета `#ADD8E6` <br><br>
+Чтобы такой тег использовать, нужно писать `<fcolor:1>`
 :::

@@ -15,18 +15,19 @@
 ```yaml
 luckperms:
   enable: true
-  sort: true
-  group: {}
+  tab-sort: true
 ```
 
 ## Параметры
+
+- [Права](/ru/permissions/module/integration/luckperms/)
 
 ### `enable`
 - По умолчанию `true`
 
 Включает или выключает работоспособность модуля
 
-### `sort`
+### `tab-sort`
 - По умолчанию `true`
 
 Включает или выключает сортировку в ТАБе по [весу группы](https://luckperms.net/wiki/Weight)

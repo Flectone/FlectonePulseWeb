@@ -1,71 +1,48 @@
-# Join
-Path `config.yml > module.server.message.join`
+# Подключение
+Путь `config.yml > module.server.message.join`
 
-## Explanation
-A message from server when a player has connected
+## Пояснение
+Сообщение от сервера, когда игрок подключился
 ![join](/join.png)
 
-## Edit
+## Редактирование
 ```yaml
 <config.module.server.message.join>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 join:
   enable: true
-  permission:
-    name: "flectonepulse.module.server.message.join"
-    type: TRUE
+  first: true
   sound:
     enable: false
     type: "BLOCK_NOTE_BLOCK_BELL:1:1"
-    permission:
-      name: "flectonepulse.module.server.message.join.sound"
-      type: TRUE
-  listener:
-    PlayerJoinEvent: HIGHEST
 ```
 
-## Options
+## Параметры
 
-- Messages are changed here [Join](/en/messages/en_us/module/server/message/join/)
+- [Сообщения](/en/messages/ru_ru/module/server/message/join/)
+- [Права](/en/permissions/module/server/message/join/)
 
 ### `enable`
-- Default `true`
+- По умолчанию `true`
 
-Enables or disables the functionality of the module
+Включает или выключает работоспособность модуля
 
-### `permission`
-- Name `flectonepulse.module.server.message.join`
-- Type `TRUE`
+### `first`
+- По умолчанию `true`
 
-[Permission](/en/config/module/#explanation) to use the module
+Включает сообщение о самом первом подключении игрока на сервер
 
 ### `sound`
-- Default `false`
+- По умолчанию `false`
 
-Turns on sound playback when using
+Включает проигрывание звука при использовании
 
-::: details Sound setting
+::: details Настройка звука
 ### `type`
-- Default `BLOCK_NOTE_BLOCK_BELL:1:1`
+- По умолчанию `BLOCK_NOTE_BLOCK_BELL:1:1`
 
-Specifies the type (`BLOCK_NOTE_BLOCK_BELL`), volume (`1`) and pitch (`1`) of the sound via `:`
-
-### `permission`
-- Default `"flectonepulse.module.server.message.join.sound`
-- Type `TRUE`
-
-[Permission](/en/config/module/#explanation) to play sound
+Определяет тип (`BLOCK_NOTE_BLOCK_BELL`), громкость (`1`) и тональность (`1`) звука через `:`
 :::
-
-### `listener`
-- Default:
-```yaml
-PlayerJoinEvent: HIGHEST
-```
-
-List of event listeners and their [priority](#event-priority)
-
-<!--@include: @/en/parts/listener.md-->

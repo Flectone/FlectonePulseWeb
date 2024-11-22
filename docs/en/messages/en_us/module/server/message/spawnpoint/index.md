@@ -1,32 +1,33 @@
-# Spawnpoint
-Path `messages > en_us.yml > module.server.message.spawnpoint`
+# Спавнпоинт
+Путь `messages > en_us.yml > module.server.message.spawnpoint`
 
-## Explanation
-Message when using `/spawnpoint`
+## Пояснение
+Сообщение при использовании `/spawnpoint`
 ![spawnpoint](/spawnpoint.png)
 
-## Edit
+## Редактирование
 ```yaml
 <en_us.module.server.message.spawnpoint>
 ```
 
-### Default
+### По умолчанию
 ```yaml
 spawnpoint:
   single: "<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <display_name>"
   multiple: "<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <fcolor:2><count></fcolor:2> players"
 ```
 
-## Options
+## Параметры
 
-- Configuration is here [Spawnpoint](/en/config/module/server/message/spawnpoint/)
+- [Конфиг](/en/config/module/server/message/spawnpoint/)
+- [Права](/en/permissions/module/server/message/spawnpoint/)
 
 ### `single`
-- Default `<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <display_name>`
+- По умолчанию `<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <display_name>`
 
-Message if command is applied to a specific player
+Сообщение, если команда применяется для конкретного игрока
 
 ### `multiple`
-- Default `<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <fcolor:2><count></fcolor:2> players`
+- По умолчанию `<fcolor:1>🛌 Set spawn point to <fcolor:2><x></fcolor:2>, <fcolor:2><y></fcolor:2>, <fcolor:2><z></fcolor:2> [<fcolor:2><angle></fcolor:2>] in <fcolor:2><world></fcolor:2> for <fcolor:2><count></fcolor:2> players`
 
-Message if command is applied to many players
+Сообщение, если команда применяется для многих игроков

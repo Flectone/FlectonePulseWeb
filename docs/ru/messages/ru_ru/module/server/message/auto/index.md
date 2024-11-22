@@ -13,48 +13,25 @@
 ### По умолчанию
 ```yaml
 auto:
-  format:
-    1:
-      - " "
-      - "<fcolor:1>◇ Сервер использует <url:\"https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</url> :)"
-      - " "
-    2:
-      - " "
-      - "<fcolor:1>      ❝ Заходи в дискорд ❠ "
-      - "<fcolor:2>    <u><url:https://discord.flectone.net>https://discord.flectone.net</url></u>"
-      - " "
-    3:
-      - " "
-      - "<fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse</fcolor:2> на Boosty "
-      - "<fcolor:1>⚡ <u><url:\"https://boosty.to/thefaser/\">https://boosty.to/thefaser/</url></u>"
-      - " "
+  values:
+    - "<br><fcolor:1>◇ Сервер использует <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
+    - "<br><fcolor:1>      ❝ Заходи в дискорд ❠<br><fcolor:2>    <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
+    - "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse</fcolor:2> на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+    - "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
 ```
 
 ## Параметры
 
-- Конфигурация происходит тут [Автоматическое](/ru/config/module/server/message/auto/)
+- [Конфиг](/ru/config/module/server/message/auto/)
+- [Права](/ru/permissions/module/server/message/auto/)
 
-### `format`
+### `values`
 - По умолчанию:
 ```yaml
-1:
-  - " "
-  - "<fcolor:1>◇ Сервер использует <url:\"https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</url> :)"
-  - " "
-2:
-  - " "
-  - "<fcolor:1>      ❝ Заходи в дискорд ❠ "
-  - "<fcolor:2>    <u><url:https://discord.flectone.net>https://discord.flectone.net</url></u>"
-  - " "
-3:
-  - " "
-  - "<fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse</fcolor:2> на Boosty "
-  - "<fcolor:1>⚡ <u><url:\"https://boosty.to/thefaser/\">https://boosty.to/thefaser/</url></u>"
-  - " "
+- "<br><fcolor:1>◇ Сервер использует <click:open_url:\"https://flectone.net/pulse/\"><hover:show_text:\"<fcolor:2>https://flectone.net/pulse/\"><fcolor:2>FlectonePulse</hover></click> :)<br>"
+- "<br><fcolor:1>      ❝ Заходи в дискорд ❠<br><fcolor:2>    <u><click:open_url:\"https://discord.flectone.net\"><hover:show_text:\"<fcolor:2>https://discord.flectone.net\">https://discord.flectone.net</hover></click></u><br>"
+- "<br><fcolor:1>⚡ Поддержи <fcolor:2>FlectonePulse</fcolor:2> на Boosty <br><fcolor:1>⚡ <u><click:open_url:\"https://boosty.to/thefaser/\"><hover:show_text:\"<fcolor:2>https://boosty.to/thefaser/\">https://boosty.to/thefaser/</hover></click></u><br>"
+- "<br><fcolor:1>   ✉ Заходи в телеграм ✉ <br><fcolor:2>    <u><click:open_url:\"https://t.me/flectone\"><hover:show_text:\"<fcolor:2>https://t.me/flectone\">https://t.me/flectone</hover></click></u><br>"
 ```
 
-Список индексов и сообщений, которые им соответствуют
-
-::: danger Обязательно
-Индексы должны идти по порядку без пропусков, т.е. `1`, `2`, `3`, `4` и т.д.
-:::
+Список автоматических сообщений

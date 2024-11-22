@@ -19,7 +19,8 @@ spoiler:
 
 ## Параметры
 
-- Конфигурация происходит тут [Спойлер](/ru/config/module/tag/spoiler/)
+- [Конфиг](/ru/config/module/tag/spoiler/)
+- [Права](/ru/permissions/module/tag/spoiler/)
 
 ### `symbol`
 - По умолчанию `█`
