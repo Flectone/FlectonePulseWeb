@@ -15,7 +15,7 @@
 footer:
   values:
     - "<br><fcolor:1>ТПС <tps>, Онлайн <online><br>"
-    - "<br><fcolor:1><br><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br><br>"
+    - "<br><fcolor:1><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br>"
 ```
 
 ## Параметры
@@ -27,7 +27,7 @@ footer:
 - По умолчанию:
 ```yaml
 - "<br><fcolor:1>ТПС <tps>, Онлайн <online><br>"
-- "<br><fcolor:1><br><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br><br>"
+- "<br><fcolor:1><fcolor:1>Привет <fcolor:2><player></fcolor:2>!<br>"
 ```
 
 Список сообщений
