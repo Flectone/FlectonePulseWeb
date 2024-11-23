@@ -20,10 +20,8 @@
 module:
   cooldown: "<color:#ff7171><b>⁉</b> Too fast, you'll be able to use it in <time>"
   time:
-    day: "d"
-    hour: "h"
-    minute: "m"
-    second: "s"
+    format: "dd'd' HH'h' mm'm' ss.SSS's'"
+    zero: "0s"
 ```
 
 ## Параметры
@@ -37,12 +35,10 @@ module:
 Сообщение, которое показывается при слишком частом использовании, если включен `cooldown`
 
 ### `time`
-- По умолчанию:
-```yaml
-day: "d"
-hour: "h"
-minute: "m"
-second: "s"
-```
+- `format: "dd'd' HH'h' mm'm' ss.SSS's'"`
 
-Форматирование времени
+Форматирование времени ([Apache DurationFormatUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/time/DurationFormatUtils.html))
+
+- `zero: "0s"`
+
+Форматирование времени, если оно равно нулю
