@@ -2,7 +2,7 @@
 Путь `commands.yml > module.command.clearmail`
 
 ## Пояснение
-Комманда для удаления отправленных [писем](/en/config/module/command/mail/)
+Комманда для удаления отправленных [писем](/en/commands/module/command/mail/)
 ![command clearmail](/commandclearmail.png)
 
 ## Редактирование
