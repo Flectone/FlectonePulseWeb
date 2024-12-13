@@ -163,8 +163,16 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/en/messages/ru_ru/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/en/messages/ru_ru/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/en/messages/ru_ru/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/en/messages/ru_ru/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/en/messages/ru_ru/module/server/status/description/' },
+                                  { text: 'Игроки', link: '/en/messages/ru_ru/module/server/status/players/' },
+                                  { text: 'Версия', link: '/en/messages/ru_ru/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/en/messages/ru_ru/module/server/tab/',
@@ -311,8 +319,16 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/en/messages/en_us/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/en/messages/en_us/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/en/messages/en_us/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/en/messages/en_us/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/en/messages/ru_ru/module/server/status/description/' },
+                                  { text: 'Игроки', link: '/en/messages/ru_ru/module/server/status/players/' },
+                                  { text: 'Версия', link: '/en/messages/ru_ru/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/en/messages/en_us/module/server/tab/',
@@ -433,7 +449,6 @@ export default defineConfig({
                     collapsed: true,
                     items: [
                         { text: 'Бренд', link: '/en/config/module/server/brand/' },
-                        { text: 'Иконка', link: '/en/config/module/server/icon/' },
                         {
                             text: 'Сообщения',
                             link: '/en/config/module/server/message/',
@@ -455,8 +470,17 @@ export default defineConfig({
                               { text: 'Спавнпоинт', link: '/en/config/module/server/message/spawnpoint/' },
                             ]
                         },
-                        { text: 'МОТД', link: '/en/config/module/server/motd/' },
-                        { text: 'Количество игроков', link: '/en/config/module/server/playercount/' },
+                        {
+                            text: 'Статус',
+                            link: '/en/config/module/server/status/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Описание', link: '/en/config/module/server/status/description/' },
+                              { text: 'Иконка', link: '/en/config/module/server/status/icon/' },
+                              { text: 'Игроки', link: '/en/config/module/server/status/players/' },
+                              { text: 'Версия', link: '/en/config/module/server/status/version/' },
+                            ]
+                        },
                         {
                             text: 'Таб',
                             link: '/en/config/module/server/tab/',
@@ -687,7 +711,6 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                             { text: 'Бренд', link: '/en/permissions/module/server/brand/' },
-                            { text: 'Иконка', link: '/en/permissions/module/server/icon/' },
                             {
                                 text: 'Сообщения',
                                 link: '/en/permissions/module/server/message/',
@@ -709,8 +732,17 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/en/permissions/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/en/permissions/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/en/permissions/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/en/permissions/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/en/permissions/module/server/status/description/' },
+                                  { text: 'Иконка', link: '/en/permissions/module/server/status/icon/' },
+                                  { text: 'Игроки', link: '/en/permissions/module/server/status/players/' },
+                                  { text: 'Версия', link: '/en/permissions/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/en/permissions/module/server/tab/',
