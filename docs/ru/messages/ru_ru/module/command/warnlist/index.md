@@ -20,36 +20,10 @@ warnlist:
     header: "<fcolor:2>▋ Предупреждения: <count> <br>"
     line: "<hover:show_text:\"<fcolor:1>Снять предупреждение <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Дата: <date><br>Время: <time><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
-    gui:
-      header: "Предупреждения: <count>"
-      line:
-        - "<display_name>"
-        - "<fcolor:1>Время: <time>"
-        - "<fcolor:1>Дата <date>"
-        - "<fcolor:1>Снять предупреждение"
-      previous:
-        - "<color:#666666>Предыдущая страница"
-        - "<color:#666666>Перейти на страницу <color:#fad311><page>"
-      next:
-        - "<color:#666666>Следующая страница"
-        - "<color:#666666>Перейти на страницу <color:#fad311><page>"
   player:
     header: "<fcolor:2>▋ Все предупреждения: <count> <br>"
     line: "<hover:show_text:\"<fcolor:1>Снять предупреждение <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Дата: <date><br>Время: <time><br>Причина: <reason>\">[ПОДРОБНЕЕ]</hover>"
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
-    gui:
-      header: "Все предупреждения: <count>"
-      line:
-        - "<display_name>"
-        - "<fcolor:1>Время: <time>"
-        - "<fcolor:1>Дата <date>"
-        - "<fcolor:1>Снять предупреждение"
-      previous:
-        - "<color:#666666>Предыдущая страница"
-        - "<color:#666666>Перейти на страницу <color:#fad311><page>"
-      next:
-        - "<color:#666666>Следующая страница"
-        - "<color:#666666>Перейти на страницу <color:#fad311><page>"
 ```
 
 ## Параметры
@@ -95,49 +69,6 @@ warnlist:
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
 
 Нижняя часть сообщения списка
-
-#### `gui`
-Сообщения для GUI
-
-#### `header`
-- По умолчанию `Предупреждения: <count>`
-
-Сообщение для названия GUI
-
-#### `line`
-- По умолчанию:
-```yaml
-- "<display_name>"
-- "<fcolor:1>Время: <time>"
-- "<fcolor:1>Дата <date>"
-- "<fcolor:1>Снять предупреждение"
-```
-Список сообщений для формата предупреждения из списка, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `previous`
-- По умолчанию:
-```yaml
-- "<color:#666666>Предыдущая страница"
-- "<color:#666666>Перейти на страницу <color:#fad311><page>"
-```
-
-Список сообщений для предмета `предыдущая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `next`
-- По умолчанию:
-```yaml
-- "<color:#666666>Следующая страница"
-- "<color:#666666>Перейти на страницу <color:#fad311><page>"
-```
-
-Список сообщений для предмета `следующая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
 :::
 
 ### `player`
@@ -158,48 +89,5 @@ warnlist:
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Страница: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
 
 Нижняя часть сообщения списка
-
-#### `gui`
-Сообщения для GUI
-
-#### `header`
-- По умолчанию `Все предупреждения: <count>`
-
-Сообщение для названия GUI
-
-#### `line`
-- По умолчанию:
-```yaml
-- "<display_name>"
-- "<fcolor:1>Время: <time>"
-- "<fcolor:1>Дата <date>"
-- "<fcolor:1>Снять предупреждение"
-```
-Список сообщений для формата предупреждения из списка, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `previous`
-- По умолчанию:
-```yaml
-- "<color:#666666>Предыдущая страница"
-- "<color:#666666>Перейти на страницу <color:#fad311><page>"
-```
-
-Список сообщений для предмета `предыдущая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `next`
-- По умолчанию:
-```yaml
-- "<color:#666666>Следующая страница"
-- "<color:#666666>Перейти на страницу <color:#fad311><page>"
-```
-
-Список сообщений для предмета `следующая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
 :::
 

@@ -5,7 +5,7 @@
 Модуль, отвечающий за сообщения над головой
 ![bubble](/bubble.gif)
 
-Идея взята из [LightChatBubbles](https://github.com/atesin/LightChatBubbles), спасибо @atesin
+Идея взята из [LightChatBubbles](https://github.com/atesin/LightChatBubbles)
 
 ## Редактирование
 ```yaml
@@ -16,9 +16,11 @@
 ```yaml
 bubble:
   enable: true
-  max-per-line: 35
-  handicap-chars: 10
-  read-speed: 800
+  new-system: true
+  line-width: 200
+  read-speed: 100.0
+  handicap-chars: 10.0
+  height: 0.2
 ```
 
 ## Длительность сообщения
@@ -26,19 +28,10 @@ bubble:
 ### Формула длительности
 
 ```java
-int duration = (messageLength + handicapChars * countStrings) * 1200 / readSpeed;
+long duration = (countWords + handicapChars) / readSpeed * 1200;
 ```
 
-Длительность = <br>
-(`длина сообщения` + [`handicap-chars`](#handicap-chars) * [`количество строк`](#формула-количества-строк)) * `1200` / [`read-speed`](#read-speed)
-
-### Формула количества строк
-
-```java
-int countStrings = messageLength / maxPerLine;
-```
-
-Грубо говоря, это значение примерно равно `длина сообщения` / [`max-per-line`](#max-per-line)
+Длительность = (`количество слов` + [`handicap-chars`](#handicap-chars)) / [`read-speed`](#read-speed) * `1200`
 
 ## Параметры
 
@@ -50,17 +43,35 @@ int countStrings = messageLength / maxPerLine;
 
 Включает или выключает работоспособность модуля
 
-### `max-per-line`
-- По умолчанию `35`
+### `new-system`
+- По умолчанию `true`
+
+Включает работу сообщений над головой через Text Display
+
+::: warning ПРЕДУПРЕЖДЕНИЕ
+Это будет работать только на серверах 1.19.4 и выше
+:::
+
+### `line-width`
+- По умолчанию `200`
 
 Максимальное количество символов на одной строчке
 
-### `handicap-chars`
-- По умолчанию `10`
-
-Дополнительное время, чтобы заметить сообщение
-
 ### `read-speed`
-- По умолчанию `800`
+- По умолчанию `100.0`
 
 Скорость чтения символов сообщения
+
+### `handicap-chars`
+- По умолчанию `10.0`
+
+Дополнительное время для коротких сообщений
+
+### `height`
+- По умолчанию `0.2`
+
+Насколько высоко от головы будет сообщение
+
+::: warning ПРЕДУПРЕЖДЕНИЕ
+Это будет работать только на серверах 1.19.4 и выше, при включённом `new-system`
+:::

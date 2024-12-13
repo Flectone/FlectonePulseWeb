@@ -18,18 +18,6 @@ ignorelist:
   header: "<fcolor:2>▋ Ignores: <count><br>"
   line: "<hover:show_text:\"<fcolor:1>Click to unignore <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1>Date: <date>"
   footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
-  gui:
-    header: "Ignores: <count>"
-    line:
-      - "<display_name>"
-      - "<fcolor:1><date>"
-      - "<fcolor:1>Click to unignore"
-    previous:
-      - "<color:#666666>Previous page"
-      - "<color:#666666>Go to page <color:#fad311><page>"
-    next:
-      - "<color:#666666>Next page"
-      - "<color:#666666>Go to page <color:#fad311><page>"
 ```
 
 ## Параметры
@@ -61,47 +49,4 @@ ignorelist:
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
 
 Нижняя часть сообщения списка
-
-### `gui`
-
-::: details Сообщения для GUI
-#### `header`
-- По умолчанию `Ignores: <count>`
-
-Сообщение для названия GUI
-
-#### `line`
-- По умолчанию:
-```yaml
-- "<display_name>"
-- "<fcolor:1><date>"
-- "<fcolor:1>Click to unignore"
-```
-Список сообщений для формата игнорирования из списка, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `previous`
-- По умолчанию:
-```yaml
-- "<color:#666666>Previous page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `предыдущая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `next`
-- По умолчанию:
-```yaml
-- "<color:#666666>Next page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `следующая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-:::
 

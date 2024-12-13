@@ -26,7 +26,7 @@ export default defineConfig({
       description: "FlectonePulse documentation",
       themeConfig: {
         nav: [
-          { text: 'Version 0.0.8', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Version 0.0.9', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         outline: {
           level: [2, 3]
@@ -780,7 +780,7 @@ export default defineConfig({
       description: "FlectonePulse документация",
       themeConfig: {
         nav: [
-          { text: 'Версия 0.0.8', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
+          { text: 'Версия 0.0.9', link: 'https://github.com/Flectone/FlectonePulseWeb/' },
         ],
         lastUpdated: {
           text: 'Обновлено'
@@ -934,8 +934,16 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/ru/messages/ru_ru/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/ru/messages/ru_ru/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/ru/messages/ru_ru/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/ru/messages/ru_ru/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/ru/messages/ru_ru/module/server/status/description/' },
+                                  { text: 'Игроки', link: '/ru/messages/ru_ru/module/server/status/players/' },
+                                  { text: 'Версия', link: '/ru/messages/ru_ru/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/ru/messages/ru_ru/module/server/tab/',
@@ -1082,8 +1090,16 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/ru/messages/en_us/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/ru/messages/en_us/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/ru/messages/en_us/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/ru/messages/en_us/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/ru/messages/ru_ru/module/server/status/description/' },
+                                  { text: 'Игроки', link: '/ru/messages/ru_ru/module/server/status/players/' },
+                                  { text: 'Версия', link: '/ru/messages/ru_ru/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/ru/messages/en_us/module/server/tab/',
@@ -1204,7 +1220,6 @@ export default defineConfig({
                     collapsed: true,
                     items: [
                         { text: 'Бренд', link: '/ru/config/module/server/brand/' },
-                        { text: 'Иконка', link: '/ru/config/module/server/icon/' },
                         {
                             text: 'Сообщения',
                             link: '/ru/config/module/server/message/',
@@ -1226,8 +1241,17 @@ export default defineConfig({
                               { text: 'Спавнпоинт', link: '/ru/config/module/server/message/spawnpoint/' },
                             ]
                         },
-                        { text: 'МОТД', link: '/ru/config/module/server/motd/' },
-                        { text: 'Количество игроков', link: '/ru/config/module/server/playercount/' },
+                        {
+                            text: 'Статус',
+                            link: '/ru/config/module/server/status/',
+                            collapsed: true,
+                            items: [
+                              { text: 'Описание', link: '/ru/config/module/server/status/description/' },
+                              { text: 'Иконка', link: '/ru/config/module/server/status/icon/' },
+                              { text: 'Игроки', link: '/ru/config/module/server/status/players/' },
+                              { text: 'Версия', link: '/ru/config/module/server/status/version/' },
+                            ]
+                        },
                         {
                             text: 'Таб',
                             link: '/ru/config/module/server/tab/',
@@ -1458,7 +1482,6 @@ export default defineConfig({
                         collapsed: true,
                         items: [
                             { text: 'Бренд', link: '/ru/permissions/module/server/brand/' },
-                            { text: 'Иконка', link: '/ru/permissions/module/server/icon/' },
                             {
                                 text: 'Сообщения',
                                 link: '/ru/permissions/module/server/message/',
@@ -1480,8 +1503,17 @@ export default defineConfig({
                                   { text: 'Спавнпоинт', link: '/ru/permissions/module/server/message/spawnpoint/' },
                                 ]
                             },
-                            { text: 'МОТД', link: '/ru/permissions/module/server/motd/' },
-                            { text: 'Количество игроков', link: '/ru/permissions/module/server/playercount/' },
+                            {
+                                text: 'Статус',
+                                link: '/ru/permissions/module/server/status/',
+                                collapsed: true,
+                                items: [
+                                  { text: 'Описание', link: '/ru/permissions/module/server/status/description/' },
+                                  { text: 'Иконка', link: '/ru/permissions/module/server/status/icon/' },
+                                  { text: 'Игроки', link: '/ru/permissions/module/server/status/players/' },
+                                  { text: 'Версия', link: '/ru/permissions/module/server/status/version/' },
+                                ]
+                            },
                             {
                                 text: 'Таб',
                                 link: '/ru/permissions/module/server/tab/',

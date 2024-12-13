@@ -21,36 +21,10 @@ banlist:
     header: "<fcolor:2>▋ Bans: <count> <br>"
     line: "<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Date: <date><br>Time: <time><br>Reason: <reason>\">[MORE]</hover>"
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
-    gui:
-      header: "Bans: <count>"
-      line:
-        - "<display_name>"
-        - "<fcolor:1>Time <time>"
-        - "<fcolor:1>Date <date>"
-        - "<fcolor:1>Click to unban"
-      previous:
-        - "<color:#666666>Previous page"
-        - "<color:#666666>Go to page <color:#fad311><page>"
-      next:
-        - "<color:#666666>Next page"
-        - "<color:#666666>Go to page <color:#fad311><page>"
   player:
     header: "<fcolor:2>▋ All bans: <count> <br>"
     line: "<hover:show_text:\"<fcolor:1>Click to unban <display_name>\"><click:run_command:\"<command>\"><color:#ff7171>☒ <display_name></click></hover> <fcolor:1><hover:show_text:\"<fcolor:1>Date: <date><br>Time: <time><br>Reason: <reason>\">[MORE]</hover>"
     footer: "<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→"
-    gui:
-      header: "All bans: <count>"
-      line:
-        - "<display_name>"
-        - "<fcolor:1>Time <time>"
-        - "<fcolor:1>Date <date>"
-        - "<fcolor:1>Click to unban"
-      previous:
-        - "<color:#666666>Previous page"
-        - "<color:#666666>Go to page <color:#fad311><page>"
-      next:
-        - "<color:#666666>Next page"
-        - "<color:#666666>Go to page <color:#fad311><page>"
 ```
 
 ## Параметры
@@ -96,49 +70,6 @@ banlist:
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
 
 Нижняя часть сообщения списка
-
-#### `gui`
-Сообщения для GUI
-
-#### `header`
-- По умолчанию `Bans: <count>`
-
-Сообщение для названия GUI
-
-#### `line`
-- По умолчанию:
-```yaml
-- "<display_name>"
-- "<fcolor:1>Time <time>"
-- "<fcolor:1>Date <date>"
-- "<fcolor:1>Click to unban"
-```
-Список сообщений для формата бана из списка, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `previous`
-- По умолчанию:
-```yaml
-- "<color:#666666>Previous page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `предыдущая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `next`
-- По умолчанию:
-```yaml
-- "<color:#666666>Next page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `следующая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
 :::
 
 ### `player`
@@ -159,48 +90,5 @@ banlist:
 - По умолчанию `<br>▋ <fcolor:2><click:run_command:\"<command> <prev_page>\">←</click> <fcolor:1>Page: <current_page>/<last_page> <fcolor:2><click:run_command:\"<command> <next_page>\">→`
 
 Нижняя часть сообщения списка
-
-#### `gui`
-Сообщения для GUI
-
-#### `header`
-- По умолчанию `All bans: <count>`
-
-Сообщение для названия GUI
-
-#### `line`
-- По умолчанию:
-```yaml
-- "<display_name>"
-- "<fcolor:1>Time <time>"
-- "<fcolor:1>Date <date>"
-- "<fcolor:1>Click to unban"
-```
-Список сообщений для формата бана из списка, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `previous`
-- По умолчанию:
-```yaml
-- "<color:#666666>Previous page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `предыдущая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
-#### `next`
-- По умолчанию:
-```yaml
-- "<color:#666666>Next page"
-- "<color:#666666>Go to page <color:#fad311><page>"
-```
-
-Список сообщений для предмета `следующая страница`, где:
-- Первая строчка - название предмета
-- Остальные строчки - описание предмета
-
 :::
 

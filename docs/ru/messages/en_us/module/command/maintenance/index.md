@@ -15,7 +15,8 @@
 maintenance:
   not: "<color:#ff7171><b>⁉</b> You have not maintenance"
   already: "<color:#ff7171><b>⁉</b> You have already maintenance"
-  motd: "<color:#ff7171>The server is under maintenance"
+  server-description: "<color:#ff7171>The server is under maintenance"
+  server-version: "Maintenance"
   kick: "<color:#ff7171>★ The server is under maintenance"
   format-true: "<fcolor:1>★ You have <fcolor:2>enabled</fcolor:2> maintenance on the server"
   format-false: "<fcolor:1>★ You have <fcolor:2>disabled</fcolor:2> maintenance on the server"
@@ -36,10 +37,15 @@ maintenance:
 
 Сообщение при попытке включения технических работ, если они включены
 
-### `motd`
+### `server-description`
 - По умолчанию `<color:#ff7171>The server is under maintenance`
 
 Сообщения при просмотре сервера, если включены технические работы
+
+### `server-version`
+- По умолчанию `Maintenance`
+
+Название версии сервера, если включены технические работы
 
 ### `kick`
 - По умолчанию `<color:#ff7171>★ The server is under maintenance`

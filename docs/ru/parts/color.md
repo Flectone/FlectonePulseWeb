@@ -14,6 +14,7 @@
 | `GOLD`         |
 | `GRAY`         |
 | `GREEN`        |
+| `RED`          |
 | `LIGHT_PURPLE` |
 | `WHITE`        |
 | `YELLOW`       |

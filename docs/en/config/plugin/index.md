@@ -13,7 +13,7 @@
 ```yaml
 plugin:
   console: "Console"
-  version: "0.0.8"
+  version: "0.0.9"
   language: "en_us"
   language-player: true
   metrics: true

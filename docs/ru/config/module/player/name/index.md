@@ -1,5 +1,5 @@
 # Имя
-Путь `config.yml > module.player.name.*`
+Путь `config.yml > module.player.name-.*`
 
 ## Пояснение
 Модуль, отвечающий за имя игрока
@@ -8,7 +8,7 @@
 
 ## Редактирование
 ```yaml
-<config.module.player.name>
+<config.module.player.name->
 ```
 
 ### По умолчанию

@@ -18,7 +18,7 @@
 ```yaml
 afk:
   enable: true
-  global: true
+  range: -1
   delay: 3000
   ignore:
     - "afk"
@@ -37,14 +37,10 @@ afk:
 
 Включает или выключает работоспособность модуля
 
-### `global`
-- По умолчанию `true`
+### `range`
+- По умолчанию `-1`
 
-Обозначает, что это сообщение должно быть отправлено всему серверу
-![afk global message](/afkglobalmessage.png)
-
-Если `false`, то сообщение получит только сам игрок
-![afk local message](/afklocalmessage.png)
+[Диапазон](#виды-диапазонов), насколько далеко в блоках отобразится сообщение
 
 ### `delay`
 - По умолчанию `3000`
@@ -74,3 +70,5 @@ afk:
 - `period: 20`
 
 Как часто в [тиках](https://ru.minecraft.wiki/w/%D0%A2%D0%B0%D0%BA%D1%82) нужно проверять, что игрок АФК или нет
+
+<!--@include: @/en/parts/range.md-->
