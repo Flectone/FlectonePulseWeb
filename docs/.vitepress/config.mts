@@ -37,6 +37,12 @@ export default defineConfig({
         },
         sidebar: [
             {
+                text: 'Файл config.yml',
+                link: '/en/config/',
+                collapsed: false,
+                items: []
+            },
+            {
                 text: 'Папка localizations/',
                 link: '/en/localizations/',
                 collapsed: false,
@@ -362,10 +368,98 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'Файл config.yml',
-                link: '/en/config/',
+                text: 'Файл message.yml',
+                link: '/en/message/',
                 collapsed: false,
-                items: []
+                items: [
+                    { text: 'Достижение', link: '/en/message/advancement/' },
+                    { text: 'Наковальня', link: '/en/message/anvil/' },
+                    { text: 'Автоматическое', link: '/en/message/auto/' },
+                    { text: 'Книга', link: '/en/message/book/' },
+                    { text: 'Бренд', link: '/en/message/brand/' },
+                    { text: 'Над головой', link: '/en/message/bubble/' },
+                    { text: 'Чат', link: '/en/message/chat/' },
+                    { text: 'Очищение', link: '/en/message/clear/' },
+                    {
+                        text: 'Контактирование',
+                        link: '/en/message/contact/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Афк', link: '/en/message/contact/afk/' },
+                            { text: 'Стуки', link: '/en/message/contact/knock/' },
+                            { text: 'Метка', link: '/en/message/contact/mark/' },
+                            { text: 'Правое нажатие', link: '/en/message/contact/rightclick/' },
+                            { text: 'Подпись', link: '/en/message/contact/sign/' },
+                            { text: 'Плевок', link: '/en/message/contact/spit/' },
+                            { text: 'Снятие подписи', link: '/en/message/contact/unsign/' },
+                        ]
+                    },
+                    { text: 'Смерть', link: '/en/message/death/' },
+                    { text: 'Деоп', link: '/en/message/deop/' },
+                    { text: 'Зачарование', link: '/en/message/enchant/' },
+                    {
+                        text: 'Форматирование',
+                        link: '/en/message/format/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Цвета', link: '/en/message/format/color/' },
+                            { text: 'Смайлики', link: '/en/message/format/emoji/' },
+                            { text: 'Изображение', link: '/en/message/format/image/' },
+                            { text: 'Упоминание', link: '/en/message/format/image/' },
+                            {
+                                text: 'Модерация',
+                                link: '/en/message/format/moderation/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Капс', link: '/en/message/format/moderation/caps/' },
+                                    { text: 'Ругательство', link: '/en/message/format/moderation/swear/' },
+                                ]
+                            },
+                            { text: 'Имя', link: '/en/message/format/name_/' },
+                            { text: 'Спойлер', link: '/en/message/format/spoiler/' },
+                            { text: 'Измерение', link: '/en/message/format/world/' },
+                        ]
+                    },
+                    { text: 'Режим игры', link: '/en/message/gamemode/' },
+                    { text: 'Приветствие', link: '/en/message/greeting/' },
+                    { text: 'Подключение', link: '/en/message/join/' },
+                    {
+                        text: 'Значения',
+                        link: '/en/message/objective/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Под ником', link: '/en/message/objective/belowname/' },
+                            { text: 'В табе', link: '/en/message/objective/tabname/' },
+                        ]
+                    },
+                    { text: 'Оп', link: '/en/message/op/' },
+                    { text: 'Отключение', link: '/en/message/quit/' },
+                    { text: 'Сид', link: '/en/message/seed/' },
+                    { text: 'Сетблок', link: '/en/message/setblock/' },
+                    { text: 'Табличка', link: '/en/message/sign/' },
+                    { text: 'Спавнпоинт', link: '/en/message/spawnpoint/' },
+                    {
+                        text: 'Статус',
+                        link: '/en/message/status/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Иконка', link: '/en/message/status/icon/' },
+                            { text: 'Описание', link: '/en/message/status/motd/' },
+                            { text: 'Игроки', link: '/en/message/status/players/' },
+                            { text: 'Версия', link: '/en/message/status/version/' },
+                        ]
+                    },
+                    {
+                        text: 'Таб',
+                        link: '/en/message/tab/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Верхнее', link: '/en/message/tab/header/' },
+                            { text: 'Нижнее', link: '/en/message/tab/footer/' },
+                            { text: 'Имя в списке', link: '/en/message/tab/playerlistname/' },
+                        ]
+                    },
+                ]
             },
             {
                 text: 'Файл permission.yml',
@@ -571,6 +665,12 @@ export default defineConfig({
         },
 
         sidebar: [
+            {
+                text: 'Файл config.yml',
+                link: '/ru/config/',
+                collapsed: false,
+                items: []
+            },
             {
                 text: 'Папка localizations/',
                 link: '/ru/localizations/',
@@ -897,10 +997,98 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'Файл config.yml',
-                link: '/ru/config/',
+                text: 'Файл message.yml',
+                link: '/ru/message/',
                 collapsed: false,
-                items: []
+                items: [
+                    { text: 'Достижение', link: '/ru/message/advancement/' },
+                    { text: 'Наковальня', link: '/ru/message/anvil/' },
+                    { text: 'Автоматическое', link: '/ru/message/auto/' },
+                    { text: 'Книга', link: '/ru/message/book/' },
+                    { text: 'Бренд', link: '/ru/message/brand/' },
+                    { text: 'Над головой', link: '/ru/message/bubble/' },
+                    { text: 'Чат', link: '/ru/message/chat/' },
+                    { text: 'Очищение', link: '/ru/message/clear/' },
+                    {
+                        text: 'Контактирование',
+                        link: '/ru/message/contact/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Афк', link: '/ru/message/contact/afk/' },
+                            { text: 'Стуки', link: '/ru/message/contact/knock/' },
+                            { text: 'Метка', link: '/ru/message/contact/mark/' },
+                            { text: 'Правое нажатие', link: '/ru/message/contact/rightclick/' },
+                            { text: 'Подпись', link: '/ru/message/contact/sign/' },
+                            { text: 'Плевок', link: '/ru/message/contact/spit/' },
+                            { text: 'Снятие подписи', link: '/ru/message/contact/unsign/' },
+                        ]
+                    },
+                    { text: 'Смерть', link: '/ru/message/death/' },
+                    { text: 'Деоп', link: '/ru/message/deop/' },
+                    { text: 'Зачарование', link: '/ru/message/enchant/' },
+                    {
+                        text: 'Форматирование',
+                        link: '/ru/message/format/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Цвета', link: '/ru/message/format/color/' },
+                            { text: 'Смайлики', link: '/ru/message/format/emoji/' },
+                            { text: 'Изображение', link: '/ru/message/format/image/' },
+                            { text: 'Упоминание', link: '/ru/message/format/image/' },
+                            {
+                                text: 'Модерация',
+                                link: '/ru/message/format/moderation/',
+                                collapsed: true,
+                                items: [
+                                    { text: 'Капс', link: '/ru/message/format/moderation/caps/' },
+                                    { text: 'Ругательство', link: '/ru/message/format/moderation/swear/' },
+                                ]
+                            },
+                            { text: 'Имя', link: '/ru/message/format/name_/' },
+                            { text: 'Спойлер', link: '/ru/message/format/spoiler/' },
+                            { text: 'Измерение', link: '/ru/message/format/world/' },
+                        ]
+                    },
+                    { text: 'Режим игры', link: '/ru/message/gamemode/' },
+                    { text: 'Приветствие', link: '/ru/message/greeting/' },
+                    { text: 'Подключение', link: '/ru/message/join/' },
+                    {
+                        text: 'Значения',
+                        link: '/ru/message/objective/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Под ником', link: '/ru/message/objective/belowname/' },
+                            { text: 'В табе', link: '/ru/message/objective/tabname/' },
+                        ]
+                    },
+                    { text: 'Оп', link: '/ru/message/op/' },
+                    { text: 'Отключение', link: '/ru/message/quit/' },
+                    { text: 'Сид', link: '/ru/message/seed/' },
+                    { text: 'Сетблок', link: '/ru/message/setblock/' },
+                    { text: 'Табличка', link: '/ru/message/sign/' },
+                    { text: 'Спавнпоинт', link: '/ru/message/spawnpoint/' },
+                    {
+                        text: 'Статус',
+                        link: '/ru/message/status/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Иконка', link: '/ru/message/status/icon/' },
+                            { text: 'Описание', link: '/ru/message/status/motd/' },
+                            { text: 'Игроки', link: '/ru/message/status/players/' },
+                            { text: 'Версия', link: '/ru/message/status/version/' },
+                        ]
+                    },
+                    {
+                        text: 'Таб',
+                        link: '/ru/message/tab/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Верхнее', link: '/ru/message/tab/header/' },
+                            { text: 'Нижнее', link: '/ru/message/tab/footer/' },
+                            { text: 'Имя в списке', link: '/ru/message/tab/playerlistname/' },
+                        ]
+                    },
+                ]
             },
             {
                 text: 'Файл permission.yml',
