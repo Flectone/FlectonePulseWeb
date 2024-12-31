@@ -370,7 +370,7 @@ export default defineConfig({
             {
                 text: 'Файл integration.yml',
                 link: '/en/integration/',
-                collapsed: true,
+                collapsed: false,
                 items: [
                     { text: 'Дискорд', link: '/en/integration/discord/' },
                     { text: 'InteractiveChat', link: '/en/integration/interactivechat/' },
