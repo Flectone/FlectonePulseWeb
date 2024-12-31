@@ -368,6 +368,24 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'Файл integration.yml',
+                link: '/en/integration/',
+                collapsed: true,
+                items: [
+                    { text: 'Дискорд', link: '/en/integration/discord/' },
+                    { text: 'InteractiveChat', link: '/en/integration/interactivechat/' },
+                    { text: 'LuckPerms', link: '/en/integration/luckperms/' },
+                    { text: 'PlaceholderAPI', link: '/en/integration/placeholderapi/' },
+                    { text: 'PlasmoVoice', link: '/en/integration/plasmovoice/' },
+                    { text: 'SimpleVoice', link: '/en/integration/simplevoice/' },
+                    { text: 'SkinsRestorer', link: '/en/integration/skinsrestorer/' },
+                    { text: 'SuperVanish', link: '/en/integration/supervanish/' },
+                    { text: 'Телеграм', link: '/en/integration/telegram/' },
+                    { text: 'Твич', link: '/en/integration/twitch/' },
+                    { text: 'Vault', link: '/en/integration/vault/' },
+                ]
+            },
+            {
                 text: 'Файл message.yml',
                 link: '/en/message/',
                 collapsed: false,
@@ -994,6 +1012,24 @@ export default defineConfig({
                     { text: 'Unwarn', link: '/ru/command/unwarn/' },
                     { text: 'Warn', link: '/ru/command/warn/' },
                     { text: 'Warnlist', link: '/ru/command/warnlist/' },
+                ]
+            },
+            {
+                text: 'Файл integration.yml',
+                link: '/ru/integration/',
+                collapsed: false,
+                items: [
+                    { text: 'Дискорд', link: '/ru/integration/discord/' },
+                    { text: 'InteractiveChat', link: '/ru/integration/interactivechat/' },
+                    { text: 'LuckPerms', link: '/ru/integration/luckperms/' },
+                    { text: 'PlaceholderAPI', link: '/ru/integration/placeholderapi/' },
+                    { text: 'PlasmoVoice', link: '/ru/integration/plasmovoice/' },
+                    { text: 'SimpleVoice', link: '/ru/integration/simplevoice/' },
+                    { text: 'SkinsRestorer', link: '/ru/integration/skinsrestorer/' },
+                    { text: 'SuperVanish', link: '/ru/integration/supervanish/' },
+                    { text: 'Телеграм', link: '/ru/integration/telegram/' },
+                    { text: 'Твич', link: '/ru/integration/twitch/' },
+                    { text: 'Vault', link: '/ru/integration/vault/' },
                 ]
             },
             {
