@@ -27,7 +27,7 @@ header {
     align-items: center;
 }
 .separator {
-    height: 15px;
+    height: 12px;
     width: 2px;
     background-color: #ffffffc8;
     align-self: center;
@@ -42,6 +42,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.link img {
+    width: 22px;
+    height: 22px;
 }
 .link:hover {
     opacity: 100%;
