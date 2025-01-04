@@ -26,10 +26,22 @@ header {
     justify-content: center;
     align-items: center;
 }
+.separator {
+    height: 15px;
+    width: 2px;
+    background-color: #ffffffc8;
+    align-self: center;
+    margin: 0.4rem;
+    display: flex;
+}
 .link {
     opacity: 40%;
     margin-right: 0.3rem;
+    margin-left: 0.3rem;
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .link:hover {
     opacity: 100%;
@@ -39,7 +51,6 @@ header {
     border-radius: 0;
     height: 42rem;
     display: flex;
-    
     align-items: center;
     background-color: #222222;
     justify-content: center;
